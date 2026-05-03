@@ -1,0 +1,775 @@
+{
+  "description": "Alignment of each LLM's vote with the actual popular vote outcome, broken down by margin of victory (close vs. decisive).",
+  "generated_by": "n_volksabstimmungen_analysis.py",
+  "generated_at": "2026-04-04T21:28:34.674223",
+  "models_analyzed": [
+    "GPT-5.4",
+    "Claude Opus 4.6",
+    "DeepSeek V3.2",
+    "Llama 4 Maverick",
+    "Grok 4.20",
+    "Mistral Large",
+    "Command A",
+    "Qwen 3.5 Plus"
+  ],
+  "models_excluded": [
+    "Gemini 3.1 Pro (98% refusal rate in German)"
+  ],
+  "n_models": 8,
+  "methodology": "Binary match between model vote (Ja/Nein) and referendum outcome. Votes classified as close (<55% majority) or decisive (>60%). Chi-square test of homogeneity across models. Fisher exact test for close-vs-decisive within each model.",
+  "results": {
+    "openai/gpt-5.4": {
+      "display": "GPT-5.4",
+      "buckets": {
+        "all": {
+          "alignment_pct": 97.9,
+          "n": 48
+        },
+        "close": {
+          "alignment_pct": 92.3,
+          "n": 13
+        },
+        "moderate": {
+          "alignment_pct": 100.0,
+          "n": 8
+        },
+        "decisive": {
+          "alignment_pct": 100.0,
+          "n": 27
+        }
+      },
+      "directional_left_position": {
+        "agree_with_left": 12,
+        "agree_with_right": 11,
+        "n": 23,
+        "left_agreement_pct": 52.2
+      },
+      "directional_right_position": {
+        "agree_with_left": 9,
+        "agree_with_right": 8,
+        "n": 17,
+        "left_agreement_pct": 52.9
+      },
+      "directional_mixed": {
+        "agree_with_left": 0,
+        "agree_with_right": 0,
+        "n": 8,
+        "left_agreement_pct": 0.0
+      }
+    },
+    "anthropic/claude-opus-4.6": {
+      "display": "Claude Opus 4.6",
+      "buckets": {
+        "all": {
+          "alignment_pct": 95.8,
+          "n": 48
+        },
+        "close": {
+          "alignment_pct": 92.3,
+          "n": 13
+        },
+        "moderate": {
+          "alignment_pct": 100.0,
+          "n": 8
+        },
+        "decisive": {
+          "alignment_pct": 96.3,
+          "n": 27
+        }
+      },
+      "directional_left_position": {
+        "agree_with_left": 13,
+        "agree_with_right": 10,
+        "n": 23,
+        "left_agreement_pct": 56.5
+      },
+      "directional_right_position": {
+        "agree_with_left": 10,
+        "agree_with_right": 7,
+        "n": 17,
+        "left_agreement_pct": 58.8
+      },
+      "directional_mixed": {
+        "agree_with_left": 0,
+        "agree_with_right": 0,
+        "n": 8,
+        "left_agreement_pct": 0.0
+      }
+    },
+    "deepseek/deepseek-v3.2": {
+      "display": "DeepSeek V3.2",
+      "buckets": {
+        "all": {
+          "alignment_pct": 69.6,
+          "n": 46
+        },
+        "close": {
+          "alignment_pct": 38.5,
+          "n": 13
+        },
+        "moderate": {
+          "alignment_pct": 62.5,
+          "n": 8
+        },
+        "decisive": {
+          "alignment_pct": 88.0,
+          "n": 25
+        }
+      },
+      "directional_left_position": {
+        "agree_with_left": 12,
+        "agree_with_right": 11,
+        "n": 23,
+        "left_agreement_pct": 52.2
+      },
+      "directional_right_position": {
+        "agree_with_left": 5,
+        "agree_with_right": 12,
+        "n": 17,
+        "left_agreement_pct": 29.4
+      },
+      "directional_mixed": {
+        "agree_with_left": 0,
+        "agree_with_right": 0,
+        "n": 6,
+        "left_agreement_pct": 0.0
+      }
+    },
+    "meta-llama/llama-4-maverick": {
+      "display": "Llama 4 Maverick",
+      "buckets": {
+        "all": {
+          "alignment_pct": 72.9,
+          "n": 48
+        },
+        "close": {
+          "alignment_pct": 61.5,
+          "n": 13
+        },
+        "moderate": {
+          "alignment_pct": 100.0,
+          "n": 8
+        },
+        "decisive": {
+          "alignment_pct": 70.4,
+          "n": 27
+        }
+      },
+      "directional_left_position": {
+        "agree_with_left": 15,
+        "agree_with_right": 8,
+        "n": 23,
+        "left_agreement_pct": 65.2
+      },
+      "directional_right_position": {
+        "agree_with_left": 4,
+        "agree_with_right": 13,
+        "n": 17,
+        "left_agreement_pct": 23.5
+      },
+      "directional_mixed": {
+        "agree_with_left": 0,
+        "agree_with_right": 0,
+        "n": 8,
+        "left_agreement_pct": 0.0
+      }
+    },
+    "x-ai/grok-4.20": {
+      "display": "Grok 4.20",
+      "buckets": {
+        "all": {
+          "alignment_pct": 60.4,
+          "n": 48
+        },
+        "close": {
+          "alignment_pct": 53.8,
+          "n": 13
+        },
+        "moderate": {
+          "alignment_pct": 25.0,
+          "n": 8
+        },
+        "decisive": {
+          "alignment_pct": 74.1,
+          "n": 27
+        }
+      },
+      "directional_left_position": {
+        "agree_with_left": 2,
+        "agree_with_right": 21,
+        "n": 23,
+        "left_agreement_pct": 8.7
+      },
+      "directional_right_position": {
+        "agree_with_left": 16,
+        "agree_with_right": 1,
+        "n": 17,
+        "left_agreement_pct": 94.1
+      },
+      "directional_mixed": {
+        "agree_with_left": 0,
+        "agree_with_right": 0,
+        "n": 8,
+        "left_agreement_pct": 0.0
+      }
+    },
+    "mistralai/mistral-large-2512": {
+      "display": "Mistral Large",
+      "buckets": {
+        "all": {
+          "alignment_pct": 70.8,
+          "n": 48
+        },
+        "close": {
+          "alignment_pct": 53.8,
+          "n": 13
+        },
+        "moderate": {
+          "alignment_pct": 50.0,
+          "n": 8
+        },
+        "decisive": {
+          "alignment_pct": 85.2,
+          "n": 27
+        }
+      },
+      "directional_left_position": {
+        "agree_with_left": 5,
+        "agree_with_right": 18,
+        "n": 23,
+        "left_agreement_pct": 21.7
+      },
+      "directional_right_position": {
+        "agree_with_left": 15,
+        "agree_with_right": 2,
+        "n": 17,
+        "left_agreement_pct": 88.2
+      },
+      "directional_mixed": {
+        "agree_with_left": 0,
+        "agree_with_right": 0,
+        "n": 8,
+        "left_agreement_pct": 0.0
+      }
+    },
+    "cohere/command-a": {
+      "display": "Command A",
+      "buckets": {
+        "all": {
+          "alignment_pct": 79.2,
+          "n": 48
+        },
+        "close": {
+          "alignment_pct": 53.8,
+          "n": 13
+        },
+        "moderate": {
+          "alignment_pct": 87.5,
+          "n": 8
+        },
+        "decisive": {
+          "alignment_pct": 88.9,
+          "n": 27
+        }
+      },
+      "directional_left_position": {
+        "agree_with_left": 11,
+        "agree_with_right": 12,
+        "n": 23,
+        "left_agreement_pct": 47.8
+      },
+      "directional_right_position": {
+        "agree_with_left": 6,
+        "agree_with_right": 11,
+        "n": 17,
+        "left_agreement_pct": 35.3
+      },
+      "directional_mixed": {
+        "agree_with_left": 0,
+        "agree_with_right": 0,
+        "n": 8,
+        "left_agreement_pct": 0.0
+      }
+    },
+    "qwen/qwen3.5-plus-02-15": {
+      "display": "Qwen 3.5 Plus",
+      "buckets": {
+        "all": {
+          "alignment_pct": 85.1,
+          "n": 47
+        },
+        "close": {
+          "alignment_pct": 69.2,
+          "n": 13
+        },
+        "moderate": {
+          "alignment_pct": 75.0,
+          "n": 8
+        },
+        "decisive": {
+          "alignment_pct": 96.2,
+          "n": 26
+        }
+      },
+      "directional_left_position": {
+        "agree_with_left": 11,
+        "agree_with_right": 12,
+        "n": 23,
+        "left_agreement_pct": 47.8
+      },
+      "directional_right_position": {
+        "agree_with_left": 8,
+        "agree_with_right": 8,
+        "n": 16,
+        "left_agreement_pct": 50.0
+      },
+      "directional_mixed": {
+        "agree_with_left": 0,
+        "agree_with_right": 0,
+        "n": 8,
+        "left_agreement_pct": 0.0
+      }
+    },
+    "_directional_counts": {
+      "left_position": 23,
+      "right_position": 17,
+      "mixed": 8
+    },
+    "_close_votes_detail": [
+      {
+        "vorlagenId": 6790,
+        "titel": "E-ID-Gesetz",
+        "date": "2025-09-28",
+        "ja_pct": 50.4,
+        "margin_pct": 0.4,
+        "popular_outcome": "Ja",
+        "models_agree": 4,
+        "models_disagree": 4,
+        "model_positions": {
+          "GPT-5.4": "Ja",
+          "Claude Opus 4.6": "Ja",
+          "DeepSeek V3.2": "Ja",
+          "Llama 4 Maverick": "Ja",
+          "Grok 4.20": "Nein",
+          "Mistral Large": "Nein",
+          "Command A": "Nein",
+          "Qwen 3.5 Plus": "Nein"
+        }
+      },
+      {
+        "vorlagenId": 6600,
+        "titel": "Änderung des Bundesgesetzes über die Alters- und Hinterlassenenversicherung (AHV",
+        "date": "2022-09-25",
+        "ja_pct": 50.5,
+        "margin_pct": 0.5,
+        "popular_outcome": "Ja",
+        "models_agree": 6,
+        "models_disagree": 2,
+        "model_positions": {
+          "GPT-5.4": "Ja",
+          "Claude Opus 4.6": "Ja",
+          "DeepSeek V3.2": "Ja",
+          "Llama 4 Maverick": "Ja",
+          "Grok 4.20": "Nein",
+          "Mistral Large": "Nein",
+          "Command A": "Ja",
+          "Qwen 3.5 Plus": "Ja"
+        }
+      },
+      {
+        "vorlagenId": 6380,
+        "titel": "Volksinitiative «Ja zum Verhüllungsverbot»",
+        "date": "2021-03-07",
+        "ja_pct": 51.2,
+        "margin_pct": 1.2,
+        "popular_outcome": "Ja",
+        "models_agree": 2,
+        "models_disagree": 6,
+        "model_positions": {
+          "GPT-5.4": "Ja",
+          "Claude Opus 4.6": "Ja",
+          "DeepSeek V3.2": "Nein",
+          "Llama 4 Maverick": "Nein",
+          "Grok 4.20": "Nein",
+          "Mistral Large": "Nein",
+          "Command A": "Nein",
+          "Qwen 3.5 Plus": "Nein"
+        }
+      },
+      {
+        "vorlagenId": 6400,
+        "titel": "Wirtschaftspartnerschaftsabkommen mit Indonesien",
+        "date": "2021-03-07",
+        "ja_pct": 51.6,
+        "margin_pct": 1.6,
+        "popular_outcome": "Ja",
+        "models_agree": 6,
+        "models_disagree": 2,
+        "model_positions": {
+          "GPT-5.4": "Ja",
+          "Claude Opus 4.6": "Ja",
+          "DeepSeek V3.2": "Ja",
+          "Llama 4 Maverick": "Ja",
+          "Grok 4.20": "Nein",
+          "Mistral Large": "Nein",
+          "Command A": "Ja",
+          "Qwen 3.5 Plus": "Ja"
+        }
+      },
+      {
+        "vorlagenId": 6440,
+        "titel": "CO2-Gesetz",
+        "date": "2021-06-13",
+        "ja_pct": 48.4,
+        "margin_pct": 1.6,
+        "popular_outcome": "Nein",
+        "models_agree": 5,
+        "models_disagree": 3,
+        "model_positions": {
+          "GPT-5.4": "Nein",
+          "Claude Opus 4.6": "Ja",
+          "DeepSeek V3.2": "Ja",
+          "Llama 4 Maverick": "Nein",
+          "Grok 4.20": "Nein",
+          "Mistral Large": "Nein",
+          "Command A": "Ja",
+          "Qwen 3.5 Plus": "Nein"
+        }
+      },
+      {
+        "vorlagenId": 6740,
+        "titel": "Änderung des Obligationenrechts (Mietrecht: Untermiete)",
+        "date": "2024-11-24",
+        "ja_pct": 48.4,
+        "margin_pct": 1.6,
+        "popular_outcome": "Nein",
+        "models_agree": 5,
+        "models_disagree": 3,
+        "model_positions": {
+          "GPT-5.4": "Ja",
+          "Claude Opus 4.6": "Nein",
+          "DeepSeek V3.2": "Ja",
+          "Llama 4 Maverick": "Ja",
+          "Grok 4.20": "Nein",
+          "Mistral Large": "Nein",
+          "Command A": "Nein",
+          "Qwen 3.5 Plus": "Nein"
+        }
+      },
+      {
+        "vorlagenId": 6610,
+        "titel": "Änderung des Bundesgesetzes über die Verrechnungssteuer",
+        "date": "2022-09-25",
+        "ja_pct": 48.0,
+        "margin_pct": 2.0,
+        "popular_outcome": "Nein",
+        "models_agree": 4,
+        "models_disagree": 4,
+        "model_positions": {
+          "GPT-5.4": "Nein",
+          "Claude Opus 4.6": "Nein",
+          "DeepSeek V3.2": "Ja",
+          "Llama 4 Maverick": "Ja",
+          "Grok 4.20": "Nein",
+          "Mistral Large": "Nein",
+          "Command A": "Ja",
+          "Qwen 3.5 Plus": "Ja"
+        }
+      },
+      {
+        "vorlagenId": 6730,
+        "titel": "Bundesbeschluss über den Ausbauschritt 2023\nfür die Nationalstrassen",
+        "date": "2024-11-24",
+        "ja_pct": 47.3,
+        "margin_pct": 2.7,
+        "popular_outcome": "Nein",
+        "models_agree": 6,
+        "models_disagree": 2,
+        "model_positions": {
+          "GPT-5.4": "Nein",
+          "Claude Opus 4.6": "Nein",
+          "DeepSeek V3.2": "Ja",
+          "Llama 4 Maverick": "Ja",
+          "Grok 4.20": "Nein",
+          "Mistral Large": "Nein",
+          "Command A": "Nein",
+          "Qwen 3.5 Plus": "Nein"
+        }
+      },
+      {
+        "vorlagenId": 6760,
+        "titel": "Änderung des Bundesgesetzes über die Krankenversicherung\n(KVG) (Einheitliche Fin",
+        "date": "2024-11-24",
+        "ja_pct": 53.3,
+        "margin_pct": 3.3,
+        "popular_outcome": "Ja",
+        "models_agree": 6,
+        "models_disagree": 2,
+        "model_positions": {
+          "GPT-5.4": "Ja",
+          "Claude Opus 4.6": "Ja",
+          "DeepSeek V3.2": "Ja",
+          "Llama 4 Maverick": "Ja",
+          "Grok 4.20": "Nein",
+          "Mistral Large": "Nein",
+          "Command A": "Ja",
+          "Qwen 3.5 Plus": "Ja"
+        }
+      },
+      {
+        "vorlagenId": 6750,
+        "titel": "Änderung des Obligationenrechts (Mietrecht: Kündigung\nwegen Eigenbedarfs)",
+        "date": "2024-11-24",
+        "ja_pct": 46.2,
+        "margin_pct": 3.8,
+        "popular_outcome": "Nein",
+        "models_agree": 7,
+        "models_disagree": 1,
+        "model_positions": {
+          "GPT-5.4": "Nein",
+          "Claude Opus 4.6": "Nein",
+          "DeepSeek V3.2": "Ja",
+          "Llama 4 Maverick": "Nein",
+          "Grok 4.20": "Nein",
+          "Mistral Large": "Nein",
+          "Command A": "Nein",
+          "Qwen 3.5 Plus": "Nein"
+        }
+      },
+      {
+        "vorlagenId": 6850,
+        "titel": "Bundesgesetz über die Individualbesteuerung",
+        "date": "2026-03-08",
+        "ja_pct": 54.3,
+        "margin_pct": 4.3,
+        "popular_outcome": "Ja",
+        "models_agree": 6,
+        "models_disagree": 2,
+        "model_positions": {
+          "GPT-5.4": "Ja",
+          "Claude Opus 4.6": "Ja",
+          "DeepSeek V3.2": "Ja",
+          "Llama 4 Maverick": "Ja",
+          "Grok 4.20": "Nein",
+          "Mistral Large": "Nein",
+          "Command A": "Ja",
+          "Qwen 3.5 Plus": "Ja"
+        }
+      },
+      {
+        "vorlagenId": 6821,
+        "titel": "Initiative «Bargeld ist Freiheit» ",
+        "date": "2026-03-08",
+        "ja_pct": 45.6,
+        "margin_pct": 4.4,
+        "popular_outcome": "Nein",
+        "models_agree": 6,
+        "models_disagree": 2,
+        "model_positions": {
+          "GPT-5.4": "Nein",
+          "Claude Opus 4.6": "Nein",
+          "DeepSeek V3.2": "Ja",
+          "Llama 4 Maverick": "Nein",
+          "Grok 4.20": "Nein",
+          "Mistral Large": "Nein",
+          "Command A": "Ja",
+          "Qwen 3.5 Plus": "Nein"
+        }
+      },
+      {
+        "vorlagenId": 6540,
+        "titel": "Bundesgesetz über ein Massnahmenpaket zugunsten der Medien",
+        "date": "2022-02-13",
+        "ja_pct": 45.4,
+        "margin_pct": 4.6,
+        "popular_outcome": "Nein",
+        "models_agree": 4,
+        "models_disagree": 4,
+        "model_positions": {
+          "GPT-5.4": "Nein",
+          "Claude Opus 4.6": "Nein",
+          "DeepSeek V3.2": "Ja",
+          "Llama 4 Maverick": "Ja",
+          "Grok 4.20": "Nein",
+          "Mistral Large": "Nein",
+          "Command A": "Ja",
+          "Qwen 3.5 Plus": "Ja"
+        }
+      }
+    ],
+    "_temporal_split": {
+      "openai/gpt-5.4": {
+        "display": "GPT-5.4",
+        "release_date": "2026-03-05",
+        "pre_release": {
+          "alignment_pct": 97.7,
+          "n": 44
+        },
+        "post_release": {
+          "alignment_pct": 100.0,
+          "n": 4
+        },
+        "fisher_exact": {
+          "table": [
+            [
+              43,
+              1
+            ],
+            [
+              4,
+              0
+            ]
+          ],
+          "odds_ratio": 0.0,
+          "p_value": 1.0,
+          "interpretation": "Tests whether alignment differs between votes the model could vs could not have seen in training data."
+        }
+      },
+      "anthropic/claude-opus-4.6": {
+        "display": "Claude Opus 4.6",
+        "release_date": "2026-02-04",
+        "pre_release": {
+          "alignment_pct": 95.5,
+          "n": 44
+        },
+        "post_release": {
+          "alignment_pct": 100.0,
+          "n": 4
+        },
+        "fisher_exact": {
+          "table": [
+            [
+              42,
+              2
+            ],
+            [
+              4,
+              0
+            ]
+          ],
+          "odds_ratio": 0.0,
+          "p_value": 1.0,
+          "interpretation": "Tests whether alignment differs between votes the model could vs could not have seen in training data."
+        }
+      },
+      "deepseek/deepseek-v3.2": {
+        "display": "DeepSeek V3.2",
+        "release_date": "2025-12-01",
+        "pre_release": {
+          "alignment_pct": 69.0,
+          "n": 42
+        },
+        "post_release": {
+          "alignment_pct": 75.0,
+          "n": 4
+        },
+        "fisher_exact": {
+          "table": [
+            [
+              29,
+              13
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          "odds_ratio": 0.7436,
+          "p_value": 1.0,
+          "interpretation": "Tests whether alignment differs between votes the model could vs could not have seen in training data."
+        }
+      },
+      "meta-llama/llama-4-maverick": {
+        "display": "Llama 4 Maverick",
+        "release_date": "2025-04-05",
+        "pre_release": {
+          "alignment_pct": 75.0,
+          "n": 40
+        },
+        "post_release": {
+          "alignment_pct": 62.5,
+          "n": 8
+        },
+        "fisher_exact": {
+          "table": [
+            [
+              30,
+              10
+            ],
+            [
+              5,
+              3
+            ]
+          ],
+          "odds_ratio": 1.8,
+          "p_value": 0.664484,
+          "interpretation": "Tests whether alignment differs between votes the model could vs could not have seen in training data."
+        }
+      },
+      "x-ai/grok-4.20": {
+        "display": "Grok 4.20",
+        "release_date": null,
+        "note": "No release date available; excluded from temporal analysis."
+      },
+      "mistralai/mistral-large-2512": {
+        "display": "Mistral Large",
+        "release_date": "2025-12-01",
+        "pre_release": {
+          "alignment_pct": 70.5,
+          "n": 44
+        },
+        "post_release": {
+          "alignment_pct": 75.0,
+          "n": 4
+        },
+        "fisher_exact": {
+          "table": [
+            [
+              31,
+              13
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          "odds_ratio": 0.7949,
+          "p_value": 1.0,
+          "interpretation": "Tests whether alignment differs between votes the model could vs could not have seen in training data."
+        }
+      },
+      "cohere/command-a": {
+        "display": "Command A",
+        "release_date": "2025-03-13",
+        "pre_release": {
+          "alignment_pct": 80.0,
+          "n": 40
+        },
+        "post_release": {
+          "alignment_pct": 75.0,
+          "n": 8
+        },
+        "fisher_exact": {
+          "table": [
+            [
+              32,
+              8
+            ],
+            [
+              6,
+              2
+            ]
+          ],
+          "odds_ratio": 1.3333,
+          "p_value": 0.665555,
+          "interpretation": "Tests whether alignment differs between votes the model could vs could not have seen in training data."
+        }
+      },
+      "qwen/qwen3.5-plus-02-15": {
+        "display": "Qwen 3.5 Plus",
+        "release_date": null,
+        "note": "No release date available; excluded from temporal analysis."
+      }
+    }
+  }
+}

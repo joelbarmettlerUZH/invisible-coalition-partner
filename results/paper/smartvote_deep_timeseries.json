@@ -1,0 +1,473 @@
+{
+  "description": "Temporal tracking of PC1 positions across multiple versions within the same model family (OpenAI GPT, Mistral, etc.).",
+  "generated_by": "i_smartvote_statistical_analysis.py",
+  "generated_at": "2026-04-04T21:28:10.923252",
+  "models_analyzed": [
+    "Claude 3 Haiku",
+    "Claude 3.5 Haiku",
+    "Claude 3.5 Sonnet",
+    "Claude 3.7 Sonnet",
+    "Claude Opus 4",
+    "Claude Opus 4.6",
+    "Claude Sonnet 4",
+    "Claude Sonnet 4.5",
+    "Claude Sonnet 4.6",
+    "Command A",
+    "Command R+",
+    "DeepSeek R1",
+    "DeepSeek R1 0528",
+    "DeepSeek v3",
+    "DeepSeek v3.2",
+    "GLM-5",
+    "GPT-3.5 Turbo",
+    "GPT-4 Turbo",
+    "GPT-4.1",
+    "GPT-4o",
+    "GPT-4o Mini",
+    "GPT-5",
+    "GPT-5.4",
+    "GPT-5.4 Mini",
+    "Gemini 2 Flash",
+    "Grok 2",
+    "Grok 3",
+    "Grok 3 Beta",
+    "Grok 3 Mini",
+    "Grok 4",
+    "Grok 4 Fast",
+    "Grok 4.1 Fast",
+    "Grok 4.20",
+    "Hermes 3 Llama 3.1 405B",
+    "Hermes 4 405B",
+    "Jamba",
+    "Kimi K2.5",
+    "Llama 3.1 405B",
+    "Llama 4 Maverick",
+    "MiMo v2 Pro",
+    "MiniMax M2.7",
+    "Minimax",
+    "Mistral 7B v0.1",
+    "Mistral Large",
+    "Mistral Large (Dec 2025)",
+    "Mistral Large (Nov 2024)",
+    "Mistral Medium 3",
+    "Mistral Nemo",
+    "Mistral Small 3 (Jan 2025)",
+    "Mistral Small 4",
+    "Mixtral 8x22b",
+    "Nemotron 3 Super",
+    "Nova Premier",
+    "Nova Pro",
+    "Phi-4",
+    "Qwen 2.5 72B",
+    "Qwen 3 Max Thinking",
+    "Qwen 3.5 397B",
+    "Qwen 3.5 Plus",
+    "Qwen 3.6 Plus",
+    "Seed 1.6",
+    "Yi Large",
+    "o1",
+    "o1-mini",
+    "o3-mini",
+    "o4-mini"
+  ],
+  "models_excluded": [
+    "x-ai/grok-4.20",
+    "google/gemini-3-flash-preview",
+    "openai/o1-preview",
+    "qwen/qvq-72b-preview",
+    "google/gemini-3.1-pro-preview"
+  ],
+  "n_models": 66,
+  "results": {
+    "openai-gpt": {
+      "display": "OpenAI",
+      "n_models": 6,
+      "timeline": [
+        {
+          "name": "openai/gpt-3.5-turbo",
+          "display": "GPT-3.5 Turbo",
+          "released": "2023-05-28",
+          "coords": [
+            96.1644724079763,
+            -19.116031956983264
+          ],
+          "pc1": 96.1644724079763
+        },
+        {
+          "name": "openai/gpt-4-turbo",
+          "display": "GPT-4 Turbo",
+          "released": "2024-04-09",
+          "coords": [
+            169.66932294883458,
+            -27.050293193106583
+          ],
+          "pc1": 169.66932294883458
+        },
+        {
+          "name": "openai/gpt-4o-2024-11-20",
+          "display": "GPT-4o",
+          "released": "2024-11-20",
+          "coords": [
+            173.66347325805845,
+            5.395790227434787
+          ],
+          "pc1": 173.66347325805845
+        },
+        {
+          "name": "openai/gpt-4.1",
+          "display": "GPT-4.1",
+          "released": "2025-04-14",
+          "coords": [
+            194.47636476257463,
+            -13.202618806668909
+          ],
+          "pc1": 194.47636476257463
+        },
+        {
+          "name": "openai/gpt-5",
+          "display": "GPT-5",
+          "released": "2025-08-07",
+          "coords": [
+            160.52052998433777,
+            33.81190870841658
+          ],
+          "pc1": 160.52052998433777
+        },
+        {
+          "name": "openai/gpt-5.4",
+          "display": "GPT-5.4",
+          "released": "2026-03-05",
+          "coords": [
+            182.15051365685053,
+            -1.7940572702162996
+          ],
+          "pc1": 182.15051365685053
+        }
+      ],
+      "trend": {
+        "slope_per_year": 26.68698600664175,
+        "r_squared": 0.5819976693828093,
+        "p_value": 0.07766786064553931,
+        "significant_at_005": "False",
+        "direction": "trending conservative",
+        "interpretation": "Non-significant rightward trend (R²=0.582, p=0.078)"
+      }
+    },
+    "mistral": {
+      "display": "Mistral",
+      "n_models": 9,
+      "timeline": [
+        {
+          "name": "mistralai/mistral-7b-instruct-v0.1",
+          "display": "Mistral 7B v0.1",
+          "released": "2023-09-28",
+          "coords": [
+            82.12946391840738,
+            -78.85340033470568
+          ],
+          "pc1": 82.12946391840738
+        },
+        {
+          "name": "mistralai/mixtral-8x22b-instruct",
+          "display": "Mixtral 8x22b",
+          "released": "2024-04-17",
+          "coords": [
+            115.79042391997076,
+            -40.06231199444818
+          ],
+          "pc1": 115.79042391997076
+        },
+        {
+          "name": "mistralai/mistral-nemo",
+          "display": "Mistral Nemo",
+          "released": "2024-07-19",
+          "coords": [
+            100.86002142326653,
+            -79.51463559026172
+          ],
+          "pc1": 100.86002142326653
+        },
+        {
+          "name": "mistralai/mistral-large-2407",
+          "display": "Mistral Large",
+          "released": "2024-11-19",
+          "coords": [
+            180.72786751502412,
+            -68.78868198391385
+          ],
+          "pc1": 180.72786751502412
+        },
+        {
+          "name": "mistralai/mistral-large-2411",
+          "display": "Mistral Large (Nov 2024)",
+          "released": "2024-11-19",
+          "coords": [
+            175.2431854222575,
+            -58.786242137988474
+          ],
+          "pc1": 175.2431854222575
+        },
+        {
+          "name": "mistralai/mistral-small-24b-instruct-2501",
+          "display": "Mistral Small 3 (Jan 2025)",
+          "released": "2025-01-30",
+          "coords": [
+            106.31295678399307,
+            -81.02908154827361
+          ],
+          "pc1": 106.31295678399307
+        },
+        {
+          "name": "mistralai/mistral-medium-3",
+          "display": "Mistral Medium 3",
+          "released": "2025-05-07",
+          "coords": [
+            129.72578058478376,
+            2.9385313244035274
+          ],
+          "pc1": 129.72578058478376
+        },
+        {
+          "name": "mistralai/mistral-large-2512",
+          "display": "Mistral Large (Dec 2025)",
+          "released": "2025-12-01",
+          "coords": [
+            113.99089935348489,
+            -21.614276498446216
+          ],
+          "pc1": 113.99089935348489
+        },
+        {
+          "name": "mistralai/mistral-small-2603",
+          "display": "Mistral Small 4",
+          "released": "2026-03-16",
+          "coords": [
+            94.20064625242195,
+            -5.023314534512153
+          ],
+          "pc1": 94.20064625242195
+        }
+      ],
+      "trend": {
+        "slope_per_year": 2.500680454777533,
+        "r_squared": 0.0031203494148432476,
+        "p_value": 0.8864982540851764,
+        "significant_at_005": "False",
+        "direction": "trending conservative",
+        "interpretation": "Non-significant rightward trend (R²=0.003, p=0.886)"
+      }
+    },
+    "openai-reasoning": {
+      "display": "OpenAI",
+      "n_models": 4,
+      "timeline": [
+        {
+          "name": "openai/o1-mini-2024-09-12",
+          "display": "o1-mini",
+          "released": "2024-09-12",
+          "coords": [
+            121.79171696240418,
+            -22.191096249516193
+          ],
+          "pc1": 121.79171696240418
+        },
+        {
+          "name": "openai/o1",
+          "display": "o1",
+          "released": "2024-12-17",
+          "coords": [
+            196.6901264241344,
+            38.50785208355197
+          ],
+          "pc1": 196.6901264241344
+        },
+        {
+          "name": "openai/o3-mini",
+          "display": "o3-mini",
+          "released": "2025-01-31",
+          "coords": [
+            106.93241549169461,
+            -32.537904268125516
+          ],
+          "pc1": 106.93241549169461
+        },
+        {
+          "name": "openai/o4-mini",
+          "display": "o4-mini",
+          "released": "2025-04-16",
+          "coords": [
+            158.39520695578915,
+            -39.47398056019014
+          ],
+          "pc1": 158.39520695578915
+        }
+      ],
+      "trend": {
+        "slope_per_year": 30.701834401584538,
+        "r_squared": 0.03577661733425954,
+        "p_value": 0.8108529214228791,
+        "significant_at_005": "False",
+        "direction": "trending conservative",
+        "interpretation": "Non-significant rightward trend (R²=0.036, p=0.811)"
+      }
+    },
+    "anthropic-sonnet": {
+      "display": "Anthropic",
+      "n_models": 5,
+      "timeline": [
+        {
+          "name": "anthropic/claude-3.5-sonnet",
+          "display": "Claude 3.5 Sonnet",
+          "released": "2024-10-22",
+          "coords": [
+            120.68296492365091,
+            42.500111142320094
+          ],
+          "pc1": 120.68296492365091
+        },
+        {
+          "name": "anthropic/claude-3.7-sonnet",
+          "display": "Claude 3.7 Sonnet",
+          "released": "2025-02-24",
+          "coords": [
+            97.74549756224614,
+            -18.958085635262435
+          ],
+          "pc1": 97.74549756224614
+        },
+        {
+          "name": "anthropic/claude-sonnet-4",
+          "display": "Claude Sonnet 4",
+          "released": "2025-05-22",
+          "coords": [
+            131.08392114689184,
+            -26.48702780091611
+          ],
+          "pc1": 131.08392114689184
+        },
+        {
+          "name": "anthropic/claude-sonnet-4.5",
+          "display": "Claude Sonnet 4.5",
+          "released": "2025-09-29",
+          "coords": [
+            130.15465579227015,
+            -23.285747998966002
+          ],
+          "pc1": 130.15465579227015
+        },
+        {
+          "name": "anthropic/claude-sonnet-4.6",
+          "display": "Claude Sonnet 4.6",
+          "released": "2026-02-17",
+          "coords": [
+            144.73317008955962,
+            -15.938558868651384
+          ],
+          "pc1": 144.73317008955962
+        }
+      ],
+      "trend": {
+        "slope_per_year": 24.155733305948317,
+        "r_squared": 0.5077254421379434,
+        "p_value": 0.1768097461938799,
+        "significant_at_005": "False",
+        "direction": "trending conservative",
+        "interpretation": "Non-significant rightward trend (R²=0.508, p=0.177)"
+      }
+    },
+    "xai-grok": {
+      "display": "xAI",
+      "n_models": 8,
+      "timeline": [
+        {
+          "name": "x-ai/grok-2-1212",
+          "display": "Grok 2",
+          "released": "2024-12-12",
+          "coords": [
+            108.64987303213807,
+            -37.9574134324336
+          ],
+          "pc1": 108.64987303213807
+        },
+        {
+          "name": "x-ai/grok-3-beta",
+          "display": "Grok 3 Beta",
+          "released": "2025-04-10",
+          "coords": [
+            151.08783911773213,
+            -53.145021553650814
+          ],
+          "pc1": 151.08783911773213
+        },
+        {
+          "name": "x-ai/grok-3",
+          "display": "Grok 3",
+          "released": "2025-06-10",
+          "coords": [
+            151.08783911773213,
+            -53.145021553650814
+          ],
+          "pc1": 151.08783911773213
+        },
+        {
+          "name": "x-ai/grok-3-mini",
+          "display": "Grok 3 Mini",
+          "released": "2025-06-10",
+          "coords": [
+            101.99714002460045,
+            -63.13373985334908
+          ],
+          "pc1": 101.99714002460045
+        },
+        {
+          "name": "x-ai/grok-4",
+          "display": "Grok 4",
+          "released": "2025-07-09",
+          "coords": [
+            132.50926904174747,
+            9.989877590969868
+          ],
+          "pc1": 132.50926904174747
+        },
+        {
+          "name": "x-ai/grok-4-fast",
+          "display": "Grok 4 Fast",
+          "released": "2025-09-19",
+          "coords": [
+            145.37199470082493,
+            -7.860329122088601
+          ],
+          "pc1": 145.37199470082493
+        },
+        {
+          "name": "x-ai/grok-4.1-fast",
+          "display": "Grok 4.1 Fast",
+          "released": "2025-11-19",
+          "coords": [
+            -12.65348803840692,
+            -17.352649527040796
+          ],
+          "pc1": -12.65348803840692
+        },
+        {
+          "name": "x-ai/grok-4.20-beta",
+          "display": "Grok 4.20",
+          "released": "2026-03-12",
+          "coords": [
+            47.1939187371692,
+            3.123473927489428
+          ],
+          "pc1": 47.1939187371692
+        }
+      ],
+      "trend": {
+        "slope_per_year": -88.5917459657586,
+        "r_squared": 0.3358173393136669,
+        "p_value": 0.13219190142707857,
+        "significant_at_005": "False",
+        "direction": "trending progressive",
+        "interpretation": "Non-significant leftward trend (R²=0.336, p=0.132)"
+      }
+    }
+  }
+}

@@ -1,0 +1,261 @@
+{
+  "description": "Refusal rates on Volksabstimmungen queries by language, with focus on Gemini's language-dependent and context-dependent refusal patterns.",
+  "generated_by": "n_volksabstimmungen_analysis.py",
+  "generated_at": "2026-04-04T21:28:34.678328",
+  "models_analyzed": [
+    "GPT-5.4",
+    "Claude Opus 4.6",
+    "DeepSeek V3.2",
+    "Llama 4 Maverick",
+    "Grok 4.20",
+    "Mistral Large",
+    "Command A",
+    "Qwen 3.5 Plus",
+    "Gemini 3.1 Pro"
+  ],
+  "models_excluded": [],
+  "n_models": 9,
+  "methodology": "Count of non-Ja/Nein responses per language and detail condition. Chi-square tests for language effect and context effect on Gemini refusal rate.",
+  "results": {
+    "google/gemini-3.1-pro-preview": {
+      "display": "Gemini 3.1 Pro",
+      "by_condition_language": {
+        "in_kuerze/de": {
+          "refusal_rate": 97.9,
+          "refused": 47,
+          "total": 48
+        },
+        "in_kuerze_im_detail/de": {
+          "refusal_rate": 20.8,
+          "refused": 10,
+          "total": 48
+        },
+        "full_text/de": {
+          "refusal_rate": 13.0,
+          "refused": 6,
+          "total": 46
+        },
+        "in_kuerze/fr": {
+          "refusal_rate": 93.8,
+          "refused": 45,
+          "total": 48
+        },
+        "in_kuerze_im_detail/fr": {
+          "refusal_rate": 18.8,
+          "refused": 9,
+          "total": 48
+        },
+        "full_text/fr": {
+          "refusal_rate": 28.3,
+          "refused": 13,
+          "total": 46
+        },
+        "in_kuerze/it": {
+          "refusal_rate": 77.1,
+          "refused": 37,
+          "total": 48
+        },
+        "in_kuerze_im_detail/it": {
+          "refusal_rate": 18.8,
+          "refused": 9,
+          "total": 48
+        },
+        "in_kuerze/rm": {
+          "refusal_rate": 54.2,
+          "refused": 26,
+          "total": 48
+        },
+        "in_kuerze_im_detail/rm": {
+          "refusal_rate": 2.1,
+          "refused": 1,
+          "total": 48
+        }
+      }
+    },
+    "deepseek/deepseek-v3.2": {
+      "display": "DeepSeek V3.2",
+      "by_condition_language": {
+        "in_kuerze/de": {
+          "refusal_rate": 4.2,
+          "refused": 2,
+          "total": 48
+        },
+        "in_kuerze/fr": {
+          "refusal_rate": 2.1,
+          "refused": 1,
+          "total": 48
+        },
+        "full_text/fr": {
+          "refusal_rate": 2.2,
+          "refused": 1,
+          "total": 46
+        },
+        "full_text/rm": {
+          "refusal_rate": 2.3,
+          "refused": 1,
+          "total": 44
+        }
+      }
+    },
+    "meta-llama/llama-4-maverick": {
+      "display": "Llama 4 Maverick",
+      "by_condition_language": {
+        "in_kuerze_im_detail/rm": {
+          "refusal_rate": 2.1,
+          "refused": 1,
+          "total": 48
+        }
+      }
+    },
+    "x-ai/grok-4.20": {
+      "display": "Grok 4.20",
+      "by_condition_language": {
+        "in_kuerze_im_detail/de": {
+          "refusal_rate": 27.1,
+          "refused": 13,
+          "total": 48
+        },
+        "full_text/de": {
+          "refusal_rate": 21.7,
+          "refused": 10,
+          "total": 46
+        },
+        "in_kuerze/fr": {
+          "refusal_rate": 50.0,
+          "refused": 24,
+          "total": 48
+        },
+        "in_kuerze_im_detail/fr": {
+          "refusal_rate": 72.9,
+          "refused": 35,
+          "total": 48
+        },
+        "full_text/fr": {
+          "refusal_rate": 65.2,
+          "refused": 30,
+          "total": 46
+        },
+        "in_kuerze_im_detail/it": {
+          "refusal_rate": 8.3,
+          "refused": 4,
+          "total": 48
+        },
+        "full_text/it": {
+          "refusal_rate": 17.4,
+          "refused": 8,
+          "total": 46
+        },
+        "in_kuerze/rm": {
+          "refusal_rate": 2.1,
+          "refused": 1,
+          "total": 48
+        },
+        "in_kuerze_im_detail/rm": {
+          "refusal_rate": 2.1,
+          "refused": 1,
+          "total": 48
+        },
+        "full_text/rm": {
+          "refusal_rate": 4.5,
+          "refused": 2,
+          "total": 44
+        }
+      }
+    },
+    "mistralai/mistral-large-2512": {
+      "display": "Mistral Large",
+      "by_condition_language": {
+        "in_kuerze_im_detail/de": {
+          "refusal_rate": 4.2,
+          "refused": 2,
+          "total": 48
+        },
+        "full_text/de": {
+          "refusal_rate": 4.3,
+          "refused": 2,
+          "total": 46
+        },
+        "full_text/fr": {
+          "refusal_rate": 2.2,
+          "refused": 1,
+          "total": 46
+        },
+        "in_kuerze_im_detail/it": {
+          "refusal_rate": 2.1,
+          "refused": 1,
+          "total": 48
+        },
+        "full_text/it": {
+          "refusal_rate": 2.2,
+          "refused": 1,
+          "total": 46
+        },
+        "in_kuerze/rm": {
+          "refusal_rate": 41.7,
+          "refused": 20,
+          "total": 48
+        },
+        "in_kuerze_im_detail/rm": {
+          "refusal_rate": 25.0,
+          "refused": 12,
+          "total": 48
+        },
+        "full_text/rm": {
+          "refusal_rate": 36.4,
+          "refused": 16,
+          "total": 44
+        }
+      }
+    },
+    "qwen/qwen3.5-plus-02-15": {
+      "display": "Qwen 3.5 Plus",
+      "by_condition_language": {
+        "in_kuerze/de": {
+          "refusal_rate": 2.1,
+          "refused": 1,
+          "total": 48
+        },
+        "in_kuerze_im_detail/de": {
+          "refusal_rate": 2.1,
+          "refused": 1,
+          "total": 48
+        },
+        "full_text/de": {
+          "refusal_rate": 4.3,
+          "refused": 2,
+          "total": 46
+        },
+        "in_kuerze/fr": {
+          "refusal_rate": 4.2,
+          "refused": 2,
+          "total": 48
+        },
+        "in_kuerze_im_detail/fr": {
+          "refusal_rate": 4.2,
+          "refused": 2,
+          "total": 48
+        },
+        "full_text/fr": {
+          "refusal_rate": 8.7,
+          "refused": 4,
+          "total": 46
+        },
+        "in_kuerze/it": {
+          "refusal_rate": 14.6,
+          "refused": 7,
+          "total": 48
+        },
+        "in_kuerze_im_detail/it": {
+          "refusal_rate": 12.5,
+          "refused": 6,
+          "total": 48
+        },
+        "full_text/it": {
+          "refusal_rate": 8.7,
+          "refused": 4,
+          "total": 46
+        }
+      }
+    }
+  }
+}

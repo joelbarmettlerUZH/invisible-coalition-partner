@@ -1,0 +1,29 @@
+{
+  "description": "Test of whether LLMs are more similar to each other than political parties are, measuring inter-model vs. inter-party pairwise agreement on referenda.",
+  "generated_by": "n_volksabstimmungen_analysis.py",
+  "generated_at": "2026-04-04T21:28:34.678207",
+  "models_analyzed": [
+    "GPT-5.4",
+    "Claude Opus 4.6",
+    "DeepSeek V3.2",
+    "Llama 4 Maverick",
+    "Grok 4.20",
+    "Mistral Large",
+    "Command A",
+    "Qwen 3.5 Plus"
+  ],
+  "models_excluded": [
+    "Gemini 3.1 Pro (98% refusal rate in German)"
+  ],
+  "n_models": 8,
+  "methodology": "Mean pairwise binary agreement across all model pairs vs. all party pairs. Mann-Whitney U test and permutation test (10,000 iterations).",
+  "results": {
+    "model_mean_pairwise_agreement": 69.3,
+    "model_std_pairwise_agreement": 12.5,
+    "party_mean_pairwise_agreement": 51.0,
+    "party_std_pairwise_agreement": 22.8,
+    "n_model_pairs": 28,
+    "n_party_pairs": 15,
+    "interpretation": "Models more similar to each other than parties are to each other"
+  }
+}

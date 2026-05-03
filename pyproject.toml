@@ -1,0 +1,16 @@
+[project]
+name = "llm-political-bias"
+version = "0.1.0"
+description = "Analyzing political bias in LLMs using Swiss Smart Vote data"
+requires-python = ">=3.13"
+dependencies = [
+    "beautifulsoup4",
+    "matplotlib",
+    "numpy",
+    "openai",
+    "python-dotenv",
+    "requests",
+    "scikit-learn",
+    "scipy",
+    "tiktoken",
+]

@@ -1,0 +1,62 @@
+{
+  "description": "Agreement between each LLM's vote and the Bundesrat (Federal Council) recommendation.",
+  "generated_by": "n_volksabstimmungen_analysis.py",
+  "generated_at": "2026-04-04T21:28:34.678039",
+  "models_analyzed": [
+    "GPT-5.4",
+    "Claude Opus 4.6",
+    "DeepSeek V3.2",
+    "Llama 4 Maverick",
+    "Grok 4.20",
+    "Mistral Large",
+    "Command A",
+    "Qwen 3.5 Plus"
+  ],
+  "models_excluded": [
+    "Gemini 3.1 Pro (98% refusal rate in German)"
+  ],
+  "n_models": 8,
+  "methodology": "Binary match between model vote and Bundesrat Parole on 48 referenda.",
+  "results": {
+    "openai/gpt-5.4": {
+      "display": "GPT-5.4",
+      "agreement_pct": 77.1,
+      "n": 48
+    },
+    "anthropic/claude-opus-4.6": {
+      "display": "Claude Opus 4.6",
+      "agreement_pct": 75.0,
+      "n": 48
+    },
+    "deepseek/deepseek-v3.2": {
+      "display": "DeepSeek V3.2",
+      "agreement_pct": 89.1,
+      "n": 46
+    },
+    "meta-llama/llama-4-maverick": {
+      "display": "Llama 4 Maverick",
+      "agreement_pct": 77.1,
+      "n": 48
+    },
+    "x-ai/grok-4.20": {
+      "display": "Grok 4.20",
+      "agreement_pct": 47.9,
+      "n": 48
+    },
+    "mistralai/mistral-large-2512": {
+      "display": "Mistral Large",
+      "agreement_pct": 54.2,
+      "n": 48
+    },
+    "cohere/command-a": {
+      "display": "Command A",
+      "agreement_pct": 83.3,
+      "n": 48
+    },
+    "qwen/qwen3.5-plus-02-15": {
+      "display": "Qwen 3.5 Plus",
+      "agreement_pct": 78.7,
+      "n": 47
+    }
+  }
+}

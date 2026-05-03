@@ -1,0 +1,84 @@
+{
+  "description": "Cross-instrument comparison: Spearman correlation between Smartvote PC1 position and Volksabstimmungen SP-minus-SVP agreement differential (left-right score) across the 8 flagship models.",
+  "generated_by": "p_extended_analysis.py",
+  "generated_at": "2026-04-04T21:26:45.380089",
+  "models_analyzed": [
+    "GPT-5.4",
+    "Claude Opus 4.6",
+    "DeepSeek V3.2",
+    "Llama 4 Maverick",
+    "Grok 4.20",
+    "Mistral Large",
+    "Command A",
+    "Qwen 3.5 Plus"
+  ],
+  "models_excluded": [
+    "Gemini 3.1 Pro (98% refusal rate in German)"
+  ],
+  "n_models": 8,
+  "methodology": "Spearman rank correlation between each model's PC1 score on Smartvote and its SP-minus-SVP agreement differential on Volksabstimmungen (n=8). The differential captures political direction: positive = closer to SP, negative = closer to SVP. Ja rate retained as secondary metric.",
+  "results": {
+    "per_model": {
+      "cohere/command-a": {
+        "display": "Command A",
+        "smartvote_pc1": -154.9,
+        "volksabstimmungen_lr_score": -10.9,
+        "volksabstimmungen_ja_rate": 50.0
+      },
+      "meta-llama/llama-4-maverick": {
+        "display": "Llama 4 Maverick",
+        "smartvote_pc1": -124.5,
+        "volksabstimmungen_lr_score": -2.2,
+        "volksabstimmungen_ja_rate": 64.6
+      },
+      "deepseek/deepseek-v3.2": {
+        "display": "DeepSeek v3.2",
+        "smartvote_pc1": -132.9,
+        "volksabstimmungen_lr_score": -13.3,
+        "volksabstimmungen_ja_rate": 54.3
+      },
+      "mistralai/mistral-large-2512": {
+        "display": "Mistral Large (Dec 2025)",
+        "smartvote_pc1": -114.0,
+        "volksabstimmungen_lr_score": 0.0,
+        "volksabstimmungen_ja_rate": 16.7
+      },
+      "anthropic/claude-opus-4.6": {
+        "display": "Claude Opus 4.6",
+        "smartvote_pc1": -149.7,
+        "volksabstimmungen_lr_score": 17.4,
+        "volksabstimmungen_ja_rate": 50.0
+      },
+      "openai/gpt-5.4": {
+        "display": "GPT-5.4",
+        "smartvote_pc1": -182.2,
+        "volksabstimmungen_lr_score": 8.7,
+        "volksabstimmungen_ja_rate": 47.9
+      },
+      "x-ai/grok-4.20": {
+        "display": "Grok 4.20",
+        "smartvote_pc1": -48.9,
+        "volksabstimmungen_lr_score": -10.9,
+        "volksabstimmungen_ja_rate": 6.2
+      },
+      "qwen/qwen3.5-plus-02-15": {
+        "display": "Qwen 3.5 Plus",
+        "smartvote_pc1": -98.1,
+        "volksabstimmungen_lr_score": 0.0,
+        "volksabstimmungen_ja_rate": 44.7
+      }
+    },
+    "pc1_vs_lr_score": {
+      "spearman_rho": -0.253,
+      "p_value": 0.5454,
+      "n": 8,
+      "interpretation": "Tests whether Smartvote PC1 (left-right) predicts Volksabstimmungen SP-minus-SVP agreement differential. Positive rho = models that are more left-leaning on Smartvote also align more with SP (vs SVP) on referenda, confirming cross-instrument consistency of political direction."
+    },
+    "pc1_vs_ja_rate_secondary": {
+      "spearman_rho": -0.515,
+      "p_value": 0.1915,
+      "n": 8,
+      "note": "Secondary metric retained for completeness. Ja rate does not preserve political direction and should not be used for convergent validity."
+    }
+  }
+}

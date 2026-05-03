@@ -1,0 +1,1693 @@
+{
+  "metadata": {
+    "question_ids": [
+      "32214",
+      "32215",
+      "32216",
+      "32217",
+      "32218",
+      "32219",
+      "32220",
+      "32221",
+      "32222",
+      "32223",
+      "32224",
+      "32225",
+      "32226",
+      "32227",
+      "32228",
+      "32229",
+      "32230",
+      "32231",
+      "32232",
+      "32233",
+      "32234",
+      "32235",
+      "32236",
+      "32237",
+      "32238",
+      "32239",
+      "32240",
+      "32241",
+      "32242",
+      "32243",
+      "32244",
+      "32245",
+      "32246",
+      "32247",
+      "32248",
+      "32249",
+      "32250",
+      "32251",
+      "32252",
+      "32253",
+      "32254",
+      "32255",
+      "32256",
+      "32257",
+      "32258",
+      "32259",
+      "32260",
+      "32261",
+      "32262",
+      "32263",
+      "32264",
+      "32265",
+      "32266",
+      "32267",
+      "32268",
+      "32269",
+      "32270",
+      "32271",
+      "32272",
+      "32273",
+      "32274",
+      "32275",
+      "32276",
+      "32277",
+      "32278",
+      "32279",
+      "32280"
+    ],
+    "pca": {
+      "n_components": 1,
+      "mean": [
+        32.47282608695652,
+        56.79347826086956,
+        70.78804347826087,
+        54.34782608695652,
+        49.72826086956522,
+        42.79891304347826,
+        17.391304347826086,
+        24.86413043478261,
+        38.858695652173914,
+        41.983695652173914,
+        34.91847826086956,
+        54.483695652173914,
+        49.72826086956522,
+        63.31521739130435,
+        40.08152173913044,
+        60.32608695652174,
+        44.97282608695652,
+        43.88586956521739,
+        56.25,
+        61.54891304347826,
+        41.16847826086956,
+        80.16304347826087,
+        49.86413043478261,
+        67.3913043478261,
+        37.77173913043478,
+        53.94021739130435,
+        37.22826086956522,
+        69.42934782608695,
+        47.28260869565217,
+        66.84782608695652,
+        51.766304347826086,
+        56.25,
+        42.255434782608695,
+        63.17934782608695,
+        59.91847826086956,
+        44.15760869565217,
+        85.32608695652173,
+        30.570652173913043,
+        53.66847826086956,
+        41.03260869565217,
+        45.65217391304348,
+        47.55434782608695,
+        53.94021739130435,
+        64.67391304347827,
+        80.84239130434783,
+        60.19021739130435,
+        65.48913043478261,
+        44.15760869565217,
+        44.70108695652174,
+        37.77173913043478,
+        55.97826086956522,
+        41.983695652173914,
+        46.33152173913044,
+        69.70108695652173,
+        29.483695652173914,
+        62.63586956521739,
+        48.91304347826087,
+        52.98913043478261,
+        23.91304347826087,
+        33.42391304347826,
+        45.755434782608695,
+        61.869565217391305,
+        47.20652173913044,
+        30.369565217391305,
+        72.17391304347827,
+        46.20652173913044,
+        51.75
+      ],
+      "components": [
+        [
+          -0.08524763782769318,
+          0.13914093059791022,
+          0.02108801173981334,
+          -0.11447849996426576,
+          0.16551945675838156,
+          0.1632970935256932,
+          0.04256019914123789,
+          0.10246268026988081,
+          -0.09553342999215933,
+          -0.11956089348660369,
+          0.06650776401413784,
+          0.11596116109551909,
+          -0.11481356943839406,
+          0.12602345581053298,
+          0.16868336428011763,
+          0.08029541889249248,
+          -0.14833440893988023,
+          0.16775829300621195,
+          0.12110174626724832,
+          0.03832213583793235,
+          0.16213194548328275,
+          0.07402170436777467,
+          -0.15746739818866495,
+          0.0814155935910262,
+          0.15738827997556037,
+          0.126499466853109,
+          0.16365431044318732,
+          0.10660024830427796,
+          -0.08931164238938216,
+          -0.11960296858308811,
+          0.15700978459644013,
+          -0.16615332336098507,
+          0.1669166577080721,
+          -0.14095327128035667,
+          -0.027225619661767016,
+          -0.16089375362313324,
+          0.03920374401283029,
+          0.10183151582828191,
+          -0.13854839796502227,
+          0.1456549317586726,
+          0.14915213712614428,
+          0.15999366730946224,
+          0.14728500662015634,
+          0.12531260816509998,
+          -0.03167610013049166,
+          0.09516302953360799,
+          0.12387442818542409,
+          -0.15898889321629983,
+          0.1695244650613875,
+          -0.08766971738012272,
+          -0.1678868459437954,
+          0.01615776559193683,
+          0.056233525330531116,
+          0.08082874948563017,
+          -0.12398731667681315,
+          0.12436150057894273,
+          -0.06999532723996481,
+          0.15703689173644095,
+          -0.09971596695934079,
+          -0.12820377572541386,
+          -0.07409542724290963,
+          -0.12049033639584518,
+          0.14297199027867344,
+          -0.09090576523128234,
+          -0.005410540897618178,
+          -0.12251604009619037,
+          0.13254392446777116
+        ]
+      ],
+      "explained_variance": [
+        65181.429416877196
+      ]
+    }
+  },
+  "points": [
+    {
+      "name": "Jean-Luc Addor",
+      "party": "SVP",
+      "color": "#4B8A3E",
+      "coords": [
+        -256.13442624447646
+      ]
+    },
+    {
+      "name": "Matthias Aebischer",
+      "party": "SP",
+      "color": "#F0554D",
+      "coords": [
+        284.46280249367237
+      ]
+    },
+    {
+      "name": "Cyril Aellen",
+      "party": "FDP",
+      "color": "#3872B5",
+      "coords": [
+        -114.46466371586716
+      ]
+    },
+    {
+      "name": "Islam Alijaj",
+      "party": "SP",
+      "color": "#F0554D",
+      "coords": [
+        322.23798268092213
+      ]
+    },
+    {
+      "name": "C\u00e9line Amaudruz",
+      "party": "SVP",
+      "color": "#4B8A3E",
+      "coords": [
+        -222.18638707232046
+      ]
+    },
+    {
+      "name": "Emmanuel Amoos",
+      "party": "SP",
+      "color": "#F0554D",
+      "coords": [
+        314.62011303550725
+      ]
+    },
+    {
+      "name": "Gerhard Andrey",
+      "party": "Gr\u00fcne",
+      "color": "#84B547",
+      "coords": [
+        326.8816478659193
+      ]
+    },
+    {
+      "name": "Christine Badertscher",
+      "party": "Gr\u00fcne",
+      "color": "#84B547",
+      "coords": [
+        297.07555275657825
+      ]
+    },
+    {
+      "name": "Jacqueline Badran",
+      "party": "SP",
+      "color": "#F0554D",
+      "coords": [
+        291.9270307687398
+      ]
+    },
+    {
+      "name": "Maya Bally",
+      "party": "Die Mitte",
+      "color": "#D6862B",
+      "coords": [
+        50.05896541416826
+      ]
+    },
+    {
+      "name": "Bettina Balmer",
+      "party": "FDP",
+      "color": "#3872B5",
+      "coords": [
+        -169.0634426042103
+      ]
+    },
+    {
+      "name": "Nicole Barandun",
+      "party": "Die Mitte",
+      "color": "#D6862B",
+      "coords": [
+        30.692610782790517
+      ]
+    },
+    {
+      "name": "Kilian Baumann",
+      "party": "Gr\u00fcne",
+      "color": "#84B547",
+      "coords": [
+        351.0008004750952
+      ]
+    },
+    {
+      "name": "Martin B\u00e4umle",
+      "party": "GLP",
+      "color": "#C4C43D",
+      "coords": [
+        -1.9870030051409582
+      ]
+    },
+    {
+      "name": "Samuel Bendahan",
+      "party": "SP",
+      "color": "#F0554D",
+      "coords": [
+        336.2945306833716
+      ]
+    },
+    {
+      "name": "Kathrin Bertschy",
+      "party": "GLP",
+      "color": "#C4C43D",
+      "coords": [
+        205.49653108717655
+      ]
+    },
+    {
+      "name": "Martina Bircher",
+      "party": "SVP",
+      "color": "#4B8A3E",
+      "coords": [
+        -281.5453248440026
+      ]
+    },
+    {
+      "name": "Thomas Bl\u00e4si",
+      "party": "SVP",
+      "color": "#4B8A3E",
+      "coords": [
+        -148.5502588089422
+      ]
+    },
+    {
+      "name": "Dominik Blunschy",
+      "party": "Die Mitte",
+      "color": "#D6862B",
+      "coords": [
+        -5.870656996824248
+      ]
+    },
+    {
+      "name": "Philipp Matthias Bregy",
+      "party": "Die Mitte",
+      "color": "#D6862B",
+      "coords": [
+        -126.65074307652145
+      ]
+    },
+    {
+      "name": "Florence Brenzikofer",
+      "party": "Gr\u00fcne",
+      "color": "#84B547",
+      "coords": [
+        339.9492326490007
+      ]
+    },
+    {
+      "name": "Simona Brizzi",
+      "party": "SP",
+      "color": "#F0554D",
+      "coords": [
+        229.70375609846099
+      ]
+    },
+    {
+      "name": "Roland Rino B\u00fcchel",
+      "party": "SVP",
+      "color": "#4B8A3E",
+      "coords": [
+        -320.0723174880367
+      ]
+    },
+    {
+      "name": "Micha\u00ebl Buffat",
+      "party": "SVP",
+      "color": "#4B8A3E",
+      "coords": [
+        -259.2679327402629
+      ]
+    },
+    {
+      "name": "Manfred B\u00fchler",
+      "party": "SVP",
+      "color": "#4B8A3E",
+      "coords": [
+        -285.42363015211697
+      ]
+    },
+    {
+      "name": "Christine Bulliard-Marbach",
+      "party": "Die Mitte",
+      "color": "#D6862B",
+      "coords": [
+        9.061810650560902
+      ]
+    },
+    {
+      "name": "Thomas Burgherr",
+      "party": "SVP",
+      "color": "#4B8A3E",
+      "coords": [
+        -285.32497309114245
+      ]
+    },
+    {
+      "name": "Roman B\u00fcrgi",
+      "party": "SVP",
+      "color": "#4B8A3E",
+      "coords": [
+        -222.9284131097067
+      ]
+    },
+    {
+      "name": "Yvonne B\u00fcrgin",
+      "party": "Die Mitte",
+      "color": "#D6862B",
+      "coords": [
+        66.82424380587935
+      ]
+    },
+    {
+      "name": "Didier Calame",
+      "party": "SVP",
+      "color": "#4B8A3E",
+      "coords": [
+        -69.6274076956855
+      ]
+    },
+    {
+      "name": "Hasan Candan",
+      "party": "SP",
+      "color": "#F0554D",
+      "coords": [
+        272.3704166386371
+      ]
+    },
+    {
+      "name": "Martin Candinas",
+      "party": "Die Mitte",
+      "color": "#D6862B",
+      "coords": [
+        -42.33554919876968
+      ]
+    },
+    {
+      "name": "Isabelle Chappuis",
+      "party": "Die Mitte",
+      "color": "#D6862B",
+      "coords": [
+        -0.898010839241437
+      ]
+    },
+    {
+      "name": "Katja Christ",
+      "party": "GLP",
+      "color": "#C4C43D",
+      "coords": [
+        127.00424028696625
+      ]
+    },
+    {
+      "name": "Christophe Clivaz",
+      "party": "Gr\u00fcne",
+      "color": "#84B547",
+      "coords": [
+        298.1442740223194
+      ]
+    },
+    {
+      "name": "Damien Cottier",
+      "party": "FDP",
+      "color": "#3872B5",
+      "coords": [
+        -153.1624422925491
+      ]
+    },
+    {
+      "name": "Brigitte Crottaz",
+      "party": "SP",
+      "color": "#F0554D",
+      "coords": [
+        317.33403852415887
+      ]
+    },
+    {
+      "name": "Christian Dandr\u00e8s",
+      "party": "SP",
+      "color": "#F0554D",
+      "coords": [
+        337.76373510215944
+      ]
+    },
+    {
+      "name": "Thomas de Courten",
+      "party": "SVP",
+      "color": "#4B8A3E",
+      "coords": [
+        -349.94619249354855
+      ]
+    },
+    {
+      "name": "Simone de Montmollin",
+      "party": "FDP",
+      "color": "#3872B5",
+      "coords": [
+        -138.61682083823854
+      ]
+    },
+    {
+      "name": "Marcel Dettling",
+      "party": "SVP",
+      "color": "#4B8A3E",
+      "coords": [
+        -327.26724852616326
+      ]
+    },
+    {
+      "name": "Marcel Dobler",
+      "party": "FDP",
+      "color": "#3872B5",
+      "coords": [
+        -252.191873347189
+      ]
+    },
+    {
+      "name": "Martine Docourt",
+      "party": "SP",
+      "color": "#F0554D",
+      "coords": [
+        313.03898654699196
+      ]
+    },
+    {
+      "name": "Regina Durrer-Knobel",
+      "party": "Die Mitte",
+      "color": "#D6862B",
+      "coords": [
+        -50.48175857337063
+      ]
+    },
+    {
+      "name": "Mike Egger",
+      "party": "SVP",
+      "color": "#4B8A3E",
+      "coords": [
+        -333.50313405461816
+      ]
+    },
+    {
+      "name": "Alex Farinelli",
+      "party": "FDP",
+      "color": "#3872B5",
+      "coords": [
+        -97.053821821788
+      ]
+    },
+    {
+      "name": "Laurence Fehlmann Rielle",
+      "party": "SP",
+      "color": "#F0554D",
+      "coords": [
+        328.36141314828484
+      ]
+    },
+    {
+      "name": "Nina Fehr D\u00fcsel",
+      "party": "SVP",
+      "color": "#4B8A3E",
+      "coords": [
+        -328.6030403279503
+      ]
+    },
+    {
+      "name": "Benjamin \"Beni\" Fischer",
+      "party": "SVP",
+      "color": "#4B8A3E",
+      "coords": [
+        -340.0306871452213
+      ]
+    },
+    {
+      "name": "Fabien Fivaz",
+      "party": "Gr\u00fcne",
+      "color": "#84B547",
+      "coords": [
+        336.95046994270837
+      ]
+    },
+    {
+      "name": "Beat Flach",
+      "party": "GLP",
+      "color": "#C4C43D",
+      "coords": [
+        148.21222389483222
+      ]
+    },
+    {
+      "name": "Giorgio Fonio",
+      "party": "Die Mitte",
+      "color": "#D6862B",
+      "coords": [
+        119.36017919779415
+      ]
+    },
+    {
+      "name": "Sylvain Freymond",
+      "party": "SVP",
+      "color": "#4B8A3E",
+      "coords": [
+        -173.55536582757463
+      ]
+    },
+    {
+      "name": "Pierre-Alain Fridez",
+      "party": "SP",
+      "color": "#F0554D",
+      "coords": [
+        261.96227169034637
+      ]
+    },
+    {
+      "name": "Claudia Friedl",
+      "party": "SP",
+      "color": "#F0554D",
+      "coords": [
+        344.12687603960427
+      ]
+    },
+    {
+      "name": "Tamara Funiciello",
+      "party": "SP",
+      "color": "#F0554D",
+      "coords": [
+        331.3224044261748
+      ]
+    },
+    {
+      "name": "Walter Gartmann",
+      "party": "SVP",
+      "color": "#4B8A3E",
+      "coords": [
+        -270.76262973325316
+      ]
+    },
+    {
+      "name": "Anna Giacometti",
+      "party": "FDP",
+      "color": "#3872B5",
+      "coords": [
+        -96.359854078442
+      ]
+    },
+    {
+      "name": "Simone Gianini",
+      "party": "FDP",
+      "color": "#3872B5",
+      "coords": [
+        -66.59328880499524
+      ]
+    },
+    {
+      "name": "Benjamin Giezendanner",
+      "party": "SVP",
+      "color": "#4B8A3E",
+      "coords": [
+        -272.58207586027925
+      ]
+    },
+    {
+      "name": "Bastien Girod",
+      "party": "Gr\u00fcne",
+      "color": "#84B547",
+      "coords": [
+        297.9092936392083
+      ]
+    },
+    {
+      "name": "Andreas Glarner",
+      "party": "SVP",
+      "color": "#4B8A3E",
+      "coords": [
+        -365.86896814546304
+      ]
+    },
+    {
+      "name": "Balthasar Gl\u00e4ttli",
+      "party": "Gr\u00fcne",
+      "color": "#84B547",
+      "coords": [
+        348.1550463763534
+      ]
+    },
+    {
+      "name": "Nadine Gobet",
+      "party": "FDP",
+      "color": "#3872B5",
+      "coords": [
+        -127.10214154157178
+      ]
+    },
+    {
+      "name": "Michael G\u00f6tte",
+      "party": "SVP",
+      "color": "#4B8A3E",
+      "coords": [
+        -266.2660014604491
+      ]
+    },
+    {
+      "name": "Michael Graber",
+      "party": "SVP",
+      "color": "#4B8A3E",
+      "coords": [
+        -250.44662005222415
+      ]
+    },
+    {
+      "name": "Corina Gredig",
+      "party": "GLP",
+      "color": "#C4C43D",
+      "coords": [
+        181.12818628117975
+      ]
+    },
+    {
+      "name": "J\u00fcrg Grossen",
+      "party": "GLP",
+      "color": "#C4C43D",
+      "coords": [
+        137.7291222362769
+      ]
+    },
+    {
+      "name": "Franz Gr\u00fcter",
+      "party": "SVP",
+      "color": "#4B8A3E",
+      "coords": [
+        -309.32989159377394
+      ]
+    },
+    {
+      "name": "Lars Guggisberg",
+      "party": "SVP",
+      "color": "#4B8A3E",
+      "coords": [
+        -301.81902317279076
+      ]
+    },
+    {
+      "name": "Diana Gutjahr",
+      "party": "SVP",
+      "color": "#4B8A3E",
+      "coords": [
+        -288.83950285288375
+      ]
+    },
+    {
+      "name": "Barbara Gysi",
+      "party": "SP",
+      "color": "#F0554D",
+      "coords": [
+        327.17550951306356
+      ]
+    },
+    {
+      "name": "Greta Gysin",
+      "party": "Gr\u00fcne",
+      "color": "#84B547",
+      "coords": [
+        329.38575205149505
+      ]
+    },
+    {
+      "name": "Martin Haab",
+      "party": "SVP",
+      "color": "#4B8A3E",
+      "coords": [
+        -255.0399234720133
+      ]
+    },
+    {
+      "name": "Patrick H\u00e4ssig",
+      "party": "GLP",
+      "color": "#C4C43D",
+      "coords": [
+        188.88224626922047
+      ]
+    },
+    {
+      "name": "Alfred \"Fredi\" Heer",
+      "party": "SVP",
+      "color": "#4B8A3E",
+      "coords": [
+        -261.5709869782568
+      ]
+    },
+    {
+      "name": "Stefanie Heimgartner",
+      "party": "SVP",
+      "color": "#4B8A3E",
+      "coords": [
+        -266.30068845155705
+      ]
+    },
+    {
+      "name": "Erich Hess",
+      "party": "SVP",
+      "color": "#4B8A3E",
+      "coords": [
+        -376.1178796293005
+      ]
+    },
+    {
+      "name": "Lorenz Hess",
+      "party": "Die Mitte",
+      "color": "#D6862B",
+      "coords": [
+        41.85848449558744
+      ]
+    },
+    {
+      "name": "Martin H\u00fcbscher",
+      "party": "SVP",
+      "color": "#4B8A3E",
+      "coords": [
+        -320.704806205278
+      ]
+    },
+    {
+      "name": "Roman Hug",
+      "party": "SVP",
+      "color": "#4B8A3E",
+      "coords": [
+        -272.92102773760917
+      ]
+    },
+    {
+      "name": "Thomas Hurter",
+      "party": "SVP",
+      "color": "#4B8A3E",
+      "coords": [
+        -261.90822297115477
+      ]
+    },
+    {
+      "name": "Christian Imark",
+      "party": "SVP",
+      "color": "#4B8A3E",
+      "coords": [
+        -337.7282723947118
+      ]
+    },
+    {
+      "name": "Jessica Jaccoud",
+      "party": "SP",
+      "color": "#F0554D",
+      "coords": [
+        306.94481705118017
+      ]
+    },
+    {
+      "name": "Matthias Samuel Jauslin",
+      "party": "FDP",
+      "color": "#3872B5",
+      "coords": [
+        -92.46493610549271
+      ]
+    },
+    {
+      "name": "Ir\u00e8ne K\u00e4lin",
+      "party": "Gr\u00fcne",
+      "color": "#84B547",
+      "coords": [
+        322.5935480484197
+      ]
+    },
+    {
+      "name": "Sidney Kamerzin",
+      "party": "Die Mitte",
+      "color": "#D6862B",
+      "coords": [
+        -131.92153446012645
+      ]
+    },
+    {
+      "name": "Pius Kaufmann",
+      "party": "Die Mitte",
+      "color": "#D6862B",
+      "coords": [
+        -89.25385863113192
+      ]
+    },
+    {
+      "name": "Delphine Klopfenstein Broggini",
+      "party": "Gr\u00fcne",
+      "color": "#84B547",
+      "coords": [
+        341.2773400971683
+      ]
+    },
+    {
+      "name": "Thomas Knutti",
+      "party": "SVP",
+      "color": "#4B8A3E",
+      "coords": [
+        -306.55117406081325
+      ]
+    },
+    {
+      "name": "Nicolas Kolly",
+      "party": "SVP",
+      "color": "#4B8A3E",
+      "coords": [
+        -224.72808298066775
+      ]
+    },
+    {
+      "name": "Philipp Kutter",
+      "party": "Die Mitte",
+      "color": "#D6862B",
+      "coords": [
+        56.68598188202565
+      ]
+    },
+    {
+      "name": "Christian Lohr",
+      "party": "Die Mitte",
+      "color": "#D6862B",
+      "coords": [
+        -50.69351222781097
+      ]
+    },
+    {
+      "name": "Rapha\u00ebl Mahaim",
+      "party": "Gr\u00fcne",
+      "color": "#84B547",
+      "coords": [
+        323.4190231468396
+      ]
+    },
+    {
+      "name": "Vincent Maitre",
+      "party": "Die Mitte",
+      "color": "#D6862B",
+      "coords": [
+        29.328044147629978
+      ]
+    },
+    {
+      "name": "Piero Marchesi",
+      "party": "SVP",
+      "color": "#4B8A3E",
+      "coords": [
+        -295.77465093426855
+      ]
+    },
+    {
+      "name": "Min Li Marti",
+      "party": "SP",
+      "color": "#F0554D",
+      "coords": [
+        303.5154213591757
+      ]
+    },
+    {
+      "name": "Samira Marti",
+      "party": "SP",
+      "color": "#F0554D",
+      "coords": [
+        315.1178870065269
+      ]
+    },
+    {
+      "name": "Nadine Masshardt",
+      "party": "SP",
+      "color": "#F0554D",
+      "coords": [
+        322.9034982777931
+      ]
+    },
+    {
+      "name": "Thomas \"Tommy\" Matter",
+      "party": "SVP",
+      "color": "#4B8A3E",
+      "coords": [
+        -336.1141734188124
+      ]
+    },
+    {
+      "name": "Andreas Meier",
+      "party": "Die Mitte",
+      "color": "#D6862B",
+      "coords": [
+        -43.307853593648126
+      ]
+    },
+    {
+      "name": "Melanie Mettler",
+      "party": "GLP",
+      "color": "#C4C43D",
+      "coords": [
+        258.43926365605245
+      ]
+    },
+    {
+      "name": "Mattea Meyer",
+      "party": "SP",
+      "color": "#F0554D",
+      "coords": [
+        323.51585165209667
+      ]
+    },
+    {
+      "name": "Sophie Michaud Gigon",
+      "party": "Gr\u00fcne",
+      "color": "#84B547",
+      "coords": [
+        291.33411122271394
+      ]
+    },
+    {
+      "name": "Simon Michel",
+      "party": "FDP",
+      "color": "#3872B5",
+      "coords": [
+        -213.70000756582465
+      ]
+    },
+    {
+      "name": "Fabian Molina",
+      "party": "SP",
+      "color": "#F0554D",
+      "coords": [
+        320.796866902814
+      ]
+    },
+    {
+      "name": "Leo M\u00fcller",
+      "party": "Die Mitte",
+      "color": "#D6862B",
+      "coords": [
+        -106.29688216689378
+      ]
+    },
+    {
+      "name": "Stefan M\u00fcller-Altermatt",
+      "party": "Die Mitte",
+      "color": "#D6862B",
+      "coords": [
+        122.60805932143019
+      ]
+    },
+    {
+      "name": "Martina Munz",
+      "party": "SP",
+      "color": "#F0554D",
+      "coords": [
+        341.9230334925097
+      ]
+    },
+    {
+      "name": "Philippe Nantermod",
+      "party": "FDP",
+      "color": "#3872B5",
+      "coords": [
+        -184.61716207519623
+      ]
+    },
+    {
+      "name": "Reto Nause",
+      "party": "Die Mitte",
+      "color": "#D6862B",
+      "coords": [
+        -96.08082508916728
+      ]
+    },
+    {
+      "name": "Jacques Nicolet",
+      "party": "SVP",
+      "color": "#4B8A3E",
+      "coords": [
+        -228.32461093177318
+      ]
+    },
+    {
+      "name": "Roger Nordmann",
+      "party": "SP",
+      "color": "#F0554D",
+      "coords": [
+        304.30002876443535
+      ]
+    },
+    {
+      "name": "Eric Nussbaumer",
+      "party": "SP",
+      "color": "#F0554D",
+      "coords": [
+        307.31623946350703
+      ]
+    },
+    {
+      "name": "Nicol\u00f2 Paganini",
+      "party": "Die Mitte",
+      "color": "#D6862B",
+      "coords": [
+        -110.14342148838715
+      ]
+    },
+    {
+      "name": "Pierre-Andr\u00e9 Page",
+      "party": "SVP",
+      "color": "#4B8A3E",
+      "coords": [
+        -258.8847981792392
+      ]
+    },
+    {
+      "name": "Yvan Pahud",
+      "party": "SVP",
+      "color": "#4B8A3E",
+      "coords": [
+        -201.76664134881779
+      ]
+    },
+    {
+      "name": "Paolo Pamini",
+      "party": "SVP",
+      "color": "#4B8A3E",
+      "coords": [
+        -298.0783145200448
+      ]
+    },
+    {
+      "name": "Gerhard Pfister",
+      "party": "Die Mitte",
+      "color": "#D6862B",
+      "coords": [
+        -86.16057110987504
+      ]
+    },
+    {
+      "name": "Val\u00e9rie Piller Carrard",
+      "party": "SP",
+      "color": "#F0554D",
+      "coords": [
+        311.47082989671486
+      ]
+    },
+    {
+      "name": "L\u00e9onore Porchet",
+      "party": "Gr\u00fcne",
+      "color": "#84B547",
+      "coords": [
+        301.6337217068288
+      ]
+    },
+    {
+      "name": "Hans-Peter Portmann",
+      "party": "FDP",
+      "color": "#3872B5",
+      "coords": [
+        -70.06536056575483
+      ]
+    },
+    {
+      "name": "Katharina Prelicz-Huber",
+      "party": "Gr\u00fcne",
+      "color": "#84B547",
+      "coords": [
+        344.3300481346345
+      ]
+    },
+    {
+      "name": "Jon Pult",
+      "party": "SP",
+      "color": "#F0554D",
+      "coords": [
+        303.860330663726
+      ]
+    },
+    {
+      "name": "Thomas Rechsteiner",
+      "party": "Die Mitte",
+      "color": "#D6862B",
+      "coords": [
+        -187.1758437271725
+      ]
+    },
+    {
+      "name": "Lukas Reimann",
+      "party": "SVP",
+      "color": "#4B8A3E",
+      "coords": [
+        -218.6501841343399
+      ]
+    },
+    {
+      "name": "Estelle Revaz",
+      "party": "SP",
+      "color": "#F0554D",
+      "coords": [
+        282.6198234305375
+      ]
+    },
+    {
+      "name": "Katja Riem",
+      "party": "SVP",
+      "color": "#4B8A3E",
+      "coords": [
+        -310.2583814937735
+      ]
+    },
+    {
+      "name": "Christoph Riner",
+      "party": "SVP",
+      "color": "#4B8A3E",
+      "coords": [
+        -302.63652449456896
+      ]
+    },
+    {
+      "name": "Maja Riniker",
+      "party": "FDP",
+      "color": "#3872B5",
+      "coords": [
+        -217.72097714246374
+      ]
+    },
+    {
+      "name": "Markus Ritter",
+      "party": "Die Mitte",
+      "color": "#D6862B",
+      "coords": [
+        -98.04116317965743
+      ]
+    },
+    {
+      "name": "Benjamin Roduit",
+      "party": "Die Mitte",
+      "color": "#D6862B",
+      "coords": [
+        -61.04232040190121
+      ]
+    },
+    {
+      "name": "Anna Rosenwasser",
+      "party": "SP",
+      "color": "#F0554D",
+      "coords": [
+        312.3506022403401
+      ]
+    },
+    {
+      "name": "David Roth",
+      "party": "SP",
+      "color": "#F0554D",
+      "coords": [
+        316.96117862580843
+      ]
+    },
+    {
+      "name": "Marie-France Roth Pasquier",
+      "party": "Die Mitte",
+      "color": "#D6862B",
+      "coords": [
+        105.43336535862801
+      ]
+    },
+    {
+      "name": "Daniel Ruch",
+      "party": "FDP",
+      "color": "#3872B5",
+      "coords": [
+        -150.61969148458527
+      ]
+    },
+    {
+      "name": "Monika R\u00fcegger-Hurschler",
+      "party": "SVP",
+      "color": "#4B8A3E",
+      "coords": [
+        -305.0182957664434
+      ]
+    },
+    {
+      "name": "Hans J\u00f6rg R\u00fcegsegger",
+      "party": "SVP",
+      "color": "#4B8A3E",
+      "coords": [
+        -233.78560504601322
+      ]
+    },
+    {
+      "name": "Farah Rumy",
+      "party": "SP",
+      "color": "#F0554D",
+      "coords": [
+        228.79824674064375
+      ]
+    },
+    {
+      "name": "Gregor Rutz",
+      "party": "SVP",
+      "color": "#4B8A3E",
+      "coords": [
+        -318.9830558526594
+      ]
+    },
+    {
+      "name": "Franziska Ryser",
+      "party": "Gr\u00fcne",
+      "color": "#84B547",
+      "coords": [
+        333.1486015219586
+      ]
+    },
+    {
+      "name": "Regine Sauter",
+      "party": "FDP",
+      "color": "#3872B5",
+      "coords": [
+        -182.59706187286668
+      ]
+    },
+    {
+      "name": "Barbara Schaffner",
+      "party": "GLP",
+      "color": "#C4C43D",
+      "coords": [
+        134.38325236923478
+      ]
+    },
+    {
+      "name": "Peter Schilliger",
+      "party": "FDP",
+      "color": "#3872B5",
+      "coords": [
+        -201.99726499876843
+      ]
+    },
+    {
+      "name": "Nina Schl\u00e4fli",
+      "party": "SP",
+      "color": "#F0554D",
+      "coords": [
+        328.8835545299582
+      ]
+    },
+    {
+      "name": "Marionna Schlatter",
+      "party": "Gr\u00fcne",
+      "color": "#84B547",
+      "coords": [
+        343.16984061309546
+      ]
+    },
+    {
+      "name": "Pascal Schmid",
+      "party": "SVP",
+      "color": "#4B8A3E",
+      "coords": [
+        -322.0188390632384
+      ]
+    },
+    {
+      "name": "Daniela Schneeberger",
+      "party": "FDP",
+      "color": "#3872B5",
+      "coords": [
+        -219.87546578457747
+      ]
+    },
+    {
+      "name": "Elisabeth Schneider-Schneiter",
+      "party": "Die Mitte",
+      "color": "#D6862B",
+      "coords": [
+        -116.0638052791435
+      ]
+    },
+    {
+      "name": "Markus Schnyder",
+      "party": "SVP",
+      "color": "#4B8A3E",
+      "coords": [
+        -281.1865107362695
+      ]
+    },
+    {
+      "name": "Priska Seiler Graf",
+      "party": "SP",
+      "color": "#F0554D",
+      "coords": [
+        312.35304848622854
+      ]
+    },
+    {
+      "name": "Andri Silberschmidt",
+      "party": "FDP",
+      "color": "#3872B5",
+      "coords": [
+        -146.99764291765135
+      ]
+    },
+    {
+      "name": "Sandra Sollberger",
+      "party": "SVP",
+      "color": "#4B8A3E",
+      "coords": [
+        -309.0463961187014
+      ]
+    },
+    {
+      "name": "Simon Stadler",
+      "party": "Die Mitte",
+      "color": "#D6862B",
+      "coords": [
+        -15.821633518197558
+      ]
+    },
+    {
+      "name": "Barbara Steinemann",
+      "party": "SVP",
+      "color": "#4B8A3E",
+      "coords": [
+        -320.86679594828087
+      ]
+    },
+    {
+      "name": "Thomas Stettler",
+      "party": "SVP",
+      "color": "#4B8A3E",
+      "coords": [
+        -179.51336520254972
+      ]
+    },
+    {
+      "name": "Bruno Storni",
+      "party": "SP",
+      "color": "#F0554D",
+      "coords": [
+        282.88621355599054
+      ]
+    },
+    {
+      "name": "Manuel Strupler",
+      "party": "SVP",
+      "color": "#4B8A3E",
+      "coords": [
+        -295.2876568521004
+      ]
+    },
+    {
+      "name": "Gabriela Suter",
+      "party": "SP",
+      "color": "#F0554D",
+      "coords": [
+        307.2514987969981
+      ]
+    },
+    {
+      "name": "Vroni Thalmann-Bieri",
+      "party": "SVP",
+      "color": "#4B8A3E",
+      "coords": [
+        -236.9985852026098
+      ]
+    },
+    {
+      "name": "Heinz Theiler",
+      "party": "FDP",
+      "color": "#3872B5",
+      "coords": [
+        -216.08724137738895
+      ]
+    },
+    {
+      "name": "Michael T\u00f6ngi",
+      "party": "Gr\u00fcne",
+      "color": "#84B547",
+      "coords": [
+        348.67492269469994
+      ]
+    },
+    {
+      "name": "Aline Trede",
+      "party": "Gr\u00fcne",
+      "color": "#84B547",
+      "coords": [
+        337.1588305440525
+      ]
+    },
+    {
+      "name": "Jean Tschopp",
+      "party": "SP",
+      "color": "#F0554D",
+      "coords": [
+        260.29217113502347
+      ]
+    },
+    {
+      "name": "Mauro Tuena",
+      "party": "SVP",
+      "color": "#4B8A3E",
+      "coords": [
+        -353.8166836931987
+      ]
+    },
+    {
+      "name": "Brenda Tuosto",
+      "party": "SP",
+      "color": "#F0554D",
+      "coords": [
+        269.89418839805955
+      ]
+    },
+    {
+      "name": "Nadja Umbricht Pieren",
+      "party": "SVP",
+      "color": "#4B8A3E",
+      "coords": [
+        -324.4137796468113
+      ]
+    },
+    {
+      "name": "Kristiane Vietze",
+      "party": "FDP",
+      "color": "#3872B5",
+      "coords": [
+        -137.9449747605198
+      ]
+    },
+    {
+      "name": "Susanne Vincenz-Stauffacher",
+      "party": "FDP",
+      "color": "#3872B5",
+      "coords": [
+        -172.50179643523174
+      ]
+    },
+    {
+      "name": "Nicolas Walder",
+      "party": "Gr\u00fcne",
+      "color": "#84B547",
+      "coords": [
+        349.3013027555586
+      ]
+    },
+    {
+      "name": "Bruno Walliser",
+      "party": "SVP",
+      "color": "#4B8A3E",
+      "coords": [
+        -276.4644937581467
+      ]
+    },
+    {
+      "name": "Beat Walti",
+      "party": "FDP",
+      "color": "#3872B5",
+      "coords": [
+        -169.42016077669058
+      ]
+    },
+    {
+      "name": "Ernst Wandfluh",
+      "party": "SVP",
+      "color": "#4B8A3E",
+      "coords": [
+        -283.11146969085837
+      ]
+    },
+    {
+      "name": "Christian Wasserfallen",
+      "party": "FDP",
+      "color": "#3872B5",
+      "coords": [
+        -224.3167434510502
+      ]
+    },
+    {
+      "name": "C\u00e9line Weber",
+      "party": "GLP",
+      "color": "#C4C43D",
+      "coords": [
+        20.74339795130758
+      ]
+    },
+    {
+      "name": "Laurent Wehrli",
+      "party": "FDP",
+      "color": "#3872B5",
+      "coords": [
+        -34.38785316167234
+      ]
+    },
+    {
+      "name": "C\u00e9dric Wermuth",
+      "party": "SP",
+      "color": "#F0554D",
+      "coords": [
+        323.38901871018373
+      ]
+    },
+    {
+      "name": "Felix Wettstein",
+      "party": "Gr\u00fcne",
+      "color": "#84B547",
+      "coords": [
+        321.75741298908747
+      ]
+    },
+    {
+      "name": "C\u00e9line Widmer",
+      "party": "SP",
+      "color": "#F0554D",
+      "coords": [
+        316.7411228946606
+      ]
+    },
+    {
+      "name": "Priska Wismer-Felder",
+      "party": "Die Mitte",
+      "color": "#D6862B",
+      "coords": [
+        20.500031752271944
+      ]
+    },
+    {
+      "name": "Sarah Wyss",
+      "party": "SP",
+      "color": "#F0554D",
+      "coords": [
+        322.35701064233297
+      ]
+    },
+    {
+      "name": "R\u00e9my Wyssmann",
+      "party": "SVP",
+      "color": "#4B8A3E",
+      "coords": [
+        -269.598499407272
+      ]
+    },
+    {
+      "name": "Andrea Zryd",
+      "party": "SP",
+      "color": "#F0554D",
+      "coords": [
+        235.899412826748
+      ]
+    },
+    {
+      "name": "Ursula Zybach",
+      "party": "SP",
+      "color": "#F0554D",
+      "coords": [
+        331.4756878697722
+      ]
+    }
+  ]
+}

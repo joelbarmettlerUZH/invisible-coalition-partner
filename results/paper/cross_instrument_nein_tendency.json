@@ -1,0 +1,397 @@
+{
+  "description": "Systematic Nein (status quo) tendency analysis: binomial test per model on Ja/Nein distribution, with direction-conditional breakdown showing that Grok and Mistral vote Nein regardless of whether Ja is the progressive or conservative position.",
+  "generated_by": "p_extended_analysis.py",
+  "generated_at": "2026-04-04T21:26:45.378824",
+  "models_analyzed": [
+    "GPT-5.4",
+    "Claude Opus 4.6",
+    "DeepSeek V3.2",
+    "Llama 4 Maverick",
+    "Grok 4.20",
+    "Mistral Large",
+    "Command A",
+    "Qwen 3.5 Plus"
+  ],
+  "models_excluded": [
+    "Gemini 3.1 Pro (98% refusal rate in German)"
+  ],
+  "n_models": 8,
+  "methodology": "Binomial test (H0: p=0.5) on Ja rate per model. Votes classified as progressive-Ja (23), conservative-Ja (17), or mixed (8) based on which parties recommended Ja. Direction-conditional Nein rates reported. Fisher's exact test on 2x2 table (progressive/conservative x Ja/Nein) tests whether Nein tendency is independent of proposal direction.",
+  "results": {
+    "vote_direction_counts": {
+      "progressive_ja": 23,
+      "conservative_ja": 17,
+      "mixed": 8
+    },
+    "per_model": {
+      "openai/gpt-5.4": {
+        "display": "GPT-5.4",
+        "ja_count": 23,
+        "nein_count": 25,
+        "n": 48,
+        "ja_rate": 47.9,
+        "binomial_p": 0.885433,
+        "by_direction": {
+          "progressive_ja": {
+            "ja_count": 12,
+            "nein_count": 11,
+            "n": 23,
+            "ja_rate": 52.2,
+            "binomial_p": 1.0
+          },
+          "conservative_ja": {
+            "ja_count": 8,
+            "nein_count": 9,
+            "n": 17,
+            "ja_rate": 47.1,
+            "binomial_p": 1.0
+          },
+          "mixed": {
+            "ja_count": 3,
+            "nein_count": 5,
+            "n": 8,
+            "ja_rate": 37.5,
+            "binomial_p": 0.726562
+          }
+        },
+        "fisher_direction_independence": {
+          "table": [
+            [
+              12,
+              11
+            ],
+            [
+              8,
+              9
+            ]
+          ],
+          "odds_ratio": 1.2273,
+          "p_value": 1.0,
+          "interpretation": "Tests whether Nein rate differs between progressive and conservative proposals. Non-significant p supports direction-independence (change-aversion)."
+        }
+      },
+      "anthropic/claude-opus-4.6": {
+        "display": "Claude Opus 4.6",
+        "ja_count": 24,
+        "nein_count": 24,
+        "n": 48,
+        "ja_rate": 50.0,
+        "binomial_p": 1.0,
+        "by_direction": {
+          "progressive_ja": {
+            "ja_count": 13,
+            "nein_count": 10,
+            "n": 23,
+            "ja_rate": 56.5,
+            "binomial_p": 0.677639
+          },
+          "conservative_ja": {
+            "ja_count": 7,
+            "nein_count": 10,
+            "n": 17,
+            "ja_rate": 41.2,
+            "binomial_p": 0.629059
+          },
+          "mixed": {
+            "ja_count": 4,
+            "nein_count": 4,
+            "n": 8,
+            "ja_rate": 50.0,
+            "binomial_p": 1.0
+          }
+        },
+        "fisher_direction_independence": {
+          "table": [
+            [
+              13,
+              10
+            ],
+            [
+              7,
+              10
+            ]
+          ],
+          "odds_ratio": 1.8571,
+          "p_value": 0.523107,
+          "interpretation": "Tests whether Nein rate differs between progressive and conservative proposals. Non-significant p supports direction-independence (change-aversion)."
+        }
+      },
+      "deepseek/deepseek-v3.2": {
+        "display": "DeepSeek V3.2",
+        "ja_count": 25,
+        "nein_count": 21,
+        "n": 46,
+        "ja_rate": 54.3,
+        "binomial_p": 0.658738,
+        "by_direction": {
+          "progressive_ja": {
+            "ja_count": 12,
+            "nein_count": 11,
+            "n": 23,
+            "ja_rate": 52.2,
+            "binomial_p": 1.0
+          },
+          "conservative_ja": {
+            "ja_count": 12,
+            "nein_count": 5,
+            "n": 17,
+            "ja_rate": 70.6,
+            "binomial_p": 0.143463
+          },
+          "mixed": {
+            "ja_count": 1,
+            "nein_count": 5,
+            "n": 6,
+            "ja_rate": 16.7,
+            "binomial_p": 0.21875
+          }
+        },
+        "fisher_direction_independence": {
+          "table": [
+            [
+              12,
+              11
+            ],
+            [
+              12,
+              5
+            ]
+          ],
+          "odds_ratio": 0.4545,
+          "p_value": 0.332223,
+          "interpretation": "Tests whether Nein rate differs between progressive and conservative proposals. Non-significant p supports direction-independence (change-aversion)."
+        }
+      },
+      "meta-llama/llama-4-maverick": {
+        "display": "Llama 4 Maverick",
+        "ja_count": 31,
+        "nein_count": 17,
+        "n": 48,
+        "ja_rate": 64.6,
+        "binomial_p": 0.059463,
+        "by_direction": {
+          "progressive_ja": {
+            "ja_count": 15,
+            "nein_count": 8,
+            "n": 23,
+            "ja_rate": 65.2,
+            "binomial_p": 0.21004
+          },
+          "conservative_ja": {
+            "ja_count": 13,
+            "nein_count": 4,
+            "n": 17,
+            "ja_rate": 76.5,
+            "binomial_p": 0.049042
+          },
+          "mixed": {
+            "ja_count": 3,
+            "nein_count": 5,
+            "n": 8,
+            "ja_rate": 37.5,
+            "binomial_p": 0.726562
+          }
+        },
+        "fisher_direction_independence": {
+          "table": [
+            [
+              15,
+              8
+            ],
+            [
+              13,
+              4
+            ]
+          ],
+          "odds_ratio": 0.5769,
+          "p_value": 0.504846,
+          "interpretation": "Tests whether Nein rate differs between progressive and conservative proposals. Non-significant p supports direction-independence (change-aversion)."
+        }
+      },
+      "x-ai/grok-4.20": {
+        "display": "Grok 4.20",
+        "ja_count": 3,
+        "nein_count": 45,
+        "n": 48,
+        "ja_rate": 6.2,
+        "binomial_p": 0.0,
+        "by_direction": {
+          "progressive_ja": {
+            "ja_count": 2,
+            "nein_count": 21,
+            "n": 23,
+            "ja_rate": 8.7,
+            "binomial_p": 6.6e-05
+          },
+          "conservative_ja": {
+            "ja_count": 1,
+            "nein_count": 16,
+            "n": 17,
+            "ja_rate": 5.9,
+            "binomial_p": 0.000275
+          },
+          "mixed": {
+            "ja_count": 0,
+            "nein_count": 8,
+            "n": 8,
+            "ja_rate": 0.0,
+            "binomial_p": 0.007812
+          }
+        },
+        "fisher_direction_independence": {
+          "table": [
+            [
+              2,
+              21
+            ],
+            [
+              1,
+              16
+            ]
+          ],
+          "odds_ratio": 1.5238,
+          "p_value": 1.0,
+          "interpretation": "Tests whether Nein rate differs between progressive and conservative proposals. Non-significant p supports direction-independence (change-aversion)."
+        }
+      },
+      "mistralai/mistral-large-2512": {
+        "display": "Mistral Large",
+        "ja_count": 8,
+        "nein_count": 40,
+        "n": 48,
+        "ja_rate": 16.7,
+        "binomial_p": 3e-06,
+        "by_direction": {
+          "progressive_ja": {
+            "ja_count": 5,
+            "nein_count": 18,
+            "n": 23,
+            "ja_rate": 21.7,
+            "binomial_p": 0.010622
+          },
+          "conservative_ja": {
+            "ja_count": 2,
+            "nein_count": 15,
+            "n": 17,
+            "ja_rate": 11.8,
+            "binomial_p": 0.00235
+          },
+          "mixed": {
+            "ja_count": 1,
+            "nein_count": 7,
+            "n": 8,
+            "ja_rate": 12.5,
+            "binomial_p": 0.070312
+          }
+        },
+        "fisher_direction_independence": {
+          "table": [
+            [
+              5,
+              18
+            ],
+            [
+              2,
+              15
+            ]
+          ],
+          "odds_ratio": 2.0833,
+          "p_value": 0.677025,
+          "interpretation": "Tests whether Nein rate differs between progressive and conservative proposals. Non-significant p supports direction-independence (change-aversion)."
+        }
+      },
+      "cohere/command-a": {
+        "display": "Command A",
+        "ja_count": 24,
+        "nein_count": 24,
+        "n": 48,
+        "ja_rate": 50.0,
+        "binomial_p": 1.0,
+        "by_direction": {
+          "progressive_ja": {
+            "ja_count": 11,
+            "nein_count": 12,
+            "n": 23,
+            "ja_rate": 47.8,
+            "binomial_p": 1.0
+          },
+          "conservative_ja": {
+            "ja_count": 11,
+            "nein_count": 6,
+            "n": 17,
+            "ja_rate": 64.7,
+            "binomial_p": 0.332306
+          },
+          "mixed": {
+            "ja_count": 2,
+            "nein_count": 6,
+            "n": 8,
+            "ja_rate": 25.0,
+            "binomial_p": 0.289062
+          }
+        },
+        "fisher_direction_independence": {
+          "table": [
+            [
+              11,
+              12
+            ],
+            [
+              11,
+              6
+            ]
+          ],
+          "odds_ratio": 0.5,
+          "p_value": 0.347564,
+          "interpretation": "Tests whether Nein rate differs between progressive and conservative proposals. Non-significant p supports direction-independence (change-aversion)."
+        }
+      },
+      "qwen/qwen3.5-plus-02-15": {
+        "display": "Qwen 3.5 Plus",
+        "ja_count": 21,
+        "nein_count": 26,
+        "n": 47,
+        "ja_rate": 44.7,
+        "binomial_p": 0.560065,
+        "by_direction": {
+          "progressive_ja": {
+            "ja_count": 11,
+            "nein_count": 12,
+            "n": 23,
+            "ja_rate": 47.8,
+            "binomial_p": 1.0
+          },
+          "conservative_ja": {
+            "ja_count": 8,
+            "nein_count": 8,
+            "n": 16,
+            "ja_rate": 50.0,
+            "binomial_p": 1.0
+          },
+          "mixed": {
+            "ja_count": 2,
+            "nein_count": 6,
+            "n": 8,
+            "ja_rate": 25.0,
+            "binomial_p": 0.289062
+          }
+        },
+        "fisher_direction_independence": {
+          "table": [
+            [
+              11,
+              12
+            ],
+            [
+              8,
+              8
+            ]
+          ],
+          "odds_ratio": 0.9167,
+          "p_value": 1.0,
+          "interpretation": "Tests whether Nein rate differs between progressive and conservative proposals. Non-significant p supports direction-independence (change-aversion)."
+        }
+      }
+    }
+  }
+}

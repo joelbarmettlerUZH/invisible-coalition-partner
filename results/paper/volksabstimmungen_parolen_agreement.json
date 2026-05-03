@@ -1,0 +1,350 @@
+{
+  "description": "Agreement between each LLM's Ja/Nein votes and the party Parolen (voting recommendations) on 48 federal referenda.",
+  "generated_by": "n_volksabstimmungen_analysis.py",
+  "generated_at": "2026-04-04T21:28:34.673308",
+  "models_analyzed": [
+    "GPT-5.4",
+    "Claude Opus 4.6",
+    "DeepSeek V3.2",
+    "Llama 4 Maverick",
+    "Grok 4.20",
+    "Mistral Large",
+    "Command A",
+    "Qwen 3.5 Plus"
+  ],
+  "models_excluded": [
+    "Gemini 3.1 Pro (98% refusal rate in German)"
+  ],
+  "n_models": 8,
+  "methodology": "Binary agreement (Ja/Nein match) between model vote and party Parole, excluding votes where the party issued Stimmfreigabe or keine Angabe. Primary condition: in_kuerze (brief summary), German language.",
+  "results": {
+    "openai/gpt-5.4": {
+      "display": "GPT-5.4",
+      "parties": {
+        "SP": {
+          "agreement": 58.7,
+          "ci_low": 43.5,
+          "ci_high": 71.7,
+          "n": 46
+        },
+        "Grüne": {
+          "agreement": 59.1,
+          "ci_low": 43.2,
+          "ci_high": 72.7,
+          "n": 44
+        },
+        "GLP": {
+          "agreement": 69.8,
+          "ci_low": 55.8,
+          "ci_high": 83.7,
+          "n": 43
+        },
+        "Die Mitte": {
+          "agreement": 77.8,
+          "ci_low": 64.4,
+          "ci_high": 88.9,
+          "n": 45
+        },
+        "FDP": {
+          "agreement": 74.5,
+          "ci_low": 61.7,
+          "ci_high": 87.2,
+          "n": 47
+        },
+        "SVP": {
+          "agreement": 50.0,
+          "ci_low": 34.8,
+          "ci_high": 65.2,
+          "n": 46
+        }
+      }
+    },
+    "anthropic/claude-opus-4.6": {
+      "display": "Claude Opus 4.6",
+      "parties": {
+        "SP": {
+          "agreement": 60.9,
+          "ci_low": 45.7,
+          "ci_high": 73.9,
+          "n": 46
+        },
+        "Grüne": {
+          "agreement": 61.4,
+          "ci_low": 47.7,
+          "ci_high": 75.0,
+          "n": 44
+        },
+        "GLP": {
+          "agreement": 76.7,
+          "ci_low": 62.8,
+          "ci_high": 88.4,
+          "n": 43
+        },
+        "Die Mitte": {
+          "agreement": 75.6,
+          "ci_low": 62.2,
+          "ci_high": 86.7,
+          "n": 45
+        },
+        "FDP": {
+          "agreement": 72.3,
+          "ci_low": 59.6,
+          "ci_high": 85.1,
+          "n": 47
+        },
+        "SVP": {
+          "agreement": 43.5,
+          "ci_low": 28.3,
+          "ci_high": 58.7,
+          "n": 46
+        }
+      }
+    },
+    "deepseek/deepseek-v3.2": {
+      "display": "DeepSeek V3.2",
+      "parties": {
+        "SP": {
+          "agreement": 46.7,
+          "ci_low": 31.1,
+          "ci_high": 62.2,
+          "n": 45
+        },
+        "Grüne": {
+          "agreement": 48.8,
+          "ci_low": 34.9,
+          "ci_high": 62.8,
+          "n": 43
+        },
+        "GLP": {
+          "agreement": 76.2,
+          "ci_low": 64.3,
+          "ci_high": 88.1,
+          "n": 42
+        },
+        "Die Mitte": {
+          "agreement": 88.4,
+          "ci_low": 79.1,
+          "ci_high": 97.7,
+          "n": 43
+        },
+        "FDP": {
+          "agreement": 84.4,
+          "ci_low": 73.3,
+          "ci_high": 93.3,
+          "n": 45
+        },
+        "SVP": {
+          "agreement": 60.0,
+          "ci_low": 44.4,
+          "ci_high": 73.3,
+          "n": 45
+        }
+      }
+    },
+    "meta-llama/llama-4-maverick": {
+      "display": "Llama 4 Maverick",
+      "parties": {
+        "SP": {
+          "agreement": 50.0,
+          "ci_low": 34.8,
+          "ci_high": 65.2,
+          "n": 46
+        },
+        "Grüne": {
+          "agreement": 52.3,
+          "ci_low": 38.6,
+          "ci_high": 65.9,
+          "n": 44
+        },
+        "GLP": {
+          "agreement": 69.8,
+          "ci_low": 55.8,
+          "ci_high": 83.7,
+          "n": 43
+        },
+        "Die Mitte": {
+          "agreement": 77.8,
+          "ci_low": 64.4,
+          "ci_high": 88.9,
+          "n": 45
+        },
+        "FDP": {
+          "agreement": 78.7,
+          "ci_low": 66.0,
+          "ci_high": 89.4,
+          "n": 47
+        },
+        "SVP": {
+          "agreement": 52.2,
+          "ci_low": 37.0,
+          "ci_high": 67.4,
+          "n": 46
+        }
+      }
+    },
+    "x-ai/grok-4.20": {
+      "display": "Grok 4.20",
+      "parties": {
+        "SP": {
+          "agreement": 47.8,
+          "ci_low": 32.6,
+          "ci_high": 63.0,
+          "n": 46
+        },
+        "Grüne": {
+          "agreement": 50.0,
+          "ci_low": 36.4,
+          "ci_high": 65.9,
+          "n": 44
+        },
+        "GLP": {
+          "agreement": 44.2,
+          "ci_low": 30.2,
+          "ci_high": 58.1,
+          "n": 43
+        },
+        "Die Mitte": {
+          "agreement": 48.9,
+          "ci_low": 33.3,
+          "ci_high": 64.4,
+          "n": 45
+        },
+        "FDP": {
+          "agreement": 55.3,
+          "ci_low": 40.4,
+          "ci_high": 70.2,
+          "n": 47
+        },
+        "SVP": {
+          "agreement": 58.7,
+          "ci_low": 45.7,
+          "ci_high": 71.7,
+          "n": 46
+        }
+      }
+    },
+    "mistralai/mistral-large-2512": {
+      "display": "Mistral Large",
+      "parties": {
+        "SP": {
+          "agreement": 54.3,
+          "ci_low": 39.1,
+          "ci_high": 69.6,
+          "n": 46
+        },
+        "Grüne": {
+          "agreement": 54.5,
+          "ci_low": 38.6,
+          "ci_high": 68.2,
+          "n": 44
+        },
+        "GLP": {
+          "agreement": 51.2,
+          "ci_low": 37.2,
+          "ci_high": 65.1,
+          "n": 43
+        },
+        "Die Mitte": {
+          "agreement": 57.8,
+          "ci_low": 42.2,
+          "ci_high": 71.1,
+          "n": 45
+        },
+        "FDP": {
+          "agreement": 57.4,
+          "ci_low": 42.6,
+          "ci_high": 72.3,
+          "n": 47
+        },
+        "SVP": {
+          "agreement": 54.3,
+          "ci_low": 39.1,
+          "ci_high": 69.6,
+          "n": 46
+        }
+      }
+    },
+    "cohere/command-a": {
+      "display": "Command A",
+      "parties": {
+        "SP": {
+          "agreement": 47.8,
+          "ci_low": 32.6,
+          "ci_high": 63.0,
+          "n": 46
+        },
+        "Grüne": {
+          "agreement": 50.0,
+          "ci_low": 36.4,
+          "ci_high": 63.6,
+          "n": 44
+        },
+        "GLP": {
+          "agreement": 79.1,
+          "ci_low": 67.4,
+          "ci_high": 90.7,
+          "n": 43
+        },
+        "Die Mitte": {
+          "agreement": 84.4,
+          "ci_low": 73.3,
+          "ci_high": 93.3,
+          "n": 45
+        },
+        "FDP": {
+          "agreement": 80.9,
+          "ci_low": 70.2,
+          "ci_high": 91.5,
+          "n": 47
+        },
+        "SVP": {
+          "agreement": 58.7,
+          "ci_low": 45.7,
+          "ci_high": 71.7,
+          "n": 46
+        }
+      }
+    },
+    "qwen/qwen3.5-plus-02-15": {
+      "display": "Qwen 3.5 Plus",
+      "parties": {
+        "SP": {
+          "agreement": 53.3,
+          "ci_low": 37.8,
+          "ci_high": 68.9,
+          "n": 45
+        },
+        "Grüne": {
+          "agreement": 55.8,
+          "ci_low": 41.9,
+          "ci_high": 69.8,
+          "n": 43
+        },
+        "GLP": {
+          "agreement": 81.0,
+          "ci_low": 69.0,
+          "ci_high": 92.9,
+          "n": 42
+        },
+        "Die Mitte": {
+          "agreement": 81.8,
+          "ci_low": 70.5,
+          "ci_high": 93.2,
+          "n": 44
+        },
+        "FDP": {
+          "agreement": 76.1,
+          "ci_low": 63.0,
+          "ci_high": 87.0,
+          "n": 46
+        },
+        "SVP": {
+          "agreement": 53.3,
+          "ci_low": 37.8,
+          "ci_high": 66.7,
+          "n": 45
+        }
+      }
+    }
+  }
+}

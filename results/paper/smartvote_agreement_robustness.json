@@ -1,0 +1,1682 @@
+{
+  "description": "Robustness check: left-right agreement gradient under absolute differences vs squared differences. Tests whether centrist bias in the squared metric drives the observed gradient.",
+  "generated_by": "i_smartvote_statistical_analysis.py",
+  "generated_at": "2026-04-04T21:28:10.927761",
+  "models_analyzed": [
+    "Claude 3 Haiku",
+    "Claude 3.5 Haiku",
+    "Claude 3.5 Sonnet",
+    "Claude 3.7 Sonnet",
+    "Claude Opus 4",
+    "Claude Opus 4.6",
+    "Claude Sonnet 4",
+    "Claude Sonnet 4.5",
+    "Claude Sonnet 4.6",
+    "Command A",
+    "Command R+",
+    "DeepSeek R1",
+    "DeepSeek R1 0528",
+    "DeepSeek v3",
+    "DeepSeek v3.2",
+    "GLM-5",
+    "GPT-3.5 Turbo",
+    "GPT-4 Turbo",
+    "GPT-4.1",
+    "GPT-4o",
+    "GPT-4o Mini",
+    "GPT-5",
+    "GPT-5.4",
+    "GPT-5.4 Mini",
+    "Gemini 2 Flash",
+    "Grok 2",
+    "Grok 3",
+    "Grok 3 Beta",
+    "Grok 3 Mini",
+    "Grok 4",
+    "Grok 4 Fast",
+    "Grok 4.1 Fast",
+    "Grok 4.20",
+    "Hermes 3 Llama 3.1 405B",
+    "Hermes 4 405B",
+    "Jamba",
+    "Kimi K2.5",
+    "Llama 3.1 405B",
+    "Llama 4 Maverick",
+    "MiMo v2 Pro",
+    "MiniMax M2.7",
+    "Minimax",
+    "Mistral 7B v0.1",
+    "Mistral Large",
+    "Mistral Large (Dec 2025)",
+    "Mistral Large (Nov 2024)",
+    "Mistral Medium 3",
+    "Mistral Nemo",
+    "Mistral Small 3 (Jan 2025)",
+    "Mistral Small 4",
+    "Mixtral 8x22b",
+    "Nemotron 3 Super",
+    "Nova Premier",
+    "Nova Pro",
+    "Phi-4",
+    "Qwen 2.5 72B",
+    "Qwen 3 Max Thinking",
+    "Qwen 3.5 397B",
+    "Qwen 3.5 Plus",
+    "Qwen 3.6 Plus",
+    "Seed 1.6",
+    "Yi Large",
+    "o1",
+    "o1-mini",
+    "o3-mini",
+    "o4-mini"
+  ],
+  "models_excluded": [
+    "x-ai/grok-4.20",
+    "google/gemini-3-flash-preview",
+    "openai/o1-preview",
+    "qwen/qvq-72b-preview",
+    "google/gemini-3.1-pro-preview"
+  ],
+  "n_models": 66,
+  "methodology": "For each model, compute party agreement with both absolute-difference (100*(1-mean(|a-b|)/100)) and squared-difference (100*(1-mean((a-b)^2)/10000)) metrics. Spearman correlation with party position under both metrics. Report whether gradient direction is preserved.",
+  "results": {
+    "batch": null,
+    "n_models": 66,
+    "gradient_preserved_count": 66,
+    "gradient_preserved_fraction": 1.0,
+    "mean_squared_gradient_rho": -0.9082,
+    "mean_absolute_gradient_rho": -0.8926,
+    "cross_metric_spearman": {
+      "rho": 0.9835,
+      "p_value": 0.0,
+      "n_datapoints": 396,
+      "note": "Correlation between squared-difference and absolute-difference agreement scores across all model-party pairs."
+    },
+    "per_model": {
+      "openai/gpt-3.5-turbo": {
+        "display": "GPT-3.5 Turbo",
+        "squared_agreements": {
+          "SP": 85.1,
+          "Grüne": 84.6,
+          "GLP": 86.3,
+          "Die Mitte": 78.5,
+          "FDP": 74.5,
+          "SVP": 67.0
+        },
+        "absolute_agreements": {
+          "SP": 68.9,
+          "Grüne": 67.4,
+          "GLP": 71.9,
+          "Die Mitte": 63.2,
+          "FDP": 58.6,
+          "SVP": 49.6
+        },
+        "squared_gradient_rho": -0.8286,
+        "squared_gradient_p": 0.0416,
+        "absolute_gradient_rho": -0.8286,
+        "absolute_gradient_p": 0.0416,
+        "gradient_direction_preserved": "True"
+      },
+      "mistralai/mistral-7b-instruct-v0.1": {
+        "display": "Mistral 7B v0.1",
+        "squared_agreements": {
+          "SP": 75.0,
+          "Grüne": 75.5,
+          "GLP": 67.6,
+          "Die Mitte": 75.7,
+          "FDP": 62.9,
+          "SVP": 59.6
+        },
+        "absolute_agreements": {
+          "SP": 64.2,
+          "Grüne": 66.0,
+          "GLP": 55.8,
+          "Die Mitte": 63.3,
+          "FDP": 51.3,
+          "SVP": 48.5
+        },
+        "squared_gradient_rho": -0.6,
+        "squared_gradient_p": 0.208,
+        "absolute_gradient_rho": -0.8857,
+        "absolute_gradient_p": 0.0188,
+        "gradient_direction_preserved": "True"
+      },
+      "anthropic/claude-3-haiku": {
+        "display": "Claude 3 Haiku",
+        "squared_agreements": {
+          "SP": 86.5,
+          "Grüne": 86.6,
+          "GLP": 84.6,
+          "Die Mitte": 79.4,
+          "FDP": 71.5,
+          "SVP": 65.6
+        },
+        "absolute_agreements": {
+          "SP": 71.3,
+          "Grüne": 70.7,
+          "GLP": 70.1,
+          "Die Mitte": 63.7,
+          "FDP": 54.6,
+          "SVP": 48.4
+        },
+        "squared_gradient_rho": -0.9429,
+        "squared_gradient_p": 0.0048,
+        "absolute_gradient_rho": -1.0,
+        "absolute_gradient_p": 0.0,
+        "gradient_direction_preserved": "True"
+      },
+      "cohere/command-r-plus": {
+        "display": "Command R+",
+        "squared_agreements": {
+          "SP": 85.3,
+          "Grüne": 83.9,
+          "GLP": 87.3,
+          "Die Mitte": 77.5,
+          "FDP": 72.3,
+          "SVP": 62.6
+        },
+        "absolute_agreements": {
+          "SP": 71.2,
+          "Grüne": 69.1,
+          "GLP": 73.8,
+          "Die Mitte": 62.5,
+          "FDP": 57.4,
+          "SVP": 46.8
+        },
+        "squared_gradient_rho": -0.8286,
+        "squared_gradient_p": 0.0416,
+        "absolute_gradient_rho": -0.8286,
+        "absolute_gradient_p": 0.0416,
+        "gradient_direction_preserved": "True"
+      },
+      "openai/gpt-4-turbo": {
+        "display": "GPT-4 Turbo",
+        "squared_agreements": {
+          "SP": 90.2,
+          "Grüne": 90.4,
+          "GLP": 88.6,
+          "Die Mitte": 76.1,
+          "FDP": 68.6,
+          "SVP": 59.6
+        },
+        "absolute_agreements": {
+          "SP": 76.1,
+          "Grüne": 75.4,
+          "GLP": 74.9,
+          "Die Mitte": 60.5,
+          "FDP": 52.3,
+          "SVP": 43.1
+        },
+        "squared_gradient_rho": -0.9429,
+        "squared_gradient_p": 0.0048,
+        "absolute_gradient_rho": -1.0,
+        "absolute_gradient_p": 0.0,
+        "gradient_direction_preserved": "True"
+      },
+      "mistralai/mixtral-8x22b-instruct": {
+        "display": "Mixtral 8x22b",
+        "squared_agreements": {
+          "SP": 86.8,
+          "Grüne": 86.4,
+          "GLP": 86.1,
+          "Die Mitte": 78.3,
+          "FDP": 72.0,
+          "SVP": 65.5
+        },
+        "absolute_agreements": {
+          "SP": 70.7,
+          "Grüne": 69.2,
+          "GLP": 71.6,
+          "Die Mitte": 62.8,
+          "FDP": 55.5,
+          "SVP": 48.0
+        },
+        "squared_gradient_rho": -1.0,
+        "squared_gradient_p": 0.0,
+        "absolute_gradient_rho": -0.8286,
+        "absolute_gradient_p": 0.0416,
+        "gradient_direction_preserved": "True"
+      },
+      "01-ai/yi-large": {
+        "display": "Yi Large",
+        "squared_agreements": {
+          "SP": 87.0,
+          "Grüne": 85.7,
+          "GLP": 87.4,
+          "Die Mitte": 79.3,
+          "FDP": 73.1,
+          "SVP": 65.6
+        },
+        "absolute_agreements": {
+          "SP": 70.3,
+          "Grüne": 68.5,
+          "GLP": 73.0,
+          "Die Mitte": 64.1,
+          "FDP": 56.2,
+          "SVP": 47.8
+        },
+        "squared_gradient_rho": -0.8286,
+        "squared_gradient_p": 0.0416,
+        "absolute_gradient_rho": -0.8286,
+        "absolute_gradient_p": 0.0416,
+        "gradient_direction_preserved": "True"
+      },
+      "openai/gpt-4o-mini": {
+        "display": "GPT-4o Mini",
+        "squared_agreements": {
+          "SP": 87.3,
+          "Grüne": 86.7,
+          "GLP": 85.0,
+          "Die Mitte": 73.9,
+          "FDP": 67.8,
+          "SVP": 59.0
+        },
+        "absolute_agreements": {
+          "SP": 74.3,
+          "Grüne": 72.8,
+          "GLP": 70.8,
+          "Die Mitte": 58.4,
+          "FDP": 52.7,
+          "SVP": 43.6
+        },
+        "squared_gradient_rho": -1.0,
+        "squared_gradient_p": 0.0,
+        "absolute_gradient_rho": -1.0,
+        "absolute_gradient_p": 0.0,
+        "gradient_direction_preserved": "True"
+      },
+      "mistralai/mistral-nemo": {
+        "display": "Mistral Nemo",
+        "squared_agreements": {
+          "SP": 86.3,
+          "Grüne": 85.4,
+          "GLP": 81.4,
+          "Die Mitte": 80.9,
+          "FDP": 70.6,
+          "SVP": 67.6
+        },
+        "absolute_agreements": {
+          "SP": 70.1,
+          "Grüne": 69.5,
+          "GLP": 66.7,
+          "Die Mitte": 66.8,
+          "FDP": 54.3,
+          "SVP": 50.8
+        },
+        "squared_gradient_rho": -1.0,
+        "squared_gradient_p": 0.0,
+        "absolute_gradient_rho": -0.9429,
+        "absolute_gradient_p": 0.0048,
+        "gradient_direction_preserved": "True"
+      },
+      "meta-llama/llama-3.1-405b-instruct": {
+        "display": "Llama 3.1 405B",
+        "squared_agreements": {
+          "SP": 87.1,
+          "Grüne": 86.7,
+          "GLP": 84.5,
+          "Die Mitte": 70.9,
+          "FDP": 63.0,
+          "SVP": 53.5
+        },
+        "absolute_agreements": {
+          "SP": 75.7,
+          "Grüne": 74.9,
+          "GLP": 71.3,
+          "Die Mitte": 56.6,
+          "FDP": 49.4,
+          "SVP": 40.4
+        },
+        "squared_gradient_rho": -1.0,
+        "squared_gradient_p": 0.0,
+        "absolute_gradient_rho": -1.0,
+        "absolute_gradient_p": 0.0,
+        "gradient_direction_preserved": "True"
+      },
+      "nousresearch/hermes-3-llama-3.1-405b": {
+        "display": "Hermes 3 Llama 3.1 405B",
+        "squared_agreements": {
+          "SP": 88.5,
+          "Grüne": 88.0,
+          "GLP": 85.6,
+          "Die Mitte": 76.6,
+          "FDP": 68.1,
+          "SVP": 60.7
+        },
+        "absolute_agreements": {
+          "SP": 75.0,
+          "Grüne": 73.5,
+          "GLP": 71.1,
+          "Die Mitte": 61.0,
+          "FDP": 51.7,
+          "SVP": 44.4
+        },
+        "squared_gradient_rho": -1.0,
+        "squared_gradient_p": 0.0,
+        "absolute_gradient_rho": -1.0,
+        "absolute_gradient_p": 0.0,
+        "gradient_direction_preserved": "True"
+      },
+      "ai21/jamba-1-5-large": {
+        "display": "Jamba",
+        "squared_agreements": {
+          "SP": 88.2,
+          "Grüne": 88.1,
+          "GLP": 86.0,
+          "Die Mitte": 78.9,
+          "FDP": 70.3,
+          "SVP": 62.5
+        },
+        "absolute_agreements": {
+          "SP": 74.0,
+          "Grüne": 73.3,
+          "GLP": 71.2,
+          "Die Mitte": 63.9,
+          "FDP": 53.9,
+          "SVP": 45.8
+        },
+        "squared_gradient_rho": -1.0,
+        "squared_gradient_p": 0.0,
+        "absolute_gradient_rho": -1.0,
+        "absolute_gradient_p": 0.0,
+        "gradient_direction_preserved": "True"
+      },
+      "openai/o1-mini-2024-09-12": {
+        "display": "o1-mini",
+        "squared_agreements": {
+          "SP": 85.4,
+          "Grüne": 84.4,
+          "GLP": 84.9,
+          "Die Mitte": 76.0,
+          "FDP": 70.9,
+          "SVP": 62.6
+        },
+        "absolute_agreements": {
+          "SP": 71.0,
+          "Grüne": 68.9,
+          "GLP": 69.8,
+          "Die Mitte": 60.4,
+          "FDP": 55.3,
+          "SVP": 46.2
+        },
+        "squared_gradient_rho": -0.9429,
+        "squared_gradient_p": 0.0048,
+        "absolute_gradient_rho": -0.9429,
+        "absolute_gradient_p": 0.0048,
+        "gradient_direction_preserved": "True"
+      },
+      "qwen/qwen-2.5-72b-instruct": {
+        "display": "Qwen 2.5 72B",
+        "squared_agreements": {
+          "SP": 88.1,
+          "Grüne": 88.3,
+          "GLP": 85.1,
+          "Die Mitte": 76.9,
+          "FDP": 69.4,
+          "SVP": 62.2
+        },
+        "absolute_agreements": {
+          "SP": 72.9,
+          "Grüne": 72.2,
+          "GLP": 71.2,
+          "Die Mitte": 61.7,
+          "FDP": 52.8,
+          "SVP": 45.3
+        },
+        "squared_gradient_rho": -0.9429,
+        "squared_gradient_p": 0.0048,
+        "absolute_gradient_rho": -1.0,
+        "absolute_gradient_p": 0.0,
+        "gradient_direction_preserved": "True"
+      },
+      "anthropic/claude-3.5-sonnet": {
+        "display": "Claude 3.5 Sonnet",
+        "squared_agreements": {
+          "SP": 86.3,
+          "Grüne": 84.1,
+          "GLP": 89.4,
+          "Die Mitte": 80.4,
+          "FDP": 74.8,
+          "SVP": 62.6
+        },
+        "absolute_agreements": {
+          "SP": 72.2,
+          "Grüne": 68.8,
+          "GLP": 76.0,
+          "Die Mitte": 65.8,
+          "FDP": 59.0,
+          "SVP": 46.0
+        },
+        "squared_gradient_rho": -0.8286,
+        "squared_gradient_p": 0.0416,
+        "absolute_gradient_rho": -0.8286,
+        "absolute_gradient_p": 0.0416,
+        "gradient_direction_preserved": "True"
+      },
+      "anthropic/claude-3.5-haiku": {
+        "display": "Claude 3.5 Haiku",
+        "squared_agreements": {
+          "SP": 86.8,
+          "Grüne": 87.3,
+          "GLP": 85.4,
+          "Die Mitte": 76.5,
+          "FDP": 68.6,
+          "SVP": 61.5
+        },
+        "absolute_agreements": {
+          "SP": 73.3,
+          "Grüne": 73.0,
+          "GLP": 71.6,
+          "Die Mitte": 61.9,
+          "FDP": 53.1,
+          "SVP": 45.7
+        },
+        "squared_gradient_rho": -0.9429,
+        "squared_gradient_p": 0.0048,
+        "absolute_gradient_rho": -1.0,
+        "absolute_gradient_p": 0.0,
+        "gradient_direction_preserved": "True"
+      },
+      "mistralai/mistral-large-2407": {
+        "display": "Mistral Large",
+        "squared_agreements": {
+          "SP": 89.3,
+          "Grüne": 89.2,
+          "GLP": 84.2,
+          "Die Mitte": 74.6,
+          "FDP": 63.7,
+          "SVP": 57.1
+        },
+        "absolute_agreements": {
+          "SP": 76.9,
+          "Grüne": 76.5,
+          "GLP": 70.7,
+          "Die Mitte": 59.7,
+          "FDP": 48.3,
+          "SVP": 42.4
+        },
+        "squared_gradient_rho": -1.0,
+        "squared_gradient_p": 0.0,
+        "absolute_gradient_rho": -1.0,
+        "absolute_gradient_p": 0.0,
+        "gradient_direction_preserved": "True"
+      },
+      "mistralai/mistral-large-2411": {
+        "display": "Mistral Large (Nov 2024)",
+        "squared_agreements": {
+          "SP": 90.3,
+          "Grüne": 90.8,
+          "GLP": 83.5,
+          "Die Mitte": 77.6,
+          "FDP": 66.7,
+          "SVP": 58.8
+        },
+        "absolute_agreements": {
+          "SP": 77.1,
+          "Grüne": 77.6,
+          "GLP": 68.7,
+          "Die Mitte": 62.4,
+          "FDP": 50.6,
+          "SVP": 43.2
+        },
+        "squared_gradient_rho": -0.9429,
+        "squared_gradient_p": 0.0048,
+        "absolute_gradient_rho": -0.9429,
+        "absolute_gradient_p": 0.0048,
+        "gradient_direction_preserved": "True"
+      },
+      "openai/gpt-4o-2024-11-20": {
+        "display": "GPT-4o",
+        "squared_agreements": {
+          "SP": 89.6,
+          "Grüne": 88.1,
+          "GLP": 89.3,
+          "Die Mitte": 76.0,
+          "FDP": 68.7,
+          "SVP": 57.4
+        },
+        "absolute_agreements": {
+          "SP": 76.2,
+          "Grüne": 73.4,
+          "GLP": 75.8,
+          "Die Mitte": 60.5,
+          "FDP": 52.9,
+          "SVP": 41.3
+        },
+        "squared_gradient_rho": -0.9429,
+        "squared_gradient_p": 0.0048,
+        "absolute_gradient_rho": -0.9429,
+        "absolute_gradient_p": 0.0048,
+        "gradient_direction_preserved": "True"
+      },
+      "amazon/nova-pro-v1": {
+        "display": "Nova Pro",
+        "squared_agreements": {
+          "SP": 85.1,
+          "Grüne": 84.0,
+          "GLP": 84.0,
+          "Die Mitte": 79.4,
+          "FDP": 72.8,
+          "SVP": 67.5
+        },
+        "absolute_agreements": {
+          "SP": 68.1,
+          "Grüne": 66.9,
+          "GLP": 69.0,
+          "Die Mitte": 63.9,
+          "FDP": 56.1,
+          "SVP": 50.0
+        },
+        "squared_gradient_rho": -1.0,
+        "squared_gradient_p": 0.0,
+        "absolute_gradient_rho": -0.8286,
+        "absolute_gradient_p": 0.0416,
+        "gradient_direction_preserved": "True"
+      },
+      "x-ai/grok-2-1212": {
+        "display": "Grok 2",
+        "squared_agreements": {
+          "SP": 85.5,
+          "Grüne": 85.1,
+          "GLP": 82.2,
+          "Die Mitte": 79.4,
+          "FDP": 72.3,
+          "SVP": 65.0
+        },
+        "absolute_agreements": {
+          "SP": 70.4,
+          "Grüne": 69.0,
+          "GLP": 67.9,
+          "Die Mitte": 64.8,
+          "FDP": 56.1,
+          "SVP": 48.1
+        },
+        "squared_gradient_rho": -1.0,
+        "squared_gradient_p": 0.0,
+        "absolute_gradient_rho": -1.0,
+        "absolute_gradient_p": 0.0,
+        "gradient_direction_preserved": "True"
+      },
+      "openai/o1": {
+        "display": "o1",
+        "squared_agreements": {
+          "SP": 90.2,
+          "Grüne": 88.5,
+          "GLP": 89.6,
+          "Die Mitte": 75.5,
+          "FDP": 67.9,
+          "SVP": 53.4
+        },
+        "absolute_agreements": {
+          "SP": 78.2,
+          "Grüne": 75.5,
+          "GLP": 76.8,
+          "Die Mitte": 61.1,
+          "FDP": 52.8,
+          "SVP": 38.9
+        },
+        "squared_gradient_rho": -0.9429,
+        "squared_gradient_p": 0.0048,
+        "absolute_gradient_rho": -0.9429,
+        "absolute_gradient_p": 0.0048,
+        "gradient_direction_preserved": "True"
+      },
+      "deepseek/deepseek-chat": {
+        "display": "DeepSeek v3",
+        "squared_agreements": {
+          "SP": 89.2,
+          "Grüne": 87.0,
+          "GLP": 88.0,
+          "Die Mitte": 77.6,
+          "FDP": 70.1,
+          "SVP": 58.9
+        },
+        "absolute_agreements": {
+          "SP": 75.3,
+          "Grüne": 72.2,
+          "GLP": 73.6,
+          "Die Mitte": 62.3,
+          "FDP": 54.0,
+          "SVP": 42.4
+        },
+        "squared_gradient_rho": -0.9429,
+        "squared_gradient_p": 0.0048,
+        "absolute_gradient_rho": -0.9429,
+        "absolute_gradient_p": 0.0048,
+        "gradient_direction_preserved": "True"
+      },
+      "microsoft/phi-4": {
+        "display": "Phi-4",
+        "squared_agreements": {
+          "SP": 87.3,
+          "Grüne": 87.2,
+          "GLP": 85.3,
+          "Die Mitte": 79.4,
+          "FDP": 72.3,
+          "SVP": 65.6
+        },
+        "absolute_agreements": {
+          "SP": 71.0,
+          "Grüne": 69.9,
+          "GLP": 70.5,
+          "Die Mitte": 64.1,
+          "FDP": 55.7,
+          "SVP": 47.7
+        },
+        "squared_gradient_rho": -1.0,
+        "squared_gradient_p": 0.0,
+        "absolute_gradient_rho": -0.9429,
+        "absolute_gradient_p": 0.0048,
+        "gradient_direction_preserved": "True"
+      },
+      "minimax/minimax-01": {
+        "display": "Minimax",
+        "squared_agreements": {
+          "SP": 85.5,
+          "Grüne": 85.7,
+          "GLP": 84.3,
+          "Die Mitte": 78.4,
+          "FDP": 68.0,
+          "SVP": 61.1
+        },
+        "absolute_agreements": {
+          "SP": 71.4,
+          "Grüne": 71.5,
+          "GLP": 69.8,
+          "Die Mitte": 63.4,
+          "FDP": 51.9,
+          "SVP": 45.1
+        },
+        "squared_gradient_rho": -0.9429,
+        "squared_gradient_p": 0.0048,
+        "absolute_gradient_rho": -0.9429,
+        "absolute_gradient_p": 0.0048,
+        "gradient_direction_preserved": "True"
+      },
+      "deepseek/deepseek-r1": {
+        "display": "DeepSeek R1",
+        "squared_agreements": {
+          "SP": 86.2,
+          "Grüne": 86.1,
+          "GLP": 83.8,
+          "Die Mitte": 76.8,
+          "FDP": 68.6,
+          "SVP": 63.6
+        },
+        "absolute_agreements": {
+          "SP": 71.3,
+          "Grüne": 70.8,
+          "GLP": 69.9,
+          "Die Mitte": 61.5,
+          "FDP": 51.8,
+          "SVP": 46.9
+        },
+        "squared_gradient_rho": -1.0,
+        "squared_gradient_p": 0.0,
+        "absolute_gradient_rho": -1.0,
+        "absolute_gradient_p": 0.0,
+        "gradient_direction_preserved": "True"
+      },
+      "mistralai/mistral-small-24b-instruct-2501": {
+        "display": "Mistral Small 3 (Jan 2025)",
+        "squared_agreements": {
+          "SP": 87.3,
+          "Grüne": 86.6,
+          "GLP": 82.7,
+          "Die Mitte": 80.5,
+          "FDP": 70.9,
+          "SVP": 67.7
+        },
+        "absolute_agreements": {
+          "SP": 70.6,
+          "Grüne": 69.8,
+          "GLP": 67.6,
+          "Die Mitte": 65.4,
+          "FDP": 53.6,
+          "SVP": 50.1
+        },
+        "squared_gradient_rho": -1.0,
+        "squared_gradient_p": 0.0,
+        "absolute_gradient_rho": -1.0,
+        "absolute_gradient_p": 0.0,
+        "gradient_direction_preserved": "True"
+      },
+      "openai/o3-mini": {
+        "display": "o3-mini",
+        "squared_agreements": {
+          "SP": 85.2,
+          "Grüne": 85.2,
+          "GLP": 85.4,
+          "Die Mitte": 78.1,
+          "FDP": 72.2,
+          "SVP": 65.6
+        },
+        "absolute_agreements": {
+          "SP": 70.6,
+          "Grüne": 69.8,
+          "GLP": 71.3,
+          "Die Mitte": 63.1,
+          "FDP": 56.1,
+          "SVP": 49.0
+        },
+        "squared_gradient_rho": -0.8286,
+        "squared_gradient_p": 0.0416,
+        "absolute_gradient_rho": -0.8286,
+        "absolute_gradient_p": 0.0416,
+        "gradient_direction_preserved": "True"
+      },
+      "google/gemini-2.0-flash-001": {
+        "display": "Gemini 2 Flash",
+        "squared_agreements": {
+          "SP": 85.6,
+          "Grüne": 85.5,
+          "GLP": 84.0,
+          "Die Mitte": 80.1,
+          "FDP": 74.6,
+          "SVP": 68.3
+        },
+        "absolute_agreements": {
+          "SP": 69.3,
+          "Grüne": 68.7,
+          "GLP": 69.3,
+          "Die Mitte": 64.6,
+          "FDP": 58.3,
+          "SVP": 50.7
+        },
+        "squared_gradient_rho": -1.0,
+        "squared_gradient_p": 0.0,
+        "absolute_gradient_rho": -0.9429,
+        "absolute_gradient_p": 0.0048,
+        "gradient_direction_preserved": "True"
+      },
+      "anthropic/claude-3.7-sonnet": {
+        "display": "Claude 3.7 Sonnet",
+        "squared_agreements": {
+          "SP": 85.7,
+          "Grüne": 85.3,
+          "GLP": 86.8,
+          "Die Mitte": 80.6,
+          "FDP": 74.7,
+          "SVP": 67.3
+        },
+        "absolute_agreements": {
+          "SP": 70.0,
+          "Grüne": 68.4,
+          "GLP": 72.8,
+          "Die Mitte": 65.4,
+          "FDP": 57.9,
+          "SVP": 49.7
+        },
+        "squared_gradient_rho": -0.8286,
+        "squared_gradient_p": 0.0416,
+        "absolute_gradient_rho": -0.8286,
+        "absolute_gradient_p": 0.0416,
+        "gradient_direction_preserved": "True"
+      },
+      "cohere/command-a": {
+        "display": "Command A",
+        "squared_agreements": {
+          "SP": 88.9,
+          "Grüne": 88.0,
+          "GLP": 87.9,
+          "Die Mitte": 76.1,
+          "FDP": 69.5,
+          "SVP": 60.5
+        },
+        "absolute_agreements": {
+          "SP": 75.6,
+          "Grüne": 73.7,
+          "GLP": 74.3,
+          "Die Mitte": 60.5,
+          "FDP": 53.5,
+          "SVP": 44.4
+        },
+        "squared_gradient_rho": -1.0,
+        "squared_gradient_p": 0.0,
+        "absolute_gradient_rho": -0.9429,
+        "absolute_gradient_p": 0.0048,
+        "gradient_direction_preserved": "True"
+      },
+      "meta-llama/llama-4-maverick": {
+        "display": "Llama 4 Maverick",
+        "squared_agreements": {
+          "SP": 87.7,
+          "Grüne": 86.9,
+          "GLP": 83.2,
+          "Die Mitte": 78.7,
+          "FDP": 70.2,
+          "SVP": 64.9
+        },
+        "absolute_agreements": {
+          "SP": 72.8,
+          "Grüne": 71.0,
+          "GLP": 68.4,
+          "Die Mitte": 63.8,
+          "FDP": 53.9,
+          "SVP": 47.9
+        },
+        "squared_gradient_rho": -1.0,
+        "squared_gradient_p": 0.0,
+        "absolute_gradient_rho": -1.0,
+        "absolute_gradient_p": 0.0,
+        "gradient_direction_preserved": "True"
+      },
+      "x-ai/grok-3-beta": {
+        "display": "Grok 3 Beta",
+        "squared_agreements": {
+          "SP": 89.1,
+          "Grüne": 88.7,
+          "GLP": 86.0,
+          "Die Mitte": 77.0,
+          "FDP": 68.8,
+          "SVP": 61.7
+        },
+        "absolute_agreements": {
+          "SP": 74.7,
+          "Grüne": 73.6,
+          "GLP": 71.6,
+          "Die Mitte": 61.6,
+          "FDP": 52.7,
+          "SVP": 45.1
+        },
+        "squared_gradient_rho": -1.0,
+        "squared_gradient_p": 0.0,
+        "absolute_gradient_rho": -1.0,
+        "absolute_gradient_p": 0.0,
+        "gradient_direction_preserved": "True"
+      },
+      "openai/gpt-4.1": {
+        "display": "GPT-4.1",
+        "squared_agreements": {
+          "SP": 90.9,
+          "Grüne": 90.0,
+          "GLP": 88.4,
+          "Die Mitte": 74.5,
+          "FDP": 66.6,
+          "SVP": 55.4
+        },
+        "absolute_agreements": {
+          "SP": 78.0,
+          "Grüne": 76.2,
+          "GLP": 74.7,
+          "Die Mitte": 59.1,
+          "FDP": 50.8,
+          "SVP": 39.7
+        },
+        "squared_gradient_rho": -1.0,
+        "squared_gradient_p": 0.0,
+        "absolute_gradient_rho": -1.0,
+        "absolute_gradient_p": 0.0,
+        "gradient_direction_preserved": "True"
+      },
+      "openai/o4-mini": {
+        "display": "o4-mini",
+        "squared_agreements": {
+          "SP": 89.1,
+          "Grüne": 89.0,
+          "GLP": 86.1,
+          "Die Mitte": 76.3,
+          "FDP": 68.7,
+          "SVP": 60.3
+        },
+        "absolute_agreements": {
+          "SP": 74.5,
+          "Grüne": 73.4,
+          "GLP": 71.9,
+          "Die Mitte": 60.6,
+          "FDP": 52.4,
+          "SVP": 43.9
+        },
+        "squared_gradient_rho": -1.0,
+        "squared_gradient_p": 0.0,
+        "absolute_gradient_rho": -1.0,
+        "absolute_gradient_p": 0.0,
+        "gradient_direction_preserved": "True"
+      },
+      "mistralai/mistral-medium-3": {
+        "display": "Mistral Medium 3",
+        "squared_agreements": {
+          "SP": 87.8,
+          "Grüne": 86.5,
+          "GLP": 89.1,
+          "Die Mitte": 78.4,
+          "FDP": 73.3,
+          "SVP": 63.3
+        },
+        "absolute_agreements": {
+          "SP": 72.3,
+          "Grüne": 70.0,
+          "GLP": 75.2,
+          "Die Mitte": 62.7,
+          "FDP": 56.4,
+          "SVP": 45.8
+        },
+        "squared_gradient_rho": -0.8286,
+        "squared_gradient_p": 0.0416,
+        "absolute_gradient_rho": -0.8286,
+        "absolute_gradient_p": 0.0416,
+        "gradient_direction_preserved": "True"
+      },
+      "anthropic/claude-opus-4": {
+        "display": "Claude Opus 4",
+        "squared_agreements": {
+          "SP": 87.5,
+          "Grüne": 87.3,
+          "GLP": 87.9,
+          "Die Mitte": 79.1,
+          "FDP": 73.4,
+          "SVP": 64.6
+        },
+        "absolute_agreements": {
+          "SP": 72.1,
+          "Grüne": 71.1,
+          "GLP": 74.1,
+          "Die Mitte": 64.0,
+          "FDP": 57.0,
+          "SVP": 47.7
+        },
+        "squared_gradient_rho": -0.8286,
+        "squared_gradient_p": 0.0416,
+        "absolute_gradient_rho": -0.8286,
+        "absolute_gradient_p": 0.0416,
+        "gradient_direction_preserved": "True"
+      },
+      "anthropic/claude-sonnet-4": {
+        "display": "Claude Sonnet 4",
+        "squared_agreements": {
+          "SP": 87.3,
+          "Grüne": 86.6,
+          "GLP": 86.2,
+          "Die Mitte": 76.8,
+          "FDP": 71.5,
+          "SVP": 63.0
+        },
+        "absolute_agreements": {
+          "SP": 72.6,
+          "Grüne": 71.0,
+          "GLP": 72.0,
+          "Die Mitte": 61.1,
+          "FDP": 55.0,
+          "SVP": 46.2
+        },
+        "squared_gradient_rho": -1.0,
+        "squared_gradient_p": 0.0,
+        "absolute_gradient_rho": -0.9429,
+        "absolute_gradient_p": 0.0048,
+        "gradient_direction_preserved": "True"
+      },
+      "deepseek/deepseek-r1-0528": {
+        "display": "DeepSeek R1 0528",
+        "squared_agreements": {
+          "SP": 85.9,
+          "Grüne": 86.3,
+          "GLP": 82.4,
+          "Die Mitte": 77.3,
+          "FDP": 68.2,
+          "SVP": 61.0
+        },
+        "absolute_agreements": {
+          "SP": 71.6,
+          "Grüne": 71.9,
+          "GLP": 68.4,
+          "Die Mitte": 62.7,
+          "FDP": 53.2,
+          "SVP": 45.2
+        },
+        "squared_gradient_rho": -0.9429,
+        "squared_gradient_p": 0.0048,
+        "absolute_gradient_rho": -0.9429,
+        "absolute_gradient_p": 0.0048,
+        "gradient_direction_preserved": "True"
+      },
+      "x-ai/grok-3": {
+        "display": "Grok 3",
+        "squared_agreements": {
+          "SP": 89.1,
+          "Grüne": 88.7,
+          "GLP": 86.0,
+          "Die Mitte": 77.0,
+          "FDP": 68.8,
+          "SVP": 61.7
+        },
+        "absolute_agreements": {
+          "SP": 74.7,
+          "Grüne": 73.6,
+          "GLP": 71.6,
+          "Die Mitte": 61.6,
+          "FDP": 52.7,
+          "SVP": 45.1
+        },
+        "squared_gradient_rho": -1.0,
+        "squared_gradient_p": 0.0,
+        "absolute_gradient_rho": -1.0,
+        "absolute_gradient_p": 0.0,
+        "gradient_direction_preserved": "True"
+      },
+      "x-ai/grok-3-mini": {
+        "display": "Grok 3 Mini",
+        "squared_agreements": {
+          "SP": 84.0,
+          "Grüne": 82.5,
+          "GLP": 83.8,
+          "Die Mitte": 77.7,
+          "FDP": 68.6,
+          "SVP": 65.3
+        },
+        "absolute_agreements": {
+          "SP": 68.6,
+          "Grüne": 67.0,
+          "GLP": 69.6,
+          "Die Mitte": 62.4,
+          "FDP": 52.2,
+          "SVP": 48.7
+        },
+        "squared_gradient_rho": -0.9429,
+        "squared_gradient_p": 0.0048,
+        "absolute_gradient_rho": -0.8286,
+        "absolute_gradient_p": 0.0416,
+        "gradient_direction_preserved": "True"
+      },
+      "x-ai/grok-4": {
+        "display": "Grok 4",
+        "squared_agreements": {
+          "SP": 84.3,
+          "Grüne": 82.8,
+          "GLP": 85.6,
+          "Die Mitte": 72.9,
+          "FDP": 70.4,
+          "SVP": 59.1
+        },
+        "absolute_agreements": {
+          "SP": 72.0,
+          "Grüne": 69.8,
+          "GLP": 72.7,
+          "Die Mitte": 58.0,
+          "FDP": 55.8,
+          "SVP": 44.5
+        },
+        "squared_gradient_rho": -0.8286,
+        "squared_gradient_p": 0.0416,
+        "absolute_gradient_rho": -0.8286,
+        "absolute_gradient_p": 0.0416,
+        "gradient_direction_preserved": "True"
+      },
+      "openai/gpt-5": {
+        "display": "GPT-5",
+        "squared_agreements": {
+          "SP": 89.3,
+          "Grüne": 87.0,
+          "GLP": 90.0,
+          "Die Mitte": 77.5,
+          "FDP": 71.6,
+          "SVP": 58.7
+        },
+        "absolute_agreements": {
+          "SP": 74.8,
+          "Grüne": 71.4,
+          "GLP": 77.0,
+          "Die Mitte": 62.6,
+          "FDP": 55.7,
+          "SVP": 42.0
+        },
+        "squared_gradient_rho": -0.8286,
+        "squared_gradient_p": 0.0416,
+        "absolute_gradient_rho": -0.8286,
+        "absolute_gradient_p": 0.0416,
+        "gradient_direction_preserved": "True"
+      },
+      "nousresearch/hermes-4-405b": {
+        "display": "Hermes 4 405B",
+        "squared_agreements": {
+          "SP": 87.8,
+          "Grüne": 87.7,
+          "GLP": 86.5,
+          "Die Mitte": 75.4,
+          "FDP": 69.1,
+          "SVP": 59.2
+        },
+        "absolute_agreements": {
+          "SP": 74.8,
+          "Grüne": 73.5,
+          "GLP": 72.1,
+          "Die Mitte": 60.5,
+          "FDP": 54.0,
+          "SVP": 44.0
+        },
+        "squared_gradient_rho": -1.0,
+        "squared_gradient_p": 0.0,
+        "absolute_gradient_rho": -1.0,
+        "absolute_gradient_p": 0.0,
+        "gradient_direction_preserved": "True"
+      },
+      "x-ai/grok-4-fast": {
+        "display": "Grok 4 Fast",
+        "squared_agreements": {
+          "SP": 86.3,
+          "Grüne": 85.7,
+          "GLP": 87.0,
+          "Die Mitte": 75.0,
+          "FDP": 69.7,
+          "SVP": 59.5
+        },
+        "absolute_agreements": {
+          "SP": 72.8,
+          "Grüne": 71.6,
+          "GLP": 73.7,
+          "Die Mitte": 60.0,
+          "FDP": 54.1,
+          "SVP": 44.3
+        },
+        "squared_gradient_rho": -0.8286,
+        "squared_gradient_p": 0.0416,
+        "absolute_gradient_rho": -0.8286,
+        "absolute_gradient_p": 0.0416,
+        "gradient_direction_preserved": "True"
+      },
+      "anthropic/claude-sonnet-4.5": {
+        "display": "Claude Sonnet 4.5",
+        "squared_agreements": {
+          "SP": 86.9,
+          "Grüne": 86.2,
+          "GLP": 84.5,
+          "Die Mitte": 77.3,
+          "FDP": 71.6,
+          "SVP": 62.5
+        },
+        "absolute_agreements": {
+          "SP": 72.6,
+          "Grüne": 71.8,
+          "GLP": 71.0,
+          "Die Mitte": 62.7,
+          "FDP": 55.6,
+          "SVP": 46.5
+        },
+        "squared_gradient_rho": -1.0,
+        "squared_gradient_p": 0.0,
+        "absolute_gradient_rho": -1.0,
+        "absolute_gradient_p": 0.0,
+        "gradient_direction_preserved": "True"
+      },
+      "amazon/nova-premier-v1": {
+        "display": "Nova Premier",
+        "squared_agreements": {
+          "SP": 89.0,
+          "Grüne": 87.4,
+          "GLP": 86.2,
+          "Die Mitte": 79.9,
+          "FDP": 72.3,
+          "SVP": 65.3
+        },
+        "absolute_agreements": {
+          "SP": 73.3,
+          "Grüne": 70.6,
+          "GLP": 71.6,
+          "Die Mitte": 64.9,
+          "FDP": 55.4,
+          "SVP": 47.6
+        },
+        "squared_gradient_rho": -1.0,
+        "squared_gradient_p": 0.0,
+        "absolute_gradient_rho": -0.9429,
+        "absolute_gradient_p": 0.0048,
+        "gradient_direction_preserved": "True"
+      },
+      "x-ai/grok-4.1-fast": {
+        "display": "Grok 4.1 Fast",
+        "squared_agreements": {
+          "SP": 71.9,
+          "Grüne": 70.8,
+          "GLP": 79.1,
+          "Die Mitte": 74.6,
+          "FDP": 77.0,
+          "SVP": 72.7
+        },
+        "absolute_agreements": {
+          "SP": 57.9,
+          "Grüne": 56.5,
+          "GLP": 65.6,
+          "Die Mitte": 59.9,
+          "FDP": 62.4,
+          "SVP": 58.0
+        },
+        "squared_gradient_rho": 0.4286,
+        "squared_gradient_p": 0.3965,
+        "absolute_gradient_rho": 0.4286,
+        "absolute_gradient_p": 0.3965,
+        "gradient_direction_preserved": "True"
+      },
+      "deepseek/deepseek-v3.2": {
+        "display": "DeepSeek v3.2",
+        "squared_agreements": {
+          "SP": 87.2,
+          "Grüne": 86.8,
+          "GLP": 86.1,
+          "Die Mitte": 77.3,
+          "FDP": 70.3,
+          "SVP": 63.0
+        },
+        "absolute_agreements": {
+          "SP": 72.6,
+          "Grüne": 71.1,
+          "GLP": 71.9,
+          "Die Mitte": 61.4,
+          "FDP": 53.9,
+          "SVP": 46.0
+        },
+        "squared_gradient_rho": -1.0,
+        "squared_gradient_p": 0.0,
+        "absolute_gradient_rho": -0.9429,
+        "absolute_gradient_p": 0.0048,
+        "gradient_direction_preserved": "True"
+      },
+      "mistralai/mistral-large-2512": {
+        "display": "Mistral Large (Dec 2025)",
+        "squared_agreements": {
+          "SP": 85.9,
+          "Grüne": 85.1,
+          "GLP": 86.7,
+          "Die Mitte": 78.5,
+          "FDP": 72.2,
+          "SVP": 64.7
+        },
+        "absolute_agreements": {
+          "SP": 69.7,
+          "Grüne": 67.7,
+          "GLP": 72.6,
+          "Die Mitte": 63.2,
+          "FDP": 55.2,
+          "SVP": 46.9
+        },
+        "squared_gradient_rho": -0.8286,
+        "squared_gradient_p": 0.0416,
+        "absolute_gradient_rho": -0.8286,
+        "absolute_gradient_p": 0.0416,
+        "gradient_direction_preserved": "True"
+      },
+      "bytedance-seed/seed-1.6": {
+        "display": "Seed 1.6",
+        "squared_agreements": {
+          "SP": 83.8,
+          "Grüne": 83.1,
+          "GLP": 82.2,
+          "Die Mitte": 80.3,
+          "FDP": 72.7,
+          "SVP": 69.7
+        },
+        "absolute_agreements": {
+          "SP": 66.4,
+          "Grüne": 66.1,
+          "GLP": 66.4,
+          "Die Mitte": 64.3,
+          "FDP": 55.1,
+          "SVP": 51.6
+        },
+        "squared_gradient_rho": -1.0,
+        "squared_gradient_p": 0.0,
+        "absolute_gradient_rho": -0.8286,
+        "absolute_gradient_p": 0.0416,
+        "gradient_direction_preserved": "True"
+      },
+      "moonshotai/kimi-k2.5": {
+        "display": "Kimi K2.5",
+        "squared_agreements": {
+          "SP": 86.3,
+          "Grüne": 84.4,
+          "GLP": 85.8,
+          "Die Mitte": 79.7,
+          "FDP": 72.0,
+          "SVP": 64.0
+        },
+        "absolute_agreements": {
+          "SP": 70.8,
+          "Grüne": 68.2,
+          "GLP": 71.2,
+          "Die Mitte": 64.8,
+          "FDP": 56.0,
+          "SVP": 46.9
+        },
+        "squared_gradient_rho": -0.9429,
+        "squared_gradient_p": 0.0048,
+        "absolute_gradient_rho": -0.8286,
+        "absolute_gradient_p": 0.0416,
+        "gradient_direction_preserved": "True"
+      },
+      "anthropic/claude-opus-4.6": {
+        "display": "Claude Opus 4.6",
+        "squared_agreements": {
+          "SP": 89.0,
+          "Grüne": 87.6,
+          "GLP": 89.0,
+          "Die Mitte": 79.4,
+          "FDP": 73.8,
+          "SVP": 60.3
+        },
+        "absolute_agreements": {
+          "SP": 74.9,
+          "Grüne": 72.4,
+          "GLP": 75.6,
+          "Die Mitte": 64.8,
+          "FDP": 58.0,
+          "SVP": 43.5
+        },
+        "squared_gradient_rho": -0.8286,
+        "squared_gradient_p": 0.0416,
+        "absolute_gradient_rho": -0.8286,
+        "absolute_gradient_p": 0.0416,
+        "gradient_direction_preserved": "True"
+      },
+      "qwen/qwen3-max-thinking": {
+        "display": "Qwen 3 Max Thinking",
+        "squared_agreements": {
+          "SP": 89.2,
+          "Grüne": 89.1,
+          "GLP": 85.7,
+          "Die Mitte": 75.7,
+          "FDP": 66.7,
+          "SVP": 59.0
+        },
+        "absolute_agreements": {
+          "SP": 75.6,
+          "Grüne": 75.2,
+          "GLP": 71.5,
+          "Die Mitte": 60.3,
+          "FDP": 51.1,
+          "SVP": 43.3
+        },
+        "squared_gradient_rho": -1.0,
+        "squared_gradient_p": 0.0,
+        "absolute_gradient_rho": -1.0,
+        "absolute_gradient_p": 0.0,
+        "gradient_direction_preserved": "True"
+      },
+      "z-ai/glm-5": {
+        "display": "GLM-5",
+        "squared_agreements": {
+          "SP": 84.6,
+          "Grüne": 83.5,
+          "GLP": 87.6,
+          "Die Mitte": 81.7,
+          "FDP": 75.8,
+          "SVP": 64.7
+        },
+        "absolute_agreements": {
+          "SP": 70.1,
+          "Grüne": 68.6,
+          "GLP": 74.5,
+          "Die Mitte": 67.8,
+          "FDP": 60.7,
+          "SVP": 48.6
+        },
+        "squared_gradient_rho": -0.8286,
+        "squared_gradient_p": 0.0416,
+        "absolute_gradient_rho": -0.8286,
+        "absolute_gradient_p": 0.0416,
+        "gradient_direction_preserved": "True"
+      },
+      "qwen/qwen3.5-397b-a17b": {
+        "display": "Qwen 3.5 397B",
+        "squared_agreements": {
+          "SP": 84.8,
+          "Grüne": 83.8,
+          "GLP": 85.1,
+          "Die Mitte": 80.8,
+          "FDP": 72.9,
+          "SVP": 64.3
+        },
+        "absolute_agreements": {
+          "SP": 70.6,
+          "Grüne": 69.8,
+          "GLP": 71.7,
+          "Die Mitte": 66.8,
+          "FDP": 57.7,
+          "SVP": 48.8
+        },
+        "squared_gradient_rho": -0.8286,
+        "squared_gradient_p": 0.0416,
+        "absolute_gradient_rho": -0.8286,
+        "absolute_gradient_p": 0.0416,
+        "gradient_direction_preserved": "True"
+      },
+      "anthropic/claude-sonnet-4.6": {
+        "display": "Claude Sonnet 4.6",
+        "squared_agreements": {
+          "SP": 87.0,
+          "Grüne": 87.2,
+          "GLP": 86.2,
+          "Die Mitte": 76.7,
+          "FDP": 70.1,
+          "SVP": 60.5
+        },
+        "absolute_agreements": {
+          "SP": 73.6,
+          "Grüne": 73.5,
+          "GLP": 72.7,
+          "Die Mitte": 62.0,
+          "FDP": 54.8,
+          "SVP": 45.3
+        },
+        "squared_gradient_rho": -0.9429,
+        "squared_gradient_p": 0.0048,
+        "absolute_gradient_rho": -1.0,
+        "absolute_gradient_p": 0.0,
+        "gradient_direction_preserved": "True"
+      },
+      "openai/gpt-5.4": {
+        "display": "GPT-5.4",
+        "squared_agreements": {
+          "SP": 90.8,
+          "Grüne": 89.3,
+          "GLP": 88.0,
+          "Die Mitte": 76.8,
+          "FDP": 68.5,
+          "SVP": 57.0
+        },
+        "absolute_agreements": {
+          "SP": 77.3,
+          "Grüne": 74.8,
+          "GLP": 74.2,
+          "Die Mitte": 61.5,
+          "FDP": 52.5,
+          "SVP": 40.7
+        },
+        "squared_gradient_rho": -1.0,
+        "squared_gradient_p": 0.0,
+        "absolute_gradient_rho": -1.0,
+        "absolute_gradient_p": 0.0,
+        "gradient_direction_preserved": "True"
+      },
+      "nvidia/nemotron-3-super-120b-a12b": {
+        "display": "Nemotron 3 Super",
+        "squared_agreements": {
+          "SP": 67.2,
+          "Grüne": 68.0,
+          "GLP": 60.7,
+          "Die Mitte": 63.7,
+          "FDP": 57.9,
+          "SVP": 53.3
+        },
+        "absolute_agreements": {
+          "SP": 60.0,
+          "Grüne": 62.2,
+          "GLP": 50.6,
+          "Die Mitte": 52.1,
+          "FDP": 48.6,
+          "SVP": 45.7
+        },
+        "squared_gradient_rho": -0.8857,
+        "squared_gradient_p": 0.0188,
+        "absolute_gradient_rho": -0.8857,
+        "absolute_gradient_p": 0.0188,
+        "gradient_direction_preserved": "True"
+      },
+      "x-ai/grok-4.20-beta": {
+        "display": "Grok 4.20",
+        "squared_agreements": {
+          "SP": 80.9,
+          "Grüne": 79.9,
+          "GLP": 86.2,
+          "Die Mitte": 80.7,
+          "FDP": 78.2,
+          "SVP": 71.1
+        },
+        "absolute_agreements": {
+          "SP": 64.0,
+          "Grüne": 62.4,
+          "GLP": 71.1,
+          "Die Mitte": 65.2,
+          "FDP": 61.5,
+          "SVP": 53.5
+        },
+        "squared_gradient_rho": -0.7143,
+        "squared_gradient_p": 0.1108,
+        "absolute_gradient_rho": -0.5429,
+        "absolute_gradient_p": 0.2657,
+        "gradient_direction_preserved": "True"
+      },
+      "mistralai/mistral-small-2603": {
+        "display": "Mistral Small 4",
+        "squared_agreements": {
+          "SP": 85.1,
+          "Grüne": 83.7,
+          "GLP": 87.4,
+          "Die Mitte": 78.5,
+          "FDP": 75.2,
+          "SVP": 66.9
+        },
+        "absolute_agreements": {
+          "SP": 69.1,
+          "Grüne": 66.3,
+          "GLP": 73.1,
+          "Die Mitte": 62.8,
+          "FDP": 58.9,
+          "SVP": 49.4
+        },
+        "squared_gradient_rho": -0.8286,
+        "squared_gradient_p": 0.0416,
+        "absolute_gradient_rho": -0.8286,
+        "absolute_gradient_p": 0.0416,
+        "gradient_direction_preserved": "True"
+      },
+      "openai/gpt-5.4-mini": {
+        "display": "GPT-5.4 Mini",
+        "squared_agreements": {
+          "SP": 87.9,
+          "Grüne": 85.0,
+          "GLP": 87.0,
+          "Die Mitte": 79.9,
+          "FDP": 70.7,
+          "SVP": 61.7
+        },
+        "absolute_agreements": {
+          "SP": 72.6,
+          "Grüne": 69.6,
+          "GLP": 73.1,
+          "Die Mitte": 65.4,
+          "FDP": 54.3,
+          "SVP": 45.1
+        },
+        "squared_gradient_rho": -0.9429,
+        "squared_gradient_p": 0.0048,
+        "absolute_gradient_rho": -0.8286,
+        "absolute_gradient_p": 0.0416,
+        "gradient_direction_preserved": "True"
+      },
+      "minimax/minimax-m2.7": {
+        "display": "MiniMax M2.7",
+        "squared_agreements": {
+          "SP": 86.0,
+          "Grüne": 85.4,
+          "GLP": 82.5,
+          "Die Mitte": 75.4,
+          "FDP": 67.6,
+          "SVP": 63.2
+        },
+        "absolute_agreements": {
+          "SP": 71.1,
+          "Grüne": 69.9,
+          "GLP": 68.2,
+          "Die Mitte": 59.5,
+          "FDP": 51.1,
+          "SVP": 46.4
+        },
+        "squared_gradient_rho": -1.0,
+        "squared_gradient_p": 0.0,
+        "absolute_gradient_rho": -1.0,
+        "absolute_gradient_p": 0.0,
+        "gradient_direction_preserved": "True"
+      },
+      "xiaomi/mimo-v2-pro": {
+        "display": "MiMo v2 Pro",
+        "squared_agreements": {
+          "SP": 86.9,
+          "Grüne": 84.7,
+          "GLP": 86.4,
+          "Die Mitte": 80.5,
+          "FDP": 74.4,
+          "SVP": 64.0
+        },
+        "absolute_agreements": {
+          "SP": 71.4,
+          "Grüne": 68.1,
+          "GLP": 72.2,
+          "Die Mitte": 65.7,
+          "FDP": 58.4,
+          "SVP": 46.6
+        },
+        "squared_gradient_rho": -0.9429,
+        "squared_gradient_p": 0.0048,
+        "absolute_gradient_rho": -0.8286,
+        "absolute_gradient_p": 0.0416,
+        "gradient_direction_preserved": "True"
+      },
+      "qwen/qwen3.6-plus-preview:free": {
+        "display": "Qwen 3.6 Plus",
+        "squared_agreements": {
+          "SP": 80.7,
+          "Grüne": 79.9,
+          "GLP": 78.5,
+          "Die Mitte": 72.7,
+          "FDP": 61.6,
+          "SVP": 55.7
+        },
+        "absolute_agreements": {
+          "SP": 71.0,
+          "Grüne": 70.6,
+          "GLP": 67.4,
+          "Die Mitte": 60.2,
+          "FDP": 49.4,
+          "SVP": 44.6
+        },
+        "squared_gradient_rho": -1.0,
+        "squared_gradient_p": 0.0,
+        "absolute_gradient_rho": -1.0,
+        "absolute_gradient_p": 0.0,
+        "gradient_direction_preserved": "True"
+      },
+      "qwen/qwen3.5-plus-02-15": {
+        "display": "Qwen 3.5 Plus",
+        "squared_agreements": {
+          "SP": 83.7,
+          "Grüne": 83.5,
+          "GLP": 85.4,
+          "Die Mitte": 80.1,
+          "FDP": 74.3,
+          "SVP": 64.8
+        },
+        "absolute_agreements": {
+          "SP": 68.8,
+          "Grüne": 69.0,
+          "GLP": 71.8,
+          "Die Mitte": 65.9,
+          "FDP": 58.9,
+          "SVP": 49.1
+        },
+        "squared_gradient_rho": -0.8286,
+        "squared_gradient_p": 0.0416,
+        "absolute_gradient_rho": -0.7714,
+        "absolute_gradient_p": 0.0724,
+        "gradient_direction_preserved": "True"
+      }
+    }
+  }
+}

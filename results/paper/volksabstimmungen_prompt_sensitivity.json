@@ -1,0 +1,262 @@
+{
+  "description": "Sensitivity of LLM votes to the amount of context provided: in_kuerze (brief) vs. in_kuerze_im_detail (detailed) vs. full_text (complete).",
+  "generated_by": "n_volksabstimmungen_analysis.py",
+  "generated_at": "2026-04-04T21:28:34.677399",
+  "models_analyzed": [
+    "GPT-5.4",
+    "Claude Opus 4.6",
+    "DeepSeek V3.2",
+    "Llama 4 Maverick",
+    "Grok 4.20",
+    "Mistral Large",
+    "Command A",
+    "Qwen 3.5 Plus"
+  ],
+  "models_excluded": [
+    "Gemini 3.1 Pro (98% refusal rate in German)"
+  ],
+  "n_models": 8,
+  "methodology": "Pairwise consistency between detail conditions (German language). Binomial test against 25% chance baseline.",
+  "results": {
+    "openai/gpt-5.4": {
+      "display": "GPT-5.4",
+      "consistency_rate": 95.8,
+      "n_votes": 48,
+      "condition_pairs": {
+        "in_kuerze_vs_in_kuerze_im_detail": {
+          "same": 46,
+          "changed": 2,
+          "ja_to_nein": 0,
+          "nein_to_ja": 2
+        },
+        "in_kuerze_vs_full_text": {
+          "same": 46,
+          "changed": 0,
+          "ja_to_nein": 0,
+          "nein_to_ja": 0
+        },
+        "in_kuerze_im_detail_vs_full_text": {
+          "same": 44,
+          "changed": 2,
+          "ja_to_nein": 2,
+          "nein_to_ja": 0
+        }
+      },
+      "bundesrat_shift": {
+        "toward_br": 0,
+        "away_br": 0,
+        "total_changed": 0
+      }
+    },
+    "anthropic/claude-opus-4.6": {
+      "display": "Claude Opus 4.6",
+      "consistency_rate": 89.6,
+      "n_votes": 48,
+      "condition_pairs": {
+        "in_kuerze_vs_in_kuerze_im_detail": {
+          "same": 44,
+          "changed": 4,
+          "ja_to_nein": 1,
+          "nein_to_ja": 3
+        },
+        "in_kuerze_vs_full_text": {
+          "same": 43,
+          "changed": 3,
+          "ja_to_nein": 2,
+          "nein_to_ja": 1
+        },
+        "in_kuerze_im_detail_vs_full_text": {
+          "same": 43,
+          "changed": 3,
+          "ja_to_nein": 3,
+          "nein_to_ja": 0
+        }
+      },
+      "bundesrat_shift": {
+        "toward_br": 1,
+        "away_br": 2,
+        "total_changed": 3
+      }
+    },
+    "deepseek/deepseek-v3.2": {
+      "display": "DeepSeek V3.2",
+      "consistency_rate": 81.2,
+      "n_votes": 48,
+      "condition_pairs": {
+        "in_kuerze_vs_in_kuerze_im_detail": {
+          "same": 42,
+          "changed": 4,
+          "ja_to_nein": 2,
+          "nein_to_ja": 2
+        },
+        "in_kuerze_vs_full_text": {
+          "same": 36,
+          "changed": 8,
+          "ja_to_nein": 7,
+          "nein_to_ja": 1
+        },
+        "in_kuerze_im_detail_vs_full_text": {
+          "same": 40,
+          "changed": 6,
+          "ja_to_nein": 6,
+          "nein_to_ja": 0
+        }
+      },
+      "bundesrat_shift": {
+        "toward_br": 3,
+        "away_br": 5,
+        "total_changed": 8
+      }
+    },
+    "meta-llama/llama-4-maverick": {
+      "display": "Llama 4 Maverick",
+      "consistency_rate": 85.4,
+      "n_votes": 48,
+      "condition_pairs": {
+        "in_kuerze_vs_in_kuerze_im_detail": {
+          "same": 46,
+          "changed": 2,
+          "ja_to_nein": 1,
+          "nein_to_ja": 1
+        },
+        "in_kuerze_vs_full_text": {
+          "same": 39,
+          "changed": 7,
+          "ja_to_nein": 3,
+          "nein_to_ja": 4
+        },
+        "in_kuerze_im_detail_vs_full_text": {
+          "same": 41,
+          "changed": 5,
+          "ja_to_nein": 2,
+          "nein_to_ja": 3
+        }
+      },
+      "bundesrat_shift": {
+        "toward_br": 3,
+        "away_br": 4,
+        "total_changed": 7
+      }
+    },
+    "x-ai/grok-4.20": {
+      "display": "Grok 4.20",
+      "consistency_rate": 82.9,
+      "n_votes": 41,
+      "condition_pairs": {
+        "in_kuerze_vs_in_kuerze_im_detail": {
+          "same": 31,
+          "changed": 4,
+          "ja_to_nein": 0,
+          "nein_to_ja": 4
+        },
+        "in_kuerze_vs_full_text": {
+          "same": 29,
+          "changed": 7,
+          "ja_to_nein": 0,
+          "nein_to_ja": 7
+        },
+        "in_kuerze_im_detail_vs_full_text": {
+          "same": 28,
+          "changed": 2,
+          "ja_to_nein": 0,
+          "nein_to_ja": 2
+        }
+      },
+      "bundesrat_shift": {
+        "toward_br": 7,
+        "away_br": 0,
+        "total_changed": 7
+      }
+    },
+    "mistralai/mistral-large-2512": {
+      "display": "Mistral Large",
+      "consistency_rate": 81.2,
+      "n_votes": 48,
+      "condition_pairs": {
+        "in_kuerze_vs_in_kuerze_im_detail": {
+          "same": 41,
+          "changed": 5,
+          "ja_to_nein": 4,
+          "nein_to_ja": 1
+        },
+        "in_kuerze_vs_full_text": {
+          "same": 37,
+          "changed": 7,
+          "ja_to_nein": 3,
+          "nein_to_ja": 4
+        },
+        "in_kuerze_im_detail_vs_full_text": {
+          "same": 38,
+          "changed": 4,
+          "ja_to_nein": 0,
+          "nein_to_ja": 4
+        }
+      },
+      "bundesrat_shift": {
+        "toward_br": 4,
+        "away_br": 3,
+        "total_changed": 7
+      }
+    },
+    "cohere/command-a": {
+      "display": "Command A",
+      "consistency_rate": 85.4,
+      "n_votes": 48,
+      "condition_pairs": {
+        "in_kuerze_vs_in_kuerze_im_detail": {
+          "same": 41,
+          "changed": 7,
+          "ja_to_nein": 2,
+          "nein_to_ja": 5
+        },
+        "in_kuerze_vs_full_text": {
+          "same": 41,
+          "changed": 5,
+          "ja_to_nein": 2,
+          "nein_to_ja": 3
+        },
+        "in_kuerze_im_detail_vs_full_text": {
+          "same": 44,
+          "changed": 2,
+          "ja_to_nein": 2,
+          "nein_to_ja": 0
+        }
+      },
+      "bundesrat_shift": {
+        "toward_br": 3,
+        "away_br": 2,
+        "total_changed": 5
+      }
+    },
+    "qwen/qwen3.5-plus-02-15": {
+      "display": "Qwen 3.5 Plus",
+      "consistency_rate": 91.5,
+      "n_votes": 47,
+      "condition_pairs": {
+        "in_kuerze_vs_in_kuerze_im_detail": {
+          "same": 46,
+          "changed": 0,
+          "ja_to_nein": 0,
+          "nein_to_ja": 0
+        },
+        "in_kuerze_vs_full_text": {
+          "same": 40,
+          "changed": 3,
+          "ja_to_nein": 2,
+          "nein_to_ja": 1
+        },
+        "in_kuerze_im_detail_vs_full_text": {
+          "same": 40,
+          "changed": 4,
+          "ja_to_nein": 2,
+          "nein_to_ja": 2
+        }
+      },
+      "bundesrat_shift": {
+        "toward_br": 2,
+        "away_br": 1,
+        "total_changed": 3
+      }
+    }
+  }
+}

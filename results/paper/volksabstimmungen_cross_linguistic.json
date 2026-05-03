@@ -1,0 +1,794 @@
+{
+  "description": "Cross-linguistic consistency: how often each LLM gives the same Ja/Nein answer across German, French, Italian, and Romansh versions of the same referendum.",
+  "generated_by": "n_volksabstimmungen_analysis.py",
+  "generated_at": "2026-04-04T21:28:34.675389",
+  "models_analyzed": [
+    "GPT-5.4",
+    "Claude Opus 4.6",
+    "DeepSeek V3.2",
+    "Llama 4 Maverick",
+    "Grok 4.20",
+    "Mistral Large",
+    "Command A",
+    "Qwen 3.5 Plus"
+  ],
+  "models_excluded": [
+    "Gemini 3.1 Pro (98% refusal rate in German)"
+  ],
+  "n_models": 8,
+  "methodology": "4-language consistency = fraction of 48 votes where the model gave the same answer in all 4 languages. Pairwise McNemar tests (BH-corrected) for each language pair. Romansh analysis: Ja-rate shift and party alignment change.",
+  "results": {
+    "per_model": {
+      "openai/gpt-5.4": {
+        "display": "GPT-5.4",
+        "consistency_rate": 97.9,
+        "n_votes": 48,
+        "counts": {
+          "all_agree": 47,
+          "some_disagree": 1,
+          "total": 48
+        },
+        "language_pairs": {
+          "de-fr": {
+            "agreement_pct": 100.0,
+            "n": 48,
+            "discordant": {
+              "de_ja_fr_nein": 0,
+              "de_nein_fr_ja": 0
+            },
+            "mcnemar_p": 1.0
+          },
+          "de-it": {
+            "agreement_pct": 97.9,
+            "n": 48,
+            "discordant": {
+              "de_ja_it_nein": 1,
+              "de_nein_it_ja": 0
+            },
+            "mcnemar_p": 1.0
+          },
+          "de-rm": {
+            "agreement_pct": 97.9,
+            "n": 48,
+            "discordant": {
+              "de_ja_rm_nein": 1,
+              "de_nein_rm_ja": 0
+            },
+            "mcnemar_p": 1.0
+          },
+          "fr-it": {
+            "agreement_pct": 97.9,
+            "n": 48,
+            "discordant": {
+              "fr_ja_it_nein": 1,
+              "fr_nein_it_ja": 0
+            },
+            "mcnemar_p": 1.0
+          },
+          "fr-rm": {
+            "agreement_pct": 97.9,
+            "n": 48,
+            "discordant": {
+              "fr_ja_rm_nein": 1,
+              "fr_nein_rm_ja": 0
+            },
+            "mcnemar_p": 1.0
+          },
+          "it-rm": {
+            "agreement_pct": 100.0,
+            "n": 48,
+            "discordant": {
+              "it_ja_rm_nein": 0,
+              "it_nein_rm_ja": 0
+            },
+            "mcnemar_p": 1.0
+          }
+        }
+      },
+      "anthropic/claude-opus-4.6": {
+        "display": "Claude Opus 4.6",
+        "consistency_rate": 93.8,
+        "n_votes": 48,
+        "counts": {
+          "all_agree": 45,
+          "some_disagree": 3,
+          "total": 48
+        },
+        "language_pairs": {
+          "de-fr": {
+            "agreement_pct": 95.8,
+            "n": 48,
+            "discordant": {
+              "de_ja_fr_nein": 2,
+              "de_nein_fr_ja": 0
+            },
+            "mcnemar_p": 0.5
+          },
+          "de-it": {
+            "agreement_pct": 95.8,
+            "n": 48,
+            "discordant": {
+              "de_ja_it_nein": 1,
+              "de_nein_it_ja": 1
+            },
+            "mcnemar_p": 1.0
+          },
+          "de-rm": {
+            "agreement_pct": 97.9,
+            "n": 48,
+            "discordant": {
+              "de_ja_rm_nein": 1,
+              "de_nein_rm_ja": 0
+            },
+            "mcnemar_p": 1.0
+          },
+          "fr-it": {
+            "agreement_pct": 95.8,
+            "n": 48,
+            "discordant": {
+              "fr_ja_it_nein": 0,
+              "fr_nein_it_ja": 2
+            },
+            "mcnemar_p": 0.5
+          },
+          "fr-rm": {
+            "agreement_pct": 97.9,
+            "n": 48,
+            "discordant": {
+              "fr_ja_rm_nein": 0,
+              "fr_nein_rm_ja": 1
+            },
+            "mcnemar_p": 1.0
+          },
+          "it-rm": {
+            "agreement_pct": 93.8,
+            "n": 48,
+            "discordant": {
+              "it_ja_rm_nein": 2,
+              "it_nein_rm_ja": 1
+            },
+            "mcnemar_p": 1.0
+          }
+        }
+      },
+      "deepseek/deepseek-v3.2": {
+        "display": "DeepSeek V3.2",
+        "consistency_rate": 81.2,
+        "n_votes": 48,
+        "counts": {
+          "all_agree": 39,
+          "some_disagree": 9,
+          "total": 48
+        },
+        "language_pairs": {
+          "de-fr": {
+            "agreement_pct": 91.1,
+            "n": 45,
+            "discordant": {
+              "de_ja_fr_nein": 1,
+              "de_nein_fr_ja": 3
+            },
+            "mcnemar_p": 0.625
+          },
+          "de-it": {
+            "agreement_pct": 89.1,
+            "n": 46,
+            "discordant": {
+              "de_ja_it_nein": 2,
+              "de_nein_it_ja": 3
+            },
+            "mcnemar_p": 1.0
+          },
+          "de-rm": {
+            "agreement_pct": 87.0,
+            "n": 46,
+            "discordant": {
+              "de_ja_rm_nein": 2,
+              "de_nein_rm_ja": 4
+            },
+            "mcnemar_p": 0.6875
+          },
+          "fr-it": {
+            "agreement_pct": 93.6,
+            "n": 47,
+            "discordant": {
+              "fr_ja_it_nein": 2,
+              "fr_nein_it_ja": 1
+            },
+            "mcnemar_p": 1.0
+          },
+          "fr-rm": {
+            "agreement_pct": 91.5,
+            "n": 47,
+            "discordant": {
+              "fr_ja_rm_nein": 2,
+              "fr_nein_rm_ja": 2
+            },
+            "mcnemar_p": 1.0
+          },
+          "it-rm": {
+            "agreement_pct": 85.4,
+            "n": 48,
+            "discordant": {
+              "it_ja_rm_nein": 3,
+              "it_nein_rm_ja": 4
+            },
+            "mcnemar_p": 1.0
+          }
+        }
+      },
+      "meta-llama/llama-4-maverick": {
+        "display": "Llama 4 Maverick",
+        "consistency_rate": 58.3,
+        "n_votes": 48,
+        "counts": {
+          "all_agree": 28,
+          "some_disagree": 20,
+          "total": 48
+        },
+        "language_pairs": {
+          "de-fr": {
+            "agreement_pct": 85.4,
+            "n": 48,
+            "discordant": {
+              "de_ja_fr_nein": 6,
+              "de_nein_fr_ja": 1
+            },
+            "mcnemar_p": 0.125
+          },
+          "de-it": {
+            "agreement_pct": 70.8,
+            "n": 48,
+            "discordant": {
+              "de_ja_it_nein": 0,
+              "de_nein_it_ja": 14
+            },
+            "mcnemar_p": 0.0001
+          },
+          "de-rm": {
+            "agreement_pct": 81.2,
+            "n": 48,
+            "discordant": {
+              "de_ja_rm_nein": 6,
+              "de_nein_rm_ja": 3
+            },
+            "mcnemar_p": 0.5078
+          },
+          "fr-it": {
+            "agreement_pct": 60.4,
+            "n": 48,
+            "discordant": {
+              "fr_ja_it_nein": 0,
+              "fr_nein_it_ja": 19
+            },
+            "mcnemar_p": 0.0
+          },
+          "fr-rm": {
+            "agreement_pct": 95.8,
+            "n": 48,
+            "discordant": {
+              "fr_ja_rm_nein": 0,
+              "fr_nein_rm_ja": 2
+            },
+            "mcnemar_p": 0.5
+          },
+          "it-rm": {
+            "agreement_pct": 64.6,
+            "n": 48,
+            "discordant": {
+              "it_ja_rm_nein": 17,
+              "it_nein_rm_ja": 0
+            },
+            "mcnemar_p": 0.0
+          }
+        }
+      },
+      "x-ai/grok-4.20": {
+        "display": "Grok 4.20",
+        "consistency_rate": 83.3,
+        "n_votes": 48,
+        "counts": {
+          "all_agree": 40,
+          "some_disagree": 8,
+          "total": 48
+        },
+        "language_pairs": {
+          "de-fr": {
+            "agreement_pct": 91.7,
+            "n": 24,
+            "discordant": {
+              "de_ja_fr_nein": 0,
+              "de_nein_fr_ja": 2
+            },
+            "mcnemar_p": 0.5
+          },
+          "de-it": {
+            "agreement_pct": 95.8,
+            "n": 48,
+            "discordant": {
+              "de_ja_it_nein": 0,
+              "de_nein_it_ja": 2
+            },
+            "mcnemar_p": 0.5
+          },
+          "de-rm": {
+            "agreement_pct": 89.4,
+            "n": 47,
+            "discordant": {
+              "de_ja_rm_nein": 1,
+              "de_nein_rm_ja": 4
+            },
+            "mcnemar_p": 0.375
+          },
+          "fr-it": {
+            "agreement_pct": 91.7,
+            "n": 24,
+            "discordant": {
+              "fr_ja_it_nein": 2,
+              "fr_nein_it_ja": 0
+            },
+            "mcnemar_p": 0.5
+          },
+          "fr-rm": {
+            "agreement_pct": 91.7,
+            "n": 24,
+            "discordant": {
+              "fr_ja_rm_nein": 2,
+              "fr_nein_rm_ja": 0
+            },
+            "mcnemar_p": 0.5
+          },
+          "it-rm": {
+            "agreement_pct": 85.1,
+            "n": 47,
+            "discordant": {
+              "it_ja_rm_nein": 3,
+              "it_nein_rm_ja": 4
+            },
+            "mcnemar_p": 1.0
+          }
+        }
+      },
+      "mistralai/mistral-large-2512": {
+        "display": "Mistral Large",
+        "consistency_rate": 50.0,
+        "n_votes": 48,
+        "counts": {
+          "all_agree": 24,
+          "some_disagree": 24,
+          "total": 48
+        },
+        "language_pairs": {
+          "de-fr": {
+            "agreement_pct": 85.4,
+            "n": 48,
+            "discordant": {
+              "de_ja_fr_nein": 3,
+              "de_nein_fr_ja": 4
+            },
+            "mcnemar_p": 1.0
+          },
+          "de-it": {
+            "agreement_pct": 79.2,
+            "n": 48,
+            "discordant": {
+              "de_ja_it_nein": 0,
+              "de_nein_it_ja": 10
+            },
+            "mcnemar_p": 0.002
+          },
+          "de-rm": {
+            "agreement_pct": 32.1,
+            "n": 28,
+            "discordant": {
+              "de_ja_rm_nein": 1,
+              "de_nein_rm_ja": 18
+            },
+            "mcnemar_p": 0.0001
+          },
+          "fr-it": {
+            "agreement_pct": 81.2,
+            "n": 48,
+            "discordant": {
+              "fr_ja_it_nein": 0,
+              "fr_nein_it_ja": 9
+            },
+            "mcnemar_p": 0.0039
+          },
+          "fr-rm": {
+            "agreement_pct": 28.6,
+            "n": 28,
+            "discordant": {
+              "fr_ja_rm_nein": 1,
+              "fr_nein_rm_ja": 19
+            },
+            "mcnemar_p": 0.0
+          },
+          "it-rm": {
+            "agreement_pct": 60.7,
+            "n": 28,
+            "discordant": {
+              "it_ja_rm_nein": 1,
+              "it_nein_rm_ja": 10
+            },
+            "mcnemar_p": 0.0117
+          }
+        }
+      },
+      "cohere/command-a": {
+        "display": "Command A",
+        "consistency_rate": 77.1,
+        "n_votes": 48,
+        "counts": {
+          "all_agree": 37,
+          "some_disagree": 11,
+          "total": 48
+        },
+        "language_pairs": {
+          "de-fr": {
+            "agreement_pct": 91.7,
+            "n": 48,
+            "discordant": {
+              "de_ja_fr_nein": 2,
+              "de_nein_fr_ja": 2
+            },
+            "mcnemar_p": 1.0
+          },
+          "de-it": {
+            "agreement_pct": 85.4,
+            "n": 48,
+            "discordant": {
+              "de_ja_it_nein": 6,
+              "de_nein_it_ja": 1
+            },
+            "mcnemar_p": 0.125
+          },
+          "de-rm": {
+            "agreement_pct": 87.5,
+            "n": 48,
+            "discordant": {
+              "de_ja_rm_nein": 2,
+              "de_nein_rm_ja": 4
+            },
+            "mcnemar_p": 0.6875
+          },
+          "fr-it": {
+            "agreement_pct": 85.4,
+            "n": 48,
+            "discordant": {
+              "fr_ja_it_nein": 6,
+              "fr_nein_it_ja": 1
+            },
+            "mcnemar_p": 0.125
+          },
+          "fr-rm": {
+            "agreement_pct": 91.7,
+            "n": 48,
+            "discordant": {
+              "fr_ja_rm_nein": 1,
+              "fr_nein_rm_ja": 3
+            },
+            "mcnemar_p": 0.625
+          },
+          "it-rm": {
+            "agreement_pct": 81.2,
+            "n": 48,
+            "discordant": {
+              "it_ja_rm_nein": 1,
+              "it_nein_rm_ja": 8
+            },
+            "mcnemar_p": 0.0391
+          }
+        }
+      },
+      "qwen/qwen3.5-plus-02-15": {
+        "display": "Qwen 3.5 Plus",
+        "consistency_rate": 83.3,
+        "n_votes": 48,
+        "counts": {
+          "all_agree": 40,
+          "some_disagree": 8,
+          "total": 48
+        },
+        "language_pairs": {
+          "de-fr": {
+            "agreement_pct": 93.3,
+            "n": 45,
+            "discordant": {
+              "de_ja_fr_nein": 0,
+              "de_nein_fr_ja": 3
+            },
+            "mcnemar_p": 0.25
+          },
+          "de-it": {
+            "agreement_pct": 92.7,
+            "n": 41,
+            "discordant": {
+              "de_ja_it_nein": 1,
+              "de_nein_it_ja": 2
+            },
+            "mcnemar_p": 1.0
+          },
+          "de-rm": {
+            "agreement_pct": 89.4,
+            "n": 47,
+            "discordant": {
+              "de_ja_rm_nein": 2,
+              "de_nein_rm_ja": 3
+            },
+            "mcnemar_p": 1.0
+          },
+          "fr-it": {
+            "agreement_pct": 94.9,
+            "n": 39,
+            "discordant": {
+              "fr_ja_it_nein": 1,
+              "fr_nein_it_ja": 1
+            },
+            "mcnemar_p": 1.0
+          },
+          "fr-rm": {
+            "agreement_pct": 89.1,
+            "n": 46,
+            "discordant": {
+              "fr_ja_rm_nein": 4,
+              "fr_nein_rm_ja": 1
+            },
+            "mcnemar_p": 0.375
+          },
+          "it-rm": {
+            "agreement_pct": 97.6,
+            "n": 41,
+            "discordant": {
+              "it_ja_rm_nein": 1,
+              "it_nein_rm_ja": 0
+            },
+            "mcnemar_p": 1.0
+          }
+        }
+      }
+    },
+    "romansh": {
+      "per_model": {
+        "openai/gpt-5.4": {
+          "display": "GPT-5.4",
+          "pairs": {
+            "rm_de": {
+              "agreement_pct": 97.9,
+              "both_answered": 48,
+              "rm_refusal_rate": 0.0,
+              "de_refusal_rate": 0.0
+            },
+            "rm_fr": {
+              "agreement_pct": 97.9,
+              "both_answered": 48,
+              "rm_refusal_rate": 0.0,
+              "fr_refusal_rate": 0.0
+            },
+            "rm_it": {
+              "agreement_pct": 100.0,
+              "both_answered": 48,
+              "rm_refusal_rate": 0.0,
+              "it_refusal_rate": 0.0
+            },
+            "de_fr": {
+              "agreement_pct": 100.0,
+              "both_answered": 48,
+              "de_refusal_rate": 0.0,
+              "fr_refusal_rate": 0.0
+            }
+          }
+        },
+        "anthropic/claude-opus-4.6": {
+          "display": "Claude Opus 4.6",
+          "pairs": {
+            "rm_de": {
+              "agreement_pct": 97.9,
+              "both_answered": 48,
+              "rm_refusal_rate": 0.0,
+              "de_refusal_rate": 0.0
+            },
+            "rm_fr": {
+              "agreement_pct": 97.9,
+              "both_answered": 48,
+              "rm_refusal_rate": 0.0,
+              "fr_refusal_rate": 0.0
+            },
+            "rm_it": {
+              "agreement_pct": 93.8,
+              "both_answered": 48,
+              "rm_refusal_rate": 0.0,
+              "it_refusal_rate": 0.0
+            },
+            "de_fr": {
+              "agreement_pct": 95.8,
+              "both_answered": 48,
+              "de_refusal_rate": 0.0,
+              "fr_refusal_rate": 0.0
+            }
+          }
+        },
+        "deepseek/deepseek-v3.2": {
+          "display": "DeepSeek V3.2",
+          "pairs": {
+            "rm_de": {
+              "agreement_pct": 87.0,
+              "both_answered": 46,
+              "rm_refusal_rate": 0.0,
+              "de_refusal_rate": 4.2
+            },
+            "rm_fr": {
+              "agreement_pct": 91.5,
+              "both_answered": 47,
+              "rm_refusal_rate": 0.0,
+              "fr_refusal_rate": 2.1
+            },
+            "rm_it": {
+              "agreement_pct": 85.4,
+              "both_answered": 48,
+              "rm_refusal_rate": 0.0,
+              "it_refusal_rate": 0.0
+            },
+            "de_fr": {
+              "agreement_pct": 91.1,
+              "both_answered": 45,
+              "de_refusal_rate": 4.2,
+              "fr_refusal_rate": 2.1
+            }
+          }
+        },
+        "meta-llama/llama-4-maverick": {
+          "display": "Llama 4 Maverick",
+          "pairs": {
+            "rm_de": {
+              "agreement_pct": 81.2,
+              "both_answered": 48,
+              "rm_refusal_rate": 0.0,
+              "de_refusal_rate": 0.0
+            },
+            "rm_fr": {
+              "agreement_pct": 95.8,
+              "both_answered": 48,
+              "rm_refusal_rate": 0.0,
+              "fr_refusal_rate": 0.0
+            },
+            "rm_it": {
+              "agreement_pct": 64.6,
+              "both_answered": 48,
+              "rm_refusal_rate": 0.0,
+              "it_refusal_rate": 0.0
+            },
+            "de_fr": {
+              "agreement_pct": 85.4,
+              "both_answered": 48,
+              "de_refusal_rate": 0.0,
+              "fr_refusal_rate": 0.0
+            }
+          }
+        },
+        "x-ai/grok-4.20": {
+          "display": "Grok 4.20",
+          "pairs": {
+            "rm_de": {
+              "agreement_pct": 89.4,
+              "both_answered": 47,
+              "rm_refusal_rate": 2.1,
+              "de_refusal_rate": 0.0
+            },
+            "rm_fr": {
+              "agreement_pct": 91.7,
+              "both_answered": 24,
+              "rm_refusal_rate": 2.1,
+              "fr_refusal_rate": 50.0
+            },
+            "rm_it": {
+              "agreement_pct": 85.1,
+              "both_answered": 47,
+              "rm_refusal_rate": 2.1,
+              "it_refusal_rate": 0.0
+            },
+            "de_fr": {
+              "agreement_pct": 91.7,
+              "both_answered": 24,
+              "de_refusal_rate": 0.0,
+              "fr_refusal_rate": 50.0
+            }
+          }
+        },
+        "mistralai/mistral-large-2512": {
+          "display": "Mistral Large",
+          "pairs": {
+            "rm_de": {
+              "agreement_pct": 32.1,
+              "both_answered": 28,
+              "rm_refusal_rate": 41.7,
+              "de_refusal_rate": 0.0
+            },
+            "rm_fr": {
+              "agreement_pct": 28.6,
+              "both_answered": 28,
+              "rm_refusal_rate": 41.7,
+              "fr_refusal_rate": 0.0
+            },
+            "rm_it": {
+              "agreement_pct": 60.7,
+              "both_answered": 28,
+              "rm_refusal_rate": 41.7,
+              "it_refusal_rate": 0.0
+            },
+            "de_fr": {
+              "agreement_pct": 85.4,
+              "both_answered": 48,
+              "de_refusal_rate": 0.0,
+              "fr_refusal_rate": 0.0
+            }
+          }
+        },
+        "cohere/command-a": {
+          "display": "Command A",
+          "pairs": {
+            "rm_de": {
+              "agreement_pct": 87.5,
+              "both_answered": 48,
+              "rm_refusal_rate": 0.0,
+              "de_refusal_rate": 0.0
+            },
+            "rm_fr": {
+              "agreement_pct": 91.7,
+              "both_answered": 48,
+              "rm_refusal_rate": 0.0,
+              "fr_refusal_rate": 0.0
+            },
+            "rm_it": {
+              "agreement_pct": 81.2,
+              "both_answered": 48,
+              "rm_refusal_rate": 0.0,
+              "it_refusal_rate": 0.0
+            },
+            "de_fr": {
+              "agreement_pct": 91.7,
+              "both_answered": 48,
+              "de_refusal_rate": 0.0,
+              "fr_refusal_rate": 0.0
+            }
+          }
+        },
+        "qwen/qwen3.5-plus-02-15": {
+          "display": "Qwen 3.5 Plus",
+          "pairs": {
+            "rm_de": {
+              "agreement_pct": 89.4,
+              "both_answered": 47,
+              "rm_refusal_rate": 0.0,
+              "de_refusal_rate": 2.1
+            },
+            "rm_fr": {
+              "agreement_pct": 89.1,
+              "both_answered": 46,
+              "rm_refusal_rate": 0.0,
+              "fr_refusal_rate": 4.2
+            },
+            "rm_it": {
+              "agreement_pct": 97.6,
+              "both_answered": 41,
+              "rm_refusal_rate": 0.0,
+              "it_refusal_rate": 14.6
+            },
+            "de_fr": {
+              "agreement_pct": 93.3,
+              "both_answered": 45,
+              "de_refusal_rate": 2.1,
+              "fr_refusal_rate": 4.2
+            }
+          }
+        }
+      },
+      "aggregate": {
+        "rm_de_agreement": 82.8,
+        "rm_fr_agreement": 85.5,
+        "rm_it_agreement": 83.6,
+        "de_fr_agreement": 91.8
+      }
+    }
+  }
+}

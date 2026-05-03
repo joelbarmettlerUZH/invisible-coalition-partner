@@ -1,0 +1,333 @@
+{
+  "metadata": {
+    "vote_ids": [
+      6380,
+      6390,
+      6400,
+      6410,
+      6420,
+      6430,
+      6440,
+      6450,
+      6460,
+      6470,
+      6480,
+      6490,
+      6500,
+      6510,
+      6520,
+      6530,
+      6540,
+      6550,
+      6560,
+      6570,
+      6580,
+      6590,
+      6600,
+      6610,
+      6620,
+      6630,
+      6640,
+      6650,
+      6660,
+      6670,
+      6680,
+      6690,
+      6700,
+      6710,
+      6720,
+      6730,
+      6740,
+      6750,
+      6760,
+      6770,
+      6780,
+      6790,
+      6800,
+      6810,
+      6821,
+      6830,
+      6840,
+      6850
+    ],
+    "vote_labels": [
+      "2021-03-07: Volksinitiative \u00abJa zum Verh\u00fcllungsverbot\u00bb",
+      "2021-03-07: Bundesgesetz \u00fcber elektronische Identifizierungsdienste (E-I",
+      "2021-03-07: Wirtschaftspartnerschaftsabkommen mit Indonesien",
+      "2021-06-13: Volksinitiative\nf\u00fcr sauberes Trinkwasser\nund gesunde Nahrung",
+      "2021-06-13: Volksinitiative\n\u00abF\u00fcr eine Schweiz ohne\nsynthetische Pestizid",
+      "2021-06-13: Covid-19-Gesetz",
+      "2021-06-13: CO2-Gesetz",
+      "2021-06-13: Bundesgesetz \u00fcber polizeiliche Massnahmen zur Bek\u00e4mpfung\nvon",
+      "2021-09-26: Volksinitiative \u00abL\u00f6hne entlasten, Kapital gerecht besteuern\u00bb",
+      "2021-09-26: Ehe f\u00fcr alle",
+      "2021-11-28: Pflegeinitiative",
+      "2021-11-28: Justiz-Initiative",
+      "2021-11-28: \u00c4nderung vom 19. M\u00e4rz 2021\ndes Covid-19-Gesetzes",
+      "2022-02-13: Volksinitiative Tier- und Menschenversuchsverbot",
+      "2022-02-13: Volksinitiative \u00abJa zum Schutz der Kinder und Jugendlichen v",
+      "2022-02-13: \u00c4nderung des Bundesgesetzes \u00fcber die Stempelabgaben",
+      "2022-02-13: Bundesgesetz \u00fcber ein Massnahmenpaket zugunsten der Medien",
+      "2022-05-15: \u00c4nderung des Filmgesetzes",
+      "2022-05-15: \u00c4nderung des Transplantationsgesetzes",
+      "2022-05-15: \u00dcbernahme der EU-Verordnung \u00fcber die Europ\u00e4ische Grenz- und ",
+      "2022-09-25: Massentierhaltungsinitiative",
+      "2022-09-25: Zusatzfinanzierung der AHV durch eine Erh\u00f6hung der Mehrwerts",
+      "2022-09-25: \u00c4nderung des Bundesgesetzes \u00fcber die Alters- und Hinterlasse",
+      "2022-09-25: \u00c4nderung des Bundesgesetzes \u00fcber die Verrechnungssteuer",
+      "2023-06-18: OECD/G20-Mindestbesteuerung",
+      "2023-06-18: Klima-Gesetz",
+      "2023-06-18: COVID-19-Gesetz",
+      "2024-03-03: Initiative f\u00fcr eine 13. AHV-Rente",
+      "2024-03-03: Renteninitiative",
+      "2024-06-09: Pr\u00e4mien-Entlastungs-Initiative",
+      "2024-06-09: Kostenbremse-Initiative",
+      "2024-06-09: Volksinitiative \u00abF\u00fcr Freiheit und k\u00f6rperliche Unversehrtheit",
+      "2024-06-09: Bundesgesetz vom 29. September 2023 \u00fcber eine sichere Stromv",
+      "2024-09-22: Biodiversit\u00e4tsinitiative",
+      "2024-09-22: Reform der beruflichen\nVorsorge",
+      "2024-11-24: Bundesbeschluss \u00fcber den Ausbauschritt 2023\nf\u00fcr die National",
+      "2024-11-24: \u00c4nderung des Obligationenrechts (Mietrecht: Untermiete)",
+      "2024-11-24: \u00c4nderung des Obligationenrechts (Mietrecht: K\u00fcndigung\nwegen ",
+      "2024-11-24: \u00c4nderung des Bundesgesetzes \u00fcber die Krankenversicherung\n(KV",
+      "2025-02-09: Umweltverantwortungsinitiative",
+      "2025-09-28: Liegenschaftssteuern auf Zweitliegenschaften",
+      "2025-09-28: E-ID-Gesetz",
+      "2025-11-30: Service-citoyen-Initiative",
+      "2025-11-30: Initiative f\u00fcr eine Zukunft",
+      "2026-03-08: Initiative \u00abBargeld ist Freiheit\u00bb ",
+      "2026-03-08: SRG-Initiative",
+      "2026-03-08: Klimafonds-Initiative",
+      "2026-03-08: Bundesgesetz \u00fcber die Individualbesteuerung"
+    ],
+    "parties": [
+      "SP",
+      "Gr\u00fcne",
+      "GLP",
+      "Die Mitte",
+      "FDP",
+      "SVP"
+    ],
+    "pca": {
+      "n_components": 1,
+      "mean": [
+        50.0,
+        41.666666666666664,
+        41.666666666666664,
+        50.0,
+        41.666666666666664,
+        91.66666666666667,
+        83.33333333333333,
+        50.0,
+        33.333333333333336,
+        83.33333333333333,
+        58.333333333333336,
+        0.0,
+        83.33333333333333,
+        0.0,
+        58.333333333333336,
+        66.66666666666667,
+        66.66666666666667,
+        66.66666666666667,
+        83.33333333333333,
+        66.66666666666667,
+        50.0,
+        66.66666666666667,
+        66.66666666666667,
+        66.66666666666667,
+        75.0,
+        83.33333333333333,
+        83.33333333333333,
+        33.333333333333336,
+        33.333333333333336,
+        33.333333333333336,
+        16.666666666666668,
+        16.666666666666668,
+        83.33333333333333,
+        50.0,
+        66.66666666666667,
+        50.0,
+        50.0,
+        66.66666666666667,
+        75.0,
+        33.333333333333336,
+        58.333333333333336,
+        83.33333333333333,
+        16.666666666666668,
+        33.333333333333336,
+        16.666666666666668,
+        16.666666666666668,
+        33.333333333333336,
+        66.66666666666667
+      ],
+      "components": [
+        [
+          -0.07556775816424438,
+          -0.005251377756453565,
+          0.021137750412690507,
+          -0.1905552280347749,
+          -0.18673174483786864,
+          -0.04501311813046697,
+          -0.09002623626093395,
+          0.19055522803477493,
+          -0.18290826164096252,
+          -0.09002623626093395,
+          -0.16888695257355216,
+          0.0,
+          -0.09002623626093395,
+          0.0,
+          -0.16888695257355216,
+          0.18290826164096252,
+          -0.14721867711232944,
+          -0.14721867711232944,
+          -0.09002623626093395,
+          0.18290826164096252,
+          -0.19055522803477493,
+          0.18290826164096252,
+          0.18290826164096252,
+          0.18290826164096252,
+          0.13842566855902777,
+          -0.09002623626093395,
+          -0.09002623626093395,
+          -0.18290826164096252,
+          0.14721867711232942,
+          -0.18290826164096252,
+          0.0433365509224455,
+          0.09002623626093394,
+          -0.09002623626093395,
+          -0.19055522803477493,
+          0.18290826164096252,
+          0.19055522803477493,
+          0.19055522803477493,
+          0.18290826164096252,
+          0.13842566855902777,
+          -0.18290826164096252,
+          0.18673174483786872,
+          -0.09002623626093395,
+          -0.0076469663938124035,
+          -0.18290826164096252,
+          0.09002623626093394,
+          0.09002623626093394,
+          -0.18290826164096252,
+          -0.13336278718337946
+        ]
+      ],
+      "explained_variance": [
+        66550.56471214842
+      ],
+      "explained_variance_ratio": [
+        0.6498020964571039
+      ]
+    }
+  },
+  "party_points": [
+    {
+      "name": "SP",
+      "color": "#E8462A",
+      "coords": [
+        -312.5982361898262
+      ]
+    },
+    {
+      "name": "Gr\u00fcne",
+      "color": "#84B547",
+      "coords": [
+        -296.0341689463458
+      ]
+    },
+    {
+      "name": "GLP",
+      "color": "#C4C43D",
+      "coords": [
+        -25.445496592151688
+      ]
+    },
+    {
+      "name": "Die Mitte",
+      "color": "#D6862B",
+      "coords": [
+        144.20359682827626
+      ]
+    },
+    {
+      "name": "FDP",
+      "color": "#2E6DA4",
+      "coords": [
+        190.3094617963255
+      ]
+    },
+    {
+      "name": "SVP",
+      "color": "#4B8A3E",
+      "coords": [
+        299.5648431037221
+      ]
+    }
+  ],
+  "model_points": [
+    {
+      "name": "openai/gpt-5.4",
+      "display": "GPT-5.4",
+      "coords": [
+        19.08141756549395
+      ],
+      "valid_answers": 48
+    },
+    {
+      "name": "anthropic/claude-opus-4.6",
+      "display": "Claude Opus 4.6",
+      "coords": [
+        -9.741425503458178
+      ],
+      "valid_answers": 48
+    },
+    {
+      "name": "deepseek/deepseek-v3.2",
+      "display": "DeepSeek V3.2",
+      "coords": [
+        104.33876092281696
+      ],
+      "valid_answers": 46
+    },
+    {
+      "name": "meta-llama/llama-4-maverick",
+      "display": "Llama 4 Maverick",
+      "coords": [
+        61.43536648367926
+      ],
+      "valid_answers": 48
+    },
+    {
+      "name": "x-ai/grok-4.20",
+      "display": "Grok 4.20",
+      "coords": [
+        28.665945953607178
+      ],
+      "valid_answers": 48
+    },
+    {
+      "name": "mistralai/mistral-large-2512",
+      "display": "Mistral Large",
+      "coords": [
+        7.055229657549925
+      ],
+      "valid_answers": 48
+    },
+    {
+      "name": "cohere/command-a",
+      "display": "Command A",
+      "coords": [
+        91.91542640704156
+      ],
+      "valid_answers": 48
+    },
+    {
+      "name": "qwen/qwen3.5-plus-02-15",
+      "display": "Qwen 3.5 Plus",
+      "coords": [
+        47.20814358385138
+      ],
+      "valid_answers": 47
+    }
+  ]
+}

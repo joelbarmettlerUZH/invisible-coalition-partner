@@ -1,0 +1,2792 @@
+{
+  "description": "Party-model agreement scores computed from squared differences on the 4-point Smartvote scale.",
+  "generated_by": "i_smartvote_statistical_analysis.py",
+  "generated_at": "2026-04-04T21:28:10.924239",
+  "models_analyzed": [
+    "Claude 3 Haiku",
+    "Claude 3.5 Haiku",
+    "Claude 3.5 Sonnet",
+    "Claude 3.7 Sonnet",
+    "Claude Opus 4",
+    "Claude Opus 4.6",
+    "Claude Sonnet 4",
+    "Claude Sonnet 4.5",
+    "Claude Sonnet 4.6",
+    "Command A",
+    "Command R+",
+    "DeepSeek R1",
+    "DeepSeek R1 0528",
+    "DeepSeek v3",
+    "DeepSeek v3.2",
+    "GLM-5",
+    "GPT-3.5 Turbo",
+    "GPT-4 Turbo",
+    "GPT-4.1",
+    "GPT-4o",
+    "GPT-4o Mini",
+    "GPT-5",
+    "GPT-5.4",
+    "GPT-5.4 Mini",
+    "Gemini 2 Flash",
+    "Grok 2",
+    "Grok 3",
+    "Grok 3 Beta",
+    "Grok 3 Mini",
+    "Grok 4",
+    "Grok 4 Fast",
+    "Grok 4.1 Fast",
+    "Grok 4.20",
+    "Hermes 3 Llama 3.1 405B",
+    "Hermes 4 405B",
+    "Jamba",
+    "Kimi K2.5",
+    "Llama 3.1 405B",
+    "Llama 4 Maverick",
+    "MiMo v2 Pro",
+    "MiniMax M2.7",
+    "Minimax",
+    "Mistral 7B v0.1",
+    "Mistral Large",
+    "Mistral Large (Dec 2025)",
+    "Mistral Large (Nov 2024)",
+    "Mistral Medium 3",
+    "Mistral Nemo",
+    "Mistral Small 3 (Jan 2025)",
+    "Mistral Small 4",
+    "Mixtral 8x22b",
+    "Nemotron 3 Super",
+    "Nova Premier",
+    "Nova Pro",
+    "Phi-4",
+    "Qwen 2.5 72B",
+    "Qwen 3 Max Thinking",
+    "Qwen 3.5 397B",
+    "Qwen 3.5 Plus",
+    "Qwen 3.6 Plus",
+    "Seed 1.6",
+    "Yi Large",
+    "o1",
+    "o1-mini",
+    "o3-mini",
+    "o4-mini"
+  ],
+  "models_excluded": [
+    "x-ai/grok-4.20",
+    "google/gemini-3-flash-preview",
+    "openai/o1-preview",
+    "qwen/qvq-72b-preview",
+    "google/gemini-3.1-pro-preview"
+  ],
+  "n_models": 66,
+  "results": {
+    "batch": null,
+    "models": {
+      "openai/gpt-3.5-turbo": {
+        "display": "GPT-3.5 Turbo",
+        "agreements": {
+          "SP": {
+            "agreement": 85.11621041135784,
+            "ci_lower": 84.60702211503457,
+            "ci_upper": 85.62768975245723,
+            "n_politicians": 41
+          },
+          "Grüne": {
+            "agreement": 84.56265813788202,
+            "ci_lower": 84.06388006396588,
+            "ci_upper": 85.09736105188344,
+            "n_politicians": 21
+          },
+          "GLP": {
+            "agreement": 86.27585074626866,
+            "ci_lower": 85.27799925373134,
+            "ci_upper": 87.55002537313433,
+            "n_politicians": 10
+          },
+          "Die Mitte": {
+            "agreement": 78.53589294904786,
+            "ci_lower": 77.00297864127639,
+            "ci_upper": 80.09357089552238,
+            "n_politicians": 29
+          },
+          "FDP": {
+            "agreement": 74.50029850746269,
+            "ci_lower": 72.46313343283582,
+            "ci_upper": 76.56118850746267,
+            "n_politicians": 25
+          },
+          "SVP": {
+            "agreement": 66.97440041173442,
+            "ci_lower": 65.82132745753988,
+            "ci_upper": 68.14759302624807,
+            "n_politicians": 58
+          }
+        }
+      },
+      "mistralai/mistral-7b-instruct-v0.1": {
+        "display": "Mistral 7B v0.1",
+        "agreements": {
+          "SP": {
+            "agreement": 75.02429195485985,
+            "ci_lower": 74.18170203858756,
+            "ci_upper": 75.88482899526755,
+            "n_politicians": 41
+          },
+          "Grüne": {
+            "agreement": 75.52712153518124,
+            "ci_lower": 74.8073987206823,
+            "ci_upper": 76.33748631840795,
+            "n_politicians": 21
+          },
+          "GLP": {
+            "agreement": 67.61614925373134,
+            "ci_lower": 66.00125074626867,
+            "ci_upper": 69.38132873134329,
+            "n_politicians": 10
+          },
+          "Die Mitte": {
+            "agreement": 75.67536798764797,
+            "ci_lower": 73.99327689140505,
+            "ci_upper": 77.26018450849202,
+            "n_politicians": 29
+          },
+          "FDP": {
+            "agreement": 62.86089552238807,
+            "ci_lower": 60.56929597014926,
+            "ci_upper": 65.36889880597015,
+            "n_politicians": 25
+          },
+          "SVP": {
+            "agreement": 59.62931549150798,
+            "ci_lower": 58.33730500514668,
+            "ci_upper": 60.91667331446218,
+            "n_politicians": 58
+          }
+        }
+      },
+      "anthropic/claude-3-haiku": {
+        "display": "Claude 3 Haiku",
+        "agreements": {
+          "SP": {
+            "agreement": 86.54340371314161,
+            "ci_lower": 86.07797096832908,
+            "ci_upper": 87.0427911357845,
+            "n_politicians": 41
+          },
+          "Grüne": {
+            "agreement": 86.61098791755508,
+            "ci_lower": 86.11310998578536,
+            "ci_upper": 87.1571867448472,
+            "n_politicians": 21
+          },
+          "GLP": {
+            "agreement": 84.61689552238806,
+            "ci_lower": 83.80255223880597,
+            "ci_upper": 85.51093880597014,
+            "n_politicians": 10
+          },
+          "Die Mitte": {
+            "agreement": 79.37402985074627,
+            "ci_lower": 77.81412853834277,
+            "ci_upper": 80.88267910447762,
+            "n_politicians": 29
+          },
+          "FDP": {
+            "agreement": 71.54179104477612,
+            "ci_lower": 69.39320835820895,
+            "ci_upper": 73.85076134328358,
+            "n_politicians": 25
+          },
+          "SVP": {
+            "agreement": 65.59534740092641,
+            "ci_lower": 64.37325990735974,
+            "ci_upper": 66.83865452907875,
+            "n_politicians": 58
+          }
+        }
+      },
+      "cohere/command-r-plus": {
+        "display": "Command R+",
+        "agreements": {
+          "SP": {
+            "agreement": 85.307510010921,
+            "ci_lower": 84.81422151437933,
+            "ci_upper": 85.78978440116491,
+            "n_politicians": 41
+          },
+          "Grüne": {
+            "agreement": 83.94467661691543,
+            "ci_lower": 83.33937224591328,
+            "ci_upper": 84.5660090618337,
+            "n_politicians": 21
+          },
+          "GLP": {
+            "agreement": 87.3325671641791,
+            "ci_lower": 86.44823880597015,
+            "ci_upper": 88.42201529850746,
+            "n_politicians": 10
+          },
+          "Die Mitte": {
+            "agreement": 77.48545548121461,
+            "ci_lower": 75.72372645393722,
+            "ci_upper": 79.23178795676789,
+            "n_politicians": 29
+          },
+          "FDP": {
+            "agreement": 72.31701492537313,
+            "ci_lower": 70.14303268656717,
+            "ci_upper": 74.50611611940299,
+            "n_politicians": 25
+          },
+          "SVP": {
+            "agreement": 62.621852804940815,
+            "ci_lower": 61.387295355120955,
+            "ci_upper": 63.89235434894493,
+            "n_politicians": 58
+          }
+        }
+      },
+      "openai/gpt-4-turbo": {
+        "display": "GPT-4 Turbo",
+        "agreements": {
+          "SP": {
+            "agreement": 90.17008736803787,
+            "ci_lower": 89.8087947761194,
+            "ci_upper": 90.53728021477977,
+            "n_politicians": 41
+          },
+          "Grüne": {
+            "agreement": 90.36436389481166,
+            "ci_lower": 89.96217892679459,
+            "ci_upper": 90.78368461265103,
+            "n_politicians": 21
+          },
+          "GLP": {
+            "agreement": 88.63555223880597,
+            "ci_lower": 87.3461473880597,
+            "ci_upper": 89.97042313432836,
+            "n_politicians": 10
+          },
+          "Die Mitte": {
+            "agreement": 76.12158517756048,
+            "ci_lower": 74.038368502316,
+            "ci_upper": 78.22410846628924,
+            "n_politicians": 29
+          },
+          "FDP": {
+            "agreement": 68.58328358208956,
+            "ci_lower": 66.33416223880596,
+            "ci_upper": 71.03086746268656,
+            "n_politicians": 25
+          },
+          "SVP": {
+            "agreement": 59.56047864127638,
+            "ci_lower": 58.32532134585691,
+            "ci_upper": 60.826113612969635,
+            "n_politicians": 58
+          }
+        }
+      },
+      "mistralai/mixtral-8x22b-instruct": {
+        "display": "Mixtral 8x22b",
+        "agreements": {
+          "SP": {
+            "agreement": 86.75436112122316,
+            "ci_lower": 86.28037986894793,
+            "ci_upper": 87.2378713141609,
+            "n_politicians": 41
+          },
+          "Grüne": {
+            "agreement": 86.39279317697228,
+            "ci_lower": 85.88630081734186,
+            "ci_upper": 86.94408493248045,
+            "n_politicians": 21
+          },
+          "GLP": {
+            "agreement": 86.08928358208956,
+            "ci_lower": 84.85105335820894,
+            "ci_upper": 87.42369925373134,
+            "n_politicians": 10
+          },
+          "Die Mitte": {
+            "agreement": 78.25282552753474,
+            "ci_lower": 76.60472130725682,
+            "ci_upper": 79.85276917138445,
+            "n_politicians": 29
+          },
+          "FDP": {
+            "agreement": 71.96298507462686,
+            "ci_lower": 69.84719134328358,
+            "ci_upper": 74.20900298507462,
+            "n_politicians": 25
+          },
+          "SVP": {
+            "agreement": 65.48829644879052,
+            "ci_lower": 64.32847297992795,
+            "ci_upper": 66.627105378281,
+            "n_politicians": 58
+          }
+        }
+      },
+      "01-ai/yi-large": {
+        "display": "Yi Large",
+        "agreements": {
+          "SP": {
+            "agreement": 86.97733163451038,
+            "ci_lower": 86.54216518019659,
+            "ci_upper": 87.4180551510739,
+            "n_politicians": 41
+          },
+          "Grüne": {
+            "agreement": 85.73536602700781,
+            "ci_lower": 85.20416897654584,
+            "ci_upper": 86.30998880597015,
+            "n_politicians": 21
+          },
+          "GLP": {
+            "agreement": 87.39525373134327,
+            "ci_lower": 86.5088828358209,
+            "ci_upper": 88.29382985074626,
+            "n_politicians": 10
+          },
+          "Die Mitte": {
+            "agreement": 79.30146165723109,
+            "ci_lower": 77.7583051981472,
+            "ci_upper": 80.8458000514668,
+            "n_politicians": 29
+          },
+          "FDP": {
+            "agreement": 73.08985074626865,
+            "ci_lower": 70.96657164179105,
+            "ci_upper": 75.34919820895523,
+            "n_politicians": 25
+          },
+          "SVP": {
+            "agreement": 65.56227997941329,
+            "ci_lower": 64.4276237133299,
+            "ci_upper": 66.70607919454453,
+            "n_politicians": 58
+          }
+        }
+      },
+      "openai/gpt-4o-mini": {
+        "display": "GPT-4o Mini",
+        "agreements": {
+          "SP": {
+            "agreement": 87.30787404441209,
+            "ci_lower": 86.85327220604296,
+            "ci_upper": 87.74765225700764,
+            "n_politicians": 41
+          },
+          "Grüne": {
+            "agreement": 86.65967306325516,
+            "ci_lower": 86.19745806680882,
+            "ci_upper": 87.15285572139304,
+            "n_politicians": 21
+          },
+          "GLP": {
+            "agreement": 84.99749253731343,
+            "ci_lower": 83.88361194029851,
+            "ci_upper": 86.26456791044777,
+            "n_politicians": 10
+          },
+          "Die Mitte": {
+            "agreement": 73.86991250643335,
+            "ci_lower": 71.65025244467319,
+            "ci_upper": 76.0662789500772,
+            "n_politicians": 29
+          },
+          "FDP": {
+            "agreement": 67.82955223880597,
+            "ci_lower": 65.51019641791044,
+            "ci_upper": 70.35417223880596,
+            "n_politicians": 25
+          },
+          "SVP": {
+            "agreement": 58.97504374678333,
+            "ci_lower": 57.53445683221822,
+            "ci_upper": 60.487817035512094,
+            "n_politicians": 58
+          }
+        }
+      },
+      "mistralai/mistral-nemo": {
+        "display": "Mistral Nemo",
+        "agreements": {
+          "SP": {
+            "agreement": 86.33754277393521,
+            "ci_lower": 85.77860211139426,
+            "ci_upper": 86.92450373134328,
+            "n_politicians": 41
+          },
+          "Grüne": {
+            "agreement": 85.37466950959488,
+            "ci_lower": 84.8428303127221,
+            "ci_upper": 85.9513644278607,
+            "n_politicians": 21
+          },
+          "GLP": {
+            "agreement": 81.43331343283582,
+            "ci_lower": 80.50792985074627,
+            "ci_upper": 82.4513473880597,
+            "n_politicians": 10
+          },
+          "Die Mitte": {
+            "agreement": 80.85009778692744,
+            "ci_lower": 79.3005012866701,
+            "ci_upper": 82.33174420998456,
+            "n_politicians": 29
+          },
+          "FDP": {
+            "agreement": 70.61492537313434,
+            "ci_lower": 68.48836104477611,
+            "ci_upper": 72.84893208955224,
+            "n_politicians": 25
+          },
+          "SVP": {
+            "agreement": 67.64977354606279,
+            "ci_lower": 66.59990729541947,
+            "ci_upper": 68.73260833762224,
+            "n_politicians": 58
+          }
+        }
+      },
+      "meta-llama/llama-3.1-405b-instruct": {
+        "display": "Llama 3.1 405B",
+        "agreements": {
+          "SP": {
+            "agreement": 87.0565999271933,
+            "ci_lower": 86.5381119402985,
+            "ci_upper": 87.53556689115398,
+            "n_politicians": 41
+          },
+          "Grüne": {
+            "agreement": 86.7387420042644,
+            "ci_lower": 86.29880597014925,
+            "ci_upper": 87.18232693674484,
+            "n_politicians": 21
+          },
+          "GLP": {
+            "agreement": 84.54749253731343,
+            "ci_lower": 82.59062238805969,
+            "ci_upper": 86.34536567164179,
+            "n_politicians": 10
+          },
+          "Die Mitte": {
+            "agreement": 70.93617601646937,
+            "ci_lower": 68.54272310859496,
+            "ci_upper": 73.31407681420484,
+            "n_politicians": 29
+          },
+          "FDP": {
+            "agreement": 62.97477611940299,
+            "ci_lower": 60.35880850746269,
+            "ci_upper": 65.76501179104478,
+            "n_politicians": 25
+          },
+          "SVP": {
+            "agreement": 53.5276685537828,
+            "ci_lower": 52.04998796963459,
+            "ci_upper": 55.082308093154914,
+            "n_politicians": 58
+          }
+        }
+      },
+      "nousresearch/hermes-3-llama-3.1-405b": {
+        "display": "Hermes 3 Llama 3.1 405B",
+        "agreements": {
+          "SP": {
+            "agreement": 88.54950127411722,
+            "ci_lower": 88.17610575172917,
+            "ci_upper": 88.93082198762286,
+            "n_politicians": 41
+          },
+          "Grüne": {
+            "agreement": 87.95196162046909,
+            "ci_lower": 87.48878073916133,
+            "ci_upper": 88.43926012793177,
+            "n_politicians": 21
+          },
+          "GLP": {
+            "agreement": 85.58555223880597,
+            "ci_lower": 84.43984589552238,
+            "ci_upper": 86.86520037313434,
+            "n_politicians": 10
+          },
+          "Die Mitte": {
+            "agreement": 76.55763767370047,
+            "ci_lower": 74.57523867730315,
+            "ci_upper": 78.44888111168297,
+            "n_politicians": 29
+          },
+          "FDP": {
+            "agreement": 68.14582089552239,
+            "ci_lower": 65.67560492537314,
+            "ci_upper": 70.72490537313432,
+            "n_politicians": 25
+          },
+          "SVP": {
+            "agreement": 60.66971693257849,
+            "ci_lower": 59.31968914050437,
+            "ci_upper": 62.075344698919196,
+            "n_politicians": 58
+          }
+        }
+      },
+      "ai21/jamba-1-5-large": {
+        "display": "Jamba",
+        "agreements": {
+          "SP": {
+            "agreement": 88.208856934838,
+            "ci_lower": 87.82954787040408,
+            "ci_upper": 88.59070658900619,
+            "n_politicians": 41
+          },
+          "Grüne": {
+            "agreement": 88.05022032693674,
+            "ci_lower": 87.56020486851456,
+            "ci_upper": 88.58229761904762,
+            "n_politicians": 21
+          },
+          "GLP": {
+            "agreement": 86.03480597014925,
+            "ci_lower": 85.13403097014925,
+            "ci_upper": 86.98935,
+            "n_politicians": 10
+          },
+          "Die Mitte": {
+            "agreement": 78.93012866700977,
+            "ci_lower": 77.21671963458569,
+            "ci_upper": 80.57092048378796,
+            "n_politicians": 29
+          },
+          "FDP": {
+            "agreement": 70.33283582089553,
+            "ci_lower": 68.01596089552238,
+            "ci_upper": 72.80910925373135,
+            "n_politicians": 25
+          },
+          "SVP": {
+            "agreement": 62.47195573854862,
+            "ci_lower": 61.19875096500257,
+            "ci_upper": 63.8226380597015,
+            "n_politicians": 58
+          }
+        }
+      },
+      "openai/o1-mini-2024-09-12": {
+        "display": "o1-mini",
+        "agreements": {
+          "SP": {
+            "agreement": 85.42518383691299,
+            "ci_lower": 85.01552220604295,
+            "ci_upper": 85.83066217692028,
+            "n_politicians": 41
+          },
+          "Grüne": {
+            "agreement": 84.42850746268657,
+            "ci_lower": 83.89785323383084,
+            "ci_upper": 84.98662846481876,
+            "n_politicians": 21
+          },
+          "GLP": {
+            "agreement": 84.88480597014924,
+            "ci_lower": 83.83768395522387,
+            "ci_upper": 86.1973802238806,
+            "n_politicians": 10
+          },
+          "Die Mitte": {
+            "agreement": 76.04760164693774,
+            "ci_lower": 74.26590105506948,
+            "ci_upper": 77.82557012352034,
+            "n_politicians": 29
+          },
+          "FDP": {
+            "agreement": 70.93208955223879,
+            "ci_lower": 68.93466104477612,
+            "ci_upper": 73.05887298507463,
+            "n_politicians": 25
+          },
+          "SVP": {
+            "agreement": 62.59637673700462,
+            "ci_lower": 61.41258054554813,
+            "ci_upper": 63.82631188883172,
+            "n_politicians": 58
+          }
+        }
+      },
+      "qwen/qwen-2.5-72b-instruct": {
+        "display": "Qwen 2.5 72B",
+        "agreements": {
+          "SP": {
+            "agreement": 88.10082999635966,
+            "ci_lower": 87.64904259191846,
+            "ci_upper": 88.56840553330906,
+            "n_politicians": 41
+          },
+          "Grüne": {
+            "agreement": 88.34641791044776,
+            "ci_lower": 87.80538610518833,
+            "ci_upper": 88.93095273631842,
+            "n_politicians": 21
+          },
+          "GLP": {
+            "agreement": 85.12734328358209,
+            "ci_lower": 83.990373880597,
+            "ci_upper": 86.50593507462686,
+            "n_politicians": 10
+          },
+          "Die Mitte": {
+            "agreement": 76.92897066392177,
+            "ci_lower": 75.06158852290274,
+            "ci_upper": 78.75702856407617,
+            "n_politicians": 29
+          },
+          "FDP": {
+            "agreement": 69.41716417910447,
+            "ci_lower": 67.17245149253732,
+            "ci_upper": 71.77372865671641,
+            "n_politicians": 25
+          },
+          "SVP": {
+            "agreement": 62.210375707668554,
+            "ci_lower": 60.91360705095214,
+            "ci_upper": 63.4535565491508,
+            "n_politicians": 58
+          }
+        }
+      },
+      "anthropic/claude-3.5-sonnet": {
+        "display": "Claude 3.5 Sonnet",
+        "agreements": {
+          "SP": {
+            "agreement": 86.29476883873316,
+            "ci_lower": 85.69015080087368,
+            "ci_upper": 86.87045267564618,
+            "n_politicians": 41
+          },
+          "Grüne": {
+            "agreement": 84.09179815209666,
+            "ci_lower": 83.40394705046198,
+            "ci_upper": 84.85247050461976,
+            "n_politicians": 21
+          },
+          "GLP": {
+            "agreement": 89.3915223880597,
+            "ci_lower": 88.44245895522388,
+            "ci_upper": 90.14371641791044,
+            "n_politicians": 10
+          },
+          "Die Mitte": {
+            "agreement": 80.35009778692744,
+            "ci_lower": 78.64643875450334,
+            "ci_upper": 81.97913419969119,
+            "n_politicians": 29
+          },
+          "FDP": {
+            "agreement": 74.84358208955224,
+            "ci_lower": 72.93153432835821,
+            "ci_upper": 76.77443686567163,
+            "n_politicians": 25
+          },
+          "SVP": {
+            "agreement": 62.602938754503356,
+            "ci_lower": 61.371980056613495,
+            "ci_upper": 63.846944287184776,
+            "n_politicians": 58
+          }
+        }
+      },
+      "anthropic/claude-3.5-haiku": {
+        "display": "Claude 3.5 Haiku",
+        "agreements": {
+          "SP": {
+            "agreement": 86.8449144521296,
+            "ci_lower": 86.45419093556607,
+            "ci_upper": 87.24460065526029,
+            "n_politicians": 41
+          },
+          "Grüne": {
+            "agreement": 87.30697228144989,
+            "ci_lower": 86.81321695095949,
+            "ci_upper": 87.82260163468372,
+            "n_politicians": 21
+          },
+          "GLP": {
+            "agreement": 85.38853731343283,
+            "ci_lower": 84.30294029850747,
+            "ci_upper": 86.56025373134328,
+            "n_politicians": 10
+          },
+          "Die Mitte": {
+            "agreement": 76.51080288214102,
+            "ci_lower": 74.59147979927945,
+            "ci_upper": 78.37821397323727,
+            "n_politicians": 29
+          },
+          "FDP": {
+            "agreement": 68.61865671641792,
+            "ci_lower": 66.21787149253731,
+            "ci_upper": 71.10956567164179,
+            "n_politicians": 25
+          },
+          "SVP": {
+            "agreement": 61.49949047864127,
+            "ci_lower": 60.21347407359753,
+            "ci_upper": 62.810668232115276,
+            "n_politicians": 58
+          }
+        }
+      },
+      "mistralai/mistral-large-2407": {
+        "display": "Mistral Large",
+        "agreements": {
+          "SP": {
+            "agreement": 89.2986821987623,
+            "ci_lower": 88.88609191845649,
+            "ci_upper": 89.72993447397161,
+            "n_politicians": 41
+          },
+          "Grüne": {
+            "agreement": 89.15167732764748,
+            "ci_lower": 88.68877878464819,
+            "ci_upper": 89.62494509594883,
+            "n_politicians": 21
+          },
+          "GLP": {
+            "agreement": 84.2139104477612,
+            "ci_lower": 82.81944850746268,
+            "ci_upper": 85.72671753731343,
+            "n_politicians": 10
+          },
+          "Die Mitte": {
+            "agreement": 74.5550643335049,
+            "ci_lower": 72.23356266083375,
+            "ci_upper": 76.84055108080288,
+            "n_politicians": 29
+          },
+          "FDP": {
+            "agreement": 63.73626865671642,
+            "ci_lower": 60.9659567164179,
+            "ci_upper": 66.60462835820896,
+            "n_politicians": 25
+          },
+          "SVP": {
+            "agreement": 57.09650540401441,
+            "ci_lower": 55.665696603190945,
+            "ci_upper": 58.528210885229015,
+            "n_politicians": 58
+          }
+        }
+      },
+      "mistralai/mistral-large-2411": {
+        "display": "Mistral Large (Nov 2024)",
+        "agreements": {
+          "SP": {
+            "agreement": 90.32370950127412,
+            "ci_lower": 89.84038414634146,
+            "ci_upper": 90.8035785402257,
+            "n_politicians": 41
+          },
+          "Grüne": {
+            "agreement": 90.8028855721393,
+            "ci_lower": 90.39259434968018,
+            "ci_upper": 91.25669314143568,
+            "n_politicians": 21
+          },
+          "GLP": {
+            "agreement": 83.48555223880597,
+            "ci_lower": 82.2128802238806,
+            "ci_upper": 84.71250746268657,
+            "n_politicians": 10
+          },
+          "Die Mitte": {
+            "agreement": 77.61412249099331,
+            "ci_lower": 75.49078139475037,
+            "ci_upper": 79.69693978383943,
+            "n_politicians": 29
+          },
+          "FDP": {
+            "agreement": 66.73432835820896,
+            "ci_lower": 64.18451582089553,
+            "ci_upper": 69.46963925373134,
+            "n_politicians": 25
+          },
+          "SVP": {
+            "agreement": 58.845733401955734,
+            "ci_lower": 57.43283266855378,
+            "ci_upper": 60.31831729284612,
+            "n_politicians": 58
+          }
+        }
+      },
+      "openai/gpt-4o-2024-11-20": {
+        "display": "GPT-4o",
+        "agreements": {
+          "SP": {
+            "agreement": 89.5648816891154,
+            "ci_lower": 89.1408917000364,
+            "ci_upper": 90.01361767382599,
+            "n_politicians": 41
+          },
+          "Grüne": {
+            "agreement": 88.08113717128643,
+            "ci_lower": 87.51722085998578,
+            "ci_upper": 88.70278642501776,
+            "n_politicians": 21
+          },
+          "GLP": {
+            "agreement": 89.26988059701493,
+            "ci_lower": 87.65214888059701,
+            "ci_upper": 90.85856902985074,
+            "n_politicians": 10
+          },
+          "Die Mitte": {
+            "agreement": 76.0315182707154,
+            "ci_lower": 73.80100025733402,
+            "ci_upper": 78.1799682192486,
+            "n_politicians": 29
+          },
+          "FDP": {
+            "agreement": 68.72507462686568,
+            "ci_lower": 66.46862029850746,
+            "ci_upper": 71.16225835820896,
+            "n_politicians": 25
+          },
+          "SVP": {
+            "agreement": 57.37313947503859,
+            "ci_lower": 56.04835338394236,
+            "ci_upper": 58.757020908389094,
+            "n_politicians": 58
+          }
+        }
+      },
+      "amazon/nova-pro-v1": {
+        "display": "Nova Pro",
+        "agreements": {
+          "SP": {
+            "agreement": 85.0771678194394,
+            "ci_lower": 84.60952229705133,
+            "ci_upper": 85.56133008736803,
+            "n_politicians": 41
+          },
+          "Grüne": {
+            "agreement": 84.04542288557212,
+            "ci_lower": 83.3746090973703,
+            "ci_upper": 84.79782746979389,
+            "n_politicians": 21
+          },
+          "GLP": {
+            "agreement": 83.97211940298507,
+            "ci_lower": 82.92016417910448,
+            "ci_upper": 85.07110298507463,
+            "n_politicians": 10
+          },
+          "Die Mitte": {
+            "agreement": 79.37158517756046,
+            "ci_lower": 78.04206922285127,
+            "ci_upper": 80.6736210756562,
+            "n_politicians": 29
+          },
+          "FDP": {
+            "agreement": 72.81537313432835,
+            "ci_lower": 70.83756134328358,
+            "ci_upper": 74.89935074626865,
+            "n_politicians": 25
+          },
+          "SVP": {
+            "agreement": 67.53950591868245,
+            "ci_lower": 66.51178396809058,
+            "ci_upper": 68.55732578486877,
+            "n_politicians": 58
+          }
+        }
+      },
+      "x-ai/grok-2-1212": {
+        "display": "Grok 2",
+        "agreements": {
+          "SP": {
+            "agreement": 85.52183472879504,
+            "ci_lower": 85.11665516927557,
+            "ci_upper": 85.93747215143793,
+            "n_politicians": 41
+          },
+          "Grüne": {
+            "agreement": 85.06070362473348,
+            "ci_lower": 84.4377565742715,
+            "ci_upper": 85.75690813788202,
+            "n_politicians": 21
+          },
+          "GLP": {
+            "agreement": 82.1915223880597,
+            "ci_lower": 81.15880634328357,
+            "ci_upper": 83.41094179104478,
+            "n_politicians": 10
+          },
+          "Die Mitte": {
+            "agreement": 79.35794647452393,
+            "ci_lower": 77.97727225939269,
+            "ci_upper": 80.73285756562017,
+            "n_politicians": 29
+          },
+          "FDP": {
+            "agreement": 72.3365671641791,
+            "ci_lower": 70.28686626865671,
+            "ci_upper": 74.46375731343284,
+            "n_politicians": 25
+          },
+          "SVP": {
+            "agreement": 65.0356459083891,
+            "ci_lower": 63.756380597014925,
+            "ci_upper": 66.3064633299022,
+            "n_politicians": 58
+          }
+        }
+      },
+      "openai/o1": {
+        "display": "o1",
+        "agreements": {
+          "SP": {
+            "agreement": 90.18819803421914,
+            "ci_lower": 89.6751667273389,
+            "ci_upper": 90.67427712049508,
+            "n_politicians": 41
+          },
+          "Grüne": {
+            "agreement": 88.49140724946696,
+            "ci_lower": 87.9708829068941,
+            "ci_upper": 89.07117093105899,
+            "n_politicians": 21
+          },
+          "GLP": {
+            "agreement": 89.55570149253731,
+            "ci_lower": 87.52234179104478,
+            "ci_upper": 91.27243582089552,
+            "n_politicians": 10
+          },
+          "Die Mitte": {
+            "agreement": 75.54811631497684,
+            "ci_lower": 73.24575231600618,
+            "ci_upper": 77.78589642305712,
+            "n_politicians": 29
+          },
+          "FDP": {
+            "agreement": 67.91477611940297,
+            "ci_lower": 65.66712253731343,
+            "ci_upper": 70.23512970149254,
+            "n_politicians": 25
+          },
+          "SVP": {
+            "agreement": 53.35371075656201,
+            "ci_lower": 51.97178885743695,
+            "ci_upper": 54.786816778178085,
+            "n_politicians": 58
+          }
+        }
+      },
+      "deepseek/deepseek-chat": {
+        "display": "DeepSeek v3",
+        "agreements": {
+          "SP": {
+            "agreement": 89.17127047688386,
+            "ci_lower": 88.72609728795048,
+            "ci_upper": 89.61886303239899,
+            "n_politicians": 41
+          },
+          "Grüne": {
+            "agreement": 86.95729211087419,
+            "ci_lower": 86.43917555081734,
+            "ci_upper": 87.48510501066099,
+            "n_politicians": 21
+          },
+          "GLP": {
+            "agreement": 87.9639104477612,
+            "ci_lower": 86.54561529850746,
+            "ci_upper": 89.33135597014926,
+            "n_politicians": 10
+          },
+          "Die Mitte": {
+            "agreement": 77.55943901183737,
+            "ci_lower": 75.50789938239835,
+            "ci_upper": 79.6113196088523,
+            "n_politicians": 29
+          },
+          "FDP": {
+            "agreement": 70.05716417910448,
+            "ci_lower": 67.8861004477612,
+            "ci_upper": 72.3279313432836,
+            "n_politicians": 25
+          },
+          "SVP": {
+            "agreement": 58.852810087493566,
+            "ci_lower": 57.47591533710757,
+            "ci_upper": 60.24451955738548,
+            "n_politicians": 58
+          }
+        }
+      },
+      "microsoft/phi-4": {
+        "display": "Phi-4",
+        "agreements": {
+          "SP": {
+            "agreement": 87.33408445576994,
+            "ci_lower": 86.91847187841282,
+            "ci_upper": 87.75401055697124,
+            "n_politicians": 41
+          },
+          "Grüne": {
+            "agreement": 87.16038379530917,
+            "ci_lower": 86.67458564321251,
+            "ci_upper": 87.74007533759773,
+            "n_politicians": 21
+          },
+          "GLP": {
+            "agreement": 85.29525373134328,
+            "ci_lower": 84.15850970149253,
+            "ci_upper": 86.56960074626865,
+            "n_politicians": 10
+          },
+          "Die Mitte": {
+            "agreement": 79.37042717447245,
+            "ci_lower": 77.79201235203293,
+            "ci_upper": 80.90428834276891,
+            "n_politicians": 29
+          },
+          "FDP": {
+            "agreement": 72.30895522388059,
+            "ci_lower": 70.11884776119403,
+            "ci_upper": 74.63274298507463,
+            "n_politicians": 25
+          },
+          "SVP": {
+            "agreement": 65.5525012866701,
+            "ci_lower": 64.27741109109624,
+            "ci_upper": 66.83342492279981,
+            "n_politicians": 58
+          }
+        }
+      },
+      "minimax/minimax-01": {
+        "display": "Minimax",
+        "agreements": {
+          "SP": {
+            "agreement": 85.45885693483801,
+            "ci_lower": 84.97259346559883,
+            "ci_upper": 85.9677827630142,
+            "n_politicians": 41
+          },
+          "Grüne": {
+            "agreement": 85.72594882729211,
+            "ci_lower": 85.22089818763325,
+            "ci_upper": 86.2672645700071,
+            "n_politicians": 21
+          },
+          "GLP": {
+            "agreement": 84.27435820895522,
+            "ci_lower": 83.26426679104478,
+            "ci_upper": 85.07373134328358,
+            "n_politicians": 10
+          },
+          "Die Mitte": {
+            "agreement": 78.40941327843541,
+            "ci_lower": 76.60678898610395,
+            "ci_upper": 80.16688741636644,
+            "n_politicians": 29
+          },
+          "FDP": {
+            "agreement": 68.02223880597015,
+            "ci_lower": 65.50268432835821,
+            "ci_upper": 70.71041552238805,
+            "n_politicians": 25
+          },
+          "SVP": {
+            "agreement": 61.05507462686567,
+            "ci_lower": 59.76052032938754,
+            "ci_upper": 62.384168553782814,
+            "n_politicians": 58
+          }
+        }
+      },
+      "deepseek/deepseek-r1": {
+        "display": "DeepSeek R1",
+        "agreements": {
+          "SP": {
+            "agreement": 86.18737895886422,
+            "ci_lower": 85.74178685839097,
+            "ci_upper": 86.62849153622133,
+            "n_politicians": 41
+          },
+          "Grüne": {
+            "agreement": 86.10316986496092,
+            "ci_lower": 85.60528926794598,
+            "ci_upper": 86.65980810234541,
+            "n_politicians": 21
+          },
+          "GLP": {
+            "agreement": 83.78405970149254,
+            "ci_lower": 82.78479888059701,
+            "ci_upper": 84.95574925373135,
+            "n_politicians": 10
+          },
+          "Die Mitte": {
+            "agreement": 76.79708697889862,
+            "ci_lower": 74.90780841482244,
+            "ci_upper": 78.65849755532682,
+            "n_politicians": 29
+          },
+          "FDP": {
+            "agreement": 68.5776119402985,
+            "ci_lower": 66.32493791044774,
+            "ci_upper": 70.90156656716417,
+            "n_politicians": 25
+          },
+          "SVP": {
+            "agreement": 63.632146165723114,
+            "ci_lower": 62.3537671770458,
+            "ci_upper": 64.92164430005147,
+            "n_politicians": 58
+          }
+        }
+      },
+      "mistralai/mistral-small-24b-instruct-2501": {
+        "display": "Mistral Small 3 (Jan 2025)",
+        "agreements": {
+          "SP": {
+            "agreement": 87.26236985802693,
+            "ci_lower": 86.75733846013833,
+            "ci_upper": 87.79162650163816,
+            "n_politicians": 41
+          },
+          "Grüne": {
+            "agreement": 86.5576830135039,
+            "ci_lower": 86.04100888415068,
+            "ci_upper": 87.14900746268657,
+            "n_politicians": 21
+          },
+          "GLP": {
+            "agreement": 82.69525373134329,
+            "ci_lower": 81.86435335820896,
+            "ci_upper": 83.67557723880597,
+            "n_politicians": 10
+          },
+          "Die Mitte": {
+            "agreement": 80.46769943386516,
+            "ci_lower": 79.03754374678331,
+            "ci_upper": 81.835026376737,
+            "n_politicians": 29
+          },
+          "FDP": {
+            "agreement": 70.92985074626866,
+            "ci_lower": 68.84272179104477,
+            "ci_upper": 73.13757313432836,
+            "n_politicians": 25
+          },
+          "SVP": {
+            "agreement": 67.7408697889861,
+            "ci_lower": 66.68277245239321,
+            "ci_upper": 68.78231755018012,
+            "n_politicians": 58
+          }
+        }
+      },
+      "openai/o3-mini": {
+        "display": "o3-mini",
+        "agreements": {
+          "SP": {
+            "agreement": 85.24771751001093,
+            "ci_lower": 84.74634537677467,
+            "ci_upper": 85.75476283218056,
+            "n_politicians": 41
+          },
+          "Grüne": {
+            "agreement": 85.24584932480454,
+            "ci_lower": 84.75275906183369,
+            "ci_upper": 85.77116862117983,
+            "n_politicians": 21
+          },
+          "GLP": {
+            "agreement": 85.36988059701493,
+            "ci_lower": 84.72771343283581,
+            "ci_upper": 86.15744776119402,
+            "n_politicians": 10
+          },
+          "Die Mitte": {
+            "agreement": 78.11914050437468,
+            "ci_lower": 76.51069544518785,
+            "ci_upper": 79.67971950591868,
+            "n_politicians": 29
+          },
+          "FDP": {
+            "agreement": 72.20820895522388,
+            "ci_lower": 70.2120567164179,
+            "ci_upper": 74.26545791044776,
+            "n_politicians": 25
+          },
+          "SVP": {
+            "agreement": 65.5525012866701,
+            "ci_lower": 64.42814803139476,
+            "ci_upper": 66.708532874421,
+            "n_politicians": 58
+          }
+        }
+      },
+      "google/gemini-2.0-flash-001": {
+        "display": "Gemini 2 Flash",
+        "agreements": {
+          "SP": {
+            "agreement": 85.59809974517655,
+            "ci_lower": 85.10875282125956,
+            "ci_upper": 86.12882144157261,
+            "n_politicians": 41
+          },
+          "Grüne": {
+            "agreement": 85.51237384506041,
+            "ci_lower": 84.96531627576404,
+            "ci_upper": 86.14226439232408,
+            "n_politicians": 21
+          },
+          "GLP": {
+            "agreement": 84.04525373134328,
+            "ci_lower": 82.95462052238805,
+            "ci_upper": 85.31669291044777,
+            "n_politicians": 10
+          },
+          "Die Mitte": {
+            "agreement": 80.055579001544,
+            "ci_lower": 78.72336387030366,
+            "ci_upper": 81.4104369531652,
+            "n_politicians": 29
+          },
+          "FDP": {
+            "agreement": 74.62611940298507,
+            "ci_lower": 72.74621776119403,
+            "ci_upper": 76.56577119402985,
+            "n_politicians": 25
+          },
+          "SVP": {
+            "agreement": 68.28989191971178,
+            "ci_lower": 67.17450038600103,
+            "ci_upper": 69.36161412763768,
+            "n_politicians": 58
+          }
+        }
+      },
+      "anthropic/claude-3.7-sonnet": {
+        "display": "Claude 3.7 Sonnet",
+        "agreements": {
+          "SP": {
+            "agreement": 85.7054896250455,
+            "ci_lower": 85.22064861667273,
+            "ci_upper": 86.19956325081907,
+            "n_politicians": 41
+          },
+          "Grüne": {
+            "agreement": 85.28671641791044,
+            "ci_lower": 84.7391881663113,
+            "ci_upper": 85.88984044065387,
+            "n_politicians": 21
+          },
+          "GLP": {
+            "agreement": 86.76092537313434,
+            "ci_lower": 86.08072873134329,
+            "ci_upper": 87.45881231343284,
+            "n_politicians": 10
+          },
+          "Die Mitte": {
+            "agreement": 80.62351518270715,
+            "ci_lower": 79.18481124549665,
+            "ci_upper": 82.01492061245497,
+            "n_politicians": 29
+          },
+          "FDP": {
+            "agreement": 74.71298507462687,
+            "ci_lower": 72.8445332835821,
+            "ci_upper": 76.71471059701493,
+            "n_politicians": 25
+          },
+          "SVP": {
+            "agreement": 67.27033453422541,
+            "ci_lower": 66.16108633556354,
+            "ci_upper": 68.41941398610396,
+            "n_politicians": 58
+          }
+        }
+      },
+      "cohere/command-a": {
+        "display": "Command A",
+        "agreements": {
+          "SP": {
+            "agreement": 88.8835020021842,
+            "ci_lower": 88.39845941026574,
+            "ci_upper": 89.3645351292319,
+            "n_politicians": 41
+          },
+          "Grüne": {
+            "agreement": 88.04435678749113,
+            "ci_lower": 87.52748098791756,
+            "ci_upper": 88.58482373845061,
+            "n_politicians": 21
+          },
+          "GLP": {
+            "agreement": 87.86988059701493,
+            "ci_lower": 86.51207462686568,
+            "ci_upper": 89.06940335820896,
+            "n_politicians": 10
+          },
+          "Die Mitte": {
+            "agreement": 76.0604683479156,
+            "ci_lower": 74.15615748841998,
+            "ci_upper": 77.98556484817293,
+            "n_politicians": 29
+          },
+          "FDP": {
+            "agreement": 69.51417910447762,
+            "ci_lower": 67.23789865671642,
+            "ci_upper": 71.83534447761194,
+            "n_politicians": 25
+          },
+          "SVP": {
+            "agreement": 60.46693772516727,
+            "ci_lower": 59.170703293875434,
+            "ci_upper": 61.780650411734435,
+            "n_politicians": 58
+          }
+        }
+      },
+      "meta-llama/llama-4-maverick": {
+        "display": "Llama 4 Maverick",
+        "agreements": {
+          "SP": {
+            "agreement": 87.73042591918457,
+            "ci_lower": 87.34905232981434,
+            "ci_upper": 88.11606170367675,
+            "n_politicians": 41
+          },
+          "Grüne": {
+            "agreement": 86.85921108742004,
+            "ci_lower": 86.3824854299929,
+            "ci_upper": 87.39741382373846,
+            "n_politicians": 21
+          },
+          "GLP": {
+            "agreement": 83.23480597014925,
+            "ci_lower": 82.06493395522388,
+            "ci_upper": 84.62814029850747,
+            "n_politicians": 10
+          },
+          "Die Mitte": {
+            "agreement": 78.65490993309315,
+            "ci_lower": 76.94454490478641,
+            "ci_upper": 80.30309559958826,
+            "n_politicians": 29
+          },
+          "FDP": {
+            "agreement": 70.17567164179104,
+            "ci_lower": 67.85601358208956,
+            "ci_upper": 72.65139507462686,
+            "n_politicians": 25
+          },
+          "SVP": {
+            "agreement": 64.93824498198661,
+            "ci_lower": 63.67186792331447,
+            "ci_upper": 66.2590315877509,
+            "n_politicians": 58
+          }
+        }
+      },
+      "x-ai/grok-3-beta": {
+        "display": "Grok 3 Beta",
+        "agreements": {
+          "SP": {
+            "agreement": 89.06324353840553,
+            "ci_lower": 88.6519552238806,
+            "ci_upper": 89.47482480888242,
+            "n_politicians": 41
+          },
+          "Grüne": {
+            "agreement": 88.652921108742,
+            "ci_lower": 88.21121197583511,
+            "ci_upper": 89.14100461975835,
+            "n_politicians": 21
+          },
+          "GLP": {
+            "agreement": 85.98555223880598,
+            "ci_lower": 84.98242276119403,
+            "ci_upper": 87.05985373134328,
+            "n_politicians": 10
+          },
+          "Die Mitte": {
+            "agreement": 76.95792074112198,
+            "ci_lower": 74.94258015954709,
+            "ci_upper": 78.89391019042718,
+            "n_politicians": 29
+          },
+          "FDP": {
+            "agreement": 68.7641791044776,
+            "ci_lower": 66.30769014925373,
+            "ci_upper": 71.3419071641791,
+            "n_politicians": 25
+          },
+          "SVP": {
+            "agreement": 61.73752444673186,
+            "ci_lower": 60.3561195316521,
+            "ci_upper": 63.166886129696344,
+            "n_politicians": 58
+          }
+        }
+      },
+      "openai/gpt-4.1": {
+        "display": "GPT-4.1",
+        "agreements": {
+          "SP": {
+            "agreement": 90.88677830360393,
+            "ci_lower": 90.50540134692392,
+            "ci_upper": 91.27723407353476,
+            "n_politicians": 41
+          },
+          "Grüne": {
+            "agreement": 90.02232409381664,
+            "ci_lower": 89.57570149253732,
+            "ci_upper": 90.49639427860696,
+            "n_politicians": 21
+          },
+          "GLP": {
+            "agreement": 88.39301492537314,
+            "ci_lower": 86.62838582089553,
+            "ci_upper": 89.9941395522388,
+            "n_politicians": 10
+          },
+          "Die Mitte": {
+            "agreement": 74.46499742665979,
+            "ci_lower": 72.03951492537313,
+            "ci_upper": 76.7974525218734,
+            "n_politicians": 29
+          },
+          "FDP": {
+            "agreement": 66.64671641791044,
+            "ci_lower": 64.15914492537314,
+            "ci_upper": 69.24171298507463,
+            "n_politicians": 25
+          },
+          "SVP": {
+            "agreement": 55.43348430262481,
+            "ci_lower": 54.00919853319609,
+            "ci_upper": 56.920788085434886,
+            "n_politicians": 58
+          }
+        }
+      },
+      "openai/o4-mini": {
+        "display": "o4-mini",
+        "agreements": {
+          "SP": {
+            "agreement": 89.05641791044776,
+            "ci_lower": 88.6458439206407,
+            "ci_upper": 89.46805378594831,
+            "n_politicians": 41
+          },
+          "Grüne": {
+            "agreement": 89.00384506041222,
+            "ci_lower": 88.54790334044066,
+            "ci_upper": 89.49286691542288,
+            "n_politicians": 21
+          },
+          "GLP": {
+            "agreement": 86.07883582089553,
+            "ci_lower": 84.66691529850746,
+            "ci_upper": 87.33504925373134,
+            "n_politicians": 10
+          },
+          "Die Mitte": {
+            "agreement": 76.25346886258363,
+            "ci_lower": 74.21975424601132,
+            "ci_upper": 78.31369325784868,
+            "n_politicians": 29
+          },
+          "FDP": {
+            "agreement": 68.65597014925373,
+            "ci_lower": 66.5039519402985,
+            "ci_upper": 70.96528805970149,
+            "n_politicians": 25
+          },
+          "SVP": {
+            "agreement": 60.34470406587751,
+            "ci_lower": 59.00979123777664,
+            "ci_upper": 61.63729760679362,
+            "n_politicians": 58
+          }
+        }
+      },
+      "mistralai/mistral-medium-3": {
+        "display": "Mistral Medium 3",
+        "agreements": {
+          "SP": {
+            "agreement": 87.75317801237715,
+            "ci_lower": 87.31536958500183,
+            "ci_upper": 88.18531461594466,
+            "n_politicians": 41
+          },
+          "Grüne": {
+            "agreement": 86.50384506041222,
+            "ci_lower": 85.99767057569296,
+            "ci_upper": 87.02525586353944,
+            "n_politicians": 21
+          },
+          "GLP": {
+            "agreement": 89.05570149253731,
+            "ci_lower": 88.31974552238806,
+            "ci_upper": 89.86867276119403,
+            "n_politicians": 10
+          },
+          "Die Mitte": {
+            "agreement": 78.38470921255791,
+            "ci_lower": 76.50912725167267,
+            "ci_upper": 80.1927698147195,
+            "n_politicians": 29
+          },
+          "FDP": {
+            "agreement": 73.29507462686567,
+            "ci_lower": 71.23127462686567,
+            "ci_upper": 75.44521656716418,
+            "n_politicians": 25
+          },
+          "SVP": {
+            "agreement": 63.313823983530625,
+            "ci_lower": 62.113710306227496,
+            "ci_upper": 64.52920387287699,
+            "n_politicians": 58
+          }
+        }
+      },
+      "anthropic/claude-opus-4": {
+        "display": "Claude Opus 4",
+        "agreements": {
+          "SP": {
+            "agreement": 87.48807062249728,
+            "ci_lower": 87.04130660720786,
+            "ci_upper": 87.94557844921732,
+            "n_politicians": 41
+          },
+          "Grüne": {
+            "agreement": 87.34481876332623,
+            "ci_lower": 86.89541471215351,
+            "ci_upper": 87.79832018479033,
+            "n_politicians": 21
+          },
+          "GLP": {
+            "agreement": 87.92958208955224,
+            "ci_lower": 87.18714029850747,
+            "ci_upper": 88.6704093283582,
+            "n_politicians": 10
+          },
+          "Die Mitte": {
+            "agreement": 79.11849716932579,
+            "ci_lower": 77.47767910447762,
+            "ci_upper": 80.6790209727226,
+            "n_politicians": 29
+          },
+          "FDP": {
+            "agreement": 73.4271641791045,
+            "ci_lower": 71.42374582089552,
+            "ci_upper": 75.50849462686567,
+            "n_politicians": 25
+          },
+          "SVP": {
+            "agreement": 64.64334019557386,
+            "ci_lower": 63.50679632012352,
+            "ci_upper": 65.76557668553784,
+            "n_politicians": 58
+          }
+        }
+      },
+      "anthropic/claude-sonnet-4": {
+        "display": "Claude Sonnet 4",
+        "agreements": {
+          "SP": {
+            "agreement": 87.27037859483072,
+            "ci_lower": 86.87197206042956,
+            "ci_upper": 87.68352921368766,
+            "n_politicians": 41
+          },
+          "Grüne": {
+            "agreement": 86.63621890547265,
+            "ci_lower": 86.17480419331912,
+            "ci_upper": 87.11349004975126,
+            "n_politicians": 21
+          },
+          "GLP": {
+            "agreement": 86.15346268656717,
+            "ci_lower": 85.19292462686568,
+            "ci_upper": 87.19169291044777,
+            "n_politicians": 10
+          },
+          "Die Mitte": {
+            "agreement": 76.77135357694287,
+            "ci_lower": 75.04133607822953,
+            "ci_upper": 78.4842408646423,
+            "n_politicians": 29
+          },
+          "FDP": {
+            "agreement": 71.46567164179105,
+            "ci_lower": 69.41023223880597,
+            "ci_upper": 73.5927304477612,
+            "n_politicians": 25
+          },
+          "SVP": {
+            "agreement": 62.99524446731858,
+            "ci_lower": 61.752008363355635,
+            "ci_upper": 64.25308537056098,
+            "n_politicians": 58
+          }
+        }
+      },
+      "deepseek/deepseek-r1-0528": {
+        "display": "DeepSeek R1 0528",
+        "agreements": {
+          "SP": {
+            "agreement": 85.88250091008372,
+            "ci_lower": 85.34590398616673,
+            "ci_upper": 86.43798161630869,
+            "n_politicians": 41
+          },
+          "Grüne": {
+            "agreement": 86.26308457711443,
+            "ci_lower": 85.6963184079602,
+            "ci_upper": 86.88408759772565,
+            "n_politicians": 21
+          },
+          "GLP": {
+            "agreement": 82.38480597014926,
+            "ci_lower": 80.98769962686568,
+            "ci_upper": 83.88424067164179,
+            "n_politicians": 10
+          },
+          "Die Mitte": {
+            "agreement": 77.2795882655687,
+            "ci_lower": 75.37816868244983,
+            "ci_upper": 79.19673970663922,
+            "n_politicians": 29
+          },
+          "FDP": {
+            "agreement": 68.19701492537314,
+            "ci_lower": 65.72916462686568,
+            "ci_upper": 70.73118925373134,
+            "n_politicians": 25
+          },
+          "SVP": {
+            "agreement": 61.029855892949044,
+            "ci_lower": 59.662036155429746,
+            "ci_upper": 62.46084270458054,
+            "n_politicians": 58
+          }
+        }
+      },
+      "x-ai/grok-3": {
+        "display": "Grok 3",
+        "agreements": {
+          "SP": {
+            "agreement": 89.06324353840553,
+            "ci_lower": 88.65206734619585,
+            "ci_upper": 89.48201592646524,
+            "n_politicians": 41
+          },
+          "Grüne": {
+            "agreement": 88.652921108742,
+            "ci_lower": 88.20894100923951,
+            "ci_upper": 89.13485554371003,
+            "n_politicians": 21
+          },
+          "GLP": {
+            "agreement": 85.98555223880598,
+            "ci_lower": 84.98532985074628,
+            "ci_upper": 87.11035671641791,
+            "n_politicians": 10
+          },
+          "Die Mitte": {
+            "agreement": 76.95792074112198,
+            "ci_lower": 74.99779014410704,
+            "ci_upper": 78.88113870303654,
+            "n_politicians": 29
+          },
+          "FDP": {
+            "agreement": 68.7641791044776,
+            "ci_lower": 66.3088947761194,
+            "ci_upper": 71.3532923880597,
+            "n_politicians": 25
+          },
+          "SVP": {
+            "agreement": 61.73752444673186,
+            "ci_lower": 60.33952386773032,
+            "ci_upper": 63.188671513124035,
+            "n_politicians": 58
+          }
+        }
+      },
+      "x-ai/grok-3-mini": {
+        "display": "Grok 3 Mini",
+        "agreements": {
+          "SP": {
+            "agreement": 84.00226792864945,
+            "ci_lower": 83.58515799053512,
+            "ci_upper": 84.42986976701856,
+            "n_politicians": 41
+          },
+          "Grüne": {
+            "agreement": 82.48234541577825,
+            "ci_lower": 81.96504513148544,
+            "ci_upper": 83.0687327647477,
+            "n_politicians": 21
+          },
+          "GLP": {
+            "agreement": 83.79749253731343,
+            "ci_lower": 82.97494029850746,
+            "ci_upper": 84.73802164179105,
+            "n_politicians": 10
+          },
+          "Die Mitte": {
+            "agreement": 77.68386001029336,
+            "ci_lower": 76.12916044776118,
+            "ci_upper": 79.23812171899125,
+            "n_politicians": 29
+          },
+          "FDP": {
+            "agreement": 68.64805970149254,
+            "ci_lower": 66.33034417910446,
+            "ci_upper": 71.1818934328358,
+            "n_politicians": 25
+          },
+          "SVP": {
+            "agreement": 65.32669068450849,
+            "ci_lower": 64.20864018270714,
+            "ci_upper": 66.46131433350489,
+            "n_politicians": 58
+          }
+        }
+      },
+      "x-ai/grok-4": {
+        "display": "Grok 4",
+        "agreements": {
+          "SP": {
+            "agreement": 84.29658900618857,
+            "ci_lower": 83.83529140880961,
+            "ci_upper": 84.74597024026211,
+            "n_politicians": 41
+          },
+          "Grüne": {
+            "agreement": 82.78796019900497,
+            "ci_lower": 82.21931698649608,
+            "ci_upper": 83.40256218905472,
+            "n_politicians": 21
+          },
+          "GLP": {
+            "agreement": 85.61167164179105,
+            "ci_lower": 84.54161791044777,
+            "ci_upper": 86.74402425373134,
+            "n_politicians": 10
+          },
+          "Die Mitte": {
+            "agreement": 72.85292846114255,
+            "ci_lower": 70.8412317292846,
+            "ci_upper": 74.81912184765825,
+            "n_politicians": 29
+          },
+          "FDP": {
+            "agreement": 70.40268656716418,
+            "ci_lower": 68.40855417910447,
+            "ci_upper": 72.46622119402986,
+            "n_politicians": 25
+          },
+          "SVP": {
+            "agreement": 59.106412763767366,
+            "ci_lower": 57.77920271487391,
+            "ci_upper": 60.43818167781781,
+            "n_politicians": 58
+          }
+        }
+      },
+      "openai/gpt-5": {
+        "display": "GPT-5",
+        "agreements": {
+          "SP": {
+            "agreement": 89.34081907535494,
+            "ci_lower": 88.84416290498724,
+            "ci_upper": 89.83129423006916,
+            "n_politicians": 41
+          },
+          "Grüne": {
+            "agreement": 86.97381663113006,
+            "ci_lower": 86.37778926794599,
+            "ci_upper": 87.6135854655295,
+            "n_politicians": 21
+          },
+          "GLP": {
+            "agreement": 90.01540298507462,
+            "ci_lower": 88.42693992537313,
+            "ci_upper": 91.4507682835821,
+            "n_politicians": 10
+          },
+          "Die Mitte": {
+            "agreement": 77.48545548121461,
+            "ci_lower": 75.53243733916625,
+            "ci_upper": 79.46715465774577,
+            "n_politicians": 29
+          },
+          "FDP": {
+            "agreement": 71.57014925373134,
+            "ci_lower": 69.6742176119403,
+            "ci_upper": 73.54021641791044,
+            "n_politicians": 25
+          },
+          "SVP": {
+            "agreement": 58.65916623777663,
+            "ci_lower": 57.430403049408135,
+            "ci_upper": 59.93152406073082,
+            "n_politicians": 58
+          }
+        }
+      },
+      "nousresearch/hermes-4-405b": {
+        "display": "Hermes 4 405B",
+        "agreements": {
+          "SP": {
+            "agreement": 87.76455405897342,
+            "ci_lower": 87.2781440662541,
+            "ci_upper": 88.24425136512559,
+            "n_politicians": 41
+          },
+          "Grüne": {
+            "agreement": 87.7165316275764,
+            "ci_lower": 87.253921108742,
+            "ci_upper": 88.20676279317698,
+            "n_politicians": 21
+          },
+          "GLP": {
+            "agreement": 86.46241791044777,
+            "ci_lower": 85.02915373134329,
+            "ci_upper": 87.71598507462687,
+            "n_politicians": 10
+          },
+          "Die Mitte": {
+            "agreement": 75.37068450849202,
+            "ci_lower": 73.30739693772517,
+            "ci_upper": 77.36070599588265,
+            "n_politicians": 29
+          },
+          "FDP": {
+            "agreement": 69.08985074626865,
+            "ci_lower": 66.54177567164179,
+            "ci_upper": 71.78917522388059,
+            "n_politicians": 25
+          },
+          "SVP": {
+            "agreement": 59.19004632012352,
+            "ci_lower": 57.79847967061246,
+            "ci_upper": 60.65169711785899,
+            "n_politicians": 58
+          }
+        }
+      },
+      "x-ai/grok-4-fast": {
+        "display": "Grok 4 Fast",
+        "agreements": {
+          "SP": {
+            "agreement": 86.34591554423007,
+            "ci_lower": 85.8986668183473,
+            "ci_upper": 86.78921751001091,
+            "n_politicians": 41
+          },
+          "Grüne": {
+            "agreement": 85.74993603411514,
+            "ci_lower": 85.28884044065389,
+            "ci_upper": 86.24018532338309,
+            "n_politicians": 21
+          },
+          "GLP": {
+            "agreement": 87.0228656716418,
+            "ci_lower": 85.8183432835821,
+            "ci_upper": 88.01188059701492,
+            "n_politicians": 10
+          },
+          "Die Mitte": {
+            "agreement": 75.0490169840453,
+            "ci_lower": 73.03743064848173,
+            "ci_upper": 77.09084186824498,
+            "n_politicians": 29
+          },
+          "FDP": {
+            "agreement": 69.67014925373134,
+            "ci_lower": 67.39306164179105,
+            "ci_upper": 72.07170582089552,
+            "n_politicians": 25
+          },
+          "SVP": {
+            "agreement": 59.54452393206382,
+            "ci_lower": 58.24234045290789,
+            "ci_upper": 60.841590131240345,
+            "n_politicians": 58
+          }
+        }
+      },
+      "anthropic/claude-sonnet-4.5": {
+        "display": "Claude Sonnet 4.5",
+        "agreements": {
+          "SP": {
+            "agreement": 86.92045140152894,
+            "ci_lower": 86.46245067346196,
+            "ci_upper": 87.40453785948307,
+            "n_politicians": 41
+          },
+          "Grüne": {
+            "agreement": 86.24620469083155,
+            "ci_lower": 85.74034790334044,
+            "ci_upper": 86.77295628997868,
+            "n_politicians": 21
+          },
+          "GLP": {
+            "agreement": 84.54077611940298,
+            "ci_lower": 83.50324738805969,
+            "ci_upper": 85.51493507462686,
+            "n_politicians": 10
+          },
+          "Die Mitte": {
+            "agreement": 77.30390633041688,
+            "ci_lower": 75.63311361296964,
+            "ci_upper": 78.92894274318064,
+            "n_politicians": 29
+          },
+          "FDP": {
+            "agreement": 71.60850746268656,
+            "ci_lower": 69.58529089552238,
+            "ci_upper": 73.70002686567165,
+            "n_politicians": 25
+          },
+          "SVP": {
+            "agreement": 62.53860524961401,
+            "ci_lower": 61.32742421513124,
+            "ci_upper": 63.79561837364899,
+            "n_politicians": 58
+          }
+        }
+      },
+      "amazon/nova-premier-v1": {
+        "display": "Nova Premier",
+        "agreements": {
+          "SP": {
+            "agreement": 89.04731707317073,
+            "ci_lower": 88.69169812522752,
+            "ci_upper": 89.39909146341463,
+            "n_politicians": 41
+          },
+          "Grüne": {
+            "agreement": 87.43135039090262,
+            "ci_lower": 86.99474378109453,
+            "ci_upper": 87.91726119402985,
+            "n_politicians": 21
+          },
+          "GLP": {
+            "agreement": 86.24674626865672,
+            "ci_lower": 85.39482873134328,
+            "ci_upper": 87.25794029850746,
+            "n_politicians": 10
+          },
+          "Die Mitte": {
+            "agreement": 79.88831188883171,
+            "ci_lower": 78.25145110653628,
+            "ci_upper": 81.43251248069994,
+            "n_politicians": 29
+          },
+          "FDP": {
+            "agreement": 72.29776119402985,
+            "ci_lower": 70.31405865671641,
+            "ci_upper": 74.47194253731344,
+            "n_politicians": 25
+          },
+          "SVP": {
+            "agreement": 65.34341739577971,
+            "ci_lower": 64.14156124549666,
+            "ci_upper": 66.58716553010808,
+            "n_politicians": 58
+          }
+        }
+      },
+      "x-ai/grok-4.1-fast": {
+        "display": "Grok 4.1 Fast",
+        "agreements": {
+          "SP": {
+            "agreement": 71.92563887877685,
+            "ci_lower": 71.2842911357845,
+            "ci_upper": 72.57542955951946,
+            "n_politicians": 41
+          },
+          "Grüne": {
+            "agreement": 70.76734896943853,
+            "ci_lower": 70.02999769012082,
+            "ci_upper": 71.55392128642502,
+            "n_politicians": 21
+          },
+          "GLP": {
+            "agreement": 79.0915223880597,
+            "ci_lower": 76.70019291044777,
+            "ci_upper": 81.37710895522387,
+            "n_politicians": 10
+          },
+          "Die Mitte": {
+            "agreement": 74.61103448275863,
+            "ci_lower": 73.5324198404529,
+            "ci_upper": 75.79812725167268,
+            "n_politicians": 29
+          },
+          "FDP": {
+            "agreement": 76.95402985074627,
+            "ci_lower": 75.52221597014925,
+            "ci_upper": 78.36185179104477,
+            "n_politicians": 25
+          },
+          "SVP": {
+            "agreement": 72.72530108080288,
+            "ci_lower": 71.81603917910446,
+            "ci_upper": 73.62409849459597,
+            "n_politicians": 58
+          }
+        }
+      },
+      "deepseek/deepseek-v3.2": {
+        "display": "DeepSeek v3.2",
+        "agreements": {
+          "SP": {
+            "agreement": 87.21577357116854,
+            "ci_lower": 86.79192473607571,
+            "ci_upper": 87.65998070622499,
+            "n_politicians": 41
+          },
+          "Grüne": {
+            "agreement": 86.78724946695095,
+            "ci_lower": 86.28118123667377,
+            "ci_upper": 87.33105366027007,
+            "n_politicians": 21
+          },
+          "GLP": {
+            "agreement": 86.09749253731344,
+            "ci_lower": 85.1764328358209,
+            "ci_upper": 87.2637791044776,
+            "n_politicians": 10
+          },
+          "Die Mitte": {
+            "agreement": 77.2795882655687,
+            "ci_lower": 75.54624240864644,
+            "ci_upper": 78.99611515697374,
+            "n_politicians": 29
+          },
+          "FDP": {
+            "agreement": 70.31641791044775,
+            "ci_lower": 68.02065791044775,
+            "ci_upper": 72.6503967164179,
+            "n_politicians": 25
+          },
+          "SVP": {
+            "agreement": 62.963077714873904,
+            "ci_lower": 61.70000231600618,
+            "ci_upper": 64.25895811888832,
+            "n_politicians": 58
+          }
+        }
+      },
+      "mistralai/mistral-large-2512": {
+        "display": "Mistral Large (Dec 2025)",
+        "agreements": {
+          "SP": {
+            "agreement": 85.88705132872224,
+            "ci_lower": 85.47324080815434,
+            "ci_upper": 86.30273634874409,
+            "n_politicians": 41
+          },
+          "Grüne": {
+            "agreement": 85.13479744136461,
+            "ci_lower": 84.62725195451316,
+            "ci_upper": 85.72720238095239,
+            "n_politicians": 21
+          },
+          "GLP": {
+            "agreement": 86.71316417910448,
+            "ci_lower": 85.99155373134329,
+            "ci_upper": 87.69457388059702,
+            "n_politicians": 10
+          },
+          "Die Mitte": {
+            "agreement": 78.5212249099331,
+            "ci_lower": 76.87225437467833,
+            "ci_upper": 80.1336038342769,
+            "n_politicians": 29
+          },
+          "FDP": {
+            "agreement": 72.2044776119403,
+            "ci_lower": 70.02546238805971,
+            "ci_upper": 74.38946746268657,
+            "n_politicians": 25
+          },
+          "SVP": {
+            "agreement": 64.65183221821924,
+            "ci_lower": 63.50819190684509,
+            "ci_upper": 65.77426170869789,
+            "n_politicians": 58
+          }
+        }
+      },
+      "bytedance-seed/seed-1.6": {
+        "display": "Seed 1.6",
+        "agreements": {
+          "SP": {
+            "agreement": 83.77474699672369,
+            "ci_lower": 83.2687904077175,
+            "ci_upper": 84.30419175464144,
+            "n_politicians": 41
+          },
+          "Grüne": {
+            "agreement": 83.06017057569296,
+            "ci_lower": 82.43965174129353,
+            "ci_upper": 83.75579726368159,
+            "n_politicians": 21
+          },
+          "GLP": {
+            "agreement": 82.20420895522388,
+            "ci_lower": 81.05205000000001,
+            "ci_upper": 83.49410298507462,
+            "n_politicians": 10
+          },
+          "Die Mitte": {
+            "agreement": 80.30866700977869,
+            "ci_lower": 78.94739307771488,
+            "ci_upper": 81.6694037570767,
+            "n_politicians": 29
+          },
+          "FDP": {
+            "agreement": 72.73164179104477,
+            "ci_lower": 70.73711746268658,
+            "ci_upper": 74.8428847761194,
+            "n_politicians": 25
+          },
+          "SVP": {
+            "agreement": 69.67602161605764,
+            "ci_lower": 68.66454831446217,
+            "ci_upper": 70.71645567421514,
+            "n_politicians": 58
+          }
+        }
+      },
+      "moonshotai/kimi-k2.5": {
+        "display": "Kimi K2.5",
+        "agreements": {
+          "SP": {
+            "agreement": 86.33927193301784,
+            "ci_lower": 85.87303931561704,
+            "ci_upper": 86.80759810702584,
+            "n_politicians": 41
+          },
+          "Grüne": {
+            "agreement": 84.43703624733475,
+            "ci_lower": 83.90544296375265,
+            "ci_upper": 85.03265351812367,
+            "n_politicians": 21
+          },
+          "GLP": {
+            "agreement": 85.81689552238807,
+            "ci_lower": 84.55721380597015,
+            "ci_upper": 86.92554626865672,
+            "n_politicians": 10
+          },
+          "Die Mitte": {
+            "agreement": 79.72799279464745,
+            "ci_lower": 78.12444480185282,
+            "ci_upper": 81.3476762738034,
+            "n_politicians": 29
+          },
+          "FDP": {
+            "agreement": 71.96194029850747,
+            "ci_lower": 69.97395820895522,
+            "ci_upper": 73.96651955223881,
+            "n_politicians": 25
+          },
+          "SVP": {
+            "agreement": 63.99357179619145,
+            "ci_lower": 62.83894653885744,
+            "ci_upper": 65.19046487390632,
+            "n_politicians": 58
+          }
+        }
+      },
+      "anthropic/claude-opus-4.6": {
+        "display": "Claude Opus 4.6",
+        "agreements": {
+          "SP": {
+            "agreement": 89.01091372406262,
+            "ci_lower": 88.55568438296324,
+            "ci_upper": 89.45552284310158,
+            "n_politicians": 41
+          },
+          "Grüne": {
+            "agreement": 87.60014925373135,
+            "ci_lower": 86.97893763326226,
+            "ci_upper": 88.26455419331911,
+            "n_politicians": 21
+          },
+          "GLP": {
+            "agreement": 89.02659701492537,
+            "ci_lower": 87.54931902985075,
+            "ci_upper": 90.36621865671641,
+            "n_politicians": 10
+          },
+          "Die Mitte": {
+            "agreement": 79.41867730313948,
+            "ci_lower": 77.56397722593927,
+            "ci_upper": 81.19599832732887,
+            "n_politicians": 29
+          },
+          "FDP": {
+            "agreement": 73.79029850746268,
+            "ci_lower": 71.8957014925373,
+            "ci_upper": 75.67727462686567,
+            "n_politicians": 25
+          },
+          "SVP": {
+            "agreement": 60.29967061245497,
+            "ci_lower": 59.02983839423571,
+            "ci_upper": 61.575983466289244,
+            "n_politicians": 58
+          }
+        }
+      },
+      "qwen/qwen3-max-thinking": {
+        "display": "Qwen 3 Max Thinking",
+        "agreements": {
+          "SP": {
+            "agreement": 89.18719694211867,
+            "ci_lower": 88.75897579177284,
+            "ci_upper": 89.60666854750637,
+            "n_politicians": 41
+          },
+          "Grüne": {
+            "agreement": 89.1294669509595,
+            "ci_lower": 88.69457285003554,
+            "ci_upper": 89.60296535181237,
+            "n_politicians": 21
+          },
+          "GLP": {
+            "agreement": 85.70644776119403,
+            "ci_lower": 84.04200858208955,
+            "ci_upper": 87.29118619402985,
+            "n_politicians": 10
+          },
+          "Die Mitte": {
+            "agreement": 75.67768399382399,
+            "ci_lower": 73.5875697375193,
+            "ci_upper": 77.71329837879567,
+            "n_politicians": 29
+          },
+          "FDP": {
+            "agreement": 66.74,
+            "ci_lower": 64.2316519402985,
+            "ci_upper": 69.40902358208956,
+            "n_politicians": 25
+          },
+          "SVP": {
+            "agreement": 58.95574369531651,
+            "ci_lower": 57.5695394364385,
+            "ci_upper": 60.36890015440041,
+            "n_politicians": 58
+          }
+        }
+      },
+      "z-ai/glm-5": {
+        "display": "GLM-5",
+        "agreements": {
+          "SP": {
+            "agreement": 84.55195850018201,
+            "ci_lower": 83.94272970513288,
+            "ci_upper": 85.1646490717146,
+            "n_politicians": 41
+          },
+          "Grüne": {
+            "agreement": 83.54098081023454,
+            "ci_lower": 82.87710536602701,
+            "ci_upper": 84.25246233120113,
+            "n_politicians": 21
+          },
+          "GLP": {
+            "agreement": 87.58182089552238,
+            "ci_lower": 86.28046119402987,
+            "ci_upper": 88.78846343283583,
+            "n_politicians": 10
+          },
+          "Die Mitte": {
+            "agreement": 81.73970149253732,
+            "ci_lower": 80.21815581574884,
+            "ci_upper": 83.21269261451364,
+            "n_politicians": 29
+          },
+          "FDP": {
+            "agreement": 75.81373134328359,
+            "ci_lower": 73.70360970149252,
+            "ci_upper": 77.94015283582088,
+            "n_politicians": 25
+          },
+          "SVP": {
+            "agreement": 64.7034276891405,
+            "ci_lower": 63.405866443643845,
+            "ci_upper": 66.01566784611427,
+            "n_politicians": 58
+          }
+        }
+      },
+      "qwen/qwen3.5-397b-a17b": {
+        "display": "Qwen 3.5 397B",
+        "agreements": {
+          "SP": {
+            "agreement": 84.81078631234074,
+            "ci_lower": 84.30227793957044,
+            "ci_upper": 85.32286002912268,
+            "n_politicians": 41
+          },
+          "Grüne": {
+            "agreement": 83.77161336176262,
+            "ci_lower": 83.27187189054727,
+            "ci_upper": 84.29547707889127,
+            "n_politicians": 21
+          },
+          "GLP": {
+            "agreement": 85.11838805970149,
+            "ci_lower": 84.3905671641791,
+            "ci_upper": 85.89731119402984,
+            "n_politicians": 10
+          },
+          "Die Mitte": {
+            "agreement": 80.75591353576942,
+            "ci_lower": 79.17769055584148,
+            "ci_upper": 82.25624176531137,
+            "n_politicians": 29
+          },
+          "FDP": {
+            "agreement": 72.92567164179104,
+            "ci_lower": 70.76260985074626,
+            "ci_upper": 75.11917791044777,
+            "n_politicians": 25
+          },
+          "SVP": {
+            "agreement": 64.27033453422541,
+            "ci_lower": 63.10544081317549,
+            "ci_upper": 65.46870033453422,
+            "n_politicians": 58
+          }
+        }
+      },
+      "anthropic/claude-sonnet-4.6": {
+        "display": "Claude Sonnet 4.6",
+        "agreements": {
+          "SP": {
+            "agreement": 87.00700036403349,
+            "ci_lower": 86.52591527120495,
+            "ci_upper": 87.48599617764836,
+            "n_politicians": 41
+          },
+          "Grüne": {
+            "agreement": 87.23678749111585,
+            "ci_lower": 86.84632711442787,
+            "ci_upper": 87.65618034825872,
+            "n_politicians": 21
+          },
+          "GLP": {
+            "agreement": 86.17211940298507,
+            "ci_lower": 85.21800559701492,
+            "ci_upper": 87.06717201492538,
+            "n_politicians": 10
+          },
+          "Die Mitte": {
+            "agreement": 76.69466803911477,
+            "ci_lower": 74.75901479670613,
+            "ci_upper": 78.52725090066906,
+            "n_politicians": 29
+          },
+          "FDP": {
+            "agreement": 70.06089552238805,
+            "ci_lower": 67.8190028358209,
+            "ci_upper": 72.3167314925373,
+            "n_politicians": 25
+          },
+          "SVP": {
+            "agreement": 60.53628924343798,
+            "ci_lower": 59.279779722079255,
+            "ci_upper": 61.827407295419455,
+            "n_politicians": 58
+          }
+        }
+      },
+      "openai/gpt-5.4": {
+        "display": "GPT-5.4",
+        "agreements": {
+          "SP": {
+            "agreement": 90.77365489625045,
+            "ci_lower": 90.32481716417911,
+            "ci_upper": 91.20773298143429,
+            "n_politicians": 41
+          },
+          "Grüne": {
+            "agreement": 89.31887704335466,
+            "ci_lower": 88.85620042643924,
+            "ci_upper": 89.80354815209667,
+            "n_politicians": 21
+          },
+          "GLP": {
+            "agreement": 87.96241791044777,
+            "ci_lower": 86.05598843283583,
+            "ci_upper": 89.61974141791043,
+            "n_politicians": 10
+          },
+          "Die Mitte": {
+            "agreement": 76.79760164693774,
+            "ci_lower": 74.59428898610396,
+            "ci_upper": 78.97013883170354,
+            "n_politicians": 29
+          },
+          "FDP": {
+            "agreement": 68.45074626865672,
+            "ci_lower": 66.17867716417912,
+            "ci_upper": 70.77275373134329,
+            "n_politicians": 25
+          },
+          "SVP": {
+            "agreement": 56.981219763252696,
+            "ci_lower": 55.625965195573855,
+            "ci_upper": 58.44278609109623,
+            "n_politicians": 58
+          }
+        }
+      },
+      "nvidia/nemotron-3-super-120b-a12b": {
+        "display": "Nemotron 3 Super",
+        "agreements": {
+          "SP": {
+            "agreement": 67.18828904259192,
+            "ci_lower": 66.49024790680741,
+            "ci_upper": 67.91834701492536,
+            "n_politicians": 41
+          },
+          "Grüne": {
+            "agreement": 68.02036958066809,
+            "ci_lower": 67.37665547263681,
+            "ci_upper": 68.69931041222459,
+            "n_politicians": 21
+          },
+          "GLP": {
+            "agreement": 60.72435820895522,
+            "ci_lower": 59.86152201492537,
+            "ci_upper": 61.70253432835822,
+            "n_politicians": 10
+          },
+          "Die Mitte": {
+            "agreement": 63.65375193000516,
+            "ci_lower": 61.87663921770458,
+            "ci_upper": 65.31831278950078,
+            "n_politicians": 29
+          },
+          "FDP": {
+            "agreement": 57.90447761194031,
+            "ci_lower": 56.172731791044775,
+            "ci_upper": 59.68707059701494,
+            "n_politicians": 25
+          },
+          "SVP": {
+            "agreement": 53.31845599588267,
+            "ci_lower": 52.12309817292846,
+            "ci_upper": 54.502570959855895,
+            "n_politicians": 58
+          }
+        }
+      },
+      "x-ai/grok-4.20-beta": {
+        "display": "Grok 4.20",
+        "agreements": {
+          "SP": {
+            "agreement": 80.85356024754277,
+            "ci_lower": 80.29716590826357,
+            "ci_upper": 81.43528367309791,
+            "n_politicians": 41
+          },
+          "Grüne": {
+            "agreement": 79.90878464818762,
+            "ci_lower": 79.27347405828003,
+            "ci_upper": 80.6009196872779,
+            "n_politicians": 21
+          },
+          "GLP": {
+            "agreement": 86.17585074626865,
+            "ci_lower": 84.7309,
+            "ci_upper": 87.64301492537314,
+            "n_politicians": 10
+          },
+          "Die Mitte": {
+            "agreement": 80.68180133813689,
+            "ci_lower": 79.48715092640246,
+            "ci_upper": 81.84952032938754,
+            "n_politicians": 29
+          },
+          "FDP": {
+            "agreement": 78.1734328358209,
+            "ci_lower": 76.53728850746268,
+            "ci_upper": 79.87600865671642,
+            "n_politicians": 25
+          },
+          "SVP": {
+            "agreement": 71.05739063304168,
+            "ci_lower": 70.07727824240865,
+            "ci_upper": 72.04005873648997,
+            "n_politicians": 58
+          }
+        }
+      },
+      "mistralai/mistral-small-2603": {
+        "display": "Mistral Small 4",
+        "agreements": {
+          "SP": {
+            "agreement": 85.14305788132508,
+            "ci_lower": 84.75171223152532,
+            "ci_upper": 85.52260784492174,
+            "n_politicians": 41
+          },
+          "Grüne": {
+            "agreement": 83.73554371002132,
+            "ci_lower": 83.19690636105187,
+            "ci_upper": 84.32982427149965,
+            "n_politicians": 21
+          },
+          "GLP": {
+            "agreement": 87.40346268656717,
+            "ci_lower": 86.52559850746269,
+            "ci_upper": 88.54607462686566,
+            "n_politicians": 10
+          },
+          "Die Mitte": {
+            "agreement": 78.5115748841997,
+            "ci_lower": 76.9223643849717,
+            "ci_upper": 80.11460743695318,
+            "n_politicians": 29
+          },
+          "FDP": {
+            "agreement": 75.1634328358209,
+            "ci_lower": 73.40264880597014,
+            "ci_upper": 76.99629761194029,
+            "n_politicians": 25
+          },
+          "SVP": {
+            "agreement": 66.92602161605764,
+            "ci_lower": 65.86462030365416,
+            "ci_upper": 67.97177380339681,
+            "n_politicians": 58
+          }
+        }
+      },
+      "openai/gpt-5.4-mini": {
+        "display": "GPT-5.4 Mini",
+        "agreements": {
+          "SP": {
+            "agreement": 87.88286494357482,
+            "ci_lower": 87.28985347651985,
+            "ci_upper": 88.45463296323263,
+            "n_politicians": 41
+          },
+          "Grüne": {
+            "agreement": 85.04240227434256,
+            "ci_lower": 84.42438095238096,
+            "ci_upper": 85.71566382373845,
+            "n_politicians": 21
+          },
+          "GLP": {
+            "agreement": 87.02211940298508,
+            "ci_lower": 85.60942873134329,
+            "ci_upper": 88.31022985074628,
+            "n_politicians": 10
+          },
+          "Die Mitte": {
+            "agreement": 79.94479670612455,
+            "ci_lower": 78.09595908389089,
+            "ci_upper": 81.7115934122491,
+            "n_politicians": 29
+          },
+          "FDP": {
+            "agreement": 70.72417910447761,
+            "ci_lower": 68.59751447761194,
+            "ci_upper": 72.88413850746267,
+            "n_politicians": 25
+          },
+          "SVP": {
+            "agreement": 61.67975295934123,
+            "ci_lower": 60.49948462429234,
+            "ci_upper": 62.89275250900669,
+            "n_politicians": 58
+          }
+        }
+      },
+      "minimax/minimax-m2.7": {
+        "display": "MiniMax M2.7",
+        "agreements": {
+          "SP": {
+            "agreement": 85.95812886785585,
+            "ci_lower": 85.51581880232982,
+            "ci_upper": 86.41835220240263,
+            "n_politicians": 41
+          },
+          "Grüne": {
+            "agreement": 85.40683013503909,
+            "ci_lower": 84.89287704335464,
+            "ci_upper": 85.95962757640369,
+            "n_politicians": 21
+          },
+          "GLP": {
+            "agreement": 82.54525373134328,
+            "ci_lower": 81.22819776119402,
+            "ci_upper": 83.9462619402985,
+            "n_politicians": 10
+          },
+          "Die Mitte": {
+            "agreement": 75.38908389089038,
+            "ci_lower": 73.74063651569737,
+            "ci_upper": 77.10662403499742,
+            "n_politicians": 29
+          },
+          "FDP": {
+            "agreement": 67.58283582089551,
+            "ci_lower": 65.32656985074627,
+            "ci_upper": 69.98299119402986,
+            "n_politicians": 25
+          },
+          "SVP": {
+            "agreement": 63.155048893463714,
+            "ci_lower": 61.90469840452908,
+            "ci_upper": 64.40967569480185,
+            "n_politicians": 58
+          }
+        }
+      },
+      "xiaomi/mimo-v2-pro": {
+        "display": "MiMo v2 Pro",
+        "agreements": {
+          "SP": {
+            "agreement": 86.90807426283217,
+            "ci_lower": 86.41803230797233,
+            "ci_upper": 87.38029295595194,
+            "n_politicians": 41
+          },
+          "Grüne": {
+            "agreement": 84.73909737029139,
+            "ci_lower": 84.09852167732765,
+            "ci_upper": 85.46132693674484,
+            "n_politicians": 21
+          },
+          "GLP": {
+            "agreement": 86.39525373134327,
+            "ci_lower": 85.17526753731343,
+            "ci_upper": 87.60667947761193,
+            "n_politicians": 10
+          },
+          "Die Mitte": {
+            "agreement": 80.53859495625322,
+            "ci_lower": 78.95839629439013,
+            "ci_upper": 82.0812554040144,
+            "n_politicians": 29
+          },
+          "FDP": {
+            "agreement": 74.39477611940299,
+            "ci_lower": 72.57166014925373,
+            "ci_upper": 76.19576552238806,
+            "n_politicians": 25
+          },
+          "SVP": {
+            "agreement": 64.04825527534742,
+            "ci_lower": 62.83892119145651,
+            "ci_upper": 65.26337332732886,
+            "n_politicians": 58
+          }
+        }
+      },
+      "qwen/qwen3.6-plus-preview:free": {
+        "display": "Qwen 3.6 Plus",
+        "agreements": {
+          "SP": {
+            "agreement": 80.73998179832545,
+            "ci_lower": 80.09764479432108,
+            "ci_upper": 81.41688150709867,
+            "n_politicians": 41
+          },
+          "Grüne": {
+            "agreement": 79.94609808102345,
+            "ci_lower": 79.21325977256575,
+            "ci_upper": 80.75376119402985,
+            "n_politicians": 21
+          },
+          "GLP": {
+            "agreement": 78.52211940298507,
+            "ci_lower": 77.28989179104478,
+            "ci_upper": 79.53759888059702,
+            "n_politicians": 10
+          },
+          "Die Mitte": {
+            "agreement": 72.68669068450849,
+            "ci_lower": 70.7749921513124,
+            "ci_upper": 74.46433221821925,
+            "n_politicians": 29
+          },
+          "FDP": {
+            "agreement": 61.62238805970149,
+            "ci_lower": 58.99534626865672,
+            "ci_upper": 64.35712134328358,
+            "n_politicians": 25
+          },
+          "SVP": {
+            "agreement": 55.72671641791045,
+            "ci_lower": 54.47929104477612,
+            "ci_upper": 57.035914758106024,
+            "n_politicians": 58
+          }
+        }
+      },
+      "qwen/qwen3.5-plus-02-15": {
+        "display": "Qwen 3.5 Plus",
+        "agreements": {
+          "SP": {
+            "agreement": 83.67836912995996,
+            "ci_lower": 83.0818943392792,
+            "ci_upper": 84.2928265380415,
+            "n_politicians": 41
+          },
+          "Grüne": {
+            "agreement": 83.51450604122246,
+            "ci_lower": 82.9759036958067,
+            "ci_upper": 84.12128056147832,
+            "n_politicians": 21
+          },
+          "GLP": {
+            "agreement": 85.36241791044776,
+            "ci_lower": 84.42613134328359,
+            "ci_upper": 86.26723208955224,
+            "n_politicians": 10
+          },
+          "Die Mitte": {
+            "agreement": 80.1111631497684,
+            "ci_lower": 78.66373430262482,
+            "ci_upper": 81.47947516726711,
+            "n_politicians": 29
+          },
+          "FDP": {
+            "agreement": 74.32910447761193,
+            "ci_lower": 72.355673880597,
+            "ci_upper": 76.3193295522388,
+            "n_politicians": 25
+          },
+          "SVP": {
+            "agreement": 64.84058672156459,
+            "ci_lower": 63.73808196088524,
+            "ci_upper": 65.95888413535769,
+            "n_politicians": 58
+          }
+        }
+      }
+    }
+  }
+}

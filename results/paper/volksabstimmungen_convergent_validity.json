@@ -1,0 +1,214 @@
+{
+  "description": "Convergent validity: correlation between Smartvote agreement scores and Volksabstimmungen Parolen agreement for the same model-party pairs.",
+  "generated_by": "n_volksabstimmungen_analysis.py",
+  "generated_at": "2026-04-04T21:28:34.680336",
+  "models_analyzed": [
+    "GPT-5.4",
+    "Claude Opus 4.6",
+    "DeepSeek V3.2",
+    "Llama 4 Maverick",
+    "Grok 4.20",
+    "Mistral Large",
+    "Command A",
+    "Qwen 3.5 Plus"
+  ],
+  "models_excluded": [
+    "Gemini 3.1 Pro (98% refusal rate in German)"
+  ],
+  "n_models": 8,
+  "methodology": "Spearman correlation between Smartvote agreement % and Volksabstimmungen agreement % across model-party pairs. Per-model, per-party, and pooled.",
+  "results": {
+    "per_model": {
+      "openai/gpt-5.4": {
+        "display": "GPT-5.4",
+        "volksabstimmungen_agreement": {
+          "SP": 58.7,
+          "Grüne": 59.1,
+          "GLP": 69.8,
+          "Die Mitte": 77.8,
+          "FDP": 74.5,
+          "SVP": 50.0
+        },
+        "smartvote_agreement": {
+          "SP": 93.7,
+          "Grüne": 90.7,
+          "GLP": 91.7,
+          "Die Mitte": 84.0,
+          "FDP": 74.7,
+          "SVP": 63.9
+        }
+      },
+      "anthropic/claude-opus-4.6": {
+        "display": "Claude Opus 4.6",
+        "volksabstimmungen_agreement": {
+          "SP": 60.9,
+          "Grüne": 61.4,
+          "GLP": 76.7,
+          "Die Mitte": 75.6,
+          "FDP": 72.3,
+          "SVP": 43.5
+        },
+        "smartvote_agreement": {
+          "SP": 92.0,
+          "Grüne": 89.0,
+          "GLP": 92.8,
+          "Die Mitte": 86.6,
+          "FDP": 80.0,
+          "SVP": 67.2
+        }
+      },
+      "deepseek/deepseek-v3.2": {
+        "display": "DeepSeek V3.2",
+        "volksabstimmungen_agreement": {
+          "SP": 46.7,
+          "Grüne": 48.8,
+          "GLP": 76.2,
+          "Die Mitte": 88.4,
+          "FDP": 84.4,
+          "SVP": 60.0
+        },
+        "smartvote_agreement": {
+          "SP": 90.2,
+          "Grüne": 88.2,
+          "GLP": 89.9,
+          "Die Mitte": 84.5,
+          "FDP": 76.5,
+          "SVP": 69.9
+        }
+      },
+      "meta-llama/llama-4-maverick": {
+        "display": "Llama 4 Maverick",
+        "volksabstimmungen_agreement": {
+          "SP": 50.0,
+          "Grüne": 52.3,
+          "GLP": 69.8,
+          "Die Mitte": 77.8,
+          "FDP": 78.7,
+          "SVP": 52.2
+        },
+        "smartvote_agreement": {
+          "SP": 90.7,
+          "Grüne": 88.3,
+          "GLP": 87.0,
+          "Die Mitte": 85.8,
+          "FDP": 76.4,
+          "SVP": 71.8
+        }
+      },
+      "x-ai/grok-4.20": {
+        "display": "Grok 4.20",
+        "volksabstimmungen_agreement": {
+          "SP": 47.8,
+          "Grüne": 50.0,
+          "GLP": 44.2,
+          "Die Mitte": 48.9,
+          "FDP": 55.3,
+          "SVP": 58.7
+        },
+        "smartvote_agreement": {
+          "SP": 84.2,
+          "Grüne": 81.4,
+          "GLP": 90.7,
+          "Die Mitte": 88.3,
+          "FDP": 85.1,
+          "SVP": 77.8
+        }
+      },
+      "mistralai/mistral-large-2512": {
+        "display": "Mistral Large",
+        "volksabstimmungen_agreement": {
+          "SP": 54.3,
+          "Grüne": 54.5,
+          "GLP": 51.2,
+          "Die Mitte": 57.8,
+          "FDP": 57.4,
+          "SVP": 54.3
+        },
+        "smartvote_agreement": {
+          "SP": 88.9,
+          "Grüne": 86.5,
+          "GLP": 90.5,
+          "Die Mitte": 85.7,
+          "FDP": 78.4,
+          "SVP": 71.5
+        }
+      },
+      "cohere/command-a": {
+        "display": "Command A",
+        "volksabstimmungen_agreement": {
+          "SP": 47.8,
+          "Grüne": 50.0,
+          "GLP": 79.1,
+          "Die Mitte": 84.4,
+          "FDP": 80.9,
+          "SVP": 58.7
+        },
+        "smartvote_agreement": {
+          "SP": 91.9,
+          "Grüne": 89.4,
+          "GLP": 91.6,
+          "Die Mitte": 83.2,
+          "FDP": 75.7,
+          "SVP": 67.4
+        }
+      },
+      "qwen/qwen3.5-plus-02-15": {
+        "display": "Qwen 3.5 Plus",
+        "volksabstimmungen_agreement": {
+          "SP": 53.3,
+          "Grüne": 55.8,
+          "GLP": 81.0,
+          "Die Mitte": 81.8,
+          "FDP": 76.1,
+          "SVP": 53.3
+        },
+        "smartvote_agreement": {
+          "SP": 86.7,
+          "Grüne": 84.9,
+          "GLP": 89.1,
+          "Die Mitte": 87.3,
+          "FDP": 80.6,
+          "SVP": 71.7
+        }
+      }
+    },
+    "pooled": {
+      "spearman_rho": -0.061,
+      "p_value": 0.6807,
+      "n_datapoints": 48,
+      "note": "Pooled across 8 models × 6 parties"
+    },
+    "per_party": {
+      "SP": {
+        "spearman_rho": 0.467,
+        "p_value": 0.2433,
+        "n": 8
+      },
+      "Grüne": {
+        "spearman_rho": 0.311,
+        "p_value": 0.4528,
+        "n": 8
+      },
+      "GLP": {
+        "spearman_rho": 0.0,
+        "p_value": 1.0,
+        "n": 8
+      },
+      "Die Mitte": {
+        "spearman_rho": -0.563,
+        "p_value": 0.1463,
+        "n": 8
+      },
+      "FDP": {
+        "spearman_rho": -0.548,
+        "p_value": 0.16,
+        "n": 8
+      },
+      "SVP": {
+        "spearman_rho": 0.371,
+        "p_value": 0.3652,
+        "n": 8
+      }
+    }
+  }
+}

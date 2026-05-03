@@ -1,0 +1,169 @@
+{
+  "description": "PCA validation for the Smartvote answer space: explained variance ratios, silhouette score, and Spearman correlation between PC1 and left-right party ordering.",
+  "generated_by": "i_smartvote_statistical_analysis.py",
+  "generated_at": "2026-04-04T21:28:10.918762",
+  "models_analyzed": [
+    "Claude 3 Haiku",
+    "Claude 3.5 Haiku",
+    "Claude 3.5 Sonnet",
+    "Claude 3.7 Sonnet",
+    "Claude Opus 4",
+    "Claude Opus 4.6",
+    "Claude Sonnet 4",
+    "Claude Sonnet 4.5",
+    "Claude Sonnet 4.6",
+    "Command A",
+    "Command R+",
+    "DeepSeek R1",
+    "DeepSeek R1 0528",
+    "DeepSeek v3",
+    "DeepSeek v3.2",
+    "GLM-5",
+    "GPT-3.5 Turbo",
+    "GPT-4 Turbo",
+    "GPT-4.1",
+    "GPT-4o",
+    "GPT-4o Mini",
+    "GPT-5",
+    "GPT-5.4",
+    "GPT-5.4 Mini",
+    "Gemini 2 Flash",
+    "Grok 2",
+    "Grok 3",
+    "Grok 3 Beta",
+    "Grok 3 Mini",
+    "Grok 4",
+    "Grok 4 Fast",
+    "Grok 4.1 Fast",
+    "Grok 4.20",
+    "Hermes 3 Llama 3.1 405B",
+    "Hermes 4 405B",
+    "Jamba",
+    "Kimi K2.5",
+    "Llama 3.1 405B",
+    "Llama 4 Maverick",
+    "MiMo v2 Pro",
+    "MiniMax M2.7",
+    "Minimax",
+    "Mistral 7B v0.1",
+    "Mistral Large",
+    "Mistral Large (Dec 2025)",
+    "Mistral Large (Nov 2024)",
+    "Mistral Medium 3",
+    "Mistral Nemo",
+    "Mistral Small 3 (Jan 2025)",
+    "Mistral Small 4",
+    "Mixtral 8x22b",
+    "Nemotron 3 Super",
+    "Nova Premier",
+    "Nova Pro",
+    "Phi-4",
+    "Qwen 2.5 72B",
+    "Qwen 3 Max Thinking",
+    "Qwen 3.5 397B",
+    "Qwen 3.5 Plus",
+    "Qwen 3.6 Plus",
+    "Seed 1.6",
+    "Yi Large",
+    "o1",
+    "o1-mini",
+    "o3-mini",
+    "o4-mini"
+  ],
+  "models_excluded": [
+    "x-ai/grok-4.20",
+    "google/gemini-3-flash-preview",
+    "openai/o1-preview",
+    "qwen/qvq-72b-preview",
+    "google/gemini-3.1-pro-preview"
+  ],
+  "n_models": 66,
+  "methodology": "PCA on 67 non-budget Smartvote questions for 184 elected National Council members. Silhouette score computed on party-labeled clusters. Spearman rho between PC1 projection and left-right party ordering (SP=1, Gruene=2, GLP=3, Die Mitte=4, FDP=5, SVP=6).",
+  "results": {
+    "explained_variance_ratio": [
+      0.5822395848350647,
+      0.08618068877768685
+    ],
+    "explained_variance_cumulative": [
+      0.5822395848350647,
+      0.6684202736127515
+    ],
+    "total_explained_variance_2d": 0.6684202736127515,
+    "silhouette_score": 0.398498748349218,
+    "silhouette_interpretation": "good",
+    "party_stats": {
+      "SP": {
+        "centroid": [
+          305.0370597757039,
+          -22.272290303896607
+        ],
+        "std": [
+          29.067136812988256,
+          35.916605368076596
+        ],
+        "n": 41
+      },
+      "Grüne": {
+        "centroid": [
+          327.773846345416,
+          -70.3575870205126
+        ],
+        "std": [
+          19.157016207008926,
+          25.25038849216342
+        ],
+        "n": 21
+      },
+      "GLP": {
+        "centroid": [
+          140.0031461027106,
+          138.8711577201478
+        ],
+        "std": [
+          75.53418938079051,
+          30.709436087203198
+        ],
+        "n": 10
+      },
+      "Die Mitte": {
+        "centroid": [
+          -26.407867818933585,
+          60.69198664494549
+        ],
+        "std": [
+          80.26346916237144,
+          57.23056772733008
+        ],
+        "n": 29
+      },
+      "FDP": {
+        "centroid": [
+          -153.99690758082346,
+          157.06427404059264
+        ],
+        "std": [
+          55.662135982418334,
+          53.57011006635212
+        ],
+        "n": 25
+      },
+      "SVP": {
+        "centroid": [
+          -278.8629453243973,
+          -80.77091053498602
+        ],
+        "std": [
+          54.76668489813414,
+          42.35315227849933
+        ],
+        "n": 58
+      }
+    },
+    "pc1_left_right_ordering": {
+      "is_monotonic": false,
+      "spearman_rho": -0.942857142857143,
+      "spearman_p": 0.004804664723032055,
+      "interpretation": "PC1 captures left-right spectrum"
+    }
+  }
+}

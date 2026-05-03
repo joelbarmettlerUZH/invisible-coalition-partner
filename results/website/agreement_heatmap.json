@@ -1,0 +1,292 @@
+{
+  "parties": [
+    "SP",
+    "Grüne",
+    "GLP",
+    "Die Mitte",
+    "FDP",
+    "SVP"
+  ],
+  "models": [
+    {
+      "name": "openai/gpt-5.4",
+      "display": "GPT-5.4",
+      "country": "USA",
+      "open_source": false,
+      "scores": {
+        "SP": 90.8,
+        "Grüne": 89.3,
+        "GLP": 88.0,
+        "Die Mitte": 76.8,
+        "FDP": 68.5,
+        "SVP": 57.0
+      }
+    },
+    {
+      "name": "qwen/qwen3-max-thinking",
+      "display": "Qwen 3 Max Thinking",
+      "country": "China",
+      "open_source": false,
+      "scores": {
+        "SP": 89.2,
+        "Grüne": 89.1,
+        "GLP": 85.7,
+        "Die Mitte": 75.7,
+        "FDP": 66.7,
+        "SVP": 59.0
+      }
+    },
+    {
+      "name": "amazon/nova-premier-v1",
+      "display": "Nova Premier",
+      "country": "USA",
+      "open_source": false,
+      "scores": {
+        "SP": 89.0,
+        "Grüne": 87.4,
+        "GLP": 86.2,
+        "Die Mitte": 79.9,
+        "FDP": 72.3,
+        "SVP": 65.3
+      }
+    },
+    {
+      "name": "anthropic/claude-opus-4.6",
+      "display": "Claude Opus 4.6",
+      "country": "USA",
+      "open_source": false,
+      "scores": {
+        "SP": 89.0,
+        "Grüne": 87.6,
+        "GLP": 89.0,
+        "Die Mitte": 79.4,
+        "FDP": 73.8,
+        "SVP": 60.3
+      }
+    },
+    {
+      "name": "cohere/command-a",
+      "display": "Command A",
+      "country": "Canada",
+      "open_source": true,
+      "scores": {
+        "SP": 88.9,
+        "Grüne": 88.0,
+        "GLP": 87.9,
+        "Die Mitte": 76.1,
+        "FDP": 69.5,
+        "SVP": 60.5
+      }
+    },
+    {
+      "name": "nousresearch/hermes-4-405b",
+      "display": "Hermes 4 405B",
+      "country": "USA",
+      "open_source": true,
+      "scores": {
+        "SP": 87.8,
+        "Grüne": 87.7,
+        "GLP": 86.5,
+        "Die Mitte": 75.4,
+        "FDP": 69.1,
+        "SVP": 59.2
+      }
+    },
+    {
+      "name": "meta-llama/llama-4-maverick",
+      "display": "Llama 4 Maverick",
+      "country": "USA",
+      "open_source": true,
+      "scores": {
+        "SP": 87.7,
+        "Grüne": 86.9,
+        "GLP": 83.2,
+        "Die Mitte": 78.7,
+        "FDP": 70.2,
+        "SVP": 64.9
+      }
+    },
+    {
+      "name": "deepseek/deepseek-v3.2",
+      "display": "DeepSeek v3.2",
+      "country": "China",
+      "open_source": true,
+      "scores": {
+        "SP": 87.2,
+        "Grüne": 86.8,
+        "GLP": 86.1,
+        "Die Mitte": 77.3,
+        "FDP": 70.3,
+        "SVP": 63.0
+      }
+    },
+    {
+      "name": "anthropic/claude-sonnet-4.6",
+      "display": "Claude Sonnet 4.6",
+      "country": "USA",
+      "open_source": false,
+      "scores": {
+        "SP": 87.0,
+        "Grüne": 87.2,
+        "GLP": 86.2,
+        "Die Mitte": 76.7,
+        "FDP": 70.1,
+        "SVP": 60.5
+      }
+    },
+    {
+      "name": "xiaomi/mimo-v2-pro",
+      "display": "MiMo v2 Pro",
+      "country": "China",
+      "open_source": false,
+      "scores": {
+        "SP": 86.9,
+        "Grüne": 84.7,
+        "GLP": 86.4,
+        "Die Mitte": 80.5,
+        "FDP": 74.4,
+        "SVP": 64.0
+      }
+    },
+    {
+      "name": "moonshotai/kimi-k2.5",
+      "display": "Kimi K2.5",
+      "country": "China",
+      "open_source": true,
+      "scores": {
+        "SP": 86.3,
+        "Grüne": 84.4,
+        "GLP": 85.8,
+        "Die Mitte": 79.7,
+        "FDP": 72.0,
+        "SVP": 64.0
+      }
+    },
+    {
+      "name": "minimax/minimax-m2.7",
+      "display": "MiniMax M2.7",
+      "country": "China",
+      "open_source": false,
+      "scores": {
+        "SP": 86.0,
+        "Grüne": 85.4,
+        "GLP": 82.5,
+        "Die Mitte": 75.4,
+        "FDP": 67.6,
+        "SVP": 63.2
+      }
+    },
+    {
+      "name": "deepseek/deepseek-r1-0528",
+      "display": "DeepSeek R1 0528",
+      "country": "China",
+      "open_source": true,
+      "scores": {
+        "SP": 85.9,
+        "Grüne": 86.3,
+        "GLP": 82.4,
+        "Die Mitte": 77.3,
+        "FDP": 68.2,
+        "SVP": 61.0
+      }
+    },
+    {
+      "name": "mistralai/mistral-large-2512",
+      "display": "Mistral Large (Dec 2025)",
+      "country": "France",
+      "open_source": true,
+      "scores": {
+        "SP": 85.9,
+        "Grüne": 85.1,
+        "GLP": 86.7,
+        "Die Mitte": 78.5,
+        "FDP": 72.2,
+        "SVP": 64.7
+      }
+    },
+    {
+      "name": "qwen/qwen3.5-397b-a17b",
+      "display": "Qwen 3.5 397B",
+      "country": "China",
+      "open_source": true,
+      "scores": {
+        "SP": 84.8,
+        "Grüne": 83.8,
+        "GLP": 85.1,
+        "Die Mitte": 80.8,
+        "FDP": 72.9,
+        "SVP": 64.3
+      }
+    },
+    {
+      "name": "google/gemini-3-flash-preview",
+      "display": "Gemini 3 Flash",
+      "country": "USA",
+      "open_source": false,
+      "scores": {
+        "SP": 84.7,
+        "Grüne": 82.5,
+        "GLP": 88.2,
+        "Die Mitte": 81.3,
+        "FDP": 76.6,
+        "SVP": 67.6
+      }
+    },
+    {
+      "name": "z-ai/glm-5",
+      "display": "GLM-5",
+      "country": "China",
+      "open_source": true,
+      "scores": {
+        "SP": 84.6,
+        "Grüne": 83.5,
+        "GLP": 87.6,
+        "Die Mitte": 81.7,
+        "FDP": 75.8,
+        "SVP": 64.7
+      }
+    },
+    {
+      "name": "bytedance-seed/seed-1.6",
+      "display": "Seed 1.6",
+      "country": "China",
+      "open_source": false,
+      "scores": {
+        "SP": 84.0,
+        "Grüne": 83.8,
+        "GLP": 82.0,
+        "Die Mitte": 78.6,
+        "FDP": 71.2,
+        "SVP": 67.5
+      }
+    },
+    {
+      "name": "x-ai/grok-4.20-beta",
+      "display": "Grok 4.20",
+      "country": "USA",
+      "open_source": false,
+      "scores": {
+        "SP": 80.9,
+        "Grüne": 79.9,
+        "GLP": 86.2,
+        "Die Mitte": 80.7,
+        "FDP": 78.2,
+        "SVP": 71.1
+      }
+    },
+    {
+      "name": "nvidia/nemotron-3-super-120b-a12b",
+      "display": "Nemotron 3 Super",
+      "country": "USA",
+      "open_source": true,
+      "scores": {
+        "SP": 67.2,
+        "Grüne": 68.0,
+        "GLP": 60.7,
+        "Die Mitte": 63.7,
+        "FDP": 57.9,
+        "SVP": 53.3
+      }
+    }
+  ]
+}

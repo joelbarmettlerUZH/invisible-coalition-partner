@@ -1,0 +1,1645 @@
+{
+  "description": "Test of whether LLM positions are systematically displaced from the parliamentary centroid in PCA space. Measures the center-left clustering of all models.",
+  "generated_by": "i_smartvote_statistical_analysis.py",
+  "generated_at": "2026-04-04T21:28:10.919285",
+  "models_analyzed": [
+    "Claude 3 Haiku",
+    "Claude 3.5 Haiku",
+    "Claude 3.5 Sonnet",
+    "Claude 3.7 Sonnet",
+    "Claude Opus 4",
+    "Claude Opus 4.6",
+    "Claude Sonnet 4",
+    "Claude Sonnet 4.5",
+    "Claude Sonnet 4.6",
+    "Command A",
+    "Command R+",
+    "DeepSeek R1",
+    "DeepSeek R1 0528",
+    "DeepSeek v3",
+    "DeepSeek v3.2",
+    "GLM-5",
+    "GPT-3.5 Turbo",
+    "GPT-4 Turbo",
+    "GPT-4.1",
+    "GPT-4o",
+    "GPT-4o Mini",
+    "GPT-5",
+    "GPT-5.4",
+    "GPT-5.4 Mini",
+    "Gemini 2 Flash",
+    "Grok 2",
+    "Grok 3",
+    "Grok 3 Beta",
+    "Grok 3 Mini",
+    "Grok 4",
+    "Grok 4 Fast",
+    "Grok 4.1 Fast",
+    "Grok 4.20",
+    "Hermes 3 Llama 3.1 405B",
+    "Hermes 4 405B",
+    "Jamba",
+    "Kimi K2.5",
+    "Llama 3.1 405B",
+    "Llama 4 Maverick",
+    "MiMo v2 Pro",
+    "MiniMax M2.7",
+    "Minimax",
+    "Mistral 7B v0.1",
+    "Mistral Large",
+    "Mistral Large (Dec 2025)",
+    "Mistral Large (Nov 2024)",
+    "Mistral Medium 3",
+    "Mistral Nemo",
+    "Mistral Small 3 (Jan 2025)",
+    "Mistral Small 4",
+    "Mixtral 8x22b",
+    "Nemotron 3 Super",
+    "Nova Premier",
+    "Nova Pro",
+    "Phi-4",
+    "Qwen 2.5 72B",
+    "Qwen 3 Max Thinking",
+    "Qwen 3.5 397B",
+    "Qwen 3.5 Plus",
+    "Qwen 3.6 Plus",
+    "Seed 1.6",
+    "Yi Large",
+    "o1",
+    "o1-mini",
+    "o3-mini",
+    "o4-mini"
+  ],
+  "models_excluded": [
+    "x-ai/grok-4.20",
+    "google/gemini-3-flash-preview",
+    "openai/o1-preview",
+    "qwen/qvq-72b-preview",
+    "google/gemini-3.1-pro-preview"
+  ],
+  "n_models": 66,
+  "methodology": "Permutation test (10,000 iterations) comparing the Euclidean distance between the model centroid and the parliamentary centroid against a null distribution of random centroid placements. Bootstrap CIs on the displacement vector.",
+  "results": {
+    "batch": null,
+    "n_models": 66,
+    "politician_centroid": [
+      -2.996636755162162e-14,
+      -5.869700860626915e-15
+    ],
+    "model_centroid": [
+      128.30533127911215,
+      -27.415659072409436
+    ],
+    "displacement_vector": [
+      128.30533127911218,
+      -27.41565907240943
+    ],
+    "displacement_magnitude": 131.20166308784852,
+    "permutation_test": {
+      "p_value": 0.00019998000199980003,
+      "n_permutations": 10000,
+      "significant_at_005": true,
+      "significant_at_001": true
+    },
+    "model_centroid_95ci": {
+      "lower": [
+        119.80308578797096,
+        -34.511387292371396
+      ],
+      "upper": [
+        136.50163658537483,
+        -19.9787304964685
+      ]
+    },
+    "closest_party_to_mean_llm": "GLP",
+    "distances_to_party_centroids": {
+      "SP": 176.80655559023262,
+      "Grüne": 204.03847107507974,
+      "GLP": 166.6977633642667,
+      "Die Mitte": 178.04249832275005,
+      "FDP": 337.23493263111,
+      "SVP": 410.6492278464764
+    },
+    "all_models_left_of_center": false,
+    "model_positions": [
+      {
+        "name": "openai/gpt-3.5-turbo",
+        "display": "GPT-3.5 Turbo",
+        "country": "USA",
+        "continent": "North America",
+        "family": "openai-gpt",
+        "open_source": false,
+        "batch": "deep-series",
+        "released": "2023-05-28",
+        "coords": [
+          96.1644724079763,
+          -19.116031956983264
+        ],
+        "closest_party": "Die Mitte",
+        "distances_to_parties": {
+          "SP": 208.8964330007612,
+          "Grüne": 237.2100315353911,
+          "GLP": 163.95664491990416,
+          "Die Mitte": 146.26448106723362,
+          "FDP": 305.9742084870873,
+          "SVP": 380.0616898655809
+        }
+      },
+      {
+        "name": "mistralai/mistral-7b-instruct-v0.1",
+        "display": "Mistral 7B v0.1",
+        "country": "France",
+        "continent": "Europe",
+        "family": "mistral",
+        "open_source": true,
+        "batch": "deep-series",
+        "released": "2023-09-28",
+        "coords": [
+          82.12946391840738,
+          -78.85340033470568
+        ],
+        "closest_party": "Die Mitte",
+        "distances_to_parties": {
+          "SP": 229.9765603343061,
+          "Grüne": 245.79125586931727,
+          "GLP": 225.28503339048402,
+          "Die Mitte": 176.785936680388,
+          "FDP": 333.7855784782221,
+          "SVP": 360.9975018975796
+        }
+      },
+      {
+        "name": "anthropic/claude-3-haiku",
+        "display": "Claude 3 Haiku",
+        "country": "USA",
+        "continent": "North America",
+        "family": "anthropic-haiku",
+        "open_source": false,
+        "batch": "deep-series",
+        "released": "2024-03-13",
+        "coords": [
+          115.11320956209654,
+          -51.992904200844954
+        ],
+        "closest_party": "Die Mitte",
+        "distances_to_parties": {
+          "SP": 192.23523030488576,
+          "Grüne": 213.45212112357626,
+          "GLP": 192.4801264390087,
+          "Die Mitte": 180.90356538226436,
+          "FDP": 340.7714174090129,
+          "SVP": 395.02580202781036
+        }
+      },
+      {
+        "name": "cohere/command-r-plus",
+        "display": "Command R+",
+        "country": "Canada",
+        "continent": "North America",
+        "family": "cohere",
+        "open_source": true,
+        "batch": "2025",
+        "released": "2024-04-04",
+        "coords": [
+          119.5642264187628,
+          2.8202040436515716
+        ],
+        "closest_party": "GLP",
+        "distances_to_parties": {
+          "SP": 187.1625100975975,
+          "Grüne": 220.69489104877675,
+          "GLP": 137.57765601336322,
+          "Die Mitte": 157.02546136722648,
+          "FDP": 314.04924321571036,
+          "SVP": 407.1015667124767
+        }
+      },
+      {
+        "name": "openai/gpt-4-turbo",
+        "display": "GPT-4 Turbo",
+        "country": "USA",
+        "continent": "North America",
+        "family": "openai-gpt",
+        "open_source": false,
+        "batch": "deep-series",
+        "released": "2024-04-09",
+        "coords": [
+          169.66932294883458,
+          -27.050293193106583
+        ],
+        "closest_party": "SP",
+        "distances_to_parties": {
+          "SP": 135.4520338911082,
+          "Grüne": 163.92852716081242,
+          "GLP": 168.55269182610326,
+          "Die Mitte": 214.81380870548983,
+          "FDP": 372.3681010142108,
+          "SVP": 451.7378669205445
+        }
+      },
+      {
+        "name": "mistralai/mixtral-8x22b-instruct",
+        "display": "Mixtral 8x22b",
+        "country": "France",
+        "continent": "Europe",
+        "family": "mistral",
+        "open_source": true,
+        "batch": "2025",
+        "released": "2024-04-17",
+        "coords": [
+          115.79042391997076,
+          -40.06231199444818
+        ],
+        "closest_party": "Die Mitte",
+        "distances_to_parties": {
+          "SP": 190.08096710208235,
+          "Grüne": 214.1372809020174,
+          "GLP": 180.5642337219727,
+          "Die Mitte": 174.27502077973955,
+          "FDP": 334.13185295650754,
+          "SVP": 396.74736527299916
+        }
+      },
+      {
+        "name": "01-ai/yi-large",
+        "display": "Yi Large",
+        "country": "China",
+        "continent": "Asia",
+        "family": "01ai-yi",
+        "open_source": false,
+        "batch": "2025",
+        "released": "2024-05-13",
+        "coords": [
+          113.86617402571984,
+          -22.0727006730106
+        ],
+        "closest_party": "Die Mitte",
+        "distances_to_parties": {
+          "SP": 191.17098993951535,
+          "Grüne": 219.28958599719562,
+          "GLP": 163.05234393847508,
+          "Die Mitte": 162.87050157187645,
+          "FDP": 322.2432096992817,
+          "SVP": 397.09147689986946
+        }
+      },
+      {
+        "name": "openai/gpt-4o-mini",
+        "display": "GPT-4o Mini",
+        "country": "USA",
+        "continent": "North America",
+        "family": "openai-gpt-mini",
+        "open_source": false,
+        "batch": "deep-series",
+        "released": "2024-07-18",
+        "coords": [
+          155.58521299163834,
+          -34.74167785056464
+        ],
+        "closest_party": "SP",
+        "distances_to_parties": {
+          "SP": 149.9711309984589,
+          "Grüne": 175.83349636017445,
+          "GLP": 174.31069239560327,
+          "Die Mitte": 205.49711867071258,
+          "FDP": 364.1848604198349,
+          "SVP": 436.8797231798613
+        }
+      },
+      {
+        "name": "mistralai/mistral-nemo",
+        "display": "Mistral Nemo",
+        "country": "France",
+        "continent": "Europe",
+        "family": "mistral",
+        "open_source": true,
+        "batch": "deep-series",
+        "released": "2024-07-19",
+        "coords": [
+          100.86002142326653,
+          -79.51463559026172
+        ],
+        "closest_party": "Die Mitte",
+        "distances_to_parties": {
+          "SP": 212.0494024614465,
+          "Grüne": 227.09851492096723,
+          "GLP": 221.8660382516619,
+          "Die Mitte": 189.35419866158492,
+          "FDP": 347.73788223821543,
+          "SVP": 379.7250448711335
+        }
+      },
+      {
+        "name": "meta-llama/llama-3.1-405b-instruct",
+        "display": "Llama 3.1 405B",
+        "country": "USA",
+        "continent": "North America",
+        "family": "meta-llama",
+        "open_source": true,
+        "batch": "2025",
+        "released": "2024-07-23",
+        "coords": [
+          186.53539987824007,
+          -35.20942965667945
+        ],
+        "closest_party": "SP",
+        "distances_to_parties": {
+          "SP": 119.2057589761821,
+          "Grüne": 145.5461841702967,
+          "GLP": 180.19240145714198,
+          "Die Mitte": 233.54210949250185,
+          "FDP": 391.0644826072293,
+          "SVP": 467.6232118460096
+        }
+      },
+      {
+        "name": "nousresearch/hermes-3-llama-3.1-405b",
+        "display": "Hermes 3 Llama 3.1 405B",
+        "country": "USA",
+        "continent": "North America",
+        "family": "nousresearch-hermes",
+        "open_source": true,
+        "batch": "2025",
+        "released": "2024-08-16",
+        "coords": [
+          153.80357293355644,
+          -44.7903275364514
+        ],
+        "closest_party": "SP",
+        "distances_to_parties": {
+          "SP": 152.90071792912184,
+          "Grüne": 175.83896265766123,
+          "GLP": 184.17924135844933,
+          "Die Mitte": 208.81255226434814,
+          "FDP": 368.08479455515374,
+          "SVP": 434.1600147115981
+        }
+      },
+      {
+        "name": "ai21/jamba-1-5-large",
+        "display": "Jamba",
+        "country": "Israel",
+        "continent": "Asia",
+        "family": "ai21-jamba",
+        "open_source": true,
+        "batch": "2025",
+        "released": "2024-08-22",
+        "coords": [
+          140.72752351296953,
+          -33.508663414134816
+        ],
+        "closest_party": "SP",
+        "distances_to_parties": {
+          "SP": 164.6932900501639,
+          "Grüne": 190.64146992742232,
+          "GLP": 172.38134312308898,
+          "Die Mitte": 191.8541151688482,
+          "FDP": 350.97084604519904,
+          "SVP": 422.2438650141339
+        }
+      },
+      {
+        "name": "openai/o1-mini-2024-09-12",
+        "display": "o1-mini",
+        "country": "USA",
+        "continent": "North America",
+        "family": "openai-reasoning",
+        "open_source": false,
+        "batch": "2025",
+        "released": "2024-09-12",
+        "coords": [
+          121.79171696240418,
+          -22.191096249516193
+        ],
+        "closest_party": "GLP",
+        "distances_to_parties": {
+          "SP": 183.24536080140817,
+          "Grüne": 211.53876348875653,
+          "GLP": 162.08857394992808,
+          "Die Mitte": 169.80200929156024,
+          "FDP": 328.9253003423252,
+          "SVP": 404.91450091824515
+        }
+      },
+      {
+        "name": "qwen/qwen-2.5-72b-instruct",
+        "display": "Qwen 2.5 72B",
+        "country": "China",
+        "continent": "Asia",
+        "family": "qwen",
+        "open_source": true,
+        "batch": "2025",
+        "released": "2024-09-19",
+        "coords": [
+          143.06000489529123,
+          -49.1853057612628
+        ],
+        "closest_party": "SP",
+        "distances_to_parties": {
+          "SP": 164.19767571053146,
+          "Grüne": 185.9232871831351,
+          "GLP": 188.08130646827533,
+          "Die Mitte": 201.97123376561345,
+          "FDP": 361.6375235208362,
+          "SVP": 423.1035645690166
+        }
+      },
+      {
+        "name": "anthropic/claude-3.5-sonnet",
+        "display": "Claude 3.5 Sonnet",
+        "country": "USA",
+        "continent": "North America",
+        "family": "anthropic-sonnet",
+        "open_source": false,
+        "batch": "2025",
+        "released": "2024-10-22",
+        "coords": [
+          120.68296492365091,
+          42.500111142320094
+        ],
+        "closest_party": "GLP",
+        "distances_to_parties": {
+          "SP": 195.40188401811614,
+          "Grüne": 235.8463338758014,
+          "GLP": 98.28859557088882,
+          "Die Mitte": 148.2115292789667,
+          "FDP": 297.61380979325514,
+          "SVP": 418.1299788119827
+        }
+      },
+      {
+        "name": "anthropic/claude-3.5-haiku",
+        "display": "Claude 3.5 Haiku",
+        "country": "USA",
+        "continent": "North America",
+        "family": "anthropic-haiku",
+        "open_source": false,
+        "batch": "deep-series",
+        "released": "2024-11-04",
+        "coords": [
+          141.04480956130095,
+          -43.60408433850021
+        ],
+        "closest_party": "SP",
+        "distances_to_parties": {
+          "SP": 165.3738297528308,
+          "Grüne": 188.63584782347104,
+          "GLP": 182.47821521245635,
+          "Die Mitte": 197.27663212958808,
+          "FDP": 356.81564554925666,
+          "SVP": 421.5493987454707
+        }
+      },
+      {
+        "name": "mistralai/mistral-large-2407",
+        "display": "Mistral Large",
+        "country": "France",
+        "continent": "Europe",
+        "family": "mistral",
+        "open_source": true,
+        "batch": "2025",
+        "released": "2024-11-19",
+        "coords": [
+          180.72786751502412,
+          -68.78868198391385
+        ],
+        "closest_party": "SP",
+        "distances_to_parties": {
+          "SP": 132.72735202448558,
+          "Grüne": 147.05434829749834,
+          "GLP": 211.61548138079965,
+          "Die Mitte": 244.27537002513336,
+          "FDP": 403.794790466609,
+          "SVP": 459.7469837284966
+        }
+      },
+      {
+        "name": "mistralai/mistral-large-2411",
+        "display": "Mistral Large (Nov 2024)",
+        "country": "France",
+        "continent": "Europe",
+        "family": "mistral",
+        "open_source": true,
+        "batch": "deep-series",
+        "released": "2024-11-19",
+        "coords": [
+          175.2431854222575,
+          -58.786242137988474
+        ],
+        "closest_party": "SP",
+        "distances_to_parties": {
+          "SP": 134.83218643269436,
+          "Grüne": 152.9689463389411,
+          "GLP": 200.77427148397973,
+          "Die Mitte": 234.38898102596198,
+          "FDP": 393.6883084055667,
+          "SVP": 454.63799184210757
+        }
+      },
+      {
+        "name": "openai/gpt-4o-2024-11-20",
+        "display": "GPT-4o",
+        "country": "USA",
+        "continent": "North America",
+        "family": "openai-gpt",
+        "open_source": false,
+        "batch": "2025",
+        "released": "2024-11-20",
+        "coords": [
+          173.66347325805845,
+          5.395790227434787
+        ],
+        "closest_party": "SP",
+        "distances_to_parties": {
+          "SP": 134.2555098116923,
+          "Grüne": 171.72239591152328,
+          "GLP": 137.6542456719738,
+          "Die Mitte": 207.57218228507887,
+          "FDP": 361.06045775418664,
+          "SVP": 460.65698717738474
+        }
+      },
+      {
+        "name": "amazon/nova-pro-v1",
+        "display": "Nova Pro",
+        "country": "USA",
+        "continent": "North America",
+        "family": "amazon-nova",
+        "open_source": false,
+        "batch": "2025",
+        "released": "2024-12-05",
+        "coords": [
+          92.910112142708,
+          -45.724415761288995
+        ],
+        "closest_party": "Die Mitte",
+        "distances_to_parties": {
+          "SP": 213.41940891250087,
+          "Grüne": 236.15199929267257,
+          "GLP": 190.5079515308978,
+          "Die Mitte": 159.8788011063765,
+          "FDP": 319.5095133173964,
+          "SVP": 373.421294323667
+        }
+      },
+      {
+        "name": "x-ai/grok-2-1212",
+        "display": "Grok 2",
+        "country": "USA",
+        "continent": "North America",
+        "family": "xai-grok",
+        "open_source": false,
+        "batch": "2025",
+        "released": "2024-12-12",
+        "coords": [
+          108.64987303213807,
+          -37.9574134324336
+        ],
+        "closest_party": "Die Mitte",
+        "distances_to_parties": {
+          "SP": 197.01256357047308,
+          "Grüne": 221.50640381067007,
+          "GLP": 179.5866679575681,
+          "Die Mitte": 167.24920776919097,
+          "FDP": 327.1342078584556,
+          "SVP": 389.8707220666562
+        }
+      },
+      {
+        "name": "openai/o1",
+        "display": "o1",
+        "country": "USA",
+        "continent": "North America",
+        "family": "openai-reasoning",
+        "open_source": false,
+        "batch": "deep-series",
+        "released": "2024-12-17",
+        "coords": [
+          196.6901264241344,
+          38.50785208355197
+        ],
+        "closest_party": "GLP",
+        "distances_to_parties": {
+          "SP": 124.23076782877769,
+          "Grüne": 170.39549718147236,
+          "GLP": 115.26580957190401,
+          "Die Mitte": 224.19824009460473,
+          "FDP": 370.1851172136043,
+          "SVP": 490.2837415836614
+        }
+      },
+      {
+        "name": "deepseek/deepseek-chat",
+        "display": "DeepSeek v3",
+        "country": "China",
+        "continent": "Asia",
+        "family": "deepseek-chat",
+        "open_source": true,
+        "batch": "2025",
+        "released": "2024-12-26",
+        "coords": [
+          161.01156057503687,
+          7.360506602501246
+        ],
+        "closest_party": "GLP",
+        "distances_to_parties": {
+          "SP": 147.0423308863711,
+          "Grüne": 183.98304821846145,
+          "GLP": 133.17809443008514,
+          "Die Mitte": 194.85966463852967,
+          "FDP": 348.7714910870144,
+          "SVP": 448.61645938031944
+        }
+      },
+      {
+        "name": "microsoft/phi-4",
+        "display": "Phi-4",
+        "country": "USA",
+        "continent": "North America",
+        "family": "microsoft-phi",
+        "open_source": true,
+        "batch": "2025",
+        "released": "2025-01-10",
+        "coords": [
+          118.46681312017081,
+          -43.51775267841644
+        ],
+        "closest_party": "Die Mitte",
+        "distances_to_parties": {
+          "SP": 187.77600115194107,
+          "Grüne": 211.0208777942717,
+          "GLP": 183.65600527810335,
+          "Die Mitte": 178.46104041793077,
+          "FDP": 338.3336053970017,
+          "SVP": 399.0723427098221
+        }
+      },
+      {
+        "name": "minimax/minimax-01",
+        "display": "Minimax",
+        "country": "China",
+        "continent": "Asia",
+        "family": "minimax",
+        "open_source": true,
+        "batch": "2025",
+        "released": "2025-01-15",
+        "coords": [
+          135.24270559598045,
+          -37.81901584785271
+        ],
+        "closest_party": "SP",
+        "distances_to_parties": {
+          "SP": 170.5046139740758,
+          "Grüne": 195.2613601618023,
+          "GLP": 176.75429055417197,
+          "Die Mitte": 189.3022067951311,
+          "FDP": 348.76790349516165,
+          "SVP": 416.3272215234128
+        }
+      },
+      {
+        "name": "deepseek/deepseek-r1",
+        "display": "DeepSeek R1",
+        "country": "China",
+        "continent": "Asia",
+        "family": "deepseek-reasoning",
+        "open_source": true,
+        "batch": "2025",
+        "released": "2025-01-20",
+        "coords": [
+          126.00282121911026,
+          -67.08393586802158
+        ],
+        "closest_party": "SP",
+        "distances_to_parties": {
+          "SP": 184.55715145641022,
+          "Grüne": 201.79758019458146,
+          "GLP": 206.43039909799725,
+          "Die Mitte": 198.88615966700908,
+          "FDP": 358.6673502470945,
+          "SVP": 405.09705280882554
+        }
+      },
+      {
+        "name": "mistralai/mistral-small-24b-instruct-2501",
+        "display": "Mistral Small 3 (Jan 2025)",
+        "country": "France",
+        "continent": "Europe",
+        "family": "mistral",
+        "open_source": true,
+        "batch": "deep-series",
+        "released": "2025-01-30",
+        "coords": [
+          106.31295678399307,
+          -81.02908154827361
+        ],
+        "closest_party": "Die Mitte",
+        "distances_to_parties": {
+          "SP": 207.22844791967094,
+          "Grüne": 221.71785313950912,
+          "GLP": 222.46605153739864,
+          "Die Mitte": 194.1640503623362,
+          "FDP": 352.77424999735274,
+          "SVP": 385.1759886302424
+        }
+      },
+      {
+        "name": "openai/o3-mini",
+        "display": "o3-mini",
+        "country": "USA",
+        "continent": "North America",
+        "family": "openai-reasoning",
+        "open_source": false,
+        "batch": "deep-series",
+        "released": "2025-01-31",
+        "coords": [
+          106.93241549169461,
+          -32.537904268125516
+        ],
+        "closest_party": "Die Mitte",
+        "distances_to_parties": {
+          "SP": 198.37044365770961,
+          "Grüne": 224.0563901900815,
+          "GLP": 174.57015711411415,
+          "Die Mitte": 162.700472381065,
+          "FDP": 322.54162159090856,
+          "SVP": 388.7987697006743
+        }
+      },
+      {
+        "name": "google/gemini-2.0-flash-001",
+        "display": "Gemini 2 Flash",
+        "country": "USA",
+        "continent": "North America",
+        "family": "google-gemini",
+        "open_source": false,
+        "batch": "2025",
+        "released": "2025-02-05",
+        "coords": [
+          92.08327161035895,
+          -40.93623690248461
+        ],
+        "closest_party": "Die Mitte",
+        "distances_to_parties": {
+          "SP": 213.77010735040977,
+          "Grüne": 237.51981572430745,
+          "GLP": 186.08335103480428,
+          "Die Mitte": 156.10395877317922,
+          "FDP": 315.8475216373931,
+          "SVP": 373.0789421578435
+        }
+      },
+      {
+        "name": "anthropic/claude-3.7-sonnet",
+        "display": "Claude 3.7 Sonnet",
+        "country": "USA",
+        "continent": "North America",
+        "family": "anthropic-sonnet",
+        "open_source": false,
+        "batch": "deep-series",
+        "released": "2025-02-24",
+        "coords": [
+          97.74549756224614,
+          -18.958085635262435
+        ],
+        "closest_party": "Die Mitte",
+        "distances_to_parties": {
+          "SP": 207.3180544899104,
+          "Grüne": 235.70097578619337,
+          "GLP": 163.3884295729385,
+          "Die Mitte": 147.50658341143642,
+          "FDP": 307.1776516172245,
+          "SVP": 381.6474087106928
+        }
+      },
+      {
+        "name": "cohere/command-a",
+        "display": "Command A",
+        "country": "Canada",
+        "continent": "North America",
+        "family": "cohere",
+        "open_source": true,
+        "batch": "2026",
+        "released": "2025-03-13",
+        "coords": [
+          154.949522929384,
+          -24.07135920497406
+        ],
+        "closest_party": "SP",
+        "distances_to_parties": {
+          "SP": 150.09831899627096,
+          "Grüne": 178.9152359347882,
+          "GLP": 163.6265809767438,
+          "Die Mitte": 200.18823136915668,
+          "FDP": 358.1312811753119,
+          "SVP": 437.5021105474386
+        }
+      },
+      {
+        "name": "meta-llama/llama-4-maverick",
+        "display": "Llama 4 Maverick",
+        "country": "USA",
+        "continent": "North America",
+        "family": "meta-llama",
+        "open_source": true,
+        "batch": "2026",
+        "released": "2025-04-05",
+        "coords": [
+          124.51139463511943,
+          -66.57535514280525
+        ],
+        "closest_party": "SP",
+        "distances_to_parties": {
+          "SP": 185.88242877843857,
+          "Grüne": 203.29763784475566,
+          "GLP": 206.02976486683082,
+          "Die Mitte": 197.4173246333651,
+          "FDP": 357.1856074151001,
+          "SVP": 403.6240477606216
+        }
+      },
+      {
+        "name": "x-ai/grok-3-beta",
+        "display": "Grok 3 Beta",
+        "country": "USA",
+        "continent": "North America",
+        "family": "xai-grok",
+        "open_source": false,
+        "batch": "grok-series",
+        "released": "2025-04-10",
+        "coords": [
+          151.08783911773213,
+          -53.145021553650814
+        ],
+        "closest_party": "SP",
+        "distances_to_parties": {
+          "SP": 157.01429258515498,
+          "Grüne": 177.52244241225418,
+          "GLP": 192.33586124835185,
+          "Die Mitte": 210.86391444852288,
+          "FDP": 370.4924434078908,
+          "SVP": 430.83740179377634
+        }
+      },
+      {
+        "name": "openai/gpt-4.1",
+        "display": "GPT-4.1",
+        "country": "USA",
+        "continent": "North America",
+        "family": "openai-gpt",
+        "open_source": false,
+        "batch": "deep-series",
+        "released": "2025-04-14",
+        "coords": [
+          194.47636476257463,
+          -13.202618806668909
+        ],
+        "closest_party": "SP",
+        "distances_to_parties": {
+          "SP": 110.93207932268191,
+          "Grüne": 145.03416489866484,
+          "GLP": 161.53564640132487,
+          "Die Mitte": 232.9168455006455,
+          "FDP": 387.8458925108998,
+          "SVP": 478.1376125350254
+        }
+      },
+      {
+        "name": "openai/o4-mini",
+        "display": "o4-mini",
+        "country": "USA",
+        "continent": "North America",
+        "family": "openai-reasoning",
+        "open_source": false,
+        "batch": "deep-series",
+        "released": "2025-04-16",
+        "coords": [
+          158.39520695578915,
+          -39.47398056019014
+        ],
+        "closest_party": "SP",
+        "distances_to_parties": {
+          "SP": 147.64732014544367,
+          "Grüne": 172.17119570206037,
+          "GLP": 179.29098206729915,
+          "Die Mitte": 210.2032288817944,
+          "FDP": 369.07467909107174,
+          "SVP": 439.20397102124014
+        }
+      },
+      {
+        "name": "mistralai/mistral-medium-3",
+        "display": "Mistral Medium 3",
+        "country": "France",
+        "continent": "Europe",
+        "family": "mistral",
+        "open_source": false,
+        "batch": "deep-series",
+        "released": "2025-05-07",
+        "coords": [
+          129.72578058478376,
+          2.9385313244035274
+        ],
+        "closest_party": "GLP",
+        "distances_to_parties": {
+          "SP": 177.11473721497777,
+          "Grüne": 211.1761286603182,
+          "GLP": 136.32058964380386,
+          "Die Mitte": 166.47275382271255,
+          "FDP": 322.8828090000068,
+          "SVP": 417.0755538226845
+        }
+      },
+      {
+        "name": "anthropic/claude-opus-4",
+        "display": "Claude Opus 4",
+        "country": "USA",
+        "continent": "North America",
+        "family": "anthropic-opus",
+        "open_source": false,
+        "batch": "deep-series",
+        "released": "2025-05-22",
+        "coords": [
+          123.1329450565705,
+          -14.329819016969608
+        ],
+        "closest_party": "GLP",
+        "distances_to_parties": {
+          "SP": 182.07742804064242,
+          "Grüne": 212.1721217968316,
+          "GLP": 154.1270351253936,
+          "Die Mitte": 167.3042917567887,
+          "FDP": 325.8479558902395,
+          "SVP": 407.44952389871935
+        }
+      },
+      {
+        "name": "anthropic/claude-sonnet-4",
+        "display": "Claude Sonnet 4",
+        "country": "USA",
+        "continent": "North America",
+        "family": "anthropic-sonnet",
+        "open_source": false,
+        "batch": "deep-series",
+        "released": "2025-05-22",
+        "coords": [
+          131.08392114689184,
+          -26.48702780091611
+        ],
+        "closest_party": "GLP",
+        "distances_to_parties": {
+          "SP": 174.00419090063195,
+          "Grüne": 201.5230821539829,
+          "GLP": 165.5985570366827,
+          "Die Mitte": 180.01067788164073,
+          "FDP": 339.06070152082356,
+          "SVP": 413.5252994126426
+        }
+      },
+      {
+        "name": "deepseek/deepseek-r1-0528",
+        "display": "DeepSeek R1 0528",
+        "country": "China",
+        "continent": "Asia",
+        "family": "deepseek-reasoning",
+        "open_source": true,
+        "batch": "2026",
+        "released": "2025-05-28",
+        "coords": [
+          137.392497383611,
+          -48.31285322991995
+        ],
+        "closest_party": "SP",
+        "distances_to_parties": {
+          "SP": 169.65497404184973,
+          "Grüne": 191.65340675400105,
+          "GLP": 187.20221537708903,
+          "Die Mitte": 196.75521532257284,
+          "FDP": 356.4934076969936,
+          "SVP": 417.51900443938996
+        }
+      },
+      {
+        "name": "x-ai/grok-3",
+        "display": "Grok 3",
+        "country": "USA",
+        "continent": "North America",
+        "family": "xai-grok",
+        "open_source": false,
+        "batch": "grok-series",
+        "released": "2025-06-10",
+        "coords": [
+          151.08783911773213,
+          -53.145021553650814
+        ],
+        "closest_party": "SP",
+        "distances_to_parties": {
+          "SP": 157.01429258515498,
+          "Grüne": 177.52244241225418,
+          "GLP": 192.33586124835185,
+          "Die Mitte": 210.86391444852288,
+          "FDP": 370.4924434078908,
+          "SVP": 430.83740179377634
+        }
+      },
+      {
+        "name": "x-ai/grok-3-mini",
+        "display": "Grok 3 Mini",
+        "country": "USA",
+        "continent": "North America",
+        "family": "xai-grok",
+        "open_source": false,
+        "batch": "grok-series",
+        "released": "2025-06-10",
+        "coords": [
+          101.99714002460045,
+          -63.13373985334908
+        ],
+        "closest_party": "Die Mitte",
+        "distances_to_parties": {
+          "SP": 207.11076039601915,
+          "Grüne": 225.89224219740333,
+          "GLP": 205.54910639963572,
+          "Die Mitte": 178.3834537790107,
+          "FDP": 337.6686507987437,
+          "SVP": 381.26824468043407
+        }
+      },
+      {
+        "name": "x-ai/grok-4",
+        "display": "Grok 4",
+        "country": "USA",
+        "continent": "North America",
+        "family": "xai-grok",
+        "open_source": false,
+        "batch": "grok-series",
+        "released": "2025-07-09",
+        "coords": [
+          132.50926904174747,
+          9.989877590969868
+        ],
+        "closest_party": "GLP",
+        "distances_to_parties": {
+          "SP": 175.51833537501514,
+          "Grüne": 211.14916580245662,
+          "GLP": 129.09896421405068,
+          "Die Mitte": 166.80935300671143,
+          "FDP": 322.050721678906,
+          "SVP": 421.2654975354031
+        }
+      },
+      {
+        "name": "openai/gpt-5",
+        "display": "GPT-5",
+        "country": "USA",
+        "continent": "North America",
+        "family": "openai-gpt",
+        "open_source": false,
+        "batch": "deep-series",
+        "released": "2025-08-07",
+        "coords": [
+          160.52052998433777,
+          33.81190870841658
+        ],
+        "closest_party": "GLP",
+        "distances_to_parties": {
+          "SP": 155.0176272615192,
+          "Grüne": 197.0404924734957,
+          "GLP": 107.0439575326661,
+          "Die Mitte": 188.85117022452349,
+          "FDP": 337.80521620089127,
+          "SVP": 454.078254093002
+        }
+      },
+      {
+        "name": "nousresearch/hermes-4-405b",
+        "display": "Hermes 4 405B",
+        "country": "USA",
+        "continent": "North America",
+        "family": "nousresearch-hermes",
+        "open_source": true,
+        "batch": "2026",
+        "released": "2025-08-26",
+        "coords": [
+          156.7932901448982,
+          -19.826752848121544
+        ],
+        "closest_party": "SP",
+        "distances_to_parties": {
+          "SP": 148.2639399442731,
+          "Grüne": 178.29109849007,
+          "GLP": 159.5836324805654,
+          "Die Mitte": 200.11479627664025,
+          "FDP": 357.6045055590553,
+          "SVP": 439.89833582254005
+        }
+      },
+      {
+        "name": "x-ai/grok-4-fast",
+        "display": "Grok 4 Fast",
+        "country": "USA",
+        "continent": "North America",
+        "family": "xai-grok",
+        "open_source": false,
+        "batch": "grok-series",
+        "released": "2025-09-19",
+        "coords": [
+          145.37199470082493,
+          -7.860329122088601
+        ],
+        "closest_party": "GLP",
+        "distances_to_parties": {
+          "SP": 160.31418412127869,
+          "Grüne": 192.81167684608005,
+          "GLP": 146.82967604065323,
+          "Die Mitte": 184.95334861615854,
+          "FDP": 341.7921362197886,
+          "SVP": 430.4546866049564
+        }
+      },
+      {
+        "name": "anthropic/claude-sonnet-4.5",
+        "display": "Claude Sonnet 4.5",
+        "country": "USA",
+        "continent": "North America",
+        "family": "anthropic-sonnet",
+        "open_source": false,
+        "batch": "deep-series",
+        "released": "2025-09-29",
+        "coords": [
+          130.15465579227015,
+          -23.285747998966002
+        ],
+        "closest_party": "GLP",
+        "distances_to_parties": {
+          "SP": 174.88534049349212,
+          "Grüne": 203.14798178606335,
+          "GLP": 162.45570114278155,
+          "Die Mitte": 177.6628371816456,
+          "FDP": 336.55347482538633,
+          "SVP": 413.03745827107065
+        }
+      },
+      {
+        "name": "amazon/nova-premier-v1",
+        "display": "Nova Premier",
+        "country": "USA",
+        "continent": "North America",
+        "family": "amazon-nova",
+        "open_source": false,
+        "batch": "2026",
+        "released": "2025-10-31",
+        "coords": [
+          126.3279127085719,
+          -37.70232151766453
+        ],
+        "closest_party": "GLP",
+        "distances_to_parties": {
+          "SP": 179.37403688583197,
+          "Grüne": 204.07555106842455,
+          "GLP": 177.10224611373707,
+          "Die Mitte": 181.68560353573687,
+          "FDP": 341.34444717269815,
+          "SVP": 407.47335470363845
+        }
+      },
+      {
+        "name": "x-ai/grok-4.1-fast",
+        "display": "Grok 4.1 Fast",
+        "country": "USA",
+        "continent": "North America",
+        "family": "xai-grok",
+        "open_source": false,
+        "batch": "grok-series",
+        "released": "2025-11-19",
+        "coords": [
+          -12.65348803840692,
+          -17.352649527040796
+        ],
+        "closest_party": "Die Mitte",
+        "distances_to_parties": {
+          "SP": 317.72863741847885,
+          "Grüne": 344.52908932971366,
+          "GLP": 218.42601927907336,
+          "Die Mitte": 79.24738606644786,
+          "FDP": 224.4977181949534,
+          "SVP": 273.65918763632595
+        }
+      },
+      {
+        "name": "deepseek/deepseek-v3.2",
+        "display": "DeepSeek v3.2",
+        "country": "China",
+        "continent": "Asia",
+        "family": "deepseek-chat",
+        "open_source": true,
+        "batch": "2026",
+        "released": "2025-12-01",
+        "coords": [
+          132.8516786738022,
+          -37.396733251212055
+        ],
+        "closest_party": "SP",
+        "distances_to_parties": {
+          "SP": 172.84835619604215,
+          "Grüne": 197.6893252833895,
+          "GLP": 176.4129044992977,
+          "Die Mitte": 187.04277617683798,
+          "FDP": 346.5504217184278,
+          "SVP": 413.9930565468743
+        }
+      },
+      {
+        "name": "mistralai/mistral-large-2512",
+        "display": "Mistral Large (Dec 2025)",
+        "country": "France",
+        "continent": "Europe",
+        "family": "mistral",
+        "open_source": true,
+        "batch": "deep-series",
+        "released": "2025-12-01",
+        "coords": [
+          113.99089935348489,
+          -21.614276498446216
+        ],
+        "closest_party": "GLP",
+        "distances_to_parties": {
+          "SP": 191.04729360616562,
+          "Grüne": 219.2693748456568,
+          "GLP": 162.57986215172417,
+          "Die Mitte": 162.7456136925484,
+          "FDP": 322.09236111431056,
+          "SVP": 397.2828345508112
+        }
+      },
+      {
+        "name": "bytedance-seed/seed-1.6",
+        "display": "Seed 1.6",
+        "country": "China",
+        "continent": "Asia",
+        "family": "bytedance-seed",
+        "open_source": false,
+        "batch": "2026",
+        "released": "2025-12-23",
+        "coords": [
+          75.71381189444234,
+          -68.57779760280528
+        ],
+        "closest_party": "Die Mitte",
+        "distances_to_parties": {
+          "SP": 233.95160188598865,
+          "Grüne": 252.06631789629782,
+          "GLP": 217.1823831656874,
+          "Die Mitte": 164.74074962480083,
+          "FDP": 321.99589925551516,
+          "SVP": 354.786342413015
+        }
+      },
+      {
+        "name": "moonshotai/kimi-k2.5",
+        "display": "Kimi K2.5",
+        "country": "China",
+        "continent": "Asia",
+        "family": "moonshot-kimi",
+        "open_source": true,
+        "batch": "2026",
+        "released": "2026-01-27",
+        "coords": [
+          117.01318845436201,
+          -11.030237124544172
+        ],
+        "closest_party": "GLP",
+        "distances_to_parties": {
+          "SP": 188.35965583519183,
+          "Grüne": 218.95156852680515,
+          "GLP": 151.65410093056317,
+          "Die Mitte": 160.35484640318344,
+          "FDP": 318.9078814279231,
+          "SVP": 401.972231408291
+        }
+      },
+      {
+        "name": "anthropic/claude-opus-4.6",
+        "display": "Claude Opus 4.6",
+        "country": "USA",
+        "continent": "North America",
+        "family": "anthropic-opus",
+        "open_source": false,
+        "batch": "2026",
+        "released": "2026-02-04",
+        "coords": [
+          149.73130644477283,
+          35.72588345086288
+        ],
+        "closest_party": "GLP",
+        "distances_to_parties": {
+          "SP": 165.78198085610813,
+          "Grüne": 207.25069052122046,
+          "GLP": 103.60301495481251,
+          "Die Mitte": 177.89973304925988,
+          "FDP": 327.06854484356006,
+          "SVP": 444.14472377656017
+        }
+      },
+      {
+        "name": "qwen/qwen3-max-thinking",
+        "display": "Qwen 3 Max Thinking",
+        "country": "China",
+        "continent": "Asia",
+        "family": "qwen-reasoning",
+        "open_source": false,
+        "batch": "2026",
+        "released": "2026-02-09",
+        "coords": [
+          168.32362913112564,
+          -47.93360741441091
+        ],
+        "closest_party": "SP",
+        "distances_to_parties": {
+          "SP": 139.10091773405546,
+          "Grüne": 161.01927409803815,
+          "GLP": 188.93932898139758,
+          "Die Mitte": 222.97954074120562,
+          "FDP": 381.98777439509496,
+          "SVP": 448.3905896085442
+        }
+      },
+      {
+        "name": "z-ai/glm-5",
+        "display": "GLM-5",
+        "country": "China",
+        "continent": "Asia",
+        "family": "zhipu-glm",
+        "open_source": true,
+        "batch": "2026",
+        "released": "2026-02-11",
+        "coords": [
+          101.59921966129632,
+          30.02330388458074
+        ],
+        "closest_party": "GLP",
+        "distances_to_parties": {
+          "SP": 210.05186017253203,
+          "Grüne": 247.44956054638808,
+          "GLP": 115.4240739652122,
+          "Die Mitte": 131.62971756950301,
+          "FDP": 285.427378433377,
+          "SVP": 396.26609359677855
+        }
+      },
+      {
+        "name": "qwen/qwen3.5-397b-a17b",
+        "display": "Qwen 3.5 397B",
+        "country": "China",
+        "continent": "Asia",
+        "family": "qwen",
+        "open_source": true,
+        "batch": "2026",
+        "released": "2026-02-16",
+        "coords": [
+          107.19638052150721,
+          -5.873094072085507
+        ],
+        "closest_party": "GLP",
+        "distances_to_parties": {
+          "SP": 198.5191880015918,
+          "Grüne": 229.81006997108082,
+          "GLP": 148.41557295241557,
+          "Die Mitte": 149.26823220457533,
+          "FDP": 307.84820882570193,
+          "SVP": 393.25753137544
+        }
+      },
+      {
+        "name": "anthropic/claude-sonnet-4.6",
+        "display": "Claude Sonnet 4.6",
+        "country": "USA",
+        "continent": "North America",
+        "family": "anthropic-sonnet",
+        "open_source": false,
+        "batch": "2026",
+        "released": "2026-02-17",
+        "coords": [
+          144.73317008955962,
+          -15.938558868651384
+        ],
+        "closest_party": "GLP",
+        "distances_to_parties": {
+          "SP": 160.4289662199484,
+          "Grüne": 190.958947916022,
+          "GLP": 154.88195981850444,
+          "Die Mitte": 187.5139871105826,
+          "FDP": 345.2095588183739,
+          "SVP": 428.5287654479943
+        }
+      },
+      {
+        "name": "openai/gpt-5.4",
+        "display": "GPT-5.4",
+        "country": "USA",
+        "continent": "North America",
+        "family": "openai-gpt",
+        "open_source": false,
+        "batch": "2026",
+        "released": "2026-03-05",
+        "coords": [
+          182.15051365685053,
+          -1.7940572702162996
+        ],
+        "closest_party": "SP",
+        "distances_to_parties": {
+          "SP": 124.5811432167915,
+          "Grüne": 160.95686575956927,
+          "GLP": 146.84380579387548,
+          "Die Mitte": 217.71794636172328,
+          "FDP": 371.7943762775232,
+          "SVP": 467.7293584044733
+        }
+      },
+      {
+        "name": "nvidia/nemotron-3-super-120b-a12b",
+        "display": "Nemotron 3 Super",
+        "country": "USA",
+        "continent": "North America",
+        "family": "nvidia-nemotron",
+        "open_source": true,
+        "batch": "2026",
+        "released": "2026-03-11",
+        "coords": [
+          73.26407671303632,
+          -75.61973484798473
+        ],
+        "closest_party": "Die Mitte",
+        "distances_to_parties": {
+          "SP": 237.83327251911686,
+          "Grüne": 254.56416291003185,
+          "GLP": 224.63402764869446,
+          "Die Mitte": 168.86498139978642,
+          "FDP": 325.25282931078834,
+          "SVP": 352.1646976343737
+        }
+      },
+      {
+        "name": "x-ai/grok-4.20-beta",
+        "display": "Grok 4.20",
+        "country": "USA",
+        "continent": "North America",
+        "family": "xai-grok",
+        "open_source": false,
+        "batch": "2026",
+        "released": "2026-03-12",
+        "coords": [
+          47.1939187371692,
+          3.123473927489428
+        ],
+        "closest_party": "Die Mitte",
+        "distances_to_parties": {
+          "SP": 259.09077602553464,
+          "Grüne": 290.0423453475244,
+          "GLP": 164.44143741545392,
+          "Die Mitte": 93.44172858391478,
+          "FDP": 253.32887426027577,
+          "SVP": 336.6769168594739
+        }
+      },
+      {
+        "name": "mistralai/mistral-small-2603",
+        "display": "Mistral Small 4",
+        "country": "France",
+        "continent": "Europe",
+        "family": "mistral",
+        "open_source": true,
+        "batch": "2026",
+        "released": "2026-03-16",
+        "coords": [
+          94.20064625242195,
+          -5.023314534512153
+        ],
+        "closest_party": "Die Mitte",
+        "distances_to_parties": {
+          "SP": 211.54082450546778,
+          "Grüne": 242.53867106702066,
+          "GLP": 151.00823864274133,
+          "Die Mitte": 137.34960675446865,
+          "FDP": 296.4361855423502,
+          "SVP": 380.67590107603
+        }
+      },
+      {
+        "name": "openai/gpt-5.4-mini",
+        "display": "GPT-5.4 Mini",
+        "country": "USA",
+        "continent": "North America",
+        "family": "openai-mini",
+        "open_source": false,
+        "batch": "2026",
+        "released": "2026-03-17",
+        "coords": [
+          136.93858022090103,
+          -1.4513591819733733
+        ],
+        "closest_party": "GLP",
+        "distances_to_parties": {
+          "SP": 169.38302748923897,
+          "Grüne": 202.89447264957897,
+          "GLP": 140.35597712171128,
+          "Die Mitte": 174.7680105677078,
+          "FDP": 331.3165616723347,
+          "SVP": 423.29953918311935
+        }
+      },
+      {
+        "name": "minimax/minimax-m2.7",
+        "display": "MiniMax M2.7",
+        "country": "China",
+        "continent": "Asia",
+        "family": "minimax",
+        "open_source": false,
+        "batch": "2026",
+        "released": "2026-03-18",
+        "coords": [
+          126.38573691279335,
+          -77.04248796908692
+        ],
+        "closest_party": "SP",
+        "distances_to_parties": {
+          "SP": 186.8584215735333,
+          "Grüne": 201.49902858708361,
+          "GLP": 216.34263617665036,
+          "Die Mitte": 205.7101629577856,
+          "FDP": 365.2675777452605,
+          "SVP": 405.26583323765357
+        }
+      },
+      {
+        "name": "xiaomi/mimo-v2-pro",
+        "display": "MiMo v2 Pro",
+        "country": "China",
+        "continent": "Asia",
+        "family": "xiaomi-mimo",
+        "open_source": false,
+        "batch": "2026",
+        "released": "2026-03-18",
+        "coords": [
+          116.66892620177732,
+          12.493506056640129
+        ],
+        "closest_party": "GLP",
+        "distances_to_parties": {
+          "SP": 191.54950885530045,
+          "Grüne": 226.78093159022572,
+          "GLP": 128.5137994861574,
+          "Die Mitte": 150.9770264585516,
+          "FDP": 306.85615609386076,
+          "SVP": 406.37877995187614
+        }
+      },
+      {
+        "name": "qwen/qwen3.6-plus-preview:free",
+        "display": "Qwen 3.6 Plus",
+        "country": "China",
+        "continent": "Asia",
+        "family": "qwen",
+        "open_source": false,
+        "batch": "2026",
+        "released": null,
+        "coords": [
+          137.13846520060025,
+          -48.74289684408373
+        ],
+        "closest_party": "SP",
+        "distances_to_parties": {
+          "SP": 169.97244209253634,
+          "Grüne": 191.85683041177373,
+          "GLP": 187.6359237105245,
+          "Die Mitte": 196.78261297277672,
+          "FDP": 356.53386497236454,
+          "SVP": 417.2325097829417
+        }
+      },
+      {
+        "name": "qwen/qwen3.5-plus-02-15",
+        "display": "Qwen 3.5 Plus",
+        "country": "China",
+        "continent": "Asia",
+        "family": "qwen",
+        "open_source": false,
+        "batch": "2026",
+        "released": null,
+        "coords": [
+          98.12190021547049,
+          6.849934209675965
+        ],
+        "closest_party": "Die Mitte",
+        "distances_to_parties": {
+          "SP": 208.95450992131202,
+          "Grüne": 242.28292902262223,
+          "GLP": 138.50502595310294,
+          "Die Mitte": 135.67103499695426,
+          "FDP": 293.47613384304736,
+          "SVP": 387.03357244622435
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,189 @@
+{
+  "description": "Unified Benjamini-Hochberg correction across all statistical tests from Smartvote, Volksabstimmungen, and cross-instrument analyses.",
+  "generated_by": "p_extended_analysis.py",
+  "generated_at": "2026-04-04T21:26:45.382793",
+  "n_models": 8,
+  "methodology": "BH procedure at alpha=0.05 across the full family of 30 p-values.",
+  "results": {
+    "nein_tendency_Grok 4.20": {
+      "raw_p": 0.0,
+      "bh_adjusted_p": 0.0,
+      "significant_at_005": true,
+      "rank": 1
+    },
+    "party_shift_SP": {
+      "raw_p": 0.0,
+      "bh_adjusted_p": 0.0,
+      "significant_at_005": true,
+      "rank": 2
+    },
+    "party_shift_Grüne": {
+      "raw_p": 0.0,
+      "bh_adjusted_p": 0.0,
+      "significant_at_005": true,
+      "rank": 3
+    },
+    "convergence_mann_whitney": {
+      "raw_p": 0.0,
+      "bh_adjusted_p": 0.0,
+      "significant_at_005": true,
+      "rank": 4
+    },
+    "gemini_refusal_language": {
+      "raw_p": 0.0,
+      "bh_adjusted_p": 0.0,
+      "significant_at_005": true,
+      "rank": 5
+    },
+    "gemini_refusal_context": {
+      "raw_p": 0.0,
+      "bh_adjusted_p": 0.0,
+      "significant_at_005": true,
+      "rank": 6
+    },
+    "nein_tendency_Mistral Large": {
+      "raw_p": 3e-06,
+      "bh_adjusted_p": 1.286e-05,
+      "significant_at_005": true,
+      "rank": 7
+    },
+    "popular_alignment_heterogeneity": {
+      "raw_p": 1.1e-05,
+      "bh_adjusted_p": 4.125e-05,
+      "significant_at_005": true,
+      "rank": 8
+    },
+    "party_shift_SVP": {
+      "raw_p": 4.2e-05,
+      "bh_adjusted_p": 0.00014,
+      "significant_at_005": true,
+      "rank": 9
+    },
+    "convergence_permutation": {
+      "raw_p": 0.0001,
+      "bh_adjusted_p": 0.0003,
+      "significant_at_005": true,
+      "rank": 10
+    },
+    "smartvote_displacement": {
+      "raw_p": 0.00019998,
+      "bh_adjusted_p": 0.0005454,
+      "significant_at_005": true,
+      "rank": 11
+    },
+    "party_shift_GLP": {
+      "raw_p": 0.002696,
+      "bh_adjusted_p": 0.00674,
+      "significant_at_005": true,
+      "rank": 12
+    },
+    "smartvote_pca_validation": {
+      "raw_p": 0.00480466,
+      "bh_adjusted_p": 0.01108769,
+      "significant_at_005": true,
+      "rank": 13
+    },
+    "gradient_flip_wilcoxon": {
+      "raw_p": 0.007812,
+      "bh_adjusted_p": 0.01674,
+      "significant_at_005": true,
+      "rank": 14
+    },
+    "sp_dm_gap_wilcoxon": {
+      "raw_p": 0.015625,
+      "bh_adjusted_p": 0.03125,
+      "significant_at_005": true,
+      "rank": 15
+    },
+    "nein_tendency_Llama 4 Maverick": {
+      "raw_p": 0.059463,
+      "bh_adjusted_p": 0.10803353,
+      "significant_at_005": false,
+      "rank": 16
+    },
+    "party_shift_Die Mitte": {
+      "raw_p": 0.061219,
+      "bh_adjusted_p": 0.10803353,
+      "significant_at_005": false,
+      "rank": 17
+    },
+    "roestigraben_spearman": {
+      "raw_p": 0.1138,
+      "bh_adjusted_p": 0.18966667,
+      "significant_at_005": false,
+      "rank": 18
+    },
+    "party_shift_FDP": {
+      "raw_p": 0.240897,
+      "bh_adjusted_p": 0.38036368,
+      "significant_at_005": false,
+      "rank": 19
+    },
+    "pc1_vs_lr_score": {
+      "raw_p": 0.5454,
+      "bh_adjusted_p": 0.80009286,
+      "significant_at_005": false,
+      "rank": 20
+    },
+    "nein_tendency_Qwen 3.5 Plus": {
+      "raw_p": 0.560065,
+      "bh_adjusted_p": 0.80009286,
+      "significant_at_005": false,
+      "rank": 21
+    },
+    "nein_tendency_DeepSeek V3.2": {
+      "raw_p": 0.658738,
+      "bh_adjusted_p": 0.88307609,
+      "significant_at_005": false,
+      "rank": 22
+    },
+    "fisher_direction_Mistral Large": {
+      "raw_p": 0.677025,
+      "bh_adjusted_p": 0.88307609,
+      "significant_at_005": false,
+      "rank": 23
+    },
+    "smartvote_open_closed": {
+      "raw_p": 0.86981302,
+      "bh_adjusted_p": 1.0,
+      "significant_at_005": false,
+      "rank": 24
+    },
+    "smartvote_geographic_anova": {
+      "raw_p": 0.87211279,
+      "bh_adjusted_p": 1.0,
+      "significant_at_005": false,
+      "rank": 25
+    },
+    "nein_tendency_GPT-5.4": {
+      "raw_p": 0.885433,
+      "bh_adjusted_p": 1.0,
+      "significant_at_005": false,
+      "rank": 26
+    },
+    "smartvote_drift_sign": {
+      "raw_p": 1.0,
+      "bh_adjusted_p": 1.0,
+      "significant_at_005": false,
+      "rank": 27
+    },
+    "nein_tendency_Claude Opus 4.6": {
+      "raw_p": 1.0,
+      "bh_adjusted_p": 1.0,
+      "significant_at_005": false,
+      "rank": 28
+    },
+    "fisher_direction_Grok 4.20": {
+      "raw_p": 1.0,
+      "bh_adjusted_p": 1.0,
+      "significant_at_005": false,
+      "rank": 29
+    },
+    "nein_tendency_Command A": {
+      "raw_p": 1.0,
+      "bh_adjusted_p": 1.0,
+      "significant_at_005": false,
+      "rank": 30
+    }
+  }
+}

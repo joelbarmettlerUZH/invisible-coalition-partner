@@ -1,0 +1,26 @@
+{
+  "description": "Benjamini-Hochberg correction applied to the family of Smartvote statistical tests.",
+  "generated_by": "i_smartvote_statistical_analysis.py",
+  "generated_at": "2026-04-04T21:28:10.930156",
+  "n_models": 66,
+  "methodology": "BH procedure at alpha=0.05 across all Smartvote p-values.",
+  "results": {
+    "method": "Benjamini-Hochberg FDR",
+    "n_tests": 5,
+    "raw_p_values": {
+      "pca_spearman": 0.004804664723032055,
+      "progressive_bias": 0.00019998000199980003,
+      "geographic_country": 0.8721127887211279,
+      "open_vs_closed": 0.8698130186981302,
+      "drift_sign_test": 1.0
+    },
+    "adjusted_p_values": {
+      "progressive_bias": 0.000999900009999,
+      "pca_spearman": 0.012011661807580138,
+      "open_vs_closed": 1.0,
+      "geographic_country": 1.0,
+      "drift_sign_test": 1.0
+    },
+    "any_flipped": false
+  }
+}

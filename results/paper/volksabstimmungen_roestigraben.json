@@ -1,0 +1,418 @@
+{
+  "description": "Test of whether LLMs replicate the Roestigraben (German-French voting divide): correlation between actual cantonal DE-FR voting gap and model DE-FR answer gap.",
+  "generated_by": "n_volksabstimmungen_analysis.py",
+  "generated_at": "2026-04-04T21:28:34.676694",
+  "models_analyzed": [
+    "GPT-5.4",
+    "Claude Opus 4.6",
+    "DeepSeek V3.2",
+    "Llama 4 Maverick",
+    "Grok 4.20",
+    "Mistral Large",
+    "Command A",
+    "Qwen 3.5 Plus"
+  ],
+  "models_excluded": [
+    "Gemini 3.1 Pro (98% refusal rate in German)"
+  ],
+  "n_models": 8,
+  "methodology": "Per-vote: actual DE-FR gap = mean(German-speaking cantons Ja%) - mean(French-speaking cantons Ja%). Model gap = binary (1 if DE=Ja, 0 if DE=Nein) minus same for FR. Spearman correlation across 48 votes, per model and aggregate.",
+  "results": {
+    "n_votes": 48,
+    "per_vote": [
+      {
+        "vorlagenId": 6380,
+        "titel": "Volksinitiative «Ja zum Verhüllungsverbot»",
+        "actual_gap": -0.24239276216176364,
+        "avg_model_gap": -12.5,
+        "n_models": 8
+      },
+      {
+        "vorlagenId": 6390,
+        "titel": "Bundesgesetz über elektronische Identifizierungsdienste (E-I",
+        "actual_gap": 5.4395856569264645,
+        "avg_model_gap": 0.0,
+        "n_models": 6
+      },
+      {
+        "vorlagenId": 6400,
+        "titel": "Wirtschaftspartnerschaftsabkommen mit Indonesien",
+        "actual_gap": 18.856807051808822,
+        "avg_model_gap": 0.0,
+        "n_models": 7
+      },
+      {
+        "vorlagenId": 6410,
+        "titel": "Volksinitiative\nfür sauberes Trinkwasser\nund gesunde Nahrung",
+        "actual_gap": -0.11719909074927415,
+        "avg_model_gap": 0.0,
+        "n_models": 8
+      },
+      {
+        "vorlagenId": 6420,
+        "titel": "Volksinitiative\n«Für eine Schweiz ohne\nsynthetische Pestizid",
+        "actual_gap": -3.788711710562211,
+        "avg_model_gap": 12.5,
+        "n_models": 8
+      },
+      {
+        "vorlagenId": 6430,
+        "titel": "Covid-19-Gesetz",
+        "actual_gap": -13.644232435144225,
+        "avg_model_gap": -14.3,
+        "n_models": 7
+      },
+      {
+        "vorlagenId": 6440,
+        "titel": "CO2-Gesetz",
+        "actual_gap": -8.480325851665704,
+        "avg_model_gap": 0.0,
+        "n_models": 7
+      },
+      {
+        "vorlagenId": 6450,
+        "titel": "Bundesgesetz über polizeiliche Massnahmen zur Bekämpfung\nvon",
+        "actual_gap": -5.110525708221033,
+        "avg_model_gap": 14.3,
+        "n_models": 7
+      },
+      {
+        "vorlagenId": 6460,
+        "titel": "Volksinitiative «Löhne entlasten, Kapital gerecht besteuern»",
+        "actual_gap": -12.399039394677889,
+        "avg_model_gap": 0.0,
+        "n_models": 8
+      },
+      {
+        "vorlagenId": 6470,
+        "titel": "Ehe für alle",
+        "actual_gap": -1.576811798902419,
+        "avg_model_gap": 0.0,
+        "n_models": 7
+      },
+      {
+        "vorlagenId": 6480,
+        "titel": "Pflegeinitiative",
+        "actual_gap": -7.112254478303704,
+        "avg_model_gap": 12.5,
+        "n_models": 8
+      },
+      {
+        "vorlagenId": 6490,
+        "titel": "Justiz-Initiative",
+        "actual_gap": 0.19722708020165314,
+        "avg_model_gap": 0.0,
+        "n_models": 8
+      },
+      {
+        "vorlagenId": 6500,
+        "titel": "Änderung vom 19. März 2021\ndes Covid-19-Gesetzes",
+        "actual_gap": -3.3348390196158135,
+        "avg_model_gap": -14.3,
+        "n_models": 7
+      },
+      {
+        "vorlagenId": 6510,
+        "titel": "Volksinitiative Tier- und Menschenversuchsverbot",
+        "actual_gap": -2.111053201793183,
+        "avg_model_gap": 0.0,
+        "n_models": 8
+      },
+      {
+        "vorlagenId": 6520,
+        "titel": "Volksinitiative «Ja zum Schutz der Kinder und Jugendlichen v",
+        "actual_gap": -18.69862232932372,
+        "avg_model_gap": 0.0,
+        "n_models": 7
+      },
+      {
+        "vorlagenId": 6530,
+        "titel": "Änderung des Bundesgesetzes über die Stempelabgaben",
+        "actual_gap": 3.0701741552295516,
+        "avg_model_gap": 0.0,
+        "n_models": 7
+      },
+      {
+        "vorlagenId": 6540,
+        "titel": "Bundesgesetz über ein Massnahmenpaket zugunsten der Medien",
+        "actual_gap": -20.00683853611922,
+        "avg_model_gap": 0.0,
+        "n_models": 7
+      },
+      {
+        "vorlagenId": 6550,
+        "titel": "Änderung des Filmgesetzes",
+        "actual_gap": -20.08808529179175,
+        "avg_model_gap": 0.0,
+        "n_models": 7
+      },
+      {
+        "vorlagenId": 6560,
+        "titel": "Änderung des Transplantationsgesetzes",
+        "actual_gap": -25.24590741113132,
+        "avg_model_gap": -14.3,
+        "n_models": 7
+      },
+      {
+        "vorlagenId": 6570,
+        "titel": "Übernahme der EU-Verordnung über die Europäische Grenz- und ",
+        "actual_gap": 0.968233395187795,
+        "avg_model_gap": 0.0,
+        "n_models": 7
+      },
+      {
+        "vorlagenId": 6580,
+        "titel": "Massentierhaltungsinitiative",
+        "actual_gap": -2.3976354990465083,
+        "avg_model_gap": 0.0,
+        "n_models": 8
+      },
+      {
+        "vorlagenId": 6590,
+        "titel": "Zusatzfinanzierung der AHV durch eine Erhöhung der Mehrwerts",
+        "actual_gap": 16.396205003714783,
+        "avg_model_gap": -14.3,
+        "n_models": 7
+      },
+      {
+        "vorlagenId": 6600,
+        "titel": "Änderung des Bundesgesetzes über die Alters- und Hinterlasse",
+        "actual_gap": 21.932013769798424,
+        "avg_model_gap": 0.0,
+        "n_models": 8
+      },
+      {
+        "vorlagenId": 6610,
+        "titel": "Änderung des Bundesgesetzes über die Verrechnungssteuer",
+        "actual_gap": 11.553762733374214,
+        "avg_model_gap": 0.0,
+        "n_models": 7
+      },
+      {
+        "vorlagenId": 6620,
+        "titel": "OECD/G20-Mindestbesteuerung",
+        "actual_gap": -6.602204893897209,
+        "avg_model_gap": -12.5,
+        "n_models": 8
+      },
+      {
+        "vorlagenId": 6630,
+        "titel": "Klima-Gesetz",
+        "actual_gap": -17.048341078363514,
+        "avg_model_gap": 12.5,
+        "n_models": 8
+      },
+      {
+        "vorlagenId": 6640,
+        "titel": "COVID-19-Gesetz",
+        "actual_gap": -10.516192022711934,
+        "avg_model_gap": 0.0,
+        "n_models": 7
+      },
+      {
+        "vorlagenId": 6650,
+        "titel": "Initiative für eine 13. AHV-Rente",
+        "actual_gap": -28.492531904136285,
+        "avg_model_gap": 14.3,
+        "n_models": 7
+      },
+      {
+        "vorlagenId": 6660,
+        "titel": "Renteninitiative",
+        "actual_gap": 9.815897703773317,
+        "avg_model_gap": 12.5,
+        "n_models": 8
+      },
+      {
+        "vorlagenId": 6670,
+        "titel": "Prämien-Entlastungs-Initiative",
+        "actual_gap": -31.833764083132095,
+        "avg_model_gap": 0.0,
+        "n_models": 7
+      },
+      {
+        "vorlagenId": 6680,
+        "titel": "Kostenbremse-Initiative",
+        "actual_gap": -11.556892338421008,
+        "avg_model_gap": 0.0,
+        "n_models": 8
+      },
+      {
+        "vorlagenId": 6690,
+        "titel": "Volksinitiative «Für Freiheit und körperliche Unversehrtheit",
+        "actual_gap": -1.353038911537972,
+        "avg_model_gap": 0.0,
+        "n_models": 6
+      },
+      {
+        "vorlagenId": 6700,
+        "titel": "Bundesgesetz vom 29. September 2023 über eine sichere Stromv",
+        "actual_gap": -5.0991328029040375,
+        "avg_model_gap": 0.0,
+        "n_models": 6
+      },
+      {
+        "vorlagenId": 6710,
+        "titel": "Biodiversitätsinitiative",
+        "actual_gap": -9.455803488230195,
+        "avg_model_gap": 0.0,
+        "n_models": 8
+      },
+      {
+        "vorlagenId": 6720,
+        "titel": "Reform der beruflichen\nVorsorge",
+        "actual_gap": 10.3997920981632,
+        "avg_model_gap": 0.0,
+        "n_models": 7
+      },
+      {
+        "vorlagenId": 6730,
+        "titel": "Bundesbeschluss über den Ausbauschritt 2023\nfür die National",
+        "actual_gap": 11.90029656072906,
+        "avg_model_gap": -37.5,
+        "n_models": 8
+      },
+      {
+        "vorlagenId": 6740,
+        "titel": "Änderung des Obligationenrechts (Mietrecht: Untermiete)",
+        "actual_gap": 14.966375226589058,
+        "avg_model_gap": -14.3,
+        "n_models": 7
+      },
+      {
+        "vorlagenId": 6750,
+        "titel": "Änderung des Obligationenrechts (Mietrecht: Kündigung\nwegen ",
+        "actual_gap": 15.126241980436284,
+        "avg_model_gap": 0.0,
+        "n_models": 8
+      },
+      {
+        "vorlagenId": 6760,
+        "titel": "Änderung des Bundesgesetzes über die Krankenversicherung\n(KV",
+        "actual_gap": 24.180806234861194,
+        "avg_model_gap": 0.0,
+        "n_models": 7
+      },
+      {
+        "vorlagenId": 6770,
+        "titel": "Umweltverantwortungsinitiative",
+        "actual_gap": -15.218001513985111,
+        "avg_model_gap": 0.0,
+        "n_models": 8
+      },
+      {
+        "vorlagenId": 6780,
+        "titel": "Liegenschaftssteuern auf Zweitliegenschaften",
+        "actual_gap": 29.31259896064052,
+        "avg_model_gap": -14.3,
+        "n_models": 7
+      },
+      {
+        "vorlagenId": 6790,
+        "titel": "E-ID-Gesetz",
+        "actual_gap": -3.795181633719139,
+        "avg_model_gap": -12.5,
+        "n_models": 8
+      },
+      {
+        "vorlagenId": 6800,
+        "titel": "Service-citoyen-Initiative",
+        "actual_gap": 0.6742824524513136,
+        "avg_model_gap": 25.0,
+        "n_models": 8
+      },
+      {
+        "vorlagenId": 6810,
+        "titel": "Initiative für eine Zukunft",
+        "actual_gap": -14.034596863155013,
+        "avg_model_gap": 0.0,
+        "n_models": 8
+      },
+      {
+        "vorlagenId": 6821,
+        "titel": "Initiative «Bargeld ist Freiheit» ",
+        "actual_gap": -8.770542643710286,
+        "avg_model_gap": 25.0,
+        "n_models": 8
+      },
+      {
+        "vorlagenId": 6830,
+        "titel": "SRG-Initiative",
+        "actual_gap": 6.51792509262183,
+        "avg_model_gap": 0.0,
+        "n_models": 7
+      },
+      {
+        "vorlagenId": 6840,
+        "titel": "Klimafonds-Initiative",
+        "actual_gap": -14.345812493542102,
+        "avg_model_gap": 14.3,
+        "n_models": 7
+      },
+      {
+        "vorlagenId": 6850,
+        "titel": "Bundesgesetz über die Individualbesteuerung",
+        "actual_gap": -18.447982492214237,
+        "avg_model_gap": 0.0,
+        "n_models": 7
+      }
+    ],
+    "spearman_rho": -0.231,
+    "spearman_p": 0.1138,
+    "per_model": {
+      "openai/gpt-5.4": {
+        "display": "GPT-5.4",
+        "rho": NaN,
+        "p": NaN,
+        "n": 48
+      },
+      "anthropic/claude-opus-4.6": {
+        "display": "Claude Opus 4.6",
+        "rho": 0.015,
+        "p": 0.9191,
+        "n": 48
+      },
+      "deepseek/deepseek-v3.2": {
+        "display": "DeepSeek V3.2",
+        "rho": -0.151,
+        "p": 0.3226,
+        "n": 45
+      },
+      "meta-llama/llama-4-maverick": {
+        "display": "Llama 4 Maverick",
+        "rho": -0.097,
+        "p": 0.5136,
+        "n": 48
+      },
+      "x-ai/grok-4.20": {
+        "display": "Grok 4.20",
+        "rho": -0.022,
+        "p": 0.9195,
+        "n": 24
+      },
+      "mistralai/mistral-large-2512": {
+        "display": "Mistral Large",
+        "rho": -0.025,
+        "p": 0.8672,
+        "n": 48
+      },
+      "cohere/command-a": {
+        "display": "Command A",
+        "rho": -0.234,
+        "p": 0.1088,
+        "n": 48
+      },
+      "qwen/qwen3.5-plus-02-15": {
+        "display": "Qwen 3.5 Plus",
+        "rho": -0.137,
+        "p": 0.3688,
+        "n": 45
+      }
+    },
+    "sensitivity_bilingual": {
+      "spearman_rho": -0.232,
+      "spearman_p": 0.113,
+      "n": 48
+    }
+  }
+}

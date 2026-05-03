@@ -1,0 +1,578 @@
+[
+  {
+    "name": "google/gemini-3.1-pro-preview",
+    "display": "Gemini 3.1 Pro",
+    "rate": 83.6,
+    "refusals": 56,
+    "total": 67,
+    "country": "USA"
+  },
+  {
+    "name": "qwen/qvq-72b-preview",
+    "display": "Qwen QVQ 72B",
+    "rate": 53.7,
+    "refusals": 36,
+    "total": 67,
+    "country": "China"
+  },
+  {
+    "name": "openai/o1-preview",
+    "display": "o1 (preview)",
+    "rate": 32.8,
+    "refusals": 22,
+    "total": 67,
+    "country": "USA"
+  },
+  {
+    "name": "google/gemini-3-flash-preview",
+    "display": "Gemini 3 Flash",
+    "rate": 25.4,
+    "refusals": 17,
+    "total": 67,
+    "country": "USA"
+  },
+  {
+    "name": "bytedance-seed/seed-1.6",
+    "display": "Seed 1.6",
+    "rate": 14.9,
+    "refusals": 10,
+    "total": 67,
+    "country": "China"
+  },
+  {
+    "name": "mistralai/mistral-7b-instruct-v0.1",
+    "display": "Mistral 7B v0.1",
+    "rate": 13.4,
+    "refusals": 9,
+    "total": 67,
+    "country": "France"
+  },
+  {
+    "name": "meta-llama/llama-3.1-405b-instruct",
+    "display": "Llama 3.1 405B",
+    "rate": 13.4,
+    "refusals": 9,
+    "total": 67,
+    "country": "USA"
+  },
+  {
+    "name": "openai/o1-mini-2024-09-12",
+    "display": "o1-mini",
+    "rate": 3.0,
+    "refusals": 2,
+    "total": 67,
+    "country": "USA"
+  },
+  {
+    "name": "qwen/qwen3.5-plus-02-15",
+    "display": "Qwen 3.5 Plus",
+    "rate": 3.0,
+    "refusals": 2,
+    "total": 67,
+    "country": "China"
+  },
+  {
+    "name": "anthropic/claude-3.7-sonnet",
+    "display": "Claude 3.7 Sonnet",
+    "rate": 1.5,
+    "refusals": 1,
+    "total": 67,
+    "country": "USA"
+  },
+  {
+    "name": "openai/gpt-3.5-turbo",
+    "display": "GPT-3.5 Turbo",
+    "rate": 0.0,
+    "refusals": 0,
+    "total": 67,
+    "country": "USA"
+  },
+  {
+    "name": "anthropic/claude-3-haiku",
+    "display": "Claude 3 Haiku",
+    "rate": 0.0,
+    "refusals": 0,
+    "total": 67,
+    "country": "USA"
+  },
+  {
+    "name": "cohere/command-r-plus",
+    "display": "Command R+",
+    "rate": 0.0,
+    "refusals": 0,
+    "total": 67,
+    "country": "Canada"
+  },
+  {
+    "name": "openai/gpt-4-turbo",
+    "display": "GPT-4 Turbo",
+    "rate": 0.0,
+    "refusals": 0,
+    "total": 67,
+    "country": "USA"
+  },
+  {
+    "name": "mistralai/mixtral-8x22b-instruct",
+    "display": "Mixtral 8x22b",
+    "rate": 0.0,
+    "refusals": 0,
+    "total": 67,
+    "country": "France"
+  },
+  {
+    "name": "01-ai/yi-large",
+    "display": "Yi Large",
+    "rate": 0.0,
+    "refusals": 0,
+    "total": 67,
+    "country": "China"
+  },
+  {
+    "name": "openai/gpt-4o-mini",
+    "display": "GPT-4o Mini",
+    "rate": 0.0,
+    "refusals": 0,
+    "total": 67,
+    "country": "USA"
+  },
+  {
+    "name": "mistralai/mistral-nemo",
+    "display": "Mistral Nemo",
+    "rate": 0.0,
+    "refusals": 0,
+    "total": 67,
+    "country": "France"
+  },
+  {
+    "name": "nousresearch/hermes-3-llama-3.1-405b",
+    "display": "Hermes 3 Llama 3.1 405B",
+    "rate": 0.0,
+    "refusals": 0,
+    "total": 67,
+    "country": "USA"
+  },
+  {
+    "name": "ai21/jamba-1-5-large",
+    "display": "Jamba",
+    "rate": 0.0,
+    "refusals": 0,
+    "total": 67,
+    "country": "Israel"
+  },
+  {
+    "name": "qwen/qwen-2.5-72b-instruct",
+    "display": "Qwen 2.5 72B",
+    "rate": 0.0,
+    "refusals": 0,
+    "total": 67,
+    "country": "China"
+  },
+  {
+    "name": "anthropic/claude-3.5-sonnet",
+    "display": "Claude 3.5 Sonnet",
+    "rate": 0.0,
+    "refusals": 0,
+    "total": 67,
+    "country": "USA"
+  },
+  {
+    "name": "anthropic/claude-3.5-haiku",
+    "display": "Claude 3.5 Haiku",
+    "rate": 0.0,
+    "refusals": 0,
+    "total": 67,
+    "country": "USA"
+  },
+  {
+    "name": "mistralai/mistral-large-2407",
+    "display": "Mistral Large",
+    "rate": 0.0,
+    "refusals": 0,
+    "total": 67,
+    "country": "France"
+  },
+  {
+    "name": "mistralai/mistral-large-2411",
+    "display": "Mistral Large (Nov 2024)",
+    "rate": 0.0,
+    "refusals": 0,
+    "total": 67,
+    "country": "France"
+  },
+  {
+    "name": "openai/gpt-4o-2024-11-20",
+    "display": "GPT-4o",
+    "rate": 0.0,
+    "refusals": 0,
+    "total": 67,
+    "country": "USA"
+  },
+  {
+    "name": "amazon/nova-pro-v1",
+    "display": "Nova Pro",
+    "rate": 0.0,
+    "refusals": 0,
+    "total": 67,
+    "country": "USA"
+  },
+  {
+    "name": "x-ai/grok-2-1212",
+    "display": "Grok 2",
+    "rate": 0.0,
+    "refusals": 0,
+    "total": 67,
+    "country": "USA"
+  },
+  {
+    "name": "openai/o1",
+    "display": "o1",
+    "rate": 0.0,
+    "refusals": 0,
+    "total": 67,
+    "country": "USA"
+  },
+  {
+    "name": "google/gemini-2.0-flash-thinking-exp:free",
+    "display": "Gemini 2 Flash Thinking",
+    "rate": 0.0,
+    "refusals": 0,
+    "total": 67,
+    "country": "USA"
+  },
+  {
+    "name": "deepseek/deepseek-chat",
+    "display": "DeepSeek v3",
+    "rate": 0.0,
+    "refusals": 0,
+    "total": 67,
+    "country": "China"
+  },
+  {
+    "name": "microsoft/phi-4",
+    "display": "Phi-4",
+    "rate": 0.0,
+    "refusals": 0,
+    "total": 67,
+    "country": "USA"
+  },
+  {
+    "name": "minimax/minimax-01",
+    "display": "Minimax",
+    "rate": 0.0,
+    "refusals": 0,
+    "total": 67,
+    "country": "China"
+  },
+  {
+    "name": "deepseek/deepseek-r1",
+    "display": "DeepSeek R1",
+    "rate": 0.0,
+    "refusals": 0,
+    "total": 67,
+    "country": "China"
+  },
+  {
+    "name": "mistralai/mistral-small-24b-instruct-2501",
+    "display": "Mistral Small 3 (Jan 2025)",
+    "rate": 0.0,
+    "refusals": 0,
+    "total": 67,
+    "country": "France"
+  },
+  {
+    "name": "openai/o3-mini",
+    "display": "o3-mini",
+    "rate": 0.0,
+    "refusals": 0,
+    "total": 67,
+    "country": "USA"
+  },
+  {
+    "name": "google/gemini-2.0-flash-001",
+    "display": "Gemini 2 Flash",
+    "rate": 0.0,
+    "refusals": 0,
+    "total": 67,
+    "country": "USA"
+  },
+  {
+    "name": "cohere/command-a",
+    "display": "Command A",
+    "rate": 0.0,
+    "refusals": 0,
+    "total": 67,
+    "country": "Canada"
+  },
+  {
+    "name": "meta-llama/llama-4-maverick",
+    "display": "Llama 4 Maverick",
+    "rate": 0.0,
+    "refusals": 0,
+    "total": 67,
+    "country": "USA"
+  },
+  {
+    "name": "x-ai/grok-3-beta",
+    "display": "Grok 3 Beta",
+    "rate": 0.0,
+    "refusals": 0,
+    "total": 67,
+    "country": "USA"
+  },
+  {
+    "name": "openai/gpt-4.1",
+    "display": "GPT-4.1",
+    "rate": 0.0,
+    "refusals": 0,
+    "total": 67,
+    "country": "USA"
+  },
+  {
+    "name": "openai/o4-mini",
+    "display": "o4-mini",
+    "rate": 0.0,
+    "refusals": 0,
+    "total": 67,
+    "country": "USA"
+  },
+  {
+    "name": "mistralai/mistral-medium-3",
+    "display": "Mistral Medium 3",
+    "rate": 0.0,
+    "refusals": 0,
+    "total": 67,
+    "country": "France"
+  },
+  {
+    "name": "anthropic/claude-opus-4",
+    "display": "Claude Opus 4",
+    "rate": 0.0,
+    "refusals": 0,
+    "total": 67,
+    "country": "USA"
+  },
+  {
+    "name": "anthropic/claude-sonnet-4",
+    "display": "Claude Sonnet 4",
+    "rate": 0.0,
+    "refusals": 0,
+    "total": 67,
+    "country": "USA"
+  },
+  {
+    "name": "deepseek/deepseek-r1-0528",
+    "display": "DeepSeek R1 0528",
+    "rate": 0.0,
+    "refusals": 0,
+    "total": 67,
+    "country": "China"
+  },
+  {
+    "name": "x-ai/grok-3",
+    "display": "Grok 3",
+    "rate": 0.0,
+    "refusals": 0,
+    "total": 67,
+    "country": "USA"
+  },
+  {
+    "name": "x-ai/grok-3-mini",
+    "display": "Grok 3 Mini",
+    "rate": 0.0,
+    "refusals": 0,
+    "total": 67,
+    "country": "USA"
+  },
+  {
+    "name": "x-ai/grok-4",
+    "display": "Grok 4",
+    "rate": 0.0,
+    "refusals": 0,
+    "total": 67,
+    "country": "USA"
+  },
+  {
+    "name": "openai/gpt-5",
+    "display": "GPT-5",
+    "rate": 0.0,
+    "refusals": 0,
+    "total": 67,
+    "country": "USA"
+  },
+  {
+    "name": "nousresearch/hermes-4-405b",
+    "display": "Hermes 4 405B",
+    "rate": 0.0,
+    "refusals": 0,
+    "total": 67,
+    "country": "USA"
+  },
+  {
+    "name": "x-ai/grok-4-fast",
+    "display": "Grok 4 Fast",
+    "rate": 0.0,
+    "refusals": 0,
+    "total": 67,
+    "country": "USA"
+  },
+  {
+    "name": "anthropic/claude-sonnet-4.5",
+    "display": "Claude Sonnet 4.5",
+    "rate": 0.0,
+    "refusals": 0,
+    "total": 67,
+    "country": "USA"
+  },
+  {
+    "name": "amazon/nova-premier-v1",
+    "display": "Nova Premier",
+    "rate": 0.0,
+    "refusals": 0,
+    "total": 67,
+    "country": "USA"
+  },
+  {
+    "name": "x-ai/grok-4.1-fast",
+    "display": "Grok 4.1 Fast",
+    "rate": 0.0,
+    "refusals": 0,
+    "total": 67,
+    "country": "USA"
+  },
+  {
+    "name": "deepseek/deepseek-v3.2",
+    "display": "DeepSeek v3.2",
+    "rate": 0.0,
+    "refusals": 0,
+    "total": 67,
+    "country": "China"
+  },
+  {
+    "name": "mistralai/mistral-large-2512",
+    "display": "Mistral Large (Dec 2025)",
+    "rate": 0.0,
+    "refusals": 0,
+    "total": 67,
+    "country": "France"
+  },
+  {
+    "name": "moonshotai/kimi-k2.5",
+    "display": "Kimi K2.5",
+    "rate": 0.0,
+    "refusals": 0,
+    "total": 67,
+    "country": "China"
+  },
+  {
+    "name": "anthropic/claude-opus-4.6",
+    "display": "Claude Opus 4.6",
+    "rate": 0.0,
+    "refusals": 0,
+    "total": 67,
+    "country": "USA"
+  },
+  {
+    "name": "qwen/qwen3-max-thinking",
+    "display": "Qwen 3 Max Thinking",
+    "rate": 0.0,
+    "refusals": 0,
+    "total": 67,
+    "country": "China"
+  },
+  {
+    "name": "z-ai/glm-5",
+    "display": "GLM-5",
+    "rate": 0.0,
+    "refusals": 0,
+    "total": 67,
+    "country": "China"
+  },
+  {
+    "name": "qwen/qwen3.5-397b-a17b",
+    "display": "Qwen 3.5 397B",
+    "rate": 0.0,
+    "refusals": 0,
+    "total": 67,
+    "country": "China"
+  },
+  {
+    "name": "anthropic/claude-sonnet-4.6",
+    "display": "Claude Sonnet 4.6",
+    "rate": 0.0,
+    "refusals": 0,
+    "total": 67,
+    "country": "USA"
+  },
+  {
+    "name": "openai/gpt-5.4",
+    "display": "GPT-5.4",
+    "rate": 0.0,
+    "refusals": 0,
+    "total": 67,
+    "country": "USA"
+  },
+  {
+    "name": "nvidia/nemotron-3-super-120b-a12b",
+    "display": "Nemotron 3 Super",
+    "rate": 0.0,
+    "refusals": 0,
+    "total": 67,
+    "country": "USA"
+  },
+  {
+    "name": "x-ai/grok-4.20-beta",
+    "display": "Grok 4.20",
+    "rate": 0.0,
+    "refusals": 0,
+    "total": 67,
+    "country": "USA"
+  },
+  {
+    "name": "mistralai/mistral-small-2603",
+    "display": "Mistral Small 4",
+    "rate": 0.0,
+    "refusals": 0,
+    "total": 67,
+    "country": "France"
+  },
+  {
+    "name": "openai/gpt-5.4-mini",
+    "display": "GPT-5.4 Mini",
+    "rate": 0.0,
+    "refusals": 0,
+    "total": 67,
+    "country": "USA"
+  },
+  {
+    "name": "minimax/minimax-m2.7",
+    "display": "MiniMax M2.7",
+    "rate": 0.0,
+    "refusals": 0,
+    "total": 67,
+    "country": "China"
+  },
+  {
+    "name": "xiaomi/mimo-v2-pro",
+    "display": "MiMo v2 Pro",
+    "rate": 0.0,
+    "refusals": 0,
+    "total": 67,
+    "country": "China"
+  },
+  {
+    "name": "x-ai/grok-4.20",
+    "display": "Grok 4.20",
+    "rate": 0.0,
+    "refusals": 0,
+    "total": 67,
+    "country": "USA"
+  },
+  {
+    "name": "qwen/qwen3.6-plus-preview:free",
+    "display": "Qwen 3.6 Plus",
+    "rate": 0.0,
+    "refusals": 0,
+    "total": 67,
+    "country": "China"
+  }
+]

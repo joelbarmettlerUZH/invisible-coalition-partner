@@ -1,0 +1,390 @@
+{
+  "description": "Analysis of whether successive model versions from the same provider drift systematically leftward or rightward over time.",
+  "generated_by": "i_smartvote_statistical_analysis.py",
+  "generated_at": "2026-04-04T21:28:10.921552",
+  "models_analyzed": [
+    "Claude 3 Haiku",
+    "Claude 3.5 Haiku",
+    "Claude 3.5 Sonnet",
+    "Claude 3.7 Sonnet",
+    "Claude Opus 4",
+    "Claude Opus 4.6",
+    "Claude Sonnet 4",
+    "Claude Sonnet 4.5",
+    "Claude Sonnet 4.6",
+    "Command A",
+    "Command R+",
+    "DeepSeek R1",
+    "DeepSeek R1 0528",
+    "DeepSeek v3",
+    "DeepSeek v3.2",
+    "GLM-5",
+    "GPT-3.5 Turbo",
+    "GPT-4 Turbo",
+    "GPT-4.1",
+    "GPT-4o",
+    "GPT-4o Mini",
+    "GPT-5",
+    "GPT-5.4",
+    "GPT-5.4 Mini",
+    "Gemini 2 Flash",
+    "Grok 2",
+    "Grok 3",
+    "Grok 3 Beta",
+    "Grok 3 Mini",
+    "Grok 4",
+    "Grok 4 Fast",
+    "Grok 4.1 Fast",
+    "Grok 4.20",
+    "Hermes 3 Llama 3.1 405B",
+    "Hermes 4 405B",
+    "Jamba",
+    "Kimi K2.5",
+    "Llama 3.1 405B",
+    "Llama 4 Maverick",
+    "MiMo v2 Pro",
+    "MiniMax M2.7",
+    "Minimax",
+    "Mistral 7B v0.1",
+    "Mistral Large",
+    "Mistral Large (Dec 2025)",
+    "Mistral Large (Nov 2024)",
+    "Mistral Medium 3",
+    "Mistral Nemo",
+    "Mistral Small 3 (Jan 2025)",
+    "Mistral Small 4",
+    "Mixtral 8x22b",
+    "Nemotron 3 Super",
+    "Nova Premier",
+    "Nova Pro",
+    "Phi-4",
+    "Qwen 2.5 72B",
+    "Qwen 3 Max Thinking",
+    "Qwen 3.5 397B",
+    "Qwen 3.5 Plus",
+    "Qwen 3.6 Plus",
+    "Seed 1.6",
+    "Yi Large",
+    "o1",
+    "o1-mini",
+    "o3-mini",
+    "o4-mini"
+  ],
+  "models_excluded": [
+    "x-ai/grok-4.20",
+    "google/gemini-3-flash-preview",
+    "openai/o1-preview",
+    "qwen/qvq-72b-preview",
+    "google/gemini-3.1-pro-preview"
+  ],
+  "n_models": 66,
+  "methodology": "Paired comparison of PC1 positions for 16 predecessor-successor model pairs. Sign test for systematic direction, with post-hoc power analysis.",
+  "results": {
+    "n_pairs": 12,
+    "pairs": [
+      {
+        "old_model": "Command R+",
+        "new_model": "Command A",
+        "old_name": "cohere/command-r-plus",
+        "new_name": "cohere/command-a",
+        "old_coords": [
+          119.5642264187628,
+          2.820204043651529
+        ],
+        "new_coords": [
+          154.949522929384,
+          -24.07135920497406
+        ],
+        "drift_vector": [
+          35.38529651062119,
+          -26.891563248625587
+        ],
+        "drift_magnitude": 44.444070280515604,
+        "drift_ci_lower": 10.564166128686638,
+        "drift_ci_upper": 97.16658711690668,
+        "drift_pc1_ci_lower": -10.69294684603325,
+        "drift_pc1_ci_upper": 83.89058761123775,
+        "drift_direction_pc1": "right (more conservative)"
+      },
+      {
+        "old_model": "Llama 3.1 405B",
+        "new_model": "Llama 4 Maverick",
+        "old_name": "meta-llama/llama-3.1-405b-instruct",
+        "new_name": "meta-llama/llama-4-maverick",
+        "old_coords": [
+          186.53539987824007,
+          -35.20942965667943
+        ],
+        "new_coords": [
+          124.5113946351194,
+          -66.57535514280526
+        ],
+        "drift_vector": [
+          -62.02400524312067,
+          -31.365925486125832
+        ],
+        "drift_magnitude": 69.50394598869806,
+        "drift_ci_lower": 33.085834285977846,
+        "drift_ci_upper": 122.74872012855195,
+        "drift_pc1_ci_lower": -110.28804303558194,
+        "drift_pc1_ci_upper": -16.417772560912002,
+        "drift_direction_pc1": "left (more progressive)"
+      },
+      {
+        "old_model": "DeepSeek R1",
+        "new_model": "DeepSeek R1 0528",
+        "old_name": "deepseek/deepseek-r1",
+        "new_name": "deepseek/deepseek-r1-0528",
+        "old_coords": [
+          126.00282121911032,
+          -67.0839358680216
+        ],
+        "new_coords": [
+          137.39249738361104,
+          -48.312853229919945
+        ],
+        "drift_vector": [
+          11.389676164500727,
+          18.771082638101653
+        ],
+        "drift_magnitude": 21.95628079932112,
+        "drift_ci_lower": 5.038290600556435,
+        "drift_ci_upper": 75.32910087877292,
+        "drift_pc1_ci_lower": -21.76520017258189,
+        "drift_pc1_ci_upper": 44.85341865834482,
+        "drift_direction_pc1": "right (more conservative)"
+      },
+      {
+        "old_model": "Hermes 3 Llama 3.1 405B",
+        "new_model": "Hermes 4 405B",
+        "old_name": "nousresearch/hermes-3-llama-3.1-405b",
+        "new_name": "nousresearch/hermes-4-405b",
+        "old_coords": [
+          153.80357293355644,
+          -44.7903275364514
+        ],
+        "new_coords": [
+          156.79329014489826,
+          -19.826752848121558
+        ],
+        "drift_vector": [
+          2.9897172113418264,
+          24.963574688329842
+        ],
+        "drift_magnitude": 25.14196631577602,
+        "drift_ci_lower": 6.31575784230422,
+        "drift_ci_upper": 68.82030584529494,
+        "drift_pc1_ci_lower": -33.6513113154957,
+        "drift_pc1_ci_upper": 39.71696844947396,
+        "drift_direction_pc1": "right (more conservative)"
+      },
+      {
+        "old_model": "Nova Pro",
+        "new_model": "Nova Premier",
+        "old_name": "amazon/nova-pro-v1",
+        "new_name": "amazon/nova-premier-v1",
+        "old_coords": [
+          92.910112142708,
+          -45.724415761289016
+        ],
+        "new_coords": [
+          126.32791270857187,
+          -37.702321517664515
+        ],
+        "drift_vector": [
+          33.41780056586387,
+          8.022094243624501
+        ],
+        "drift_magnitude": 34.36718479470562,
+        "drift_ci_lower": 12.445517227256827,
+        "drift_ci_upper": 70.5336169534262,
+        "drift_pc1_ci_lower": 4.4076828175275145,
+        "drift_pc1_ci_upper": 63.61805368511696,
+        "drift_direction_pc1": "right (more conservative)"
+      },
+      {
+        "old_model": "DeepSeek v3",
+        "new_model": "DeepSeek v3.2",
+        "old_name": "deepseek/deepseek-chat",
+        "new_name": "deepseek/deepseek-v3.2",
+        "old_coords": [
+          161.01156057503687,
+          7.36050660250126
+        ],
+        "new_coords": [
+          132.8516786738022,
+          -37.39673325121204
+        ],
+        "drift_vector": [
+          -28.159881901234655,
+          -44.7572398537133
+        ],
+        "drift_magnitude": 52.87900781987409,
+        "drift_ci_lower": 16.691740766454277,
+        "drift_ci_upper": 115.18964444627764,
+        "drift_pc1_ci_lower": -67.32393318170914,
+        "drift_pc1_ci_upper": 10.21130768011911,
+        "drift_direction_pc1": "left (more progressive)"
+      },
+      {
+        "old_model": "Qwen 2.5 72B",
+        "new_model": "Qwen 3.5 397B",
+        "old_name": "qwen/qwen-2.5-72b-instruct",
+        "new_name": "qwen/qwen3.5-397b-a17b",
+        "old_coords": [
+          143.06000489529129,
+          -49.18530576126282
+        ],
+        "new_coords": [
+          107.19638052150727,
+          -5.873094072085493
+        ],
+        "drift_vector": [
+          -35.86362437378402,
+          43.312211689177325
+        ],
+        "drift_magnitude": 56.232972841847726,
+        "drift_ci_lower": 14.210484614427282,
+        "drift_ci_upper": 116.85918714754399,
+        "drift_pc1_ci_lower": -90.04374793536631,
+        "drift_pc1_ci_upper": 14.147726579987788,
+        "drift_direction_pc1": "left (more progressive)"
+      },
+      {
+        "old_model": "Claude 3.5 Sonnet",
+        "new_model": "Claude Sonnet 4.6",
+        "old_name": "anthropic/claude-3.5-sonnet",
+        "new_name": "anthropic/claude-sonnet-4.6",
+        "old_coords": [
+          120.68296492365097,
+          42.500111142320094
+        ],
+        "new_coords": [
+          144.73317008955962,
+          -15.938558868651398
+        ],
+        "drift_vector": [
+          24.05020516590865,
+          -58.43867001097149
+        ],
+        "drift_magnitude": 63.19407030072931,
+        "drift_ci_lower": 18.45513830260748,
+        "drift_ci_upper": 127.59706486978938,
+        "drift_pc1_ci_lower": -22.180699300621225,
+        "drift_pc1_ci_upper": 70.37816767061537,
+        "drift_direction_pc1": "right (more conservative)"
+      },
+      {
+        "old_model": "GPT-4o",
+        "new_model": "GPT-5.4",
+        "old_name": "openai/gpt-4o-2024-11-20",
+        "new_name": "openai/gpt-5.4",
+        "old_coords": [
+          173.66347325805845,
+          5.395790227434759
+        ],
+        "new_coords": [
+          182.15051365685053,
+          -1.7940572702162996
+        ],
+        "drift_vector": [
+          8.48704039879209,
+          -7.1898474976510585
+        ],
+        "drift_magnitude": 11.123118347397378,
+        "drift_ci_lower": 4.145241690288817,
+        "drift_ci_upper": 57.577616256579624,
+        "drift_pc1_ci_lower": -13.715176347344707,
+        "drift_pc1_ci_upper": 31.03342539825089,
+        "drift_direction_pc1": "right (more conservative)"
+      },
+      {
+        "old_model": "Grok 2",
+        "new_model": "Grok 4.20",
+        "old_name": "x-ai/grok-2-1212",
+        "new_name": "x-ai/grok-4.20-beta",
+        "old_coords": [
+          108.64987303213805,
+          -37.95741343243358
+        ],
+        "new_coords": [
+          47.19391873716923,
+          3.123473927489428
+        ],
+        "drift_vector": [
+          -61.45595429496882,
+          41.08088735992301
+        ],
+        "drift_magnitude": 73.92207805915618,
+        "drift_ci_lower": 31.329210716608905,
+        "drift_ci_upper": 125.35569587012182,
+        "drift_pc1_ci_lower": -104.36080271775351,
+        "drift_pc1_ci_upper": -20.229915331085156,
+        "drift_direction_pc1": "left (more progressive)"
+      },
+      {
+        "old_model": "Minimax",
+        "new_model": "MiniMax M2.7",
+        "old_name": "minimax/minimax-01",
+        "new_name": "minimax/minimax-m2.7",
+        "old_coords": [
+          135.24270559598045,
+          -37.81901584785271
+        ],
+        "new_coords": [
+          126.38573691279332,
+          -77.04248796908692
+        ],
+        "drift_vector": [
+          -8.856968683187134,
+          -39.22347212123421
+        ],
+        "drift_magnitude": 40.211026590976196,
+        "drift_ci_lower": 9.732265599827087,
+        "drift_ci_upper": 111.91711572345595,
+        "drift_pc1_ci_lower": -60.453615105311094,
+        "drift_pc1_ci_upper": 42.30094371979492,
+        "drift_direction_pc1": "left (more progressive)"
+      },
+      {
+        "old_model": "Qwen 3.5 397B",
+        "new_model": "Qwen 3.5 Plus",
+        "old_name": "qwen/qwen3.5-397b-a17b",
+        "new_name": "qwen/qwen3.5-plus-02-15",
+        "old_coords": [
+          107.19638052150727,
+          -5.873094072085493
+        ],
+        "new_coords": [
+          98.12190021547052,
+          6.849934209675965
+        ],
+        "drift_vector": [
+          -9.074480306036747,
+          12.723028281761458
+        ],
+        "drift_magnitude": 15.627592312418145,
+        "drift_ci_lower": 5.463590431890243,
+        "drift_ci_upper": 72.01378321552221,
+        "drift_pc1_ci_lower": -50.5655823207088,
+        "drift_pc1_ci_upper": 32.07093272721099,
+        "drift_direction_pc1": "left (more progressive)"
+      }
+    ],
+    "aggregate": {
+      "mean_drift_pc1": -7.476264898775308,
+      "mean_drift_direction": "left (more progressive)",
+      "n_moved_left": 6,
+      "n_moved_right": 6,
+      "sign_test_p_value": 1.0,
+      "systematic_drift": false
+    },
+    "sign_test_power": {
+      "n_pairs": 12,
+      "alpha": 0.05,
+      "power_at_p75": 0.39106667041778564,
+      "power_at_p65": 0.15689733067751233,
+      "interpretation": "With n=12 pairs, the sign test has 39.1% power to detect a 75/25 split and 15.7% power to detect a 65/35 split at α=0.05."
+    }
+  }
+}
