@@ -18,12 +18,12 @@ from _volksabstimmungen_constants import MAIN_PARTIES, PARTY_COLORS, FLAGSHIP_MO
 
 plt.rcParams.update({
     "font.family": "serif",
-    "font.size": 8,
-    "axes.labelsize": 9,
-    "axes.titlesize": 10,
-    "xtick.labelsize": 7,
-    "ytick.labelsize": 7,
-    "legend.fontsize": 7,
+    "font.size": 12,
+    "axes.labelsize": 11.5,
+    "axes.titlesize": 12,
+    "xtick.labelsize": 10.5,
+    "ytick.labelsize": 10.5,
+    "legend.fontsize": 10.5,
     "figure.dpi": 300,
     "savefig.bbox": "tight",
     "savefig.pad_inches": 0.05,
@@ -59,12 +59,7 @@ _FLAGSHIP_META = {m["name"]: m for m in FLAGSHIP_MODELS}
 
 
 def _model_label(name: str, display: str) -> str:
-    """Format model label with country and license tag, matching Smartvote heatmap style."""
-    meta = _FLAGSHIP_META.get(name, {})
-    country = meta.get("country", "")
-    license_tag = "OS" if meta.get("open_source") else "CS"
-    if country:
-        return f"{display}  [{country}, {license_tag}]"
+    """Model label: display name only (country/license tags omitted for legibility)."""
     return display
 
 
@@ -112,7 +107,7 @@ def fig_volksabstimmungen_heatmap(analysis):
         for j in range(len(MAIN_PARTIES)):
             val = matrix[i, j]
             color = "white" if val < 55 or val > 82 else "black"
-            ax.text(j, i, f"{val:.0f}", ha="center", va="center", fontsize=6, color=color)
+            ax.text(j, i, f"{val:.0f}", ha="center", va="center", fontsize=9, color=color)
 
     ax.set_xlabel("Party")
     ax.set_title("Volksabstimmungen Agreement (%)")
@@ -150,7 +145,7 @@ def fig_popular_alignment(analysis):
     ax.set_xticklabels(bucket_labels)
     ax.set_ylabel("Alignment with popular majority (%)")
     ax.set_title("Model Alignment with Referendum Outcomes")
-    ax.legend(fontsize=5, ncol=3, loc="lower left")
+    ax.legend(fontsize=7.5, ncol=3, loc="lower left")
     ax.set_ylim(0, 100)
 
     fig.savefig(f"{FIGURES_DIR}/fig-popular-alignment.pdf")
@@ -185,7 +180,7 @@ def fig_roestigraben(analysis):
     p_val = v5.get("spearman_p")
     if rho is not None:
         ax.text(0.05, 0.95, f"Spearman \u03c1 = {rho:.3f}\np = {p_val:.4f}",
-                transform=ax.transAxes, fontsize=7, verticalalignment="top",
+                transform=ax.transAxes, fontsize=10.5, verticalalignment="top",
                 bbox=dict(boxstyle="round,pad=0.3", facecolor="wheat", alpha=0.5))
 
     ax.axhline(0, color="gray", linewidth=0.5, linestyle="--")
@@ -224,7 +219,7 @@ def fig_language_consistency(analysis):
     ax.invert_yaxis()
 
     for i, v in enumerate(rates):
-        ax.text(v + 1, i, f"{v:.0f}%", va="center", fontsize=6)
+        ax.text(v + 1, i, f"{v:.0f}%", va="center", fontsize=9)
 
     fig.savefig(f"{FIGURES_DIR}/fig-language-consistency.pdf")
     plt.close(fig)
@@ -278,7 +273,7 @@ def fig_convergent_validity(analysis):
     ax.set_xlabel("Smartvote Agreement (%)")
     ax.set_ylabel("Volksabstimmungen Agreement (%)")
     ax.set_title("Convergent Validity: Two Instruments")
-    ax.legend(fontsize=6)
+    ax.legend(fontsize=9)
 
     fig.savefig(f"{FIGURES_DIR}/fig-convergent-validity.pdf")
     plt.close(fig)
@@ -313,11 +308,11 @@ def fig_close_votes(analysis):
     ax.barh(y, [-d for d in disagree_counts], color="#E8462A", alpha=0.8, label="Disagree with majority")
 
     ax.set_yticks(y)
-    ax.set_yticklabels(labels, fontsize=6)
+    ax.set_yticklabels(labels, fontsize=9)
     ax.set_xlabel("Number of models")
     ax.set_title("Close Votes (\u22645% margin): Model Consensus vs. Popular Outcome")
     ax.axvline(0, color="black", linewidth=0.5)
-    ax.legend(fontsize=6, loc="lower right")
+    ax.legend(fontsize=9, loc="lower right")
     ax.invert_yaxis()
 
     fig.savefig(f"{FIGURES_DIR}/fig-close-votes.pdf")
@@ -361,11 +356,11 @@ def fig_stimmfreigabe(analysis):
     ax.bar(x + width / 2, clear_rates, width, label=f"Clear votes (n={v6['n_clear']})", color="#3c78d8", alpha=0.85)
 
     ax.set_xticks(x)
-    ax.set_xticklabels(displays, rotation=30, ha="right", fontsize=6)
+    ax.set_xticklabels(displays, rotation=30, ha="right", fontsize=9)
     ax.set_ylabel("Position-taking rate (%)")
     ax.set_title("False Certainty: Position-Taking on Ambiguous vs. Clear Votes")
     ax.set_ylim(0, 105)
-    ax.legend(fontsize=6)
+    ax.legend(fontsize=9)
 
     fig.savefig(f"{FIGURES_DIR}/fig-stimmfreigabe.pdf")
     plt.close(fig)
@@ -429,7 +424,7 @@ def fig_volksabstimmungen_refusal(analysis):
             val = matrix[i, j]
             color = "white" if val > 50 else "black"
             text = f"{val:.0f}%" if val > 0 else "\u2013"
-            ax.text(j, i, text, ha="center", va="center", fontsize=7, color=color)
+            ax.text(j, i, text, ha="center", va="center", fontsize=10.5, color=color)
 
     ax.set_title("Volksabstimmungen Refusal Rate by Language (Brief Condition)")
     fig.colorbar(im, ax=ax, shrink=0.8, label="Refusal rate (%)")
@@ -462,7 +457,7 @@ def fig_instrument_shift():
 
         drop = sv_means[i] - va_means[i]
         # Place drop label to the right of the Smartvote dot (the rightmost point)
-        ax.text(sv_means[i] + 1.5, i, f"\u2212{drop:.0f}pp", fontsize=6, ha="left", va="center", color=color,
+        ax.text(sv_means[i] + 1.5, i, f"\u2212{drop:.0f}pp", fontsize=9, ha="left", va="center", color=color,
                 fontweight="bold")
 
     ax.set_yticks(y)
@@ -477,7 +472,7 @@ def fig_instrument_shift():
         Line2D([0], [0], marker="o", color="gray", markerfacecolor="gray", markersize=6, linestyle="None", label="Smartvote"),
         Line2D([0], [0], marker="o", color="gray", markerfacecolor="white", markeredgewidth=1.5, markersize=6, linestyle="None", label="Volksabstimmungen"),
     ]
-    ax.legend(handles=legend_elements, fontsize=6, loc="upper left")
+    ax.legend(handles=legend_elements, fontsize=9, loc="upper left")
 
     fig.savefig(f"{FIGURES_DIR}/fig-instrument-shift.pdf")
     plt.close(fig)
@@ -527,12 +522,12 @@ def fig_ja_rate_by_language(analysis):
                color=LANG_COLORS[lang], alpha=0.85)
 
     ax.set_xticks(x)
-    ax.set_xticklabels(ordered, rotation=30, ha="right", fontsize=6)
+    ax.set_xticklabels(ordered, rotation=30, ha="right", fontsize=9)
     ax.set_ylabel("Ja rate (%)")
     ax.set_title("Ja Rate by Query Language")
     ax.set_ylim(0, 100)
     ax.axhline(50, color="gray", linewidth=0.5, linestyle="--", alpha=0.5)
-    ax.legend(fontsize=6, ncol=4)
+    ax.legend(fontsize=9, ncol=4)
 
     fig.savefig(f"{FIGURES_DIR}/fig-ja-rate-by-language.pdf")
     plt.close(fig)
@@ -569,19 +564,19 @@ def fig_nein_tendency():
     ax.bar(x + width / 2, cons_nein, width, label="Conservative-Ja proposals", color="#3c78d8", alpha=0.85)
 
     ax.set_xticks(x)
-    ax.set_xticklabels(displays, rotation=30, ha="right", fontsize=6)
+    ax.set_xticklabels(displays, rotation=30, ha="right", fontsize=9)
     ax.set_ylabel("Nein rate (%)")
     ax.set_title("Nein Rate by Proposal Direction")
     ax.set_ylim(0, 105)
     ax.axhline(50, color="gray", linewidth=0.5, linestyle="--", alpha=0.5)
-    ax.legend(fontsize=6)
+    ax.legend(fontsize=9)
 
     # Add significance markers for models with p < 0.05
     for i, (name, data) in enumerate(sorted_models):
         if data["binomial_p"] < 0.001:
-            ax.text(i, max(prog_nein[i], cons_nein[i]) + 2, "***", ha="center", fontsize=6)
+            ax.text(i, max(prog_nein[i], cons_nein[i]) + 2, "***", ha="center", fontsize=9)
         elif data["binomial_p"] < 0.05:
-            ax.text(i, max(prog_nein[i], cons_nein[i]) + 2, "*", ha="center", fontsize=6)
+            ax.text(i, max(prog_nein[i], cons_nein[i]) + 2, "*", ha="center", fontsize=9)
 
     fig.savefig(f"{FIGURES_DIR}/fig-nein-tendency.pdf")
     plt.close(fig)

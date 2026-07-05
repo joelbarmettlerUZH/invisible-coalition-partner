@@ -20,12 +20,12 @@ from datetime import datetime
 # Publication settings
 plt.rcParams.update({
     "font.family": "serif",
-    "font.size": 8,
-    "axes.labelsize": 9,
-    "axes.titlesize": 10,
-    "xtick.labelsize": 7,
-    "ytick.labelsize": 7,
-    "legend.fontsize": 7,
+    "font.size": 12,
+    "axes.labelsize": 11.5,
+    "axes.titlesize": 12,
+    "xtick.labelsize": 10.5,
+    "ytick.labelsize": 10.5,
+    "legend.fontsize": 10.5,
     "figure.dpi": 300,
     "savefig.bbox": "tight",
     "savefig.pad_inches": 0.05,
@@ -369,9 +369,8 @@ def fig_agreement_heatmap(pca_1d, all_models):
     model_countries = [model_data[d]["country"] for d in ordered_displays]
     model_os = [model_data[d]["os"] for d in ordered_displays]
 
-    # Build y-labels with metadata
-    ylabels = [f"{name}  [{country}, {os}]"
-               for name, country, os in zip(model_names, model_countries, model_os)]
+    # Y-labels: display name only (country/license tags omitted for legibility)
+    ylabels = list(model_names)
 
     fig, ax = plt.subplots(figsize=(4.5, 3.0))
     im = ax.imshow(matrix, cmap="RdYlGn", vmin=40, vmax=95, aspect="auto")
@@ -379,17 +378,17 @@ def fig_agreement_heatmap(pca_1d, all_models):
     ax.set_xticks(range(len(PARTY_ORDER)))
     ax.set_xticklabels([PARTY_LABELS[p] for p in PARTY_ORDER])
     ax.set_yticks(range(len(ylabels)))
-    ax.set_yticklabels(ylabels, fontsize=5.5)
+    ax.set_yticklabels(ylabels, fontsize=8.2)
 
     for i in range(len(model_names)):
         for j in range(len(PARTY_ORDER)):
             val = matrix[i, j]
             color = "white" if val < 65 or val > 88 else "black"
             ax.text(j, i, f"{val:.0f}", ha="center", va="center",
-                    fontsize=6, color=color)
+                    fontsize=9, color=color)
 
     cbar = fig.colorbar(im, ax=ax, shrink=0.6, pad=0.02)
-    cbar.set_label("Agreement (%)", fontsize=8)
+    cbar.set_label("Agreement (%)", fontsize=12)
 
     fig.savefig(f"{FIGURES_DIR}/fig-agreement-heatmap.pdf")
     plt.close(fig)
@@ -449,7 +448,7 @@ def fig_drift(pca_2d, drift_pairs):
         cy = np.mean([p["coords"][1] for p in pts])
         color = pts[0]["color"]
         ax.scatter(cx, cy, c=color, s=100, alpha=0.3, marker="s", zorder=1)
-        ax.annotate(PARTY_LABELS[party], (cx, cy), fontsize=6, alpha=0.5,
+        ax.annotate(PARTY_LABELS[party], (cx, cy), fontsize=9, alpha=0.5,
                     ha="center", va="bottom", xytext=(0, 5),
                     textcoords="offset points")
 
@@ -472,7 +471,7 @@ def fig_drift(pca_2d, drift_pairs):
             ax.plot(new[0], new[1], marker="o", markersize=2.5, color=color, zorder=4)
             # Text annotation with CI
             ci_text = f"[{ci_lo:.0f},{ci_hi:.0f}]"
-            ax.annotate(ci_text, (new[0], new[1]), fontsize=3.5,
+            ax.annotate(ci_text, (new[0], new[1]), fontsize=5.2,
                         xytext=(4, -6), textcoords="offset points", color=color, alpha=0.7)
 
         # Label at arrow origin, rotated to match its angle
@@ -493,7 +492,7 @@ def fig_drift(pca_2d, drift_pairs):
         # When angle is flipped, text reads right-to-left, so use ha="right"
         # to anchor text end at the arrow origin
         h_align = "right" if flipped else "left"
-        ax.text(old[0], old[1], company, fontsize=5, color=color,
+        ax.text(old[0], old[1], company, fontsize=7.5, color=color,
                 ha=h_align, va="bottom", rotation=display_angle,
                 rotation_mode="anchor",
                 transform_rotates_text=True)
@@ -502,7 +501,7 @@ def fig_drift(pca_2d, drift_pairs):
         Line2D([0], [0], color="#2166ac", linewidth=1.5, label="Moved left (progressive)"),
         Line2D([0], [0], color="#b2182b", linewidth=1.5, label="Moved right (conservative)"),
     ]
-    ax.legend(handles=legend_elements, loc="upper left", fontsize=7, bbox_to_anchor=(0.0, 1.0))
+    ax.legend(handles=legend_elements, loc="upper left", fontsize=10.5, bbox_to_anchor=(0.0, 1.0))
 
     ax.set_xlabel("PC1 \u2014 Left \u2190 \u2192 Right")
     ax.set_ylabel("PC2")
@@ -589,7 +588,7 @@ def fig_timeline(pca_1d, all_models):
             ax.axvline(x=party_centroids[party], color="gray", linewidth=0.3,
                        linestyle=":", alpha=0.5, zorder=0)
             ax.text(party_centroids[party], 0.01, PARTY_LABELS[party],
-                    transform=ax.get_xaxis_transform(), fontsize=5, ha="center",
+                    transform=ax.get_xaxis_transform(), fontsize=7.5, ha="center",
                     color="gray", alpha=0.6)
 
     for company, config in COMPANY_CONFIG.items():
@@ -601,13 +600,13 @@ def fig_timeline(pca_1d, all_models):
         ax.plot(xs, ys, color=config["color"], linewidth=1.2,
                 marker="o", markersize=4, zorder=3, label=company)
         for p in points:
-            ax.annotate(p["name"], (p["pc1"], p["date"]), fontsize=4.5,
+            ax.annotate(p["name"], (p["pc1"], p["date"]), fontsize=6.8,
                         xytext=(4, 0), textcoords="offset points", va="center",
                         color=config["color"], alpha=0.8)
 
     ax.set_xlabel("PC1 (1D) \u2014 Left \u2190 \u2192 Right")
     ax.set_ylabel("Release Date")
-    ax.legend(loc="upper left", fontsize=6, framealpha=0.9)
+    ax.legend(loc="upper left", fontsize=9, framealpha=0.9)
     ax.yaxis.set_major_formatter(mdates.DateFormatter("%b %Y"))
     ax.yaxis.set_major_locator(mdates.MonthLocator(interval=3))
     fig.autofmt_xdate()
@@ -660,7 +659,7 @@ def fig_refusal(all_models):
     colors = ["#d32f2f" if r > 5 else "#ff9800" if r > 0 else "#4caf50" for r in rates]
     bars = ax.barh(range(len(names)), rates, color=colors, height=0.7)
     ax.set_yticks(range(len(names)))
-    ax.set_yticklabels(names, fontsize=6)
+    ax.set_yticklabels(names, fontsize=9)
     ax.set_xlabel("Refusal Rate (%)")
     ax.invert_yaxis()
     ax.set_xlim(0, 105)
@@ -668,12 +667,12 @@ def fig_refusal(all_models):
     for bar, rate in zip(bars, rates):
         if rate > 0:
             ax.text(bar.get_width() + 0.5, bar.get_y() + bar.get_height() / 2,
-                    f"{rate:.1f}%", va="center", fontsize=6)
+                    f"{rate:.1f}%", va="center", fontsize=9)
 
     ax.text(0.95, 0.02,
             f"Showing {len(with_refusal)} models with refusals + {len(without)} zero-rate for reference.\n"
             f"{len(refusal_data) - len(to_show)} additional models with 0% refusal omitted.",
-            transform=ax.transAxes, fontsize=5, ha="right", va="bottom",
+            transform=ax.transAxes, fontsize=7.5, ha="right", va="bottom",
             style="italic", color="gray")
 
     fig.savefig(f"{FIGURES_DIR}/fig-refusal.pdf")
@@ -802,7 +801,7 @@ def fig_category_profiles(all_models, families):
     # Y-axis labels (English translations)
     labels = [CATEGORY_LABELS.get(c, c) for c in sorted_cats]
     ax.set_yticks(y_positions)
-    ax.set_yticklabels(labels, fontsize=7)
+    ax.set_yticklabels(labels, fontsize=10.5)
     ax.set_xlabel("Category PC1 \u2014 Left \u2190 \u2192 Right")
     ax.invert_yaxis()
 
@@ -811,7 +810,7 @@ def fig_category_profiles(all_models, families):
     for i, cat_name in enumerate(sorted_cats):
         cs = cat_stats.get(cat_name, {})
         if cs.get("significant_after_correction"):
-            ax.text(xlim[1] + 2, i, "*", fontsize=9, ha="left", va="center",
+            ax.text(xlim[1] + 2, i, "*", fontsize=13.5, ha="left", va="center",
                     fontweight="bold", color="black", clip_on=False)
 
     # Add light grid
@@ -831,7 +830,7 @@ def fig_category_profiles(all_models, families):
     legend_elements.append(
         Line2D([0], [0], marker="D", color="w", markerfacecolor="black",
                markersize=5, label="LLM mean"))
-    ax.legend(handles=legend_elements, loc="lower right", fontsize=6,
+    ax.legend(handles=legend_elements, loc="lower right", fontsize=9,
               ncol=2, framealpha=0.9)
 
     fig.savefig(f"{FIGURES_DIR}/fig-category-profiles.pdf")

@@ -50,7 +50,7 @@ We introduce a dual-instrument methodology grounded in Swiss direct democracy: t
 The instruments disagree.
 (1)~The left-to-right agreement gradient that dominates Smartvote (replicating prior work; Cohen's $d = 3.64$) shifts to center-peaked on referenda, where models align most with centrist Die~Mitte and FDP rather than leftist SP and Gr\"{u}ne (Wilcoxon $p = 0.008$).
 (2)~For some models the \emph{language} of a question changes the answer more than its content does: cross-linguistic consistency ranges from 50\% (Mistral) to 98\% (GPT-5.4).
-(3)~Two models vote Nein on 83--94\% of referenda regardless of political direction (binomial $p < 0.0001$), a status-quo aversion rather than a left-right bias.
+(3)~Two models vote Nein on 83--94\% of referenda at similar rates on progressive and conservative proposals (binomial $p < 0.0001$), a status-quo aversion rather than a left-right bias.
 What prior work measured as ``leftward bias'' may not extend beyond abstract instruments: confronted with real decisions, LLMs behave less like coalition partners of the left than like cautious civil servants, centrist and inconsistent across languages.
 \end{abstract}
 
@@ -83,7 +83,7 @@ We administer both instruments to the same models and ask three questions.
 The two instruments give different answers.
 On Smartvote, we replicate prior work: 66 models from 27 families converge left of the parliamentary centroid (Cohen's $d = 3.64$) and show the expected left-to-right agreement gradient.
 On the 48 referenda the gradient does not attenuate but moves from left-peaked to center-peaked (Wilcoxon $p = 0.008$), with models agreeing most with centrist Die~Mitte and FDP rather than leftist SP and Gr\"{u}ne; a model's Smartvote position does not predict its referendum voting direction ($\rho = -0.25$, $p = 0.55$).
-Two further results compound this instability: cross-linguistic consistency ranges from 50\% (Mistral) to 98\% (GPT-5.4), and two models (Grok, Mistral) vote Nein on 83--94\% of referenda irrespective of political direction (binomial $p < 0.0001$), indicating status-quo aversion rather than a left-right bias.
+Two further results compound this instability: cross-linguistic consistency ranges from 50\% (Mistral) to 98\% (GPT-5.4), and two models (Grok, Mistral) vote Nein on 83--94\% of referenda at similar rates on progressive and conservative proposals (binomial $p < 0.0001$), indicating status-quo aversion rather than a left-right bias.
 
 We frame these results through the \emph{invisible coalition partner}.
 In Swiss consensus democracy, policy emerges from negotiation among governing parties; an LLM consulted on political questions acts as an unelected participant whose dispositions shape the information environment.
@@ -107,7 +107,7 @@ Instruction-tuned LLMs lean left of center on abstract political instruments.
 First shown by \citet{liu2022quantifying} for GPT-2, the result has been replicated across dozens of models and national contexts: pro-environmental, left-libertarian orientations robust across languages~\citep{hartmann2023political}; leftward positioning across 15--24 models and four measurement paradigms~\citep{rozado2023political, rozado2024political, rozado2025measuring}; and the same pattern on G7 and US/Brazilian/UK questionnaires~\citep{rutinowski2024self, motoki2024more}.
 
 The bias is neither coherent nor unqualified.
-\citet{ceron2024beyond} found left-leaning outputs on environment and welfare but right-leaning ones on law and order, and even DPO fine-tuning toward opposite preferences preserves 52--84\% of original stances~\citep{press2025framework}.
+\citet{ceron2024beyond} found left-leaning outputs on environment and welfare but right-leaning ones on law and order, and argumentative pressure toward opposite preferences preserves 58--95\% of original stances~\citep{press2025framework}.
 RLHF is the likely mechanism: it shifts opinions toward liberal, higher-income demographics~\citep{santurkar2023whose}, and instruction tuning moves base models leftward from a near-center start~\citep{faulborn2025only}.
 Robustness is contested too: PCT results behave as a ``spinning arrow'' under prompt variation~\citep{rottger2024political} and exaggerate bias relative to theory-grounded measures~\citep{faulborn2025only, fujimoto2023revisiting}, though model identity explains over 90\% of variance versus under 2\% for phrasing, keeping relative comparisons robust~\citep{sakhawat2026political}.
 
@@ -176,7 +176,7 @@ This tests whether additional context, particularly exposure to both sides' argu
 For the Smartvote experiment, we tested 66 LLMs from 27 model families across five countries (USA, China, France, Canada, Israel), selected to maximize diversity along provider nationality, licensing (26 open-source, 40 closed-source), capability tier, and architecture.
 Data was collected in multiple rounds between January 2025 and March 2026 to capture models as they were released; the analysis pools all models.
 
-For the Volksabstimmungen experiment, we selected 9 flagship models representing the frontier of each major provider family (Table~\ref{tab:flagships}): five countries, two open-source, seven closed-source.
+For the Volksabstimmungen experiment, we selected 9 flagship models representing the frontier of each major provider family (Table~\ref{tab:flagships}): four countries, two open-source, seven closed-source.
 Gemini~3.1~Pro was excluded from Volksabstimmungen analysis due to a 98\% refusal rate in the primary condition (German, brief), but its refusal patterns across languages and conditions are analyzed separately (\S\ref{sec:refusal}).
 
 \begin{table}[t]
@@ -266,10 +266,10 @@ Section~\ref{sec:refusal} analyzes refusal patterns across languages and conditi
 
 The first two principal components explain 66.8\% of parliamentary variance; PC1 aligns with the established left-right ordering (Spearman $\rho = -0.943$, $p = 0.005$) and the silhouette score (0.398) confirms party separation.
 All 66 LLMs cluster in one narrow region, displaced from the parliamentary centroid (Figure~\ref{fig:pca2d}): 2D displacement 131.2 ($p = 0.0002$, Cohen's $d = 3.64$), stable under all imputation values ($p < 0.003$).
-No structural variable predicts positioning: geographic origin ($p = 0.872$), open- vs.\ closed-source ($p = 0.870$), and temporal drift (6/6 pairs, $p = 1.000$) are all null.
+No structural variable predicts positioning: geographic origin ($p = 0.872$), open- vs.\ closed-source ($p = 0.870$), and temporal drift (12 pairs, 6 each way, $p = 1.000$) are all null.
 The centroid sits nearest GLP and Die~Mitte, with individual models spanning SP to Die~Mitte.
 
-The Smartvote agreement heatmap (Figure~\ref{fig:heatmap}) shows the expected left-to-right gradient: highest agreement with SP and Gr\"{u}ne, lowest with SVP, though 37 of 66 models deviate from strict monotonicity by peaking at GLP.
+The Smartvote agreement heatmap (Figure~\ref{fig:heatmap}) shows the expected left-to-right gradient: highest agreement with SP and Gr\"{u}ne, lowest with SVP, though 37 of 66 models deviate from strict monotonicity, most commonly by peaking at GLP.
 This gradient is the signature of the abstract instrument and the pattern against which we test the referendum results.
 
 \subsection{LLMs in the Volksabstimmung}
@@ -277,7 +277,7 @@ This gradient is the signature of the abstract instrument and the pattern agains
 
 \subsubsection{The Gradient Flips (RQ1).}
 The left-to-right gradient that dominates Smartvote shifts from left-peaked to center-peaked on Volksabstimmungen (Figure~\ref{fig:volks-heatmap}).
-Across the 8 flagship models, the Spearman correlation between party position (left$\to$right) and agreement reverses from negative on Smartvote (mean $\rho = -0.77$, 6/8 significant) to positive or flat on Volksabstimmungen (mean $\rho = +0.34$, 0/8 significant); a Wilcoxon signed-rank test on the 8 paired $\rho$ gives $p = 0.008$ (BH-adjusted $0.018$), the smallest value attainable at $n = 8$.
+Across the 8 flagship models, the Spearman correlation between party position (left$\to$right) and agreement reverses from negative on Smartvote (mean $\rho = -0.77$, 6/8 significant) to positive or flat on Volksabstimmungen (mean $\rho = +0.34$, 0/8 significant); a Wilcoxon signed-rank test on the 8 paired $\rho$ gives $p = 0.008$ (BH-adjusted $0.017$), the smallest value attainable at $n = 8$.
 
 The flip is a selective collapse rather than a mirror: agreement falls for every party but far more for the left (SP $-37$pp, Gr\"{u}ne $-33$pp) than the center-right (FDP $-6$pp), shifting the peak from SP/Gr\"{u}ne to Die~Mitte (5 of 8 models; Claude alone keeps its GLP peak).
 These per-party magnitudes partly reflect the 4-point-to-binary scale change and should not be over-read, but the direction change does not depend on them.
@@ -368,7 +368,7 @@ Mistral & 50.0\% & 17\% & 19\% & 38\% & 82\% \\
 \end{table}
 
 BH-corrected McNemar tests find significant pairwise language effects only for Llama (3 pairs) and Mistral (5 pairs).
-Mistral is the extreme case: its Ja rate swings from 17\% in German to 82\% in Romansh, though 42\% of Romansh queries are refused (\S\ref{sec:refusal}), so the 82\% rests on approximately 28 responses and would fall to $\sim$41\% if refusals were Nein.
+Mistral is the extreme case: its Ja rate swings from 17\% in German to 82\% in Romansh, though 42\% of Romansh queries are refused (\S\ref{sec:refusal}), so the 82\% rests on approximately 28 responses and would fall to $\sim$48\% if refusals were Nein.
 Even so, the same model yields a change-averse Nein-voter in German and a Ja-voter in Romansh on identical questions.
 
 \subsubsection{The R\"{o}stigraben.}
@@ -408,7 +408,7 @@ This predicts a rightward shift on \emph{any} instrument that supplies counterar
 A \textbf{balanced-information} effect plausibly contributes, though 81--96\% cross-condition consistency suggests even the brief summary anchors most positions.
 A pure \textbf{scale artifact} is ruled out: binary collapse of the 4-point scale lowers overall agreement but cannot reverse a gradient's direction.
 
-Mechanistically, RLHF/DPO alignment remains the leading candidate for the convergence itself: base models start near center and instruction tuning shifts them leftward~\citep{faulborn2025only, rozado2024political, potter2024hidden}, plausibly producing leftward \emph{attitudes} and change-averse \emph{behavior} at once under a ``helpful and harmless'' objective~\citep{bai2022training}.
+Mechanistically, RLHF/DPO alignment~\citep{ouyang2022training, rafailov2023direct} remains the leading candidate for the convergence itself: base models start near center and instruction tuning shifts them leftward~\citep{faulborn2025only, rozado2024political, potter2024hidden}, plausibly producing leftward \emph{attitudes} and change-averse \emph{behavior} at once under a ``helpful and harmless'' objective~\citep{bai2022training}.
 That Chinese and Western models converge when prompted in German argues against pretraining data as the driver of the convergence, even as pretraining plausibly explains the language instabilities below.
 
 \subsection{Language, Refusal, and Democratic Risk}
@@ -418,7 +418,7 @@ For GPT-5.4 and Claude it barely matters; for Mistral and Llama it changes the m
 The democratic consequence is direct: the same citizen asking the same question in a different national language can receive a different answer and different effective influence, a natural-experiment version of effects reported across languages~\citep{nadeem2026bias, languageyouask2026}.
 
 Two systemic risks follow.
-First, a \emph{diversity illusion}: models from five countries, both licences, and 2.5 years of releases converge on the same abstract position with no structural predictor, so market diversity does not produce political diversity; documented persuasive effects~\citep{potter2024hidden, hackenburg2024evaluating, extreme2025llms} are then systemic rather than model-specific, and where Smartvote already sways 67\% of its users' decisions~\citep{ladner2012smartvote} and 2--3\% swings decide cantonal votes, the stakes are concrete.
+First, a \emph{diversity illusion}: models from five countries, both licenses, and 2.5 years of releases converge on the same abstract position with no structural predictor, so market diversity does not produce political diversity; documented persuasive effects~\citep{potter2024hidden, hackenburg2024evaluating, extreme2025llms} are then systemic rather than model-specific, and where Smartvote already sways 67\% of its users' decisions~\citep{ladner2012smartvote} and 2--3\% swings decide cantonal votes, the stakes are concrete.
 Users' perception of models as left-leaning~\citep{westwood2025perceived} may also be miscalibrated against their centrist concrete behavior.
 Second, refusal is \emph{inconsistent gatekeeping}: across three providers it depends on language and context in contradictory directions (added context lowers Gemini's refusal but raises Grok's), so filters bypassable by a paragraph of context or a change of language fail the robustness safety mechanisms are meant to have~\citep{bai2022training}; minority-language speakers face differential access, extending \citeposs{urman2024silence} single-model finding to a multi-provider, within-country setting.
 
@@ -429,7 +429,7 @@ Second, refusal is \emph{inconsistent gatekeeping}: across three providers it de
 
 We introduced a dual-instrument methodology for auditing LLM political bias, pairing an abstract questionnaire (Swiss Smartvote, 66 models) with concrete referendum decisions (48 Volksabstimmungen, 9 flagship models, 4 languages).
 The two instruments disagree: the left-to-right Smartvote gradient shifts to center-peaked on referenda (Wilcoxon $p = 0.008$) and a model's abstract position does not predict its referendum direction ($\rho = -0.25$), so the ``leftward bias'' of the literature is instrument-dependent rather than a stable disposition.
-Two further instabilities compound this: for Mistral and Llama the query language changes the answer more than the content does, through processing differences that do not track the real R\"{o}stigraben; and two models vote Nein on 83--94\% of referenda regardless of direction, a status-quo aversion rather than a left-right bias.
+Two further instabilities compound this: for Mistral and Llama the query language changes the answer more than the content does, through processing differences that do not track the real R\"{o}stigraben; and two models vote Nein on 83--94\% of referenda at similar rates whether progressive or conservative, a status-quo aversion rather than a left-right bias.
 
 The question is thus not whether LLMs lean left, but what that means when they engage the democratic process; our answer is less than assumed.
 The invisible coalition partner that emerges from concrete decisions resembles a cautious civil servant: centrist, change-averse, and, for some models, linguistically inconsistent.
@@ -442,7 +442,7 @@ Replicating this design in other referendum democracies is a natural next step.
 
 \textbf{Sample sizes.}
 The Smartvote convergence tests use 66 models from 27 families; the Volksabstimmungen experiment uses 8 usable flagship models.
-The Smartvote tests have limited power to detect small structural effects (the drift sign test has $\sim$38\% power at $p = 0.75$ with $n = 12$ pairs).
+The Smartvote tests have limited power to detect small structural effects (the drift sign test has $\sim$39\% power at $p = 0.75$ with $n = 12$ pairs).
 The Volksabstimmungen $n = 8$ limits the Wilcoxon test's sensitivity, though the gradient flip is significant at $p = 0.008$.
 The R\"{o}stigraben test ($n = 48$ votes) has only $\sim$52\% power to detect $\rho = 0.3$.
 
