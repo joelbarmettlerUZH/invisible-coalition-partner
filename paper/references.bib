@@ -1,0 +1,811 @@
+% ============================================================
+% Political Bias in LLMs — Core Literature
+% ============================================================
+
+% --- 2022 ---
+@article{liu2022quantifying,
+    title = {Quantifying and alleviating political bias in language models},
+    journal = {Artificial Intelligence},
+    volume = {304},
+    pages = {103654},
+    year = {2022},
+    issn = {0004-3702},
+    doi = {https://doi.org/10.1016/j.artint.2021.103654},
+    url = {https://www.sciencedirect.com/science/article/pii/S0004370221002058},
+    author = {Ruibo Liu and Chenyan Jia and Jason Wei and Guangxuan Xu and Soroush Vosoughi},
+    keywords = {Bias in language models, Natural language generation, Political bias, Measuring bias, Mitigating bias},
+    abstract = {Current large-scale language models can be politically biased as a result of the data they are trained on, potentially causing serious problems when they are deployed in real-world settings. In this paper, we first describe metrics for measuring political bias in GPT-2 generation, and discuss several interesting takeaways: 1) The generation of vanilla GPT-2 model is mostly liberal-leaning, 2) Such political bias depends on the sensitive attributes mentioned in the context, and 3) Priming the generation with a explicit political identifier, the extent of political bias is imbalanced (between liberal and conservative). We then propose a reinforcement learning (RL) framework for mitigating such political biases in generated text: By using rewards from word embeddings or a classifier, our RL framework guides debiased generation without having access to the training data or requiring the model to be retrained. In empirical experiments on three attributes sensitive to political bias (gender, location, and topic), our methods reduced bias according to both our metrics and human evaluation, while maintaining readability and semantic coherence.}
+}
+
+% --- 2023 ---
+@misc{hartmann2023political,
+      title={The political ideology of conversational {AI}: Converging evidence on {ChatGPT}'s pro-environmental, left-libertarian orientation},
+      author={Jochen Hartmann and Jasper Schwenzow and Maximilian Witte},
+      year={2023},
+      eprint={2301.01768},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2301.01768},
+}
+
+@article{rozado2023political,
+  author  = {Rozado, David},
+  title   = {The Political Biases of {ChatGPT}},
+  journal = {Social Sciences},
+  year    = {2023},
+  volume  = {12},
+  number  = {3},
+  pages   = {148},
+  doi     = {10.3390/socsci12030148},
+}
+
+@inproceedings{feng2023pretraining,
+    title = "From Pretraining Data to Language Models to Downstream Tasks: Tracking the Trails of Political Biases Leading to Unfair {NLP} Models",
+    author = "Feng, Shangbin  and
+      Park, Chan Young  and
+      Liu, Yuhan  and
+      Tsvetkov, Yulia",
+    editor = "Rogers, Anna  and
+      Boyd-Graber, Jordan  and
+      Okazaki, Naoaki",
+    booktitle = "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.acl-long.656/",
+    doi = "10.18653/v1/2023.acl-long.656",
+    pages = "11737--11762",
+    abstract = "Language models (LMs) are pretrained on diverse data sources{---}news, discussion forums, books, online encyclopedias. A significant portion of this data includes facts and opinions which, on one hand, celebrate democracy and diversity of ideas, and on the other hand are inherently socially biased. Our work develops new methods to (1) measure media biases in LMs trained on such corpora, along social and economic axes, and (2) measure the fairness of downstream NLP models trained on top of politically biased LMs. We focus on hate speech and misinformation detection, aiming to empirically quantify the effects of political (social, economic) biases in pretraining data on the fairness of high-stakes social-oriented tasks. Our findings reveal that pretrained LMs do have political leanings which reinforce the polarization present in pretraining corpora, propagating social biases into hate speech predictions and media biases into misinformation detectors. We discuss the implications of our findings for NLP research and propose future directions to mitigate unfairness."
+}
+
+@InProceedings{santurkar2023whose,
+  title = 	 {Whose Opinions Do Language Models Reflect?},
+  author =       {Santurkar, Shibani and Durmus, Esin and Ladhak, Faisal and Lee, Cinoo and Liang, Percy and Hashimoto, Tatsunori},
+  booktitle = 	 {Proceedings of the 40th International Conference on Machine Learning},
+  pages = 	 {29971--30004},
+  year = 	 {2023},
+  editor = 	 {Krause, Andreas and Brunskill, Emma and Cho, Kyunghyun and Engelhardt, Barbara and Sabato, Sivan and Scarlett, Jonathan},
+  volume = 	 {202},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {23--29 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {https://proceedings.mlr.press/v202/santurkar23a/santurkar23a.pdf},
+  url = 	 {https://proceedings.mlr.press/v202/santurkar23a.html},
+  abstract = 	 {Language models (LMs) are increasingly being used in open-ended contexts, where the opinions they reflect in response to subjective queries can have a profound impact, both on user satisfaction, and shaping the views of society at large. We put forth a quantitative framework to investigate the opinions reflected by LMs – by leveraging high-quality public opinion polls. Using this framework, we create OpinionQA, a dataset for evaluating the alignment of LM opinions with those of 60 US demographic groups over topics ranging from abortion to automation. Across topics, we find substantial misalignment between the views reflected by current LMs and those of US demographic groups: on par with the Democrat-Republican divide on climate change. Notably, this misalignment persists even after explicitly steering the LMs towards particular groups. Our analysis not only confirms prior observations about the left-leaning tendencies of some human feedback-tuned LMs, but also surfaces groups whose opinions are poorly reflected by current LMs (e.g., 65+ and widowed individuals).}
+}
+
+
+@article{fujimoto2023revisiting,
+    AUTHOR={Fujimoto, Sasuke  and Takemoto, Kazuhiro },
+    TITLE={Revisiting the political biases of {ChatGPT}},
+    JOURNAL={Frontiers in Artificial Intelligence},
+    VOLUME={Volume 6 - 2023},
+    YEAR={2023},
+    URL={https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2023.1232003},
+    DOI={10.3389/frai.2023.1232003},
+    ISSN={2624-8212},
+    ABSTRACT={Although ChatGPT promises wide-ranging applications, there is a concern that it is politically biased; in particular, that it has a left-libertarian orientation. Nevertheless, following recent trends in attempts to reduce such biases, this study re-evaluated the political biases of ChatGPT using political orientation tests and the application programming interface. The effects of the languages used in the system as well as gender and race settings were evaluated. The results indicate that ChatGPT manifests less political bias than previously assumed; however, they did not entirely dismiss the political bias. The languages used in the system, and the gender and race settings may induce political biases. These findings enhance our understanding of the political biases of ChatGPT and may be useful for bias evaluation and designing the operational strategy of ChatGPT.}
+}
+
+@inproceedings{zhou2023entity,
+    title = "Entity-Based Evaluation of Political Bias in Automatic Summarization",
+    author = "Zhou, Karen  and
+      Tan, Chenhao",
+    editor = "Bouamor, Houda  and
+      Pino, Juan  and
+      Bali, Kalika",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2023",
+    month = dec,
+    year = "2023",
+    address = "Singapore",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.findings-emnlp.696/",
+    doi = "10.18653/v1/2023.findings-emnlp.696",
+    pages = "10374--10386",
+    abstract = "Growing literature has shown that NLP systems may encode social biases; however, the *political* bias of summarization models remains relatively unknown. In this work, we use an entity replacement method to investigate the portrayal of politicians in automatically generated summaries of news articles. We develop an entity-based computational framework to assess the sensitivities of several extractive and abstractive summarizers to the politicians Donald Trump and Joe Biden. We find consistent differences in these summaries upon entity replacement, such as reduced emphasis of Trump{'}s presence in the context of the same article and a more individualistic representation of Trump with respect to the collective US government (i.e., administration). These summary dissimilarities are most prominent when the entity is heavily featured in the source article. Our characterization provides a foundation for future studies of bias in summarization and for normative discussions on the ideal qualities of automatic summaries."
+}
+
+% --- 2024 ---
+@article{rozado2024political,
+    doi = {10.1371/journal.pone.0306621},
+    author = {Rozado, David},
+    journal = {PLOS ONE},
+    publisher = {Public Library of Science},
+    title = {The political preferences of {LLMs}},
+    year = {2024},
+    month = {07},
+    volume = {19},
+    url = {https://doi.org/10.1371/journal.pone.0306621},
+    pages = {1-15},
+    abstract = {I report here a comprehensive analysis about the political preferences embedded in Large Language Models (LLMs). Namely, I administer 11 political orientation tests, designed to identify the political preferences of the test taker, to 24 state-of-the-art conversational LLMs, both closed and open source. When probed with questions/statements with political connotations, most conversational LLMs tend to generate responses that are diagnosed by most political test instruments as manifesting preferences for left-of-center viewpoints. This does not appear to be the case for five additional base (i.e. foundation) models upon which LLMs optimized for conversation with humans are built. However, the weak performance of the base models at coherently answering the tests’ questions makes this subset of results inconclusive. Finally, I demonstrate that LLMs can be steered towards specific locations in the political spectrum through Supervised Fine-Tuning (SFT) with only modest amounts of politically aligned data, suggesting SFT’s potential to embed political orientation in LLMs. With LLMs beginning to partially displace traditional information sources like search engines and Wikipedia, the societal implications of political biases embedded in LLMs are substantial.},
+    number = {7},
+}
+
+@article{motoki2024more,
+  author = {Motoki, Fabio and Pinho Neto, Valdemar and Rodrigues, Victor},
+  title = {More human than human: measuring {ChatGPT} political bias},
+  journal = {Public Choice},
+  volume = {198},
+  number = {1},
+  pages = {3--23},
+  year = {2024},
+  doi = {10.1007/s11127-023-01097-2},
+  url = {https://doi.org/10.1007/s11127-023-01097-2},
+  abstract = {We investigate the political bias of a large language model (LLM), ChatGPT, which has become popular for retrieving factual information and generating content. Although ChatGPT assures that it is impartial, the literature suggests that LLMs exhibit bias involving race, gender, religion, and political orientation. Political bias in LLMs can have adverse political and electoral consequences similar to bias from traditional and social media. Moreover, political bias can be harder to detect and eradicate than gender or racial bias. We propose a novel empirical design to infer whether ChatGPT has political biases by requesting it to impersonate someone from a given side of the political spectrum and comparing these answers with its default. We also propose dose-response, placebo, and profession-politics alignment robustness tests. To reduce concerns about the randomness of the generated text, we collect answers to the same questions 100 times, with question order randomized on each round. We find robust evidence that ChatGPT presents a significant and systematic political bias toward the Democrats in the US, Lula in Brazil, and the Labour Party in the UK. These results translate into real concerns that ChatGPT, and LLMs in general, can extend or even amplify the existing challenges involving political processes posed by the Internet and social media. Our findings have important implications for policymakers, media, politics, and academia stakeholders.}
+}
+
+@inproceedings{bang2024measuring,
+    title = "Measuring Political Bias in Large Language Models: What Is Said and How It Is Said",
+    author = "Bang, Yejin  and
+      Chen, Delong  and
+      Lee, Nayeon  and
+      Fung, Pascale",
+    editor = "Ku, Lun-Wei  and
+      Martins, Andre  and
+      Srikumar, Vivek",
+    booktitle = "Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = aug,
+    year = "2024",
+    address = "Bangkok, Thailand",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.acl-long.600/",
+    doi = "10.18653/v1/2024.acl-long.600",
+    pages = "11142--11159",
+    abstract = "We propose to measure political bias in LLMs by analyzing both the content and style of their generated content regarding political issues. Existing benchmarks and measures focus on gender and racial biases. However, political bias exists in LLMs and can lead to polarization and other harms in downstream applications. In order to provide transparency to users, we advocate that there should be fine-grained and explainable measures of political biases generated by LLMs. Our proposed measure looks at different political issues such as reproductive rights and climate change, at both the content (the substance of the generation) and the style (the lexical polarity) of such bias. We measured the political bias in eleven open-sourced LLMs and showed that our proposed framework is easily scalable to other topics and is explainable."
+}
+
+@inproceedings{rottger2024political,
+  title={Political compass or spinning arrow? towards more meaningful evaluations for values and opinions in large language models},
+  author={R{\"o}ttger, Paul and Hofmann, Valentin and Pyatkin, Valentina and Hinck, Musashi and Kirk, Hannah and Schuetze, Hinrich and Hovy, Dirk},
+  booktitle={Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
+  pages={15295--15311},
+  year={2024}
+}
+
+@inproceedings{potter2024hidden,
+    title = "Hidden Persuaders: {LLM}s' Political Leaning and Their Influence on Voters",
+    author = "Potter, Yujin  and
+      Lai, Shiyang  and
+      Kim, Junsol  and
+      Evans, James  and
+      Song, Dawn",
+    editor = "Al-Onaizan, Yaser  and
+      Bansal, Mohit  and
+      Chen, Yun-Nung",
+    booktitle = "Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2024",
+    address = "Miami, Florida, USA",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.emnlp-main.244/",
+    doi = "10.18653/v1/2024.emnlp-main.244",
+    pages = "4244--4275",
+    abstract = "Do LLMs have political leanings and are LLMs able to shift our political views? This paper explores these questions in the context of the 2024 U.S. presidential election. Through a voting simulation, we demonstrate 18 open-weight and closed-source LLMs' political preference for Biden over Trump. We show how Biden-leaning becomes more pronounced in instruction-tuned and reinforced models compared to their base versions by analyzing their responses to political questions related to the two nominees. We further explore the potential impact of LLMs on voter choice by recruiting 935 U.S. registered voters. Participants interacted with LLMs (Claude-3, Llama-3, and GPT-4) over five exchanges. Intriguingly, although LLMs were not asked to persuade users to support Biden, about 20{\%} of Trump supporters reduced their support for Trump after LLM interaction. This result is noteworthy given that many studies on the persuasiveness of political campaigns have shown minimal effects in presidential elections. Many users also expressed a desire for further interaction with LLMs on political subjects. Further research on how LLMs affect users' political views is required, as their use becomes more widespread."
+}
+
+@inproceedings{fulay2024relationship,
+    title = "On the Relationship between Truth and Political Bias in Language Models",
+    author = "Fulay, Suyash  and
+      Brannon, William  and
+      Mohanty, Shrestha  and
+      Overney, Cassandra  and
+      Poole-Dayan, Elinor  and
+      Roy, Deb  and
+      Kabbara, Jad",
+    editor = "Al-Onaizan, Yaser  and
+      Bansal, Mohit  and
+      Chen, Yun-Nung",
+    booktitle = "Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2024",
+    address = "Miami, Florida, USA",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.emnlp-main.508/",
+    doi = "10.18653/v1/2024.emnlp-main.508",
+    pages = "9004--9018",
+    abstract = "Language model alignment research often attempts to ensure that models are not only helpful and harmless, but also truthful and unbiased. However, optimizing these objectives simultaneously can obscure how improving one aspect might impact the others. In this work, we focus on analyzing the relationship between two concepts essential in both language model alignment and political science: truthfulness and political bias. We train reward models on various popular truthfulness datasets and subsequently evaluate their political bias. Our findings reveal that optimizing reward models for truthfulness on these datasets tends to result in a left-leaning political bias. We also find that existing open-source reward models (i.e., those trained on standard human preference datasets) already show a similar bias and that the bias is larger for larger models. These results raise important questions about the datasets used to represent truthfulness, potential limitations of aligning models to be both truthful and politically unbiased, and what language models capture about the relationship between truth and politics."
+}
+
+@article{ceron2024beyond,
+    author = {Ceron, Tanise and Falk, Neele and Barić, Ana and Nikolaev, Dmitry and Padó, Sebastian},
+    title = {Beyond Prompt Brittleness: Evaluating the Reliability and Consistency of Political Worldviews in {LLMs}},
+    journal = {Transactions of the Association for Computational Linguistics},
+    volume = {12},
+    pages = {1378-1400},
+    year = {2024},
+    month = {11},
+    abstract = {Due to the widespread use of large language models (LLMs), we need to understand whether they embed a specific “worldview” and what these views reflect. Recent studies report that, prompted with political questionnaires, LLMs show left-liberal leanings (Feng et al., 2023; Motoki et al., 2024). However, it is as yet unclear whether these leanings are reliable (robust to prompt variations) and whether the leaning is consistent across policies and political leaning. We propose a series of tests which assess the reliability and consistency of LLMs’ stances on political statements based on a dataset of voting-advice questionnaires collected from seven EU countries and annotated for policy issues. We study LLMs ranging in size from 7B to 70B parameters and find that their reliability increases with parameter count. Larger models show overall stronger alignment with left-leaning parties but differ among policy programs: They show a (left-wing) positive stance towards environment protection, social welfare state, and liberal society but also (right-wing) law and order, with no consistent preferences in the areas of foreign policy and migration.},
+    issn = {2307-387X},
+    doi = {10.1162/tacl_a_00710},
+    url = {https://doi.org/10.1162/tacl_a_00710},
+}
+
+@article{hackenburg2024evaluating,
+author = {Kobi Hackenburg  and Helen Margetts },
+title = {Evaluating the persuasive influence of political microtargeting with large language models},
+journal = {Proceedings of the National Academy of Sciences},
+volume = {121},
+number = {24},
+pages = {e2403116121},
+year = {2024},
+doi = {10.1073/pnas.2403116121},
+URL = {https://www.pnas.org/doi/abs/10.1073/pnas.2403116121},
+eprint = {https://www.pnas.org/doi/pdf/10.1073/pnas.2403116121},
+abstract = {Advances in large language models (LLMs) have raised concerns over scalable, personalized political persuasion. Here, we integrate user data into GPT-4 prompts in real-time, facilitating the live creation of messages tailored to persuade individual users on political issues. We then deploy this application at scale to test whether personalized, microtargeted messaging offers a persuasive advantage compared to nontargeted messaging. We find that while messages generated by GPT-4 were persuasive, in aggregate, the persuasive impact of microtargeted messages was not statistically different from that of nontargeted messages. These findings suggest—contrary to widespread speculation—that the influence of current LLMs may reside not in their ability to tailor messages to individuals but rather in the persuasiveness of their generic, nontargeted messages. Recent advancements in large language models (LLMs) have raised the prospect of scalable, automated, and fine-grained political microtargeting on a scale previously unseen; however, the persuasive influence of microtargeting with LLMs remains unclear. Here, we build a custom web application capable of integrating self-reported demographic and political data into GPT-4 prompts in real-time, facilitating the live creation of unique messages tailored to persuade individual users on four political issues. We then deploy this application in a preregistered randomized control experiment (n = 8,587) to investigate the extent to which access to individual-level data increases the persuasive influence of GPT-4. Our approach yields two key findings. First, messages generated by GPT-4 were broadly persuasive, in some cases increasing support for an issue stance by up to 12 percentage points. Second, in aggregate, the persuasive impact of microtargeted messages was not statistically different from that of non-microtargeted messages (4.83 vs. 6.20 percentage points, respectively, P = 0.226). These trends hold even when manipulating the type and number of attributes used to tailor the message. These findings suggest—contrary to widespread speculation—that the influence of current LLMs may reside not in their ability to tailor messages to individuals but rather in the persuasiveness of their generic, nontargeted messages. We release our experimental dataset, GPTarget2024, as an empirical baseline for future research.}
+}
+
+@article{rutinowski2024self,
+author = {Rutinowski, Jérôme and Franke, Sven and Endendyk, Jan and Dormuth, Ina and Roidl, Moritz and Pauly, Markus},
+title = {The Self-Perception and Political Biases of {ChatGPT}},
+journal = {Human Behavior and Emerging Technologies},
+volume = {2024},
+number = {1},
+pages = {7115633},
+doi = {https://doi.org/10.1155/2024/7115633},
+url = {https://onlinelibrary.wiley.com/doi/abs/10.1155/2024/7115633},
+eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1155/2024/7115633},
+abstract = {This contribution analyzes the self-perception and political biases of OpenAI’s Large Language Model ChatGPT. Considering the first small-scale reports and studies that have emerged, claiming that ChatGPT is politically biased towards progressive and libertarian points of view, this contribution is aimed at providing further clarity on this subject. Although the concept of political bias and affiliation is hard to define, lacking an agreed-upon measure for its quantification, this contribution attempts to examine this issue by having ChatGPT respond to questions on commonly used measures of political bias. In addition, further measures for personality traits that have previously been linked to political affiliations were examined. More specifically, ChatGPT was asked to answer the questions posed by the political compass test as well as similar questionnaires that are specific to the respective politics of the G7 member states. These eight tests were repeated ten times each and indicate that ChatGPT seems to hold a bias towards progressive views. The political compass test revealed a bias towards progressive and libertarian views, supporting the claims of prior research. The political questionnaires for the G7 member states indicated a bias towards progressive views but no significant bias between authoritarian and libertarian views, contradicting the findings of prior reports. In addition, ChatGPT’s Big Five personality traits were tested using the OCEAN test, and its personality type was queried using the Myers-Briggs Type Indicator (MBTI) test. Finally, the maliciousness of ChatGPT was evaluated using the Dark Factor test. These three tests were also repeated ten times each, revealing that ChatGPT perceives itself as highly open and agreeable, has the Myers-Briggs personality type ENFJ, and is among the test-takers with the least pronounced dark traits.},
+year = {2024}
+}
+
+@ARTICLE{choudhary2024political,
+  author={Choudhary, Tavishi},
+  journal={IEEE Access},
+  title={Political Bias in Large Language Models: A Comparative Analysis of {ChatGPT-4}, {Perplexity}, {Google} {Gemini}, and {Claude}},
+  year={2025},
+  volume={13},
+  number={},
+  pages={11341-11379},
+  keywords={Artificial intelligence;Biological system modeling;Training;Data models;Internet;Generative AI;Ethics;Adaptation models;Training data;Decision making;Large language models (LLM);generative AI (GenAI);AI governance and policy;ethical AI systems},
+  doi={10.1109/ACCESS.2024.3523764}
+}
+
+@misc{haman2024chatbots,
+      title={Who Would Chatbots Vote For? Political Preferences of {ChatGPT} and {Gemini} in the 2024 {European Union} Elections},
+      author={Michael Haman and Milan Školník},
+      year={2024},
+      eprint={2409.00721},
+      archivePrefix={arXiv},
+      primaryClass={cs.CY},
+      url={https://arxiv.org/abs/2409.00721},
+}
+
+@article{urman2024silence,
+title = {The silence of the {LLMs}: Cross-lingual analysis of guardrail-related political bias and false information prevalence in {ChatGPT}, {Google} {Bard} ({Gemini}), and {Bing Chat}},
+journal = {Telematics and Informatics},
+volume = {96},
+pages = {102211},
+year = {2025},
+issn = {0736-5853},
+doi = {https://doi.org/10.1016/j.tele.2024.102211},
+url = {https://www.sciencedirect.com/science/article/pii/S0736585324001151},
+author = {Aleksandra Urman and Mykola Makhortykh},
+keywords = {LLM, Political information, ChatGPT, Bing Chat, Bard, Russia, Ukraine},
+abstract = {This article presents a comparative analysis of political bias in the outputs of three Large Language Model (LLM)-based chatbots – ChatGPT (GPT3.5, GPT4, GPT4o), Bing Chat, and Bard/Gemini – in response to political queries concerning the authoritarian regime in Russia. We investigate whether safeguards implemented in these chatbots contribute to the censorship of information that is viewed as harmful by the regime, in particular information about Vladimir Putin and the Russian war against Ukraine, and whether these safeguards enable the generation of false claims, in particular in relation to the regime’s internal and external opponents. To detect whether LLM safeguards reiterate political bias, the article compares the outputs of prompts focusing on Putin’s regime and the ones dealing with the Russian opposition and the US and Ukrainian politicians. It also examines whether the degree of bias varies depending on the language of the prompt and compares outputs concerning political personalities and issues across three languages: Russian, Ukrainian, and English. The results reveal significant disparities in how individual chatbots withhold politics-related information or produce false claims in relation to it. Notably, Bard consistently refused to respond to queries about Vladimir Putin in Russian, even when the relevant information was accessible via Google Search, and generally followed the censorship guidelines that, according to Yandex-related data leaks, were issued by the Russian authorities. A subsequent evaluation of Gemini showed that the chatbot restricts political information beyond what was officially confirmed by Google. In terms of false claims, we find substantial variation across languages with Ukrainian and Russian prompts generating false information more often and Bard being more prone to produce false claims in relation to Russian regime opponents (e.g., Navalny or Zelenskyy) than other chatbots. We also found that while GPT4 and GPT4o generate less factually incorrect information, both models still make mistakes, with their prevalence being higher in Russian and Ukrainian than in English. This research aims to stimulate further dialogue and research on developing safeguards against the misuse of LLMs outside of democratic environments.}
+}
+
+@article{peng2024beyond,
+author = {Tai-Quan Peng and Kaiqi Yang and Sanguk Lee and Hang Li and Yucheng Chu and Yuping Lin and Hui Liu},
+title = {Beyond partisan leaning: a comparative analysis of political bias in large language models},
+journal = {Journal of Information Technology \& Politics},
+volume = {0},
+number = {0},
+pages = {1--18},
+year = {2026},
+publisher = {Routledge},
+doi = {10.1080/19331681.2026.2646990},
+URL = { https://doi.org/10.1080/19331681.2026.2646990 },
+eprint = { https://doi.org/10.1080/19331681.2026.2646990 }
+}
+
+% --- 2025 ---
+@article{rettenberger2025assessing,
+  author = {Rettenberger, Luca and Reischl, Markus and Schutera, Mark},
+  title = {Assessing political bias in large language models},
+  journal = {Journal of Computational Social Science},
+  year = {2025},
+  volume = {8},
+  number = {2},
+  pages = {42},
+  doi = {10.1007/s42001-025-00376-w},
+  url = {https://doi.org/10.1007/s42001-025-00376-w},
+  issn = {2432-2725},
+  abstract = {Evaluating bias in Large Language Models (LLMs) has become a pivotal issue in current Artificial Intelligence (AI) research due to their significant impact on societal dynamics. Recognizing political bias in LLMs is particularly important as they approach performative prediction, influencing societal behavior and political events, such as the upcoming European Parliament elections. From a German voter’s perspective, we evaluate the political bias of the currently most popular open-source LLMs concerning political issues within the European Union. To do so, we use the "Wahl-O-Mat," a voting advice application used in Germany. We show that larger models, such as Llama3-70B, tend to align more closely with left-leaning political parties, while smaller models often remain neutral, particularly when prompted in English. The central finding is that LLMs are similarly biased, with low variances in the alignment concerning a specific party. Our findings offer crucial insights for developers and policymakers to understand and mitigate LLM biases, emphasizing the need for rigorous bias assessment to ensure the integrity and trustworthiness of AI applications.}
+}
+
+@article{buyl2025llms,
+  author = {Buyl, Maarten and Rogiers, Alexander and Noels, Sander and Bied, Guillaume and Dominguez-Catena, Iris and Heiter, Edith and Johary, Iman and Mara, Alexandru-Cristian and Romero, Raphaël and Lijffijt, Jefrey and De Bie, Tijl},
+  title = {Large language models reflect the ideology of their creators},
+  journal = {npj Artificial Intelligence},
+  year = {2026},
+  volume = {2},
+  number = {1},
+  pages = {7},
+  doi = {10.1038/s44387-025-00048-0},
+  url = {https://doi.org/10.1038/s44387-025-00048-0},
+  issn = {3005-1460},
+  abstract = {Large language models (LLMs) already play an influential role in how humans access information. However, their behavior varies depending on their design, training, and use. We prompt a diverse panel of 19 popular LLMs to describe 3,991 prominent persons with political relevance, and then judge how positively they portray each person. When comparing these assessments, we find disparities in ideological positions between LLMs across different geopolitical regions (Arabic countries, China, Russia, and Western countries), and across different languages (the United Nations’ six official languages). Moreover, among only models from the United States, we find significant normative differences related to progressive values. Among Chinese models, we characterize division between internationally- and domestically-focused models. Our results suggest that the ideological stance of an LLM reflects the worldview of its creators. This poses the risk of political instrumentalization and raises concerns around technological and regulatory efforts aiming to make LLMs ideologically ‘unbiased’.}
+}
+
+@misc{rozado2025measuring,
+      title={Measuring Political Preferences in {AI} Systems: An Integrative Approach},
+      author={David Rozado},
+      year={2025},
+      eprint={2503.10649},
+      archivePrefix={arXiv},
+      primaryClass={cs.CY},
+      url={https://arxiv.org/abs/2503.10649},
+}
+
+@article{motoki2025assessing,
+title = {Assessing political bias and value misalignment in generative artificial intelligence},
+journal = {Journal of Economic Behavior \& Organization},
+volume = {234},
+pages = {106904},
+year = {2025},
+issn = {0167-2681},
+doi = {https://doi.org/10.1016/j.jebo.2025.106904},
+url = {https://www.sciencedirect.com/science/article/pii/S0167268125000241},
+author = {Fabio Y.S. Motoki and Valdemar {Pinho Neto} and Victor Rangel},
+keywords = {Generative AI, Societal values, Large language models, Multimodal, AI governance},
+abstract = {Our analysis reveals a concerning misalignment of values between ChatGPT and the average American. We also show that ChatGPT displays political leanings when generating text and images, but the degree and direction of skew depend on the theme. Notably, ChatGPT repeatedly refused to generate content representing certain mainstream perspectives, citing concerns over misinformation and bias. As generative AI systems like ChatGPT become ubiquitous, such misalignment with societal norms poses risks of distorting public discourse. Without proper safeguards, these systems threaten to exacerbate societal divides and depart from principles that underpin free societies.}
+}
+
+@inproceedings{faulborn2025only,
+    title = "Only a Little to the Left: A Theory-grounded Measure of Political Bias in Large Language Models",
+    author = "Faulborn, Mats  and
+      Sen, Indira  and
+      Pellert, Max  and
+      Spitz, Andreas  and
+      Garcia, David",
+    editor = "Che, Wanxiang  and
+      Nabende, Joyce  and
+      Shutova, Ekaterina  and
+      Pilehvar, Mohammad Taher",
+    booktitle = "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2025",
+    address = "Vienna, Austria",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.acl-long.1529/",
+    doi = "10.18653/v1/2025.acl-long.1529",
+    pages = "31684--31704",
+    ISBN = "979-8-89176-251-0",
+    abstract = "Prompt-based language models like GPT4 and LLaMa have been used for a wide variety of use cases such as simulating agents, searching for information, or for content analysis. For all of these applications and others, political biases in these models can affect their performance. Several researchers have attempted to study political bias in language models using evaluation suites based on surveys, such as the Political Compass Test (PCT), often finding a particular leaning favored by these models. However, there is some variation in the exact prompting techniques, leading to diverging findings, and most research relies on constrained-answer settings to extract model responses. Moreover, the Political Compass Test is not a scientifically valid survey instrument. In this work, we contribute a political bias measured informed by political science theory, building on survey design principles to test a wide variety of input prompts, while taking into account prompt sensitivity. We then prompt 11 different open and commercial models, differentiating between instruction-tuned and non-instruction-tuned models, and automatically classify their political stances from 88,110 responses. Leveraging this dataset, we compute political bias profiles across different prompt variations and find that while PCT exaggerates bias in certain models like GPT3.5, measures of political bias are often unstable, but generally more left-leaning for instruction-tuned models. Code and data are available at https://github.com/MaFa211/theory{\_}grounded{\_}pol{\_}bias."
+}
+
+@misc{exler2025large,
+      title={Large Means Left: Political Bias in Large Language Models Increases with Their Number of Parameters},
+      author={David Exler and Mark Schutera and Markus Reischl and Luca Rettenberger},
+      year={2025},
+      eprint={2505.04393},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2505.04393},
+}
+
+@article{westwood2025perceived,
+  title={Measuring perceived slant in large language models through user evaluations},
+  author={Westwood, Sean J and Grimmer, Justin and Hall, Andrew B},
+  journal={Standford Business School},
+  year={2025}
+}
+
+@inproceedings{yoo2025fair,
+    title = "Fair or Framed? Political Bias in News Articles Generated by {LLM}s",
+    author = "Yoo, Junho  and
+      Shin, Youhyun",
+    editor = "Christodoulopoulos, Christos  and
+      Chakraborty, Tanmoy  and
+      Rose, Carolyn  and
+      Peng, Violet",
+    booktitle = "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2025",
+    address = "Suzhou, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.emnlp-main.856/",
+    doi = "10.18653/v1/2025.emnlp-main.856",
+    pages = "16904--16930",
+    ISBN = "979-8-89176-332-6",
+    abstract = "Despite biases in Large Language Models (LLMs) being widely researched, systematic explorations of political biases in news article generation tasks remain underexplored. This study evaluates political bias across seven LLMs by leveraging our PublicViews dataset-extracted from the TwinViews-13K corpus-comprising 31 topics and 31,692 statements. We analyze 10,850 articles, finding left-leaning bias persists in generation tasks, with neutral content remaining rare even under balanced opinion settings. Models exhibit asymmetric behavior in minority opinion scenarios, amplifying preferred viewpoints when in minority while conforming to majority opinions otherwise. Notably, all models employ `stance-flipping quotations'' (altering supporters' statements to express opposite viewpoints) in 33-38{\%} of quotations despite explicit instructions against distortion. Consistent with prior research, increased model size failed to enhance neutrality. This research measures political bias in LLM-generated news, analyzes its mechanisms, and reveals how opinion distribution and explicitness affect bias expression. Our results highlight how LLMs can introduce unintended political bias in generative contexts. We publicly release our PublicViews corpus and code at https://anonymous.4open.science/r/Fair-or-Framed-46F1."
+}
+
+@inproceedings{zhang2025probing,
+  title={Probing Political Ideology in Large Language Models: How Latent Political Representations Generalize Across Tasks},
+  author={Zhang, Tianyi},
+  booktitle={Findings of the Association for Computational Linguistics: EMNLP 2025},
+  pages={23349--23360},
+  year={2025}
+}
+
+@article{liu2025turning,
+  author = {Liu, Yifei and Panwang, Yuang and Gu, Chao},
+  title = {“Turning right”? An experimental study on the political value shift in large language models},
+  journal = {Humanities and Social Sciences Communications},
+  year = {2025},
+  volume = {12},
+  number = {1},
+  pages = {179},
+  doi = {10.1057/s41599-025-04465-z},
+  url = {https://doi.org/10.1057/s41599-025-04465-z},
+  issn = {2662-9992},
+  abstract = {Constructing artificial intelligence that aligns with human values is a crucial challenge, with political values playing a distinctive role among various human value systems. In this study, we adapted the Political Compass Test and combined it with rigorous bootstrapping techniques to create a standardized method for testing political values in AI. This approach was applied to multiple versions of ChatGPT, utilizing a dataset of over 3000 tests to ensure robustness. Our findings reveal that while newer versions of ChatGPT consistently maintain values within the libertarian-left quadrant, there is a statistically significant rightward shift in political values over time, a phenomenon we term a ‘value shift’ in large language models. This shift is particularly noteworthy given the widespread use of LLMs and their potential influence on societal values. Importantly, our study controlled for factors such as user interaction and language, and the observed shifts were not directly linked to changes in training datasets. While this research provides valuable insights into the dynamic nature of value alignment in AI, it also underscores limitations, including the challenge of isolating all external variables that may contribute to these shifts. These findings suggest a need for continuous monitoring of AI systems to ensure ethical value alignment, particularly as they increasingly integrate into human decision-making and knowledge systems.}
+}
+
+@inproceedings{dai2025media,
+    title = "Media Source Matters More Than Content: Unveiling Political Bias in {LLM}-Generated Citations",
+    author = "Dai, Sunhao  and
+      Cao, Zhanshuo  and
+      Wang, Wenjie  and
+      Pang, Liang  and
+      Xu, Jun  and
+      Ng, See-Kiong  and
+      Chua, Tat-Seng",
+    editor = "Christodoulopoulos, Christos  and
+      Chakraborty, Tanmoy  and
+      Rose, Carolyn  and
+      Peng, Violet",
+    booktitle = "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2025",
+    address = "Suzhou, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.emnlp-main.872/",
+    doi = "10.18653/v1/2025.emnlp-main.872",
+    pages = "17256--17276",
+    ISBN = "979-8-89176-332-6",
+    abstract = "Unlike traditional search engines that present ranked lists of webpages, generative search engines rely solely on in-line citations as the key gateway to original real-world webpages, making it crucial to examine whether LLM-generated citations have biases{---}particularly for politically sensitive queries. To investigate this, we first construct AllSides-2024, a new dataset comprising the latest real-world news articles (Jan. 2024 - Dec. 2024) labeled with left- or right-leaning stances. Through systematic evaluations, we find that LLMs exhibit a consistent tendency to cite left-leaning sources at notably higher rates compared to traditional retrieval systems (e.g., BM25 and dense retrievers). Controlled experiments further reveal that this bias arises from a preference for media outlets identified as left-leaning, rather than for left-oriented content itself. Meanwhile, our findings show that while LLMs struggle to infer political bias from news content alone, they can almost perfectly recognize the political orientation of media outlets based on their names. These insights highlight the risk that, in the era of generative search engines, information exposure may be disproportionately shaped by specific media outlets, potentially shaping public perception and decision-making."
+}
+
+@InProceedings{bleick2025cautionary,
+author="Dormuth, Ina
+and Franke, Sven
+and Hafer, Marlies
+and Katzke, Tim
+and Marx, Alexander
+and M{\"u}ller, Emmanuel
+and Neider, Daniel
+and Pauly, Markus
+and Rutinowski, J{\'e}r{\^o}me",
+editor="Guidotti, Riccardo
+and Schmid, Ute
+and Longo, Luca",
+title="A Cautionary Tale About ``Neutrally'' Informative {AI} Tools Ahead of the 2025 Federal Elections in {Germany}",
+booktitle="Explainable Artificial Intelligence",
+year="2026",
+publisher="Springer Nature Switzerland",
+address="Cham",
+pages="64--85",
+abstract="This study examines the reliability of AI-based Voting Advice Applications (VAAs) and large language models (LLMs) in providing objective political information. Our analysis is based upon comparing party responses to 38 statements of the Wahl-O-Mat, a well-established German online tool that helps inform voters by comparing their views with political party positions. For the LLMs, we identify significant biases. They exhibit a strong alignment (over 75{\%} on average) with left-wing parties and a substantially lower alignment with center-right (smaller 50{\%}) and right-wing parties (around 30{\%}). Furthermore, for the VAAs, intended to objectively inform voters, we found substantial deviations from the parties' stated positions in Wahl-O-Mat: While one VAA deviated in 25{\%} of cases, another VAA showed deviations in more than 50{\%} of cases. For the latter, we even observed that simple prompt injections led to severe hallucinations, including false claims such as non-existent connections between political parties and right-wing extremist ties.",
+isbn="978-3-032-08333-3"
+}
+
+
+@article{pnasnexus2025censorship,
+    author = {Pan, Jennifer and Xu, Xu},
+    title = {Political censorship in large language models originating from {China}},
+    journal = {PNAS Nexus},
+    volume = {5},
+    number = {2},
+    pages = {pgag013},
+    year = {2026},
+    month = {02},
+    abstract = {A growing body of research on large language models (LLMs) has identified various biases, primarily in contexts where biases reflect societal patterns. This article focuses on a different source of bias in LLMs—government censorship. By comparing foundation models developed in China and those from outside China, we find substantially higher rates of refusal to respond, shorter responses, and inaccurate responses to a battery of 145 political questions in China-originating models. These disparities diminish for less-sensitive prompts, showing that technological and market differences cannot fully explain this divergence. While all models exhibit higher refusal to respond rates with Chinese-language prompts than English ones, language differences are less pronounced than disparities between China-originating and non-China-originating models. We caution that our study is observational and cross-sectional and does not establish a causal linkage between regulatory pressures and censorship behaviors of China-originating LLMs, but these results suggest that censorship through government regulation requiring companies to restrict political content may be an important factor contributing to political bias in LLMs.},
+    issn = {2752-6542},
+    doi = {10.1093/pnasnexus/pgag013},
+    url = {https://doi.org/10.1093/pnasnexus/pgag013},
+    eprint = {https://academic.oup.com/pnasnexus/article-pdf/5/2/pgag013/66929680/pgag013.pdf},
+}
+
+@misc{openai2025defining,
+  author       = {{OpenAI}},
+  title        = {Defining and Evaluating Political Bias in {LLMs}},
+  year         = {2025},
+  month        = oct,
+  howpublished = {\url{https://openai.com/index/defining-and-evaluating-political-bias-in-llms/}},
+  note         = {Accessed: 2026-03-31}
+}
+
+@misc{extreme2025llms,
+      title={Large Language Models are often politically extreme, usually ideologically inconsistent, and persuasive even in informational contexts},
+      author={Nouar Aldahoul and Hazem Ibrahim and Matteo Varvello and Aaron Kaufman and Talal Rahwan and Yasir Zaki},
+      year={2025},
+      eprint={2505.04171},
+      archivePrefix={arXiv},
+      primaryClass={cs.CY},
+      url={https://arxiv.org/abs/2505.04171},
+}
+
+@misc{press2025framework,
+      title={{PReSS}: A Black-Box Framework for Evaluating Political Stance Stability in {LLMs} via Argumentative Pressure},
+      author={Shariar Kabir and Kevin Esterling and Yue Dong},
+      year={2026},
+      eprint={2504.17052},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2504.17052},
+}
+
+@misc{pakistani2025framing,
+      title={Framing Political Bias in Multilingual {LLMs} Across {Pakistani} Languages},
+      author={Afrozah Nadeem and Mark Dras and Usman Naseem},
+      year={2026},
+      eprint={2506.00068},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2506.00068},
+}
+
+@misc{crosscultural2025benchmarks,
+      title={Beyond {Western} Politics: Cross-Cultural Benchmarks for Evaluating Partisan Associations in {LLMs}},
+      author={Divyanshu Kumar and Ishita Gupta and Nitin Aravind Birur and Tanay Baswa and Sahil Agarwal and Prashanth Harshangi},
+      year={2025},
+      eprint={2509.22711},
+      archivePrefix={arXiv},
+      primaryClass={cs.CY},
+      url={https://arxiv.org/abs/2509.22711},
+}
+
+% --- 2026 ---
+@misc{sakhawat2026political,
+      title={Political Alignment in Large Language Models: A Multidimensional Audit of Psychometric Identity and Behavioral Bias},
+      author={Adib Sakhawat and Tahsin Islam and Takia Farhin and Syed Rifat Raiyan and Hasan Mahmud and Md Kamrul Hasan},
+      year={2026},
+      eprint={2601.06194},
+      archivePrefix={arXiv},
+      primaryClass={cs.CY},
+      url={https://arxiv.org/abs/2601.06194},
+}
+
+@misc{nadeem2026bias,
+      title={Bias Beyond Borders: Political Ideology Evaluation and Steering in Multilingual {LLMs}},
+      author={Afrozah Nadeem and Agrima Seth and Mehwish Nasim and Usman Naseem},
+      year={2026},
+      eprint={2601.23001},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2601.23001},
+}
+
+@misc{languageyouask2026,
+      title={The Language You Ask In: Language-Conditioned Ideological Divergence in {LLM} Analysis of Contested Political Documents},
+      author={Oleg Smirnov},
+      year={2026},
+      eprint={2601.12164},
+      archivePrefix={arXiv},
+      primaryClass={cs.CY},
+      url={https://arxiv.org/abs/2601.12164},
+}
+
+@misc{taiwan2026bilingual,
+      title={Bilingual Bias in Large Language Models: A {Taiwan} Sovereignty Benchmark Study},
+      author={Ju-Chun Ko},
+      year={2026},
+      eprint={2602.06371},
+      archivePrefix={arXiv},
+      primaryClass={cs.CY},
+      url={https://arxiv.org/abs/2602.06371},
+}
+
+% ============================================================
+% Swiss Political Context & Smart Vote
+% ============================================================
+
+
+@misc{smartvote2023,
+  author = {{Politools}},
+  title = {{smartvote}: Online Voting Advice Application},
+  year = {2026},
+  url = {https://www.smartvote.ch/},
+  note = {Accessed: 2026-03-31}
+}
+
+@article{ladner2012smartvote,
+  title={Voting advice applications and party choice: evidence from {smartvote} users in {Switzerland}},
+  author={Ladner, Andreas and Fivaz, Jan and Pianzola, Jo{\"e}lle},
+  journal={International Journal of Electronic Governance},
+  volume={5},
+  number={3-4},
+  pages={367--387},
+  year={2012},
+  publisher={Inderscience Publishers}
+}
+
+@book{linder2010swiss,
+  author    = {Linder, Wolf},
+  title     = {{Swiss} Democracy: Possible Solutions to Conflict in Multicultural Societies},
+  publisher = {Palgrave Macmillan},
+  year      = {2010},
+  edition   = {3rd},
+}
+
+% ============================================================
+% RLHF / Alignment
+% ============================================================
+
+@inproceedings{ouyang2022training,
+ author = {Ouyang, Long and Wu, Jeffrey and Jiang, Xu and Almeida, Diogo and Wainwright, Carroll and Mishkin, Pamela and Zhang, Chong and Agarwal, Sandhini and Slama, Katarina and Ray, Alex and Schulman, John and Hilton, Jacob and Kelton, Fraser and Miller, Luke and Simens, Maddie and Askell, Amanda and Welinder, Peter and Christiano, Paul F and Leike, Jan and Lowe, Ryan},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {S. Koyejo and S. Mohamed and A. Agarwal and D. Belgrave and K. Cho and A. Oh},
+ pages = {27730--27744},
+ publisher = {Curran Associates, Inc.},
+ title = {Training language models to follow instructions with human feedback},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2022/file/b1efde53be364a73914f58805a001731-Paper-Conference.pdf},
+ volume = {35},
+ year = {2022}
+}
+
+@inproceedings{rafailov2023direct,
+ author = {Rafailov, Rafael and Sharma, Archit and Mitchell, Eric and Manning, Christopher D and Ermon, Stefano and Finn, Chelsea},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {A. Oh and T. Naumann and A. Globerson and K. Saenko and M. Hardt and S. Levine},
+ pages = {53728--53741},
+ publisher = {Curran Associates, Inc.},
+ title = {Direct Preference Optimization: Your Language Model is Secretly a Reward Model},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2023/file/a85b405ed65c6477a4fe8302b5e06ce7-Paper-Conference.pdf},
+ volume = {36},
+ year = {2023}
+}
+
+@misc{bai2022training,
+      title={Training a Helpful and Harmless Assistant with Reinforcement Learning from Human Feedback},
+      author={Yuntao Bai and Andy Jones and Kamal Ndousse and Amanda Askell and Anna Chen and Nova DasSarma and Dawn Drain and Stanislav Fort and Deep Ganguli and Tom Henighan and Nicholas Joseph and Saurav Kadavath and Jackson Kernion and Tom Conerly and Sheer El-Showk and Nelson Elhage and Zac Hatfield-Dodds and Danny Hernandez and Tristan Hume and Scott Johnston and Shauna Kravec and Liane Lovitt and Neel Nanda and Catherine Olsson and Dario Amodei and Tom Brown and Jack Clark and Sam McCandlish and Chris Olah and Ben Mann and Jared Kaplan},
+      year={2022},
+      eprint={2204.05862},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2204.05862},
+}
+
+% ============================================================
+% Sociotechnical AI Auditing / FAccT Context
+% ============================================================
+
+@InProceedings{buolamwini2018gender,
+  title = 	 {Gender Shades: Intersectional Accuracy Disparities in Commercial Gender Classification},
+  author = 	 {Buolamwini, Joy and Gebru, Timnit},
+  booktitle = 	 {Proceedings of the 1st Conference on Fairness, Accountability and Transparency},
+  pages = 	 {77--91},
+  year = 	 {2018},
+  editor = 	 {Friedler, Sorelle A. and Wilson, Christo},
+  volume = 	 {81},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {23--24 Feb},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v81/buolamwini18a/buolamwini18a.pdf},
+  url = 	 {https://proceedings.mlr.press/v81/buolamwini18a.html},
+  abstract = 	 {Recent studies demonstrate that machine learning algorithms can discriminate based on classes like race and gender. In this work, we present an approach to evaluate bias present in automated facial analysis algorithms and datasets with respect to phenotypic subgroups. Using the dermatologist  approved Fitzpatrick Skin Type classification system, we characterize the gender and skin type distribution of two facial analysis benchmarks, IJB-A and Adience. We find that these datasets are overwhelmingly composed of lighter-skinned subjects (79.6% for IJB-A and 86.2% for Adience) and introduce a new facial analysis dataset which is balanced by gender and skin type. We evaluate 3 commercial gender classification systems using our dataset and show that darker-skinned females are the most misclassified group (with error rates of up to 34.7%). The maximum error rate for lighter-skinned males is 0.8%. The substantial disparities in the accuracy of classifying darker females, lighter females, darker males, and lighter males in gender classification systems require urgent attention if commercial companies are to build genuinely fair, transparent and accountable facial analysis algorithms.}
+}
+
+
+@inproceedings{raji2020closing,
+    author = {Raji, Inioluwa Deborah and Smart, Andrew and White, Rebecca N. and Mitchell, Margaret and Gebru, Timnit and Hutchinson, Ben and Smith-Loud, Jamila and Theron, Daniel and Barnes, Parker},
+    title = {Closing the {AI} accountability gap: defining an end-to-end framework for internal algorithmic auditing},
+    year = {2020},
+    isbn = {9781450369367},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    url = {https://doi.org/10.1145/3351095.3372873},
+    doi = {10.1145/3351095.3372873},
+    abstract = {Rising concern for the societal implications of artificial intelligence systems has inspired a wave of academic and journalistic literature in which deployed systems are audited for harm by investigators from outside the organizations deploying the algorithms. However, it remains challenging for practitioners to identify the harmful repercussions of their own systems prior to deployment, and, once deployed, emergent issues can become difficult or impossible to trace back to their source.In this paper, we introduce a framework for algorithmic auditing that supports artificial intelligence system development end-to-end, to be applied throughout the internal organization development life-cycle. Each stage of the audit yields a set of documents that together form an overall audit report, drawing on an organization's values or principles to assess the fit of decisions made throughout the process. The proposed auditing framework is intended to contribute to closing the accountability gap in the development and deployment of large-scale artificial intelligence systems by embedding a robust process to ensure audit integrity.},
+    booktitle = {Proceedings of the 2020 Conference on Fairness, Accountability, and Transparency},
+    pages = {33–44},
+    numpages = {12},
+    keywords = {accountability, algorithmic audits, machine learning, responsible innovation},
+    location = {Barcelona, Spain},
+    series = {FAT* '20}
+}
+
+@article{mohamed2020decolonial,
+  author = {Mohamed, Shakir and Png, Marie-Therese and Isaac, William},
+  title = {Decolonial {AI}: Decolonial Theory as Sociotechnical Foresight in Artificial Intelligence},
+  journal = {Philosophy \& Technology},
+  year = {2020},
+  volume = {33},
+  number = {4},
+  pages = {659--684},
+  doi = {10.1007/s13347-020-00405-8},
+  url = {https://doi.org/10.1007/s13347-020-00405-8},
+  issn = {2210-5441},
+  abstract = {This paper explores the important role of critical science, and in particular of post-colonial and decolonial theories, in understanding and shaping the ongoing advances in artificial intelligence. Artificial intelligence (AI) is viewed as amongst the technological advances that will reshape modern societies and their relations. While the design and deployment of systems that continually adapt holds the promise of far-reaching positive change, they simultaneously pose significant risks, especially to already vulnerable peoples. Values and power are central to this discussion. Decolonial theories use historical hindsight to explain patterns of power that shape our intellectual, political, economic, and social world. By embedding a decolonial critical approach within its technical practice, AI communities can develop foresight and tactics that can better align research and technology development with established ethical principles, centring vulnerable peoples who continue to bear the brunt of negative impacts of innovation and scientific progress. We highlight problematic applications that are instances of coloniality, and using a decolonial lens, submit three tactics that can form a decolonial field of artificial intelligence: creating a critical technical practice of AI, seeking reverse tutelage and reverse pedagogies, and the renewal of affective and political communities. The years ahead will usher in a wave of new scientific breakthroughs and technologies driven by AI research, making it incumbent upon AI communities to strengthen the social contract through ethical foresight and the multiplicity of intellectual perspectives available to us, ultimately supporting future technologies that enable greater well-being, with the goal of beneficence and justice for all.}
+}
+
+@inproceedings{shelby2023sociotechnical,
+    author = {Shelby, Renee and Rismani, Shalaleh and Henne, Kathryn and Moon, AJung and Rostamzadeh, Negar and Nicholas, Paul and Yilla-Akbari, N'Mah and Gallegos, Jess and Smart, Andrew and Garcia, Emilio and Virk, Gurleen},
+    title = {Sociotechnical Harms of Algorithmic Systems: Scoping a Taxonomy for Harm Reduction},
+    year = {2023},
+    isbn = {9798400702310},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    url = {https://doi.org/10.1145/3600211.3604673},
+    doi = {10.1145/3600211.3604673},
+    abstract = {Understanding the landscape of potential harms from algorithmic systems enables practitioners to better anticipate consequences of the systems they build. It also supports the prospect of incorporating controls to help minimize harms that emerge from the interplay of technologies and social and cultural dynamics. A growing body of scholarship has identified a wide range of harms across different algorithmic technologies. However, computing research and practitioners lack a high level and synthesized overview of harms from algorithmic systems. Based on a scoping review of computing research (n=172), we present an applied taxonomy of sociotechnical harms to support a more systematic surfacing of potential harms in algorithmic systems. The final taxonomy builds on and refers to existing taxonomies, classifications, and terminologies. Five major themes related to sociotechnical harms — representational, allocative, quality-of-service, interpersonal harms, and social system/societal harms — and sub-themes are presented along with a description of these categories. We conclude with a discussion of challenges and opportunities for future research.},
+    booktitle = {Proceedings of the 2023 AAAI/ACM Conference on AI, Ethics, and Society},
+    pages = {723–741},
+    numpages = {19},
+    keywords = {AI, harms, machine learning, scoping review},
+    location = {Montr\'{e}al, QC, Canada},
+    series = {AIES '23}
+}
+
+@inproceedings{weidinger2022taxonomy,
+    author = {Weidinger, Laura and Uesato, Jonathan and Rauh, Maribeth and Griffin, Conor and Huang, Po-Sen and Mellor, John and Glaese, Amelia and Cheng, Myra and Balle, Borja and Kasirzadeh, Atoosa and Biles, Courtney and Brown, Sasha and Kenton, Zac and Hawkins, Will and Stepleton, Tom and Birhane, Abeba and Hendricks, Lisa Anne and Rimell, Laura and Isaac, William and Haas, Julia and Legassick, Sean and Irving, Geoffrey and Gabriel, Iason},
+    title = {Taxonomy of Risks posed by Language Models},
+    year = {2022},
+    isbn = {9781450393522},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    url = {https://doi.org/10.1145/3531146.3533088},
+    doi = {10.1145/3531146.3533088},
+    abstract = {Responsible innovation on large-scale Language Models (LMs) requires foresight into and in-depth understanding of the risks these models may pose. This paper develops a comprehensive taxonomy of ethical and social risks associated with LMs. We identify twenty-one risks, drawing on expertise and literature from computer science, linguistics, and the social sciences. We situate these risks in our taxonomy of six risk areas: I. Discrimination, Hate speech and Exclusion, II. Information Hazards, III. Misinformation Harms, IV. Malicious Uses, V. Human-Computer Interaction Harms, and VI. Environmental and Socioeconomic harms. For risks that have already been observed in LMs, the causal mechanism leading to harm, evidence of the risk, and approaches to risk mitigation are discussed. We further describe and analyse risks that have not yet been observed but are anticipated based on assessments of other language technologies, and situate these in the same taxonomy. We underscore that it is the responsibility of organizations to engage with the mitigations we discuss throughout the paper. We close by highlighting challenges and directions for further research on risk evaluation and mitigation with the goal of ensuring that language models are developed responsibly.},
+    booktitle = {Proceedings of the 2022 ACM Conference on Fairness, Accountability, and Transparency},
+    pages = {214–229},
+    numpages = {16},
+    keywords = {language models, responsible AI, responsible innovation, risk assessment, technology risks},
+    location = {Seoul, Republic of Korea},
+    series = {FAccT '22}
+}
+
+% ============================================================
+% Statistical Methods
+% ============================================================
+
+@article{pedregosa2011scikit,
+  title={Scikit-learn: Machine Learning in {P}ython},
+  author={Pedregosa, F. and Varoquaux, G. and Gramfort, A. and Michel, V.
+          and Thirion, B. and Grisel, O. and Blondel, M. and Prettenhofer, P.
+          and Weiss, R. and Dubourg, V. and Vanderplas, J. and Passos, A. and
+          Cournapeau, D. and Brucher, M. and Perrot, M. and Duchesnay, E.},
+  journal={Journal of Machine Learning Research},
+  volume={12},
+  pages={2825--2830},
+  year={2011}
+}
+
+@book{efron1993bootstrap,
+  title={An introduction to the bootstrap},
+  author={Efron, Bradley and Tibshirani, Robert J},
+  year={1994},
+  publisher={Chapman and Hall/CRC}
+}
+
+@article{benjamini1995controlling,
+    author = {Benjamini, Yoav and Hochberg, Yosef},
+    title = {Controlling the False Discovery Rate: A Practical and Powerful Approach to Multiple Testing},
+    journal = {Journal of the Royal Statistical Society: Series B (Methodological)},
+    volume = {57},
+    number = {1},
+    pages = {289-300},
+    keywords = {bonferroni-type procedures, familywise error rate, multiple-comparison procedures, p-values},
+    doi = {https://doi.org/10.1111/j.2517-6161.1995.tb02031.x},
+    url = {https://rss.onlinelibrary.wiley.com/doi/abs/10.1111/j.2517-6161.1995.tb02031.x},
+    eprint = {https://rss.onlinelibrary.wiley.com/doi/pdf/10.1111/j.2517-6161.1995.tb02031.x},
+    abstract = {SUMMARY The common approach to the multiplicity problem calls for controlling the familywise error rate (FWER). This approach, though, has faults, and we point out a few. A different approach to problems of multiple significance testing is presented. It calls for controlling the expected proportion of falsely rejected hypotheses — the false discovery rate. This error rate is equivalent to the FWER when all hypotheses are true but is smaller otherwise. Therefore, in problems where the control of the false discovery rate rather than that of the FWER is desired, there is potential for a gain in power. A simple sequential Bonferronitype procedure is proved to control the false discovery rate for independent test statistics, and a simulation study shows that the gain in power is substantial. The use of the new procedure and the appropriateness of the criterion are illustrated with examples.},
+    year = {1995}
+}
+
+@Article{bolker2009generalized,
+     author={Bolker, Benjamin M.
+        and Brooks, Mollie E.
+        and Clark, Connie J.
+        and Geange, Shane W.
+        and Poulsen, John R.
+        and Stevens, M. Henry H.
+        and White, Jada-Simone S.},
+     title={Generalized linear mixed models: a practical guide for ecology and evolution},
+     journal={Trends in Ecology {\&} Evolution},
+     year={2009},
+     month={Mar},
+     day={01},
+     publisher={Elsevier},
+     volume={24},
+     number={3},
+     pages={127-135},
+     abstract={How should ecologists and evolutionary biologists analyze nonnormal data that involve random effects? Nonnormal data such as counts or proportions often defy classical statistical procedures. Generalized linear mixed models (GLMMs) provide a more flexible approach for analyzing nonnormal data when random effects are present. The explosion of research on GLMMs in the last decade has generated considerable uncertainty for practitioners in ecology and evolution. Despite the availability of accurate techniques for estimating GLMM parameters in simple cases, complex GLMMs are challenging to fit and statistical inference such as hypothesis testing remains difficult. We review the use (and misuse) of GLMMs in ecology and evolution, discuss estimation and inference and summarize ?best-practice? data analysis procedures for scientists facing this challenge.},
+     issn={0169-5347},
+     doi={10.1016/j.tree.2008.10.008},
+     url={https://doi.org/10.1016/j.tree.2008.10.008}
+}
+

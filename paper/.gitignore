@@ -1,0 +1,29 @@
+# LaTeX build artifacts
+*.log
+*.aux
+*.cfg
+*.glo
+*.idx
+*.toc
+*.ilg
+*.ind
+*.out
+*.lof
+*.lot
+*.bbl
+*.blg
+*.gls
+*.cut
+*.hd
+*.dvi
+*.ps
+*.thm
+*.tgz
+*.zip
+*.rpi
+*~
+*.bcf
+*.run.xml
+
+# Compiled PDF (regenerate with: yarn paper)
+paper.pdf
